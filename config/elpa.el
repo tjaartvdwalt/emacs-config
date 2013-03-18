@@ -24,6 +24,8 @@
      (setq ac-auto-start 2)
 ;; magit
 (elpa-install 'magit)
+;; shell switcher is a dependency of magit
+(elpa-install 'shell-switcher)
 (require 'magit)
 (define-key shell-switcher-mode-map (kbd "C-x m")
 	    'magit-status)

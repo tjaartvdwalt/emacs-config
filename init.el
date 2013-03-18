@@ -34,9 +34,11 @@
 
 (el-get 'sync)
 
-(load "~/.emacs.d/config/modes")
-(load "~/.emacs.d/config/file-extensions")
 (load "~/.emacs.d/config/repo-config")
 (load "~/.emacs.d/config/elpa")
+
 (load "~/.emacs.d/config/el-get")
+
+(load "~/.emacs.d/config/modes")
+(load "~/.emacs.d/config/file-extensions")
 (load "~/.emacs.d/config/abandoned")
