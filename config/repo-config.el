@@ -10,8 +10,8 @@
     '("melpa" .
       "http://melpa.milkbox.net/packages/"))
 
-(add-to-list 'package-archives
-    '("tromney" .
-      "http://tromey.com/elpa"))
+;;(add-to-list 'package-archives
+;;    '("tromney" .
+;;      "http://tromey.com/elpa"))
 
 (package-initialize)
