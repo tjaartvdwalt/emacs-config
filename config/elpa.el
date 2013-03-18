@@ -1,10 +1,4 @@
-;;************* Install ELPA plugins *******************
-;; a helper method to install a package before configuring
 (package-refresh-contents)
-(defun el-get-install (package)
-  (when (not (package-installed-p package))
-    (package-install package))
-)
 
 ;;************* Configure ELPA plugins *******************
 ;; dired+
