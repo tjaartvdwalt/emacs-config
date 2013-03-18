@@ -1,5 +1,6 @@
 ;;************* Install ELPA plugins *******************
 ;; a helper method to install a package before configuring
+(package-refresh-contents)
 (defun elpa-install (package)
   (when (not (package-installed-p package))
     (package-install package))
@@ -113,6 +114,11 @@
 (elpa-install 'header2)
 (require 'header2)
 (add-hook 'ruby-mode 'auto-make-header)
+
+;; inf-ruby
+;; inf-ruby is a dependency for skype installed in el-get.el
+(elpa-install 'inf-ruby)
+(require 'inf-ruby)
 
 ;; mmm-mode
 ;;     (require 'mmm-auto)

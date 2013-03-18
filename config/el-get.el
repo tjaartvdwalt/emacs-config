@@ -1,7 +1,6 @@
 ;************* Downloaded Plugins *******************
 ;; skype
 ;; inf-ruby is a dependency for skype
-(el-get-install 'inf-ruby)
 (el-get-install 'skype)
 (require 'skype)
      (setq skype--my-user-handle "rkwtavdw")
