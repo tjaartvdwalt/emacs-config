@@ -12,8 +12,8 @@
 ;;    ;; Configure dired to sort directories first
 ;;    (setq dired-listing-switches "-aBhl --group-directories-first")
 ;; gimme
-(elpa-install 'gimme)
-(require 'gimme)
+;;(elpa-install 'gimme)
+;;(require 'gimme)
 
 ;; auto-complete
 (elpa-install 'auto-complete)
