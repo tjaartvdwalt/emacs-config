@@ -12,9 +12,10 @@
 )
 
 ;;************* Configure ELPA plugins *******************
+;; Broken in repo
 ;; gimme
-(elpa-install 'gimme)
-(require 'gimme)
+;; (elpa-install 'gimme)
+;; (require 'gimme)
 
 ;; auto-complete
 (elpa-install 'auto-complete)
