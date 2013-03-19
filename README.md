@@ -11,7 +11,8 @@ At startup the config checks whether the required plugins are installed, and ins
 There are 2 ways of installing plugins: through ELPA (the preferred way), or with el-get.
 
 el-get can technically install plugins from ELPA repositories, but I prefer installing these plugins with package.el
-el-get has the advantage of being able to install packages from source, so all plugins that aren't in the ELPA repositorygets installed that way.
 
-ELPA plugins are defined in config/elpa.el
-el-get plugins are defined in confg/el-get.el
+el-get has the advantage of being able to install packages from other sources, so all plugins that aren't in the ELPA repositorygets installed that way.
+
+ELPA plugins are defined in `config/elpa.el`
+el-get plugins are defined in `confg/el-get.el`
