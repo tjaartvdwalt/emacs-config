@@ -12,6 +12,12 @@
 )
 
 ;;************* Configure ELPA plugins *******************
+;; dired+
+(elpa-install 'dired+)
+(require 'dired+)
+    ;; Configure dired to sort directories first
+    (setq dired-listing-switches "-aBhl --group-directories-first")
+
 ;; Broken in repo
 ;; gimme
 ;; (elpa-install 'gimme)
