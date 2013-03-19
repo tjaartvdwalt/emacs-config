@@ -1,19 +1,20 @@
-(package-refresh-contents)
+;; Its neccesary to update your repos on first install
+;; otherwise elpa cannot find the sources. Once the archives
+;; dir exists, you will have to manually update
+(unless (file-exists-p "~/.emacs.d/elpa/archives")
+  (package-refresh-contents))
 
+;; A small function to install packages if they do not exist.
+;; This allows the config for each plugin to live together
 (defun elpa-install (package)
    (when (not (package-installed-p package))
      (package-install package))
 )
 
 ;;************* Configure ELPA plugins *******************
-;; dired+
-;;(el-get 'sync (dired+))
-;;(require 'dired+)
-;;    ;; Configure dired to sort directories first
-;;    (setq dired-listing-switches "-aBhl --group-directories-first")
 ;; gimme
-;;(elpa-install 'gimme)
-;;(require 'gimme)
+(elpa-install 'gimme)
+(require 'gimme)
 
 ;; auto-complete
 (elpa-install 'auto-complete)
