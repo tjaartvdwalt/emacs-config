@@ -1,26 +1,31 @@
 (package-refresh-contents)
 
+(defun elpa-install (package)
+   (when (not (package-installed-p package))
+     (package-install package))
+)
+
 ;;************* Configure ELPA plugins *******************
 ;; dired+
-(el-get-install 'dired+)
-(require 'dired+)
-    ;; Configure dired to sort directories first
-    (setq dired-listing-switches "-aBhl --group-directories-first")
+;;(el-get 'sync (dired+))
+;;(require 'dired+)
+;;    ;; Configure dired to sort directories first
+;;    (setq dired-listing-switches "-aBhl --group-directories-first")
 ;; gimme
-(el-get-install 'gimme)
+(elpa-install 'gimme)
 (require 'gimme)
 
 ;; auto-complete
-(el-get-install 'auto-complete)
+(elpa-install 'auto-complete)
 (require 'auto-complete)
 (require 'auto-complete-config)
      (ac-config-default)
      (global-auto-complete-mode t)
      (setq ac-auto-start 2)
 ;; magit
-(el-get-install 'magit)
+(elpa-install 'magit)
 ;; shell switcher is a dependency of magit
-(el-get-install 'shell-switcher)
+(elpa-install 'shell-switcher)
 (require 'magit)
 (define-key shell-switcher-mode-map (kbd "C-x m")
 	    'magit-status)
@@ -33,22 +38,22 @@
        (set-face-background 'magit-item-highlight "black"))))
 
 ;; auto-indent
-(el-get-install 'auto-indent-mode)
+(elpa-install 'auto-indent-mode)
 (require 'auto-indent-mode)
 ;; I don't really like the way auto indent works, so I disable it by default
 ;; Rather use C-j instead of RET to get indentation
 ;;     (auto-indent-global-mode)
 
 ;; ruby end
-(el-get-install 'ruby-end)
+(elpa-install 'ruby-end)
 (require 'ruby-end)
 
 ;; json mode
-(el-get-install 'json-mode)
+(elpa-install 'json-mode)
 (require 'json-mode)
 
 ;; enclose
-(el-get-install 'enclose)
+(elpa-install 'enclose)
 (require 'enclose)
      (enclose-mode t)
 
@@ -62,56 +67,56 @@
 	    'shell-switcher-new-shell)
 
 ;; sunrise commander
-(el-get-install 'sunrise-commander)
+(elpa-install 'sunrise-commander)
 (require 'sunrise-commander)
-(el-get-install 'sunrise-x-tree)
+(elpa-install 'sunrise-x-tree)
 (require 'sunrise-x-tree)
 
 ;; anything
-(el-get-install 'anything)
+(elpa-install 'anything)
 (require 'anything)
 
 ;; browse-url-dwim
-(el-get-install 'browse-url-dwim)
+(elpa-install 'browse-url-dwim)
 (require 'browse-url-dwim)
      (browse-url-dwim-mode 1)
      (setq browse-url-dwim-always-confirm-extraction nil)
 
 ;; mark-down-mode
-(el-get-install 'markdown-mode)
+(elpa-install 'markdown-mode)
 (require 'markdown-mode)
 
 ;;;; rinani
 ;;;; Interactively Do Things (highly recommended, but not strictly required)
-(el-get-install 'ido)
+(elpa-install 'ido)
 (require 'ido)
      (ido-mode t)
 ;;;;
 ;;;;       ;; Rinari
-(el-get-install 'rinari)
+(elpa-install 'rinari)
 (require 'rinari)
 
 ;; RVM
-(el-get-install 'rvm)
+(elpa-install 'rvm)
 (require 'rvm)
      (rvm-use-default)
 
 ;; js2-mode
-(el-get-install 'js2-mode)
+(elpa-install 'js2-mode)
 (require 'js2-mode)
 
 ;; rspec-mode
-(el-get-install 'rspec-mode)
+(elpa-install 'rspec-mode)
 (require 'rspec-mode)
 
 ;; header2
-(el-get-install 'header2)
+(elpa-install 'header2)
 (require 'header2)
 (add-hook 'ruby-mode 'auto-make-header)
 
 ;; inf-ruby
 ;; inf-ruby is a dependency for skype installed in el-get.el
-(el-get-install 'inf-ruby)
+(elpa-install 'inf-ruby)
 (require 'inf-ruby)
 
 ;; mmm-mode
