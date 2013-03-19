@@ -14,5 +14,5 @@ el-get can technically install plugins from ELPA repositories, but I prefer inst
 
 el-get has the advantage of being able to install packages from other sources, so all plugins that aren't in the ELPA repositorygets installed that way.
 
-ELPA plugins are defined in config/elpa.el
-el-get plugins are defined in confg/el-get.el
+ELPA plugins are defined in `config/elpa.el`
+el-get plugins are defined in `confg/el-get.el`
