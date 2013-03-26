@@ -110,8 +110,8 @@
      (rvm-use-default)
 
 ;; js2-mode
-(elpa-install 'js2-mode)
-(require 'js2-mode)
+;;(elpa-install 'js2-mode)
+;;(require 'js2-mode)
 
 ;; rspec-mode
 (elpa-install 'rspec-mode)
