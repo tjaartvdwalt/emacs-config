@@ -127,6 +127,14 @@
 (elpa-install 'inf-ruby)
 (require 'inf-ruby)
 
+;; tea-time
+(elpa-install 'tea-time)
+(require 'tea-time)
+
+;; yasnippet
+(elpa-install 'yasnippet)
+(require 'yasnippet)
+
 ;; mmm-mode
 ;;     (require 'mmm-auto)
 ;;     (setq mmm-global-mode 'maybe)

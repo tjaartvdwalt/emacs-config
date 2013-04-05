@@ -12,6 +12,7 @@
  '(global-auto-complete-mode t)
  '(keep-end-mode t)
  '(rails-ws:default-server-type "webrick")
+ '(show-paren-mode t)
  '(size-indication-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
