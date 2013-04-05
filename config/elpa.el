@@ -134,6 +134,9 @@
 ;; yasnippet
 (elpa-install 'yasnippet)
 (require 'yasnippet)
+(yas--initialize)
+    (yas/load-directory "~/.emacs.d/elpa/yasnippet-20130218.2229/snippets")
+    (yas/load-directory "~/.emacs.d/config/my_yasnippets")
 
 ;; mmm-mode
 ;;     (require 'mmm-auto)
