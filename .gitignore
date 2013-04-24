@@ -14,6 +14,8 @@
 /elpa
 /eshell
 /url
+/config/my_yasnippets
+
 # Files
 ac-comphist.dat
 ede-projects.el

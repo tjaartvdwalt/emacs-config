@@ -131,6 +131,10 @@
 (elpa-install 'tea-time)
 (require 'tea-time)
 
+;; mark-down-mode
+(elpa-install 'yaml-mode)
+(require 'yaml-mode)
+
 ;; yasnippet
 (elpa-install 'yasnippet)
 (require 'yasnippet)

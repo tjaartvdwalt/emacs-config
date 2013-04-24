@@ -12,3 +12,4 @@
 (add-to-list 'auto-mode-alist '("\\.html\\'" . html-mode))
 (add-to-list 'auto-mode-alist '("\\.less\\'" . css-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
