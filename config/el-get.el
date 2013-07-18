@@ -10,7 +10,7 @@
 ;; Create a list of all plugins to install
 (setq my-packages
     (append
-	'(skype keep-end rhtml-mode multiple-line-edit)))
+	'(skype keep-end rhtml-mode multiple-line-edit rdebug)))
 ;; Sync the plugins
 (el-get 'sync my-packages)
 

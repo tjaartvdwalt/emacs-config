@@ -123,7 +123,6 @@
 (add-hook 'ruby-mode 'auto-make-header)
 
 ;; inf-ruby
-;; inf-ruby is a dependency for skype installed in el-get.el
 (elpa-install 'inf-ruby)
 (require 'inf-ruby)
 
@@ -141,6 +140,9 @@
 (yas--initialize)
     (yas/load-directory "~/.emacs.d/elpa/yasnippet-20130218.2229/snippets")
     (yas/load-directory "~/.emacs.d/config/my_yasnippets")
+
+(elpa-install 'coffee-mode)
+(require 'coffee-mode)
 
 ;; mmm-mode
 ;;     (require 'mmm-auto)
