@@ -29,8 +29,8 @@
 (keyboard-translate ?\C-x ?\C-u)
 (keyboard-translate ?\C-u ?\C-x)
 
-(keyboard-translate ?\M-x ?\M-u)
-(keyboard-translate ?\M-u ?\M-x)
+;; (keyboard-translate ?\M-x ?\M-u)
+;; (keyboard-translate M-u M-x)
 
 ;; Set a shortcut for compile
 (global-set-key "\C-xc" 'compile)
@@ -39,6 +39,7 @@
 (load "~/.emacs.d/config/elpa")
 
 (load "~/.emacs.d/config/el-get")
+(load "~/.emacs.d/config/manual-install")
 
 (load "~/.emacs.d/config/modes")
 (load "~/.emacs.d/config/file-extensions")

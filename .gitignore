@@ -23,3 +23,6 @@ places
 
 # Ignore emacs temp files
 *.*~
+
+# Ignore session files
+session.*

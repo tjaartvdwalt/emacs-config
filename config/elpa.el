@@ -94,6 +94,9 @@
 (elpa-install 'markdown-mode)
 (require 'markdown-mode)
 
+(elpa-install 'markdown-mode+)
+(require 'markdown-mode+)
+
 ;;;; rinani
 ;;;; Interactively Do Things (highly recommended, but not strictly required)
 (elpa-install 'ido)
