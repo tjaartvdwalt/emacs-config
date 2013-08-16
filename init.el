@@ -26,11 +26,11 @@
 (require 'iso-transl)
 
 ;; Swap c-x and c-u and m-x and m-u ... useful for dvorak layout
-;;(keyboard-translate ?\C-x ?\C-v)
+(keyboard-translate ?\C-x ?\C-u)
 (keyboard-translate ?\C-u ?\C-x)
 
-;; (keyboard-translate ?\M-x ?\M-u)
-;; (keyboard-translate M-u M-x)
+;;(keyboard-translate ?\M-x ?\M-u)
+;;(keyboard-translate ?\M-u ?\M-x)
 
 ;; Set a shortcut for compile
 (global-set-key "\C-xc" 'compile)
