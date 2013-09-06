@@ -6,6 +6,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(auto-indent-next-pair-timer-geo-mean (quote ((default 0.0005 0))))
+ '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
  '(custom-enabled-themes (quote (wombat)))
@@ -25,12 +26,28 @@
 ;; Get deadkeys to work
 (require 'iso-transl)
 
+;; add tramp for editing remote files
+(require 'tramp)
+(setq tramp-default-method "scp")
+
 ;; Swap c-x and c-u and m-x and m-u ... useful for dvorak layout
 (keyboard-translate ?\C-x ?\C-u)
 (keyboard-translate ?\C-u ?\C-x)
 
 ;;(keyboard-translate ?\M-x ?\M-u)
 ;;(keyboard-translate ?\M-u ?\M-x)
+
+;; Disable menu-bar
+(menu-bar-mode -1)
+
+;; use dired-x for hiding hiddin files
+(require 'dired-x)
+(setq-default dired-omit-files-p t) ; this is buffer-local variable
+
+;; 1) Hide files that start with # (emacs tmp files)
+;; 2) Hide files that start with . then not a dot then anything
+;;    This will hide any hidden files, but not . and .. that I use to navigate
+(setq dired-omit-files "^#\\|^\\.[^.].*$") 
 
 ;; Set a shortcut for compile
 (global-set-key "\C-xc" 'compile)
@@ -44,3 +61,4 @@
 (load "~/.emacs.d/config/modes")
 (load "~/.emacs.d/config/file-extensions")
 (load "~/.emacs.d/config/abandoned")
+(load "~/.emacs.d/config/sudo-edit-current-file")

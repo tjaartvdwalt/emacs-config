@@ -20,6 +20,7 @@
 ac-comphist.dat
 ede-projects.el
 places
+tramp
 
 # Ignore emacs temp files
 *.*~

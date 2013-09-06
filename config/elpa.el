@@ -18,6 +18,9 @@
     ;; Configure dired to sort directories first
     (setq dired-listing-switches "-aBhl --group-directories-first")
 
+(toggle-diredp-find-file-reuse-dir 1)
+
+
 ;; Broken in repo
 ;; gimme
 ;; (elpa-install 'gimme)
@@ -146,6 +149,18 @@
 
 (elpa-install 'coffee-mode)
 (require 'coffee-mode)
+
+(elpa-install 'sudo-ext)
+(require 'sudo-ext)
+
+(elpa-install 'bookmark+)
+(require 'bookmark+)
+
+(elpa-install 'workgroups2)
+(require 'workgroups2)
+(workgroups-mode 1)
+(setq wg-default-session-file "~/.emacs.d/.emacs_workgroups")
+(setq wg-use-default-session-file 1)
 
 ;; mmm-mode
 ;;     (require 'mmm-auto)
