@@ -52,13 +52,32 @@
 ;; Set a shortcut for compile
 (global-set-key "\C-xc" 'compile)
 
+;; Customize compile command
+;; For c files search for nearest Makefile
+(require 'cl)
+(defun* get-closest-pathname (&optional (file "Makefile"))
+  (let ((root (expand-file-name "/")))
+    (expand-file-name file
+		      (loop 
+			for d = default-directory then (expand-file-name ".." d)
+			if (file-exists-p (expand-file-name file d))
+			return d
+			if (equal d root)
+			return nil))))
+
+(require 'compile)
+  (add-hook 'c-mode-hook (lambda () (set (make-local-variable 'compile-command) (format "make -f %s" (get-closest-pathname)))))
+
+;; set return to use indent
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
 (load "~/.emacs.d/config/repo-config")
 (load "~/.emacs.d/config/elpa")
-
 (load "~/.emacs.d/config/el-get")
 (load "~/.emacs.d/config/manual-install")
-
 (load "~/.emacs.d/config/modes")
 (load "~/.emacs.d/config/file-extensions")
 (load "~/.emacs.d/config/abandoned")
 (load "~/.emacs.d/config/sudo-edit-current-file")
+
+

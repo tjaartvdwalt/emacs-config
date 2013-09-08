@@ -49,8 +49,8 @@
        (set-face-background 'magit-item-highlight "black"))))
 
 ;; auto-indent
-(elpa-install 'auto-indent-mode)
-(require 'auto-indent-mode)
+;;(elpa-install 'auto-indent-mode)
+;;(require 'auto-indent-mode)
 ;; I don't really like the way auto indent works, so I disable it by default
 ;; Rather use C-j instead of RET to get indentation
 ;;     (auto-indent-global-mode)
@@ -149,7 +149,6 @@
 
 (elpa-install 'coffee-mode)
 (require 'coffee-mode)
-
 (elpa-install 'sudo-ext)
 (require 'sudo-ext)
 
