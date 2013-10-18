@@ -48,13 +48,6 @@
      (when (not window-system)
        (set-face-background 'magit-item-highlight "black"))))
 
-;; auto-indent
-;;(elpa-install 'auto-indent-mode)
-;;(require 'auto-indent-mode)
-;; I don't really like the way auto indent works, so I disable it by default
-;; Rather use C-j instead of RET to get indentation
-;;     (auto-indent-global-mode)
-
 ;; ruby end
 (elpa-install 'ruby-end)
 (require 'ruby-end)
@@ -76,12 +69,6 @@
 	    'shell-switcher-switch-buffer-other-window)
 (define-key shell-switcher-mode-map (kbd "C-M-=")
 	    'shell-switcher-new-shell)
-
-;; sunrise commander
-(elpa-install 'sunrise-commander)
-(require 'sunrise-commander)
-(elpa-install 'sunrise-x-tree)
-(require 'sunrise-x-tree)
 
 ;; anything
 (elpa-install 'anything)
@@ -142,24 +129,40 @@
 
 ;; yasnippet
 (elpa-install 'yasnippet)
-(require 'yasnippet)
-(yas--initialize)
-    (yas/load-directory "~/.emacs.d/elpa/yasnippet-20130218.2229/snippets")
-    (yas/load-directory "~/.emacs.d/config/my_yasnippets")
+
 
 (elpa-install 'coffee-mode)
 (require 'coffee-mode)
 (elpa-install 'sudo-ext)
 (require 'sudo-ext)
 
-(elpa-install 'bookmark+)
-(require 'bookmark+)
+;;(elpa-install 'bookmark+)
+;;(require 'bookmark+)
 
-(elpa-install 'workgroups2)
-(require 'workgroups2)
-(workgroups-mode 1)
-(setq wg-default-session-file "~/.emacs.d/.emacs_workgroups")
-(setq wg-use-default-session-file 1)
+(elpa-install 'persp-mode)
+(persp-mode t)
+
+(elpa-install 'emacs-eclim)
+(require 'eclim)
+(global-eclim-mode)
+(require 'eclimd)
+(setq eclimd-default-workspace "~/my_dev/eclipse_workspace")
+(setq help-at-pt-display-when-idle t)
+(setq help-at-pt-timer-delay 0.1)
+(help-at-pt-set-timer)
+
+;; add the emacs-eclim source
+(require 'ac-emacs-eclim-source)
+(ac-emacs-eclim-config)
+
+(elpa-install 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; (elpa-install 'workgroups2)
+;; (require 'workgroups2)
+;; (workgroups-mode 1)
+;; (setq wg-default-session-file "~/.emacs.d/.emacs_workgroups")
+;; (setq wg-use-default-session-file 1)
 
 ;; mmm-mode
 ;;     (require 'mmm-auto)

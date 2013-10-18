@@ -31,11 +31,16 @@
 (setq tramp-default-method "scp")
 
 ;; Swap c-x and c-u and m-x and m-u ... useful for dvorak layout
-(keyboard-translate ?\C-x ?\C-u)
-(keyboard-translate ?\C-u ?\C-x)
+;;(keyboard-translate ?\C-x ?\C-u)
+;;(keyboard-translate ?\C-u ?\C-x)
+(define-key key-translation-map [?\C-x] [?\C-u])
+(define-key key-translation-map [?\C-u] [?\C-x])
 
 ;;(keyboard-translate ?\M-x ?\M-u)
 ;;(keyboard-translate ?\M-u ?\M-x)
+
+(global-set-key "\C-x." 'mulled/edit-trailing-edges)
+(global-set-key "\C-x," 'mulled/edit-leading-edges)
 
 ;; Disable menu-bar
 (menu-bar-mode -1)
@@ -67,6 +72,13 @@
 
 (require 'compile)
   (add-hook 'c-mode-hook (lambda () (set (make-local-variable 'compile-command) (format "make -f %s" (get-closest-pathname)))))
+
+  (add-hook 'c++-mode-hook (lambda () (set (make-local-variable 'compile-command) (format "make -f %s" (get-closest-pathname)))))
+
+;; Midnight mode by default runs CleanBufferList
+;; This will clean up unused buffers(more than 3 days old by default) every morning
+(require 'midnight)
+(midnight-delay-set 'midnight-delay "10:00am")
 
 ;; set return to use indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
