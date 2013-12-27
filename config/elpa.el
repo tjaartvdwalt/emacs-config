@@ -158,13 +158,6 @@
 (elpa-install 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 
-;; (elpa-install 'workgroups2)
-;; (require 'workgroups2)
-;; (workgroups-mode 1)
-;; (setq wg-default-session-file "~/.emacs.d/.emacs_workgroups")
-;; (setq wg-use-default-session-file 1)
-
-;; mmm-mode
-;;     (require 'mmm-auto)
-;;     (setq mmm-global-mode 'maybe)
-;;     (mmm-add-mode-ext-class 'html-mode "\\.erb\\'" 'ruby-mode)
+(elpa-install 'emacsd-tile)
+(add-hook 'after-init-hook 'global-company-mode)
+(load "~/.emacs.d/config/emacsd-tile")

@@ -75,21 +75,16 @@
 
   (add-hook 'c++-mode-hook (lambda () (set (make-local-variable 'compile-command) (format "make -f %s" (get-closest-pathname)))))
 
-;; Midnight mode by default runs CleanBufferList
-;; This will clean up unused buffers(more than 3 days old by default) every morning
-(require 'midnight)
-(midnight-delay-set 'midnight-delay "10:00am")
-
 ;; set return to use indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
 (load "~/.emacs.d/config/repo-config")
 (load "~/.emacs.d/config/elpa")
 (load "~/.emacs.d/config/el-get")
+(load "~/.emacs.d/config/mu4e")
 (load "~/.emacs.d/config/manual-install")
 (load "~/.emacs.d/config/modes")
 (load "~/.emacs.d/config/file-extensions")
 (load "~/.emacs.d/config/abandoned")
 (load "~/.emacs.d/config/sudo-edit-current-file")
-
-
+(load "~/.emacs.d/config/clean-buffer")
