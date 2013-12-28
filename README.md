@@ -1,18 +1,33 @@
 # My Emacs config
-This is my personal Emacs config. Feel free to fork this repository!
+This is my personal Emacs config.
 
-To use it simply do:
-`git clone https://github.com/tjaartvdwalt/emacs-config.git ~/.emacs.d`
+I wrote this config to self install the required plugins before configuring them.
+## Installation of plugins 
+There are two ways to install a plugin: [ELPA](https://github.com/tjaartvdwalt/emacs-config/blob/master/config/elpa.el) or [el-get](https://github.com/tjaartvdwalt/emacs-config/blob/master/config/el-get.el)
+Elpa is the preferred installation method but el-get can install packages from more sources.
 
-The first time you open emacs will take a LONG time to sync all the plugins
+### ELPA
+The way to install a package is:
+```
+(elpa-install 'my-package)
+```
 
-## Automatic installation of plugins
-At startup the config checks whether the required plugins are installed, and installs all missing plugins.
-There are 2 ways of installing plugins: through ELPA (the preferred way), or with el-get.
+### el-get
 
-el-get can technically install plugins from ELPA repositories, but I prefer installing these plugins with package.el
 
-el-get has the advantage of being able to install packages from other sources, so all plugins that aren't in the ELPA repositorygets installed that way.
 
-ELPA plugins are defined in `config/elpa.el`
-el-get plugins are defined in `confg/el-get.el`
+## Plugins
+### mu4e
+[mu4e](https://github.com/tjaartvdwalt/emacs-config/blob/master/config/mu4e.el)
+This config is a work in progress.
+
+I configure multiple email accounts. The idea is that (eventually) you will be able to set your email folders in the `my-mu4e-account-alist` variable and the rest of the config will use these details.
+
+#### Smart refiling
+
+#### Bookmarks
+
+####
+
+
+### sudo tramp

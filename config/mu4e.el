@@ -44,8 +44,6 @@
 (setq message-send-mail-function 'smtpmail-send-it
         smtpmail-stream-type 'starttls
         smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
-        smtpmail-auth-credentials
-          '(("smtp.gmail.com" 587 "tjaart@tjaart.co.za" mat16:18))
         smtpmail-default-smtp-server "smtp.gmail.com"
         smtpmail-smtp-server "smtp.gmail.com"
         smtpmail-smtp-service 587
@@ -73,9 +71,10 @@
 
 (defvar my-mu4e-account-alist
   '(("tjaart@tjaart.co.za"
+    (mu4e-inbox-folder "/tjaart@tjaart.co.za/INBOX")
     (mu4e-refile-folder "/tajvdw@gmail.com/Archives")
     (mu4e-drafts-folder "/tjaart@tjaart.co.za/[Gmail].Drafts")
-    (mu4e-sent-folder "/tjaart@tjaart.co.za/Sent Mail")
+    (mu4e-sent-folder "/tjaart@tjaart.co.za/[Gmail].Sent\\ Mail")
     (mu4e-spam-folder "/tjaart@tjaart.co.za/[Gmail].Spam")
     (mu4e-trash-folder "/tjaart@tjaart.co.za/[Gmail].Trash")
     (user-mail-address "tjaart@tjaart.co.za")
@@ -83,9 +82,10 @@
     (setq mu4e-sent-messages-behavior 'delete)
    )
    ("tajvdw@gmail.com"
+    (mu4e-inbox-folder "/tajvdw@gmail.com/INBOX")
     (mu4e-refile-folder "/tajvdw@gmail.com/Archives")
     (mu4e-drafts-folder "/tajvdw@gmail.com/[Gmail].Drafts")
-    (mu4e-sent-folder "/tajvdw@gmail.com/Sent Mail")
+    (mu4e-sent-folder "/tajvdw@gmail.com/[Gmail].Sent\\ Mail")
     (mu4e-spam-folder "/tajvdw@gmail.com/[Gmail].Spam")
     (mu4e-trash-folder "/tajvdw@gmail.com/[Gmail].Trash")
     (user-mail-address "tajvdw@gmail.com")
@@ -93,6 +93,7 @@
 
    )
    ("tav9wc@mail.umsl.edu"
+    (mu4e-inbox-folder "/tav9wc@mail.umsl.edu/INBOX")
     (mu4e-refile-folder "/tav9wc@mail.umsl.edu/Archives")
     (mu4e-drafts-folder "/tav9wc@mail.umsl.edu/Drafts")
     (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent")
@@ -131,8 +132,8 @@
   "Returns the configured mu4e accounts by using the configuration list 'my-mu4e-account-alist'"
   (let (value)
     (dolist (account my-mu4e-account-alist)
-      (add-to-list 'value (car account))))
-  (print value))
+      (add-to-list 'value (car account)))
+  (print value)))
 
 
 ;; a function to find the location for a mu4e-folder.
@@ -151,6 +152,9 @@
 (let*((draft "flag:draft")
       (unread "flag:unread")
       (trash "flag:trashed")
+      (tajinbox    (concat "maildir:" (my-mu4e-find-folder "tajvdw@gmail.com"     "mu4e-inbox-folder")))
+      (tjaartinbox (concat "maildir:" (my-mu4e-find-folder "tjaart@tjaart.co.za"  "mu4e-inbox-folder")))
+      (tav9wcinbox (concat "maildir:" (my-mu4e-find-folder "tav9wc@mail.umsl.edu" "mu4e-inbox-folder")))
       (tajspam    (concat "maildir:" (my-mu4e-find-folder "tajvdw@gmail.com"     "mu4e-spam-folder")))
       (tjaartspam (concat "maildir:" (my-mu4e-find-folder "tjaart@tjaart.co.za"  "mu4e-spam-folder")))
       (tajsent    (concat "maildir:" (my-mu4e-find-folder "tajvdw@gmail.com"     "mu4e-sent-folder")))
@@ -159,21 +163,29 @@
       (trash-and-not-spam (concat trash " AND NOT " tajspam " AND NOT " tjaartspam)))
 (setq mu4e-bookmarks
         `(
+          (,(concat tajinbox " OR " tjaartinbox " OR " tav9wcinbox) "Messages in Inbox"      ?i)
           (,(concat unread " AND NOT " trash-and-not-spam) "Unread messages"      ?u)
           (,(concat "date:today..now AND NOT " trash-and-not-spam) "Today's messages"     ?t)
           (,(concat "date:7d..now AND NOT " trash-and-not-spam) "Last 7 days"          ?w)
           (,(concat "mime:image/* AND NOT " trash-and-not-spam) "Messages with images" ?p)
           (,(concat tjaartsent " OR " tajsent " OR " tav9wcsent) "Sent Mail" ?s)
-           (,(concat tjaartspam " OR " tajspam) "Spam" ?S)
-           (,(concat trash) "Trashed messages" ?T)
-           (,(concat draft) "Draft messages" ?d))))
+          (,(concat tjaartspam " OR " tajspam) "Spam" ?S)
+          (,(concat trash) "Trashed messages" ?T)
+          (,(concat draft) "Draft messages" ?d))))
 
-(defun get-message-year(msg)
+(defun my-mu4e-get-message-year(msg)
 (let ((year (decode-time (mu4e-message-field msg :date))))
-    (message  (number-to-string (nth 5 year)))))
+    (message (number-to-string (nth 5 year)))))
+
+(defun my-mu4e-get-message-account(msg)
+  (let (value)
+  (dolist (account (my-mu4e-find-accounts))
+    (if (search account (mu4e-message-field msg :path)) (add-to-list 'value account)))
+  (message (car value))))
+
 
 ;; archive messages to the folder corresponding to the current year
 (setq mu4e-refile-folder
   (lambda (msg)
-     (message (concat "/tajvdw@gmail.com/Archives." (get-message-year msg)))))
-
+     ;;(message (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-refile-folder"))
+     (message (concat (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-refile-folder") "." (my-mu4e-get-message-year msg)))))
