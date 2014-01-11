@@ -28,3 +28,5 @@
 ;; rhtml
 (add-hook 'rhtml-mode-hook
    (lambda () (rinari-launch)))
+
+;;(require 'w3m-session)

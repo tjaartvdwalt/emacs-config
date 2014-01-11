@@ -9,7 +9,7 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
- '(custom-enabled-themes (quote (wombat)))
+ ;;'(custom-enabled-themes (quote (wombat)))
  '(global-auto-complete-mode t)
  '(keep-end-mode t)
  '(rails-ws:default-server-type "webrick")
@@ -56,6 +56,10 @@
 
 ;; Set a shortcut for compile
 (global-set-key "\C-xc" 'compile)
+
+;; make whitespace-mode use just basic coloring
+(global-set-key "\C-cw" 'whitespace-mode)
+;;(global-whitespace-mode 1)
 
 ;; Customize compile command
 ;; For c files search for nearest Makefile

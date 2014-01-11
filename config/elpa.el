@@ -13,6 +13,12 @@
 
 ;;************* Configure ELPA plugins *******************
 ;; dired+
+(elpa-install 'color-theme)
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-arjen)
+
+;; dired+
 (elpa-install 'dired+)
 (require 'dired+)
     ;; Configure dired to sort directories first
@@ -161,3 +167,82 @@
 (elpa-install 'emacsd-tile)
 (add-hook 'after-init-hook 'global-company-mode)
 (load "~/.emacs.d/config/emacsd-tile")
+
+
+(elpa-install 'w3m)
+(setq browse-url-browser-function 'w3m-browse-url)
+(setq w3m-use-cookies t)
+(setq w3m-cookie-accept-bad-cookies t)
+
+;; open page in firefox
+(defun w3m-open-current-page-in-firefox ()
+  "Open the current URL in Mozilla Firefox."
+  (interactive)
+  (browse-url-firefox w3m-current-url))
+
+(defun w3m-open-link-or-image-in-firefox ()
+  "Open the current link or image in Firefox."
+  (interactive)
+  (browse-url-firefox (or (w3m-anchor)
+                          (w3m-image))))
+
+(setq w3m-default-display-inline-images t)
+
+(setq w3m-use-tab t)
+
+;;(define-key w3m-mode-map "f" 'w3m-open-current-page-in-firefox)
+;;(define-key w3m-mode-map "F" 'w3m-open-link-or-image-in-firefox)
+
+
+;; webjump
+(elpa-install 'webjump)
+(require 'webjump)
+(global-set-key "\C-cj" 'webjump)
+
+(setq webjump-sites
+   (append '(("stackoverflow" . "www.stackoverflow.com"))
+      webjump-sample-sites))
+
+
+
+(elpa-install 'conkeror-minor-mode)
+(add-hook 'js-mode-hook 'conkeror-minor-mode)
+(autoload 'conkeror-minor-mode "conkeror-minor-mode")
+
+(add-hook 'js-mode-hook (lambda ()
+                          (when (string= ".conkerorrc" (buffer-name))
+                            (conkeror-minor-mode 1))))
+
+;; open certain types of files with external applications
+(elpa-install 'openwith)
+
+(when (require 'openwith nil 'noerror)
+      (setq openwith-associations
+            (list
+             (list (openwith-make-extension-regexp
+                    '("mpg" "mpeg" "mp3" "mp4"
+                      "avi" "wmv" "wav" "mov" "flv"
+                      "ogm" "ogg" "mkv"))
+                   "mpv"
+                   '(file))
+             (list (openwith-make-extension-regexp
+                    '("xbm" "pbm" "pgm" "ppm" "pnm"
+                      "png" "gif" "bmp" "tif" "jpeg" "jpg"))
+                   "~/bin/wrappers/feh-browser.sh"
+                   '(file))
+             (list (openwith-make-extension-regexp
+                    '("doc" "xls" "ppt" "odt" "ods" "odg" "odp"))
+                   "libreoffice"
+                   '(file))
+             '("\\.lyx" "lyx" (file))
+             '("\\.chm" "kchmviewer" (file))
+             (list (openwith-make-extension-regexp
+                    '("pdf" "ps" "ps.gz" "dvi"))
+                   "xpdf"
+                   '(file))
+             (list (openwith-make-extension-regexp
+                    '("zip" "tar\\.gz" "tar\\.bz2" "ear" "jar" "rar" "war" ))
+                   "file-roller"
+                   '(file))
+             ))
+      (openwith-mode 1))
