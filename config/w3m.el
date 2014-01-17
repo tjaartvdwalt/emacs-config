@@ -29,6 +29,15 @@
 (global-set-key "\C-cj" 'webjump)
 
 (setq webjump-sites
-   (append '(("stackoverflow" . "www.stackoverflow.com"))
-      webjump-sample-sites))
+   (append '(("Github" .
+             [simple-query "https://github.com"
+                           "https://github.com/search?q=" "&type=Everything&repo=&langOverride=&start_value=1"])
+            ("Arch wiki" .
+            [simple-query "https://wiki.archlinux.org"
+                          "https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=" "" ])
+            ("Stack Overflow" .
+            [simple-query "http://stackoverflow.com"
+                          "http://stackoverflow.com/search?q=" "" ]))
+
+            webjump-sample-sites))
 
