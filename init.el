@@ -82,8 +82,13 @@
 ;; set return to use indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
+(global-set-key "\C-cf" 'find-grep-dired)
+(global-set-key "\C-cn" 'find-name-dired)
+
+
 (load "~/.emacs.d/config/repo-config")
 (load "~/.emacs.d/config/elpa")
+(load "~/.emacs.d/config/w3m")
 (load "~/.emacs.d/config/el-get")
 (load "~/.emacs.d/config/mu4e")
 (load "~/.emacs.d/config/manual-install")

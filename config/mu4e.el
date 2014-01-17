@@ -1,3 +1,5 @@
+;; Maybe the config and code should be seperated
+
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
 (require 'mu4e)
 
@@ -191,7 +193,8 @@
 (let*((draft "flag:draft")
       (unread "flag:unread")
       (trash "flag:trashed")
-      (trash-and-not-spam (concat trash " AND NOT " (my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "AND NOT"))))
+      (trash-and-not-spam (concat trash " AND NOT "
+                          (my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "AND NOT"))))
 (setq mu4e-bookmarks
         `(
           (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-inbox-folder" "OR") "Messages in Inbox"      ?i)
