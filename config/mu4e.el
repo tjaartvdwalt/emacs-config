@@ -3,9 +3,6 @@
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
 (require 'mu4e)
 
-;;Set a shortcut for mu4e
-(global-set-key "\C-xr" 'mu4e)
-
 ;; mark a message as spam
 (defun mu4e-headers-mark-for-spam (msg)
        "Move the current message to the Spam folder."
@@ -122,11 +119,11 @@
     (my-mu4e-refile-folder "/tav9wc@mail.umsl.edu/Archives")
     (my-mu4e-spam-folder "/tav9wc@mail.umsl.edu/Spam")
     (mu4e-drafts-folder "/tav9wc@mail.umsl.edu/Drafts")
-    (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent")
+    (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent\ Items")
     (mu4e-trash-folder "/tav9wc@mail.umsl.edu/Trash")
     (mu4e-compose-signature "Tjaart van der Walt" )
     (user-mail-address "tav9wc@mail.umsl.edu")
-    (smtpmail-smtp-server "smtp.outlook.com")
+    (smtpmail-smtp-server "smtp.office365.com")
     (smtpmail-stream-type starttls)
     (smtpmail-smtp-service 587))
 

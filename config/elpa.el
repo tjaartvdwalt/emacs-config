@@ -44,8 +44,6 @@
 ;; shell switcher is a dependency of magit
 (elpa-install 'shell-switcher)
 (require 'magit)
-(define-key shell-switcher-mode-map (kbd "C-x m")
-	    'magit-status)
 ;; change magit diff colors
 (eval-after-load 'magit
   '(progn
@@ -69,12 +67,6 @@
 
 ;; shell switcher
 (shell-switcher-mode t)
-(define-key shell-switcher-mode-map (kbd "C-=")
-	    'shell-switcher-switch-buffer)
-(define-key shell-switcher-mode-map (kbd "C-x 4 =")
-	    'shell-switcher-switch-buffer-other-window)
-(define-key shell-switcher-mode-map (kbd "C-M-=")
-	    'shell-switcher-new-shell)
 
 ;; anything
 (elpa-install 'anything)
@@ -119,7 +111,6 @@
 ;; header2
 (elpa-install 'header2)
 (require 'header2)
-(add-hook 'ruby-mode 'auto-make-header)
 
 ;; inf-ruby
 (elpa-install 'inf-ruby)
@@ -162,28 +153,16 @@
 (ac-emacs-eclim-config)
 
 (elpa-install 'company)
-(add-hook 'after-init-hook 'global-company-mode)
 
 (elpa-install 'emacsd-tile)
-(add-hook 'after-init-hook 'global-company-mode)
 (load "~/.emacs.d/config/emacsd-tile")
 
 ;; column-enforce-mode
 (elpa-install 'column-enforce-mode)
 (require 'column-enforce-mode)
-(add-hook 'prog-mode-hook 'column-enforce-mode)
-(global-set-key "\C-cc" 'column-enforce-mode)
-
-
-
 
 (elpa-install 'conkeror-minor-mode)
-(add-hook 'js-mode-hook 'conkeror-minor-mode)
 (autoload 'conkeror-minor-mode "conkeror-minor-mode")
-
-(add-hook 'js-mode-hook (lambda ()
-                          (when (string= ".conkerorrc" (buffer-name))
-                            (conkeror-minor-mode 1))))
 
 ;; open certain types of files with external applications
 (elpa-install 'openwith)
@@ -199,7 +178,7 @@
              (list (openwith-make-extension-regexp
                     '("xbm" "pbm" "pgm" "ppm" "pnm"
                       "png" "gif" "bmp" "tif" "jpeg" "jpg"))
-                   "~/bin/wrappers/feh-browser.sh"
+                   "feh-browser.sh"
                    '(file))
              (list (openwith-make-extension-regexp
                     '("doc" "xls" "ppt" "odt" "ods" "odg" "odp"))
@@ -209,7 +188,7 @@
              '("\\.chm" "kchmviewer" (file))
              (list (openwith-make-extension-regexp
                     '("pdf" "ps" "ps.gz" "dvi"))
-                   "xpdf"
+                   "evince"
                    '(file))
              (list (openwith-make-extension-regexp
                     '("zip" "tar\\.gz" "tar\\.bz2" "ear" "jar" "rar" "war" ))
