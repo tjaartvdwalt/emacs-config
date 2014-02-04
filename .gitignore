@@ -8,13 +8,11 @@
 # This list may not be complete... add more files as needed
 # Dirs
 /auto-save-list
-/backups
-/downloaded
 /el-get
 /elpa
 /eshell
+/newsticker
 /url
-/config/my_yasnippets
 /persp-confs
 
 # Files
