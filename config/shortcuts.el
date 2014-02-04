@@ -50,18 +50,17 @@
 (global-set-key (kbd "M-c") (lambda () (interactive) (enlarge-window -1)))
 (global-set-key (kbd "M-h") (lambda () (interactive) (enlarge-window -1 t)))
 (global-set-key (kbd "M-n") (lambda () (interactive) (enlarge-window 1 t)))
+(global-set-key (kbd "C-M-m") 'toggle-window-split)
 
 (global-set-key (kbd "M-t") 'windmove-down)
 (global-set-key (kbd "M-c") 'windmove-up)
 (global-set-key (kbd "M-h") 'windmove-left)
 (global-set-key (kbd "M-n") 'windmove-right)
 
-(define-key shell-switcher-mode-map (kbd "C-x m")
-	    'magit-status)
+(global-set-key (kbd "\C-xe") 'yas-insert-snippet)
+(global-set-key (kbd "\C-co") 'yas-visit-snippet-file)
+(global-set-key (kbd "\C-ca") 'yas-new-snippet)
 
-(define-key shell-switcher-mode-map (kbd "C-=")
-	    'shell-switcher-switch-buffer)
-(define-key shell-switcher-mode-map (kbd "C-x 4 =")
-	    'shell-switcher-switch-buffer-other-window)
-(define-key shell-switcher-mode-map (kbd "C-M-=")
-	    'shell-switcher-new-shell)
+(global-set-key (kbd "\C-ce") 'aya-create)
+(global-set-key (kbd "\C-cu") 'aya-expand)
+

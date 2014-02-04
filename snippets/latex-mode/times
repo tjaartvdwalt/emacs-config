@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributor: Tjaart van der Walt <latex@tjaart.co.za>
+# key: x
+# group: math
+# name: times
+# --
+$1 \times $2

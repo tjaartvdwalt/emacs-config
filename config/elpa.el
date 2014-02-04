@@ -1,3 +1,21 @@
+;************* Configure package repositories *******************
+(require 'package)
+(add-to-list 'package-archives
+	     '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+    '("sunrise_commander" .
+      "http://joseito.republika.pl/sunrise-commander/"))
+(add-to-list 'package-archives
+    '("melpa" .
+      "http://melpa.milkbox.net/packages/"))
+
+;;(add-to-list 'package-archives
+;;    '("tromney" .
+;;      "http://tromey.com/elpa"))
+
+(package-initialize)
+
 ;; Its neccesary to update your repos on first install
 ;; otherwise elpa cannot find the sources. Once the archives
 ;; dir exists, you will have to manually update
@@ -11,8 +29,6 @@
      (package-install package))
 )
 
-;;************* Configure ELPA plugins *******************
-;; dired+
 (elpa-install 'color-theme)
 (require 'color-theme)
 (color-theme-initialize)
@@ -39,18 +55,6 @@
      (ac-config-default)
      (global-auto-complete-mode t)
      (setq ac-auto-start 2)
-;; magit
-(elpa-install 'magit)
-;; shell switcher is a dependency of magit
-(elpa-install 'shell-switcher)
-(require 'magit)
-;; change magit diff colors
-(eval-after-load 'magit
-  '(progn
-     (set-face-foreground 'magit-diff-add "green3")
-     (set-face-foreground 'magit-diff-del "red3")
-     (when (not window-system)
-       (set-face-background 'magit-item-highlight "black"))))
 
 ;; ruby end
 (elpa-install 'ruby-end)
@@ -68,9 +72,12 @@
 ;; shell switcher
 (shell-switcher-mode t)
 
-;; anything
-(elpa-install 'anything)
-(require 'anything)
+(define-key shell-switcher-mode-map (kbd "C-=")
+	    'shell-switcher-switch-buffer)
+(define-key shell-switcher-mode-map (kbd "C-x 4 =")
+	    'shell-switcher-switch-buffer-other-window)
+(define-key shell-switcher-mode-map (kbd "C-M-=")
+	    'shell-switcher-new-shell)
 
 ;; browse-url-dwim
 (elpa-install 'browse-url-dwim)
@@ -123,10 +130,6 @@
 ;; mark-down-mode
 (elpa-install 'yaml-mode)
 (require 'yaml-mode)
-
-;; yasnippet
-(elpa-install 'yasnippet)
-
 
 (elpa-install 'coffee-mode)
 (require 'coffee-mode)

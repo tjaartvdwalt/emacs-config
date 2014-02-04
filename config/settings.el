@@ -32,3 +32,16 @@
 ;; Disable menu-bar
 (menu-bar-mode -1)
 
+;; enable line numbers
+(global-linum-mode t)
+
+;;(setq default-minibuffer-frame
+;;      (make-frame
+;;       '((name . "minibuffer")
+;;         (width . 20)
+;;         (height . 80)
+;;         (minibuffer . only)
+;;         (top . 0)
+;;         (right . 0)
+;;         )))
+;;(setq-default mode-line-format nil)

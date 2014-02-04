@@ -1,6 +1,9 @@
 (add-hook 'text-mode-hook 'ispell-minor-mode)
 
-(add-hook 'text-mode-hook 'flyspell-mode)
+;; Flyspell highligts misspelled text. I find it a bit too intrusive.
+;; Enabled ispell-minor-mode that displays a message in the
+;; mini-buffer instead.
+;;(add-hook 'text-mode-hook 'flyspell-mode)
 
 (add-hook 'rhtml-mode-hook (lambda () (rinari-launch)))
 

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Mads D. Kristensen <madsdk@gmail.com>
+# key: use
+# group: misc
+# name: \usepackage
+# --
+\usepackage[$2]{${1:$$(yas/choose-value
+        '("amsmath" "amssymb" "qtree" "tikz" "tikz-qtree" "tikz-qtree-compat"))}}$0

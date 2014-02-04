@@ -74,5 +74,8 @@
             ("Stack Overflow" .
              [simple-query "http://stackoverflow.com"
                           "http://stackoverflow.com/search?q=" "" ])
+            ("Rotten Tomatoes" .
+             [simple-query "http://www.rottentomatoes.com"
+                          "http://www.rottentomatoes.com/search/?search=" "&sitesearch=rt" ])
             )))
 

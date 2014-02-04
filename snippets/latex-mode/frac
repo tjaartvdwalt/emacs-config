@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributor: Tjaart van der Walt <latex@tjaart.co.za>
+# key: frac
+# group: math
+# name: fraction
+# --
+\frac{$1}{$2}

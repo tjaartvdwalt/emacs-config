@@ -1,0 +1,6 @@
+The yasnippets in the jquery directory is a copy of the following github repo:
+https://github.com/jpablobr/yasnippets-jquery
+
+The repo is distributed under the MIT license and does not seem to be under active development
+so I decided to import it into my config rather than to have to clone it everytime I rebuild
+my config.
