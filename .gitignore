@@ -14,11 +14,11 @@
 /newsticker
 /url
 /persp-confs
-
 # Files
 ac-comphist.dat
 ede-projects.el
 places
+oauth2.plstore
 tramp
 
 # Ignore emacs temp files
