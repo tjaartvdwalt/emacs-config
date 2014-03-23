@@ -4,4 +4,4 @@
 # group: math
 # name: times
 # --
-$1 \times $2
+\times $2

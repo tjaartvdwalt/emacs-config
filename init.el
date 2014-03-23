@@ -1,48 +1,11 @@
-;; ********* General settings **********
-(load "~/.emacs.d/config/settings")
+;; This script leads all the .el files in a given directory.
+(load "~/.emacs.d/load-directory")
+(require 'load-directory)
+;; load manually installed files 
+(load-directory "~/.emacs.d/manual")
+(load-directory "~/.emacs.d/config")
+(load-directory "~/.emacs.d/config/functions")
 
-;; configure built in packages 
-(load "~/.emacs.d/config/built-in")
-
-;; configure where the backup files go
-(load "~/.emacs.d/config/backup")
-
-;;configure global keyboard shortcuts
-(load "~/.emacs.d/config/shortcuts")
-
-;; add hooks
-(load "~/.emacs.d/config/hooks")
-
-;; set which mode to use for what kind of file
-(load "~/.emacs.d/config/file-extensions")
-
-;; ********* Configure package managers *********
-;; We use elpa as far as possible, otherwise el-get
-(load "~/.emacs.d/config/elpa")
-(load "~/.emacs.d/config/el-get")
-
-;; ********* Package specific config ******** 
-;;(load "~/.emacs.d/config/clean-buffer-list")
-;;(load "~/.emacs.d/config/helm")
-(load "~/.emacs.d/config/dired")
-(load "~/.emacs.d/config/go")
-(load "~/.emacs.d/config/ido")
-(load "~/.emacs.d/config/magit")
-(load "~/.emacs.d/config/mu4e")
-(load "~/.emacs.d/config/multi-web-mode")
-(load "~/.emacs.d/config/openwith")
-;;(load "~/.emacs.d/config/news-ticker")
-(load "~/.emacs.d/config/rinari")
-(load "~/.emacs.d/config/sage")
-(load "~/.emacs.d/config/tramp")
-(load "~/.emacs.d/config/w3m")
-(load "~/.emacs.d/config/yasnippet")
-
-;; custom functions that does not belong with any plugin
-(load "~/.emacs.d/config/functions/toggle-window-split")
-
-;; Plugins that are not used anymore
-;;(load "~/.emacs.d/config/abandoned")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -52,6 +15,7 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
+ '(custom-safe-themes (quote ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(global-auto-complete-mode t)
  '(keep-end-mode t)
  '(persp-nil-name "none")
@@ -65,3 +29,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 143 :width normal)))))
+
+(load-theme 'solarized-light)

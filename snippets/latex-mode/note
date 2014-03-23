@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# contributor: Song Qiang <tsiangsung@gmail.com>
+# key: note
+# group: beamer
+# --
+\note{$1}$0

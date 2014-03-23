@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: snippet template.
+# key: snippet
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+# -*- mode: snippet -*-
+# name:        ${snippet name}
+# key:         ${snippet shortcut}
+# group:       ${snippet group}
+# contributor: ${Tjaart van der Walt <tjaart@tjaart.co.za>}
+# --
+                

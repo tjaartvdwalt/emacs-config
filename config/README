@@ -1,0 +1,3 @@
+all .el and .elc files in this directory will be loaded by the emacs init file.
+
+In order to exclude files from your emacs config, the convention is to add ! to the file extension.

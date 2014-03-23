@@ -1,0 +1,9 @@
+#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
+#name : getset
+# --
+function set_${1:name}($1) {
+    $this->$1 = $1;
+}
+function get_$1() {
+    return $this->$1;
+}

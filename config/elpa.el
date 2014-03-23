@@ -29,10 +29,13 @@
      (package-install package))
 )
 
-(elpa-install 'color-theme)
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-arjen)
+;; (elpa-install 'color-theme)
+;; (require 'color-theme)
+;; (color-theme-initialize)
+;; (color-theme-arjen)
+
+(elpa-install 'solarized-theme)
+
 
 ;; dired+
 (elpa-install 'dired+)

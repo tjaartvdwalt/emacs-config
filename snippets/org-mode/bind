@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key:         bind
+# group:       options
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+#+bind: ${1:$$(yas-choose-value '("org-export-publishing-directory"))} ${2:"./rendered"}
+$0

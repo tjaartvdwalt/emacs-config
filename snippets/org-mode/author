@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key:         author
+# group:       options
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+#+AUTHOR:Tjaart van der Walt
+$0
+

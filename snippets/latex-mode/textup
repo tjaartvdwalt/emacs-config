@@ -1,9 +1,6 @@
 # -*- mode: snippet -*-
 # contributor: Tjaart van der Walt <latex@tjaart.co.za>
-# key: align
+# key: textup
 # group: math
 # --
-\begin{align}
-$1
-\end{align}
-$0
+\textup{$0}

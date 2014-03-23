@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: online reference.
+# key: online
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+@Online{$1,
+  author = {$2},
+  title = {$3},
+  url = {$4},
+  ${5:organization = {$6},}
+  ${7:date = {$8},}
+  urldate = ${`(format-time-string "%Y-%02m-%d")`}}
+
+  

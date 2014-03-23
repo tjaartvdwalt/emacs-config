@@ -5,4 +5,4 @@
 # name: \usepackage
 # --
 \usepackage[$2]{${1:$$(yas/choose-value
-        '("amsmath" "amssymb" "qtree" "tikz" "tikz-qtree" "tikz-qtree-compat"))}}$0
+        '("amsmath" "amssymb" "fancyhdr" "qtree" "tikz" "tikz-qtree" "tikz-qtree-compat"))}}$0

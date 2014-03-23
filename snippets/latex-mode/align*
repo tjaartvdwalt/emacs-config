@@ -1,9 +1,9 @@
 # -*- mode: snippet -*-
 # contributor: Tjaart van der Walt <latex@tjaart.co.za>
-# key: align
+# key: align*
 # group: math
 # --
-\begin{align}
+\begin{align*}
 $1
-\end{align}
+\end{align*}
 $0

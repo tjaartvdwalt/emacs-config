@@ -5,6 +5,7 @@
 ;; add tramp for editing remote files
 (require 'tramp)
 (setq tramp-default-method "scp")
+
 (setq ispell-change-dictionary "british")
 
 ;; Customize compile command
@@ -21,4 +22,6 @@
 			return nil))))
 
 (require 'compile)
+(setq compilation-scroll-output t)
 
+(setq eshell-cmpl-cycle-completions nil)

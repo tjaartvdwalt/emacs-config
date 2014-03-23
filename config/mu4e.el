@@ -52,22 +52,40 @@
         (:subject     . nil)))
 
 (setq ;;mu4e-refile-folder "/tajvdw@gmail.com/Archives"
-      mu4e-sent-folder "/tjaart@tjaart.co.za/[Gmail].Sent Mail"
-      mu4e-drafts-folder "/tjaart@tjaart.co.za/[Gmail].Drafts"
+      mu4e-sent-folder "/tjaart@tjaart.co.za/Sent"
+      mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts"
       ;;mu4e-spam-folder "/tjaart@tjaart.co.za/[Gmail].Spam"
-      mu4e-trash-folder "/tjaart@tjaart.co.za/[Gmail].Trash"
+      mu4e-trash-folder "/tjaart@tjaart.co.za/Trash"
       user-mail-address "tjaart@tjaart.co.za"
       user-full-name  "Tjaart van der Walt"
 )
 
-(require 'smtpmail)
-(setq message-send-mail-function 'smtpmail-send-it
-        smtpmail-stream-type 'starttls
-        smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
-        smtpmail-default-smtp-server "smtp.gmail.com"
-        smtpmail-smtp-server "smtp.gmail.com"
-        smtpmail-smtp-service 587
-)
+;; sending mail
+(setq message-send-mail-function 'message-send-mail-with-sendmail
+      sendmail-program "/usr/bin/msmtp"
+      user-full-name "Tjaart van der Walt")
+
+;; Choose account label to feed msmtp -a option based on From header
+;; in Message buffer; This function must be added to
+;; message-send-mail-hook for on-the-fly change of From address before
+;; sending message since message-send-mail-hook is processed right
+;; before sending message.
+(defun choose-msmtp-account ()
+  (if (message-mail-p)
+      (save-excursion
+        (let*
+            ((from (save-restriction
+                     (message-narrow-to-headers)
+                     (message-fetch-field "from")))
+             (account
+              (cond
+               ((string-match "tjaart@tjaart.co.za" from) "tjaart")
+               ((string-match "tajvdw@gmail.com" from) "tajvdw")
+               ((string-match "tav9wc@mail.umsl.edu" from) "tav9wc"))))
+          (setq message-sendmail-extra-arguments (list '"-a" account))))))
+(setq message-sendmail-envelope-from 'header)
+(add-hook 'message-send-mail-hook 'choose-msmtp-account)
+
 
 (require 'gnus-dired)
 ;; make the `gnus-dired-mail-buffers' function also work on
@@ -93,10 +111,10 @@
   '(("tjaart@tjaart.co.za"
     (mu4e-inbox-folder "/tjaart@tjaart.co.za/INBOX")
     (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
-    (my-mu4e-spam-folder "/tjaart@tjaart.co.za/[Gmail].Spam")
-    (mu4e-drafts-folder "/tjaart@tjaart.co.za/[Gmail].Drafts")
-    (mu4e-sent-folder "/tjaart@tjaart.co.za/[Gmail].Sent\\ Mail")
-    (mu4e-trash-folder "/tjaart@tjaart.co.za/[Gmail].Trash")
+    (my-mu4e-spam-folder "/tjaart@tjaart.co.za/Spam")
+    (mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts")
+    (mu4e-sent-folder "/tjaart@tjaart.co.za/Sent")
+    (mu4e-trash-folder "/tjaart@tjaart.co.za/Trash")
     (user-mail-address "tjaart@tjaart.co.za")
     (mu4e-compose-signature "Tjaart van der Walt" )
     ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
@@ -105,10 +123,10 @@
    ("tajvdw@gmail.com"
     (mu4e-inbox-folder "/tajvdw@gmail.com/INBOX")
     (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
-    (my-mu4e-spam-folder "/tajvdw@gmail.com/[Gmail].Spam")
-    (mu4e-drafts-folder "/tajvdw@gmail.com/[Gmail].Drafts")
-    (mu4e-sent-folder "/tajvdw@gmail.com/[Gmail].Sent\\ Mail")
-    (mu4e-trash-folder "/tajvdw@gmail.com/[Gmail].Trash")
+    (my-mu4e-spam-folder "/tajvdw@gmail.com/Spam")
+    (mu4e-drafts-folder "/tajvdw@gmail.com/Drafts")
+    (mu4e-sent-folder "/tajvdw@gmail.com/Sent")
+    (mu4e-trash-folder "/tajvdw@gmail.com/Trash")
     (user-mail-address "tajvdw@gmail.com")
     (mu4e-compose-signature "Tjaart van der Walt" )
     (setq mu4e-sent-messages-behavior 'delete)
@@ -119,7 +137,7 @@
     (my-mu4e-refile-folder "/tav9wc@mail.umsl.edu/Archives")
     (my-mu4e-spam-folder "/tav9wc@mail.umsl.edu/Spam")
     (mu4e-drafts-folder "/tav9wc@mail.umsl.edu/Drafts")
-    (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent\ Items")
+    (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent")
     (mu4e-trash-folder "/tav9wc@mail.umsl.edu/Trash")
     (mu4e-compose-signature "Tjaart van der Walt" )
     (user-mail-address "tav9wc@mail.umsl.edu")

@@ -12,7 +12,7 @@
 
 (elpa-install 'w3m)
 (require 'w3m)
-(setq browse-url-browser-function 'w3m-browse-url)
+;;(setq browse-url-browser-function 'w3m-browse-url)
 (setq w3m-use-cookies t)
 (setq w3m-cookie-accept-bad-cookies t)
 (setq w3m-default-display-inline-images t)

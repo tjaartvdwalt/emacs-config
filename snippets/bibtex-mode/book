@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name:        book reference
+# key:         book
+# group:       
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+@book{$1,
+    author    = "$2",
+    title     = "$3",
+    publisher = "$4",
+    year      = "$0",
+}

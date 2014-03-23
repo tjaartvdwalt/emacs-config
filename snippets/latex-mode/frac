@@ -4,4 +4,4 @@
 # group: math
 # name: fraction
 # --
-\frac{$1}{$2}
+\frac{$1}{$2}$0

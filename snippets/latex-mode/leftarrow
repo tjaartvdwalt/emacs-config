@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributor: Tjaart van der Walt <tjaaart@tjaart.co.za> 
+# key: <-
+# group: math
+# name: leftarrow
+# --
+\leftarrow $0
