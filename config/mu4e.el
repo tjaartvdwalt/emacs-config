@@ -3,6 +3,8 @@
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
 (require 'mu4e)
 
+(setq mu4e-org-contacts-file  "~/org/contacts/google-contacts.org")
+
 ;; mark a message as spam
 (defun mu4e-headers-mark-for-spam (msg)
        "Move the current message to the Spam folder."

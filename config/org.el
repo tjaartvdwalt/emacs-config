@@ -1,5 +1,6 @@
 (require 'org)
 (require 'org-contacts)
+(require 'org-location-google-maps)
 
 (setq org-startup-truncated nil)
 (setq org-log-done t)

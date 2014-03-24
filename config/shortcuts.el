@@ -9,7 +9,7 @@
 
 
 
-(global-set-key "\c-x." 'mulled/edit-trailing-edges)
+(global-set-key "\C-x." 'mulled/edit-trailing-edges)
 (global-set-key "\C-x," 'mulled/edit-leading-edges)
 
 ;; Set a shortcut for compile
@@ -23,7 +23,7 @@
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;;Set a shortcut for mu4e
-(global-set-key "\C-xr" 'mu4e)
+(global-set-key "\C-cr" 'mu4e)
 
                                         ; Optionally bind a shortcut for your new RSS reader.
 (global-set-key (kbd "C-c n") 'newsticker-treeview)
