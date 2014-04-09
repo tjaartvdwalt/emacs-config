@@ -2,13 +2,14 @@
 (require 'org-contacts)
 (require 'org-location-google-maps)
 
+(setq org-clock-idle-time 5)
 (setq org-startup-truncated nil)
 (setq org-log-done t)
 
 (setq org-agenda-files (list "~/org/"))
 
-(setq org-mobile-push "~/ubuntu1/org")
-(setq org-mobile-directory "~/ubuntu1/org")
+(setq org-mobile-push "~/Dropbox/org")
+(setq org-mobile-directory "~/Dropbox/org")
 
 (setq org-checkbox-hierarchical-statistics t)
 

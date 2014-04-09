@@ -8,6 +8,7 @@
 
 
 
+(global-set-key "\C-x/" 'undo-only)
 
 (global-set-key "\C-x." 'mulled/edit-trailing-edges)
 (global-set-key "\C-x," 'mulled/edit-leading-edges)
