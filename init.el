@@ -1,10 +1,10 @@
 ;; This script leads all the .el files in a given directory.
-(load "~/.emacs.d/load-directory")
+(load "~/.emacs.d/load-directory" 1)
 (require 'load-directory)
 ;; load manually installed files 
-(load-directory "~/.emacs.d/manual")
-(load-directory "~/.emacs.d/config")
-(load-directory "~/.emacs.d/config/functions")
+(load-directory "~/.emacs.d/manual" 1)
+(load-directory "~/.emacs.d/config" 1)
+(load-directory "~/.emacs.d/config/functions" 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
