@@ -1,15 +1,17 @@
-;; Swap c-x and c-u and m-x and m-u ... useful for dvorak layout
+;; Swap c-x and c-u. This is useful for dvorak layout since u is
+;; on the home row and x is difficult to reach
 (define-key key-translation-map [?\C-x] [?\C-u])
 (define-key key-translation-map [?\C-u] [?\C-x])
 
-;; Use ibuffer instead of buffer-menu
+;; use ibuffer instead of buffer-menu
+
 (substitute-key-definition
            'list-buffers 'ibuffer global-map global-map)
 
+;; C-/ is undo and M-/ as redo
+(global-unset-key (kbd "M-/"))
 
-
-(global-set-key "\C-x/" 'undo-only)
-
+(global-set-key "\C-cy" 'toggle-window-split)
 (global-set-key "\C-x." 'mulled/edit-trailing-edges)
 (global-set-key "\C-x," 'mulled/edit-leading-edges)
 
@@ -48,16 +50,16 @@
 ;;(global-set-key (kbd "C-c s m") 'skype--chat-mode-message-command)
 ;;(global-set-key (kbd "C-c s s") 'skype--message-mode-send-command)
 
-(global-set-key (kbd "C-M-t") (lambda () (interactive) (swap-with 'down)))
-(global-set-key (kbd "C-M-c") (lambda () (interactive) (swap-with 'up)))
-(global-set-key (kbd "C-M-h") (lambda () (interactive) (swap-with 'left)))
-(global-set-key (kbd "C-M-n") (lambda () (interactive) (swap-with 'right)))
+;; (global-set-key (kbd "C-M-t") (lambda () (interactive) (swap-with 'down)))
+;; (global-set-key (kbd "C-M-c") (lambda () (interactive) (swap-with 'up)))
+;; (global-set-key (kbd "C-M-h") (lambda () (interactive) (swap-with 'left)))
+;; (global-set-key (kbd "C-M-n") (lambda () (interactive) (swap-with 'right)))
 
-(global-set-key (kbd "M-t") (lambda () (interactive) (enlarge-window 1)))
-(global-set-key (kbd "M-c") (lambda () (interactive) (-1 enlarge-window)))
-(global-set-key (kbd "M-h") (lambda () (interactive) (enlarge-window -1 t)))
-(global-set-key (kbd "M-n") (lambda () (interactive) (enlarge-window 1 t)))
-(global-set-key (kbd "C-M-m") 'toggle-window-split)
+;; (global-set-key (kbd "M-t") (lambda () (interactive) (enlarge-window 1)))
+;; (global-set-key (kbd "M-c") (lambda () (interactive) (-1 enlarge-window)))
+;; (global-set-key (kbd "M-h") (lambda () (interactive) (enlarge-window -1 t)))
+;; (global-set-key (kbd "M-n") (lambda () (interactive) (enlarge-window 1 t)))
+;; (global-set-key (kbd "C-M-m") 'toggle-window-split)
 
 ;; (global-set-key (kbd "M-t") 'windmove-down)
 ;; (global-set-key (kbd "M-c") 'windmove-up)

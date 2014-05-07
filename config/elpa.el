@@ -132,8 +132,8 @@
 ;;(elpa-install 'bookmark+)
 ;;(require 'bookmark+)
 
-(elpa-install 'persp-mode)
-(persp-mode t)
+;; (elpa-install 'persp-mode)
+;; (persp-mode t)
 
 (elpa-install 'emacs-eclim)
 (require 'eclim)

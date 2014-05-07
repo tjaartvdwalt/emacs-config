@@ -1,6 +1,11 @@
 (require 'org)
 (require 'org-contacts)
 (require 'org-location-google-maps)
+(require 'org-latex)
+
+;; use minted for latex exported code blocks
+(setq org-export-latex-listings 'minted)
+(add-to-list 'org-export-latex-packages-alist '("" "minted"))
 
 (setq org-clock-idle-time 5)
 (setq org-startup-truncated nil)
