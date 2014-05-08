@@ -7,3 +7,10 @@
 ;;    This will hide any hidden files, but not . and .. that I use to navigate
 (setq dired-omit-files "^#\\|^\\.[^.].*$") 
 
+;; use dired-k to show git status
+(elpa-install 'dired-k)
+(require 'dired-k)
+;; use dired-k as alternative to revert buffer. This will refresh git status
+;;(define-key dired-mode-map (kbd "g") 'dired-k)
+(add-hook 'dired-mode-hook 'dired-k)
+;;(setq dired-k-style 'git)
