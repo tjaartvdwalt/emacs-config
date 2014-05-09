@@ -45,11 +45,6 @@
 (global-set-key "\C-cn" 'ispell-word)
 ;;(global-set-key "\C-ci" 'ispell-minor-mode)
 
-;;(global-set-key (kbd "M-9") 'skype--anything-command)
-;;(global-set-key (kbd "C-c s r") 'skype--open-recent-chat-buffer-command)
-;;(global-set-key (kbd "C-c s m") 'skype--chat-mode-message-command)
-;;(global-set-key (kbd "C-c s s") 'skype--message-mode-send-command)
-
 ;; (global-set-key (kbd "C-M-t") (lambda () (interactive) (swap-with 'down)))
 ;; (global-set-key (kbd "C-M-c") (lambda () (interactive) (swap-with 'up)))
 ;; (global-set-key (kbd "C-M-h") (lambda () (interactive) (swap-with 'left)))

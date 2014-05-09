@@ -13,3 +13,6 @@
 
 (define-key shell-switcher-mode-map (kbd "C-x m")
 	    'magit-status)
+(elpa-install 'magit-commit-training-wheels)
+(require 'magit-commit-training-wheels)
+(ad-activate 'magit-log-edit-commit)

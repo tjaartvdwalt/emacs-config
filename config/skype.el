@@ -1,0 +1,10 @@
+(elpa-install 'skype)
+(require 'skype)
+(setq skype--my-user-handle "rkwtavdw")
+(defvar skype--com-handlers 'skype--com-handlers-py)
+(skype--init)
+
+;;(global-set-key (kbd "M-9") 'skype--anything-command)
+;;(global-set-key (kbd "C-c s r") 'skype--open-recent-chat-buffer-command)
+;;(global-set-key (kbd "C-c s m") 'skype--chat-mode-message-command)
+;;(global-set-key (kbd "C-c s s") 'skype--message-mode-send-command)

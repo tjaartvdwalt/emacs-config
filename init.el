@@ -1,3 +1,7 @@
+;; this script configures our elpa repositories, and supplies a
+;; convenient method to install packages from elpa
+(load "~/.emacs.d/elpa" 1)
+
 ;; This script leads all the .el files in a given directory.
 (load "~/.emacs.d/load-directory" 1)
 (require 'load-directory)

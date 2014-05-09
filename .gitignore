@@ -26,3 +26,5 @@ tramp
 
 # Ignore session files
 session.*
+/image-dired/
+/.org-id-locations
