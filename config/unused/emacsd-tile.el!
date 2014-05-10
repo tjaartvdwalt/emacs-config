@@ -1,3 +1,6 @@
+(elpa-install 'emacsd-tile)
+(load "~/.emacs.d/config/emacsd-tile")
+
 ;; emacsd-tile.el -- tiling windows for emacs
 
 (defun swap-with (dir)

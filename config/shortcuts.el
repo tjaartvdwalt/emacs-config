@@ -3,8 +3,8 @@
 (define-key key-translation-map [?\C-x] [?\C-u])
 (define-key key-translation-map [?\C-u] [?\C-x])
 
-;; use ibuffer instead of buffer-menu
 
+;; use ibuffer instead of buffer-menu
 (substitute-key-definition
            'list-buffers 'ibuffer global-map global-map)
 
@@ -25,25 +25,10 @@
 ;; set return to use indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
-;;Set a shortcut for mu4e
-(global-set-key "\C-cr" 'mu4e)
-
                                         ; Optionally bind a shortcut for your new RSS reader.
-(global-set-key (kbd "C-c n") 'newsticker-treeview)
-
-;; set shortcut
-(global-set-key "\C-xw" 'sudo-edit-current-file)
-
-(global-set-key "\C-cj" 'webjump)
 
 (global-set-key "\C-cf" 'find-grep-dired)
 (global-set-key "\C-cd" 'find-name-dired)
-
-(global-set-key "\C-cc" 'column-enforce-mode)
-
-(global-set-key "\C-cs" 'ispell-buffer)
-(global-set-key "\C-cn" 'ispell-word)
-;;(global-set-key "\C-ci" 'ispell-minor-mode)
 
 ;; (global-set-key (kbd "C-M-t") (lambda () (interactive) (swap-with 'down)))
 ;; (global-set-key (kbd "C-M-c") (lambda () (interactive) (swap-with 'up)))
@@ -67,8 +52,5 @@
 ;;(global-set-key (kbd "\C-ce") 'aya-create)
 ;;(global-set-key (kbd "\C-cu") 'aya-expand)
 
-(global-set-key (kbd "\C-Co") 'occur)
 (global-set-key (kbd "\C-Ci") 'indent-whole-buffer)
-
-(define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-ca" 'org-agenda)
+(global-set-key (kbd "\C-Co") 'occur)

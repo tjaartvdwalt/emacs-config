@@ -40,4 +40,3 @@
       (backup-buffer)))
 
 (add-hook 'before-save-hook  'force-backup-of-buffer)
-

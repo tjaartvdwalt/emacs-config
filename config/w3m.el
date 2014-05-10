@@ -22,9 +22,19 @@
 (define-key w3m-mode-map "f" 'w3m-open-current-page-in-firefox)
 (define-key w3m-mode-map "F" 'w3m-open-link-or-image-in-firefox)
 
+;; browse-url-dwim
+(elpa-install 'browse-url-dwim)
+(require 'browse-url-dwim)
+     (browse-url-dwim-mode 1)
+     (setq browse-url-dwim-always-confirm-extraction nil)
+
+
 ;; webjump
 (elpa-install 'webjump)
 (require 'webjump)
+
+(global-set-key "\C-cj" 'webjump)
+
 
 (setq webjump-sites
    (append '(

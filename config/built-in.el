@@ -6,7 +6,7 @@
 (require 'tramp)
 (setq tramp-default-method "scp")
 
-(setq ispell-change-dictionary "british")
+
 
 ;; Customize compile command
 ;; For c files search for nearest Makefile

@@ -1,0 +1,8 @@
+;; auto-complete
+(elpa-install 'auto-complete)
+(require 'auto-complete)
+(require 'auto-complete-config)
+     (ac-config-default)
+     (global-auto-complete-mode t)
+     (setq ac-auto-start 2)
+

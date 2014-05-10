@@ -3,9 +3,16 @@
 (require 'org-location-google-maps)
 (require 'org-latex)
 
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+
 ;; use minted for latex exported code blocks
+;; NB: minted requires pygments to be installed
 (setq org-export-latex-listings 'minted)
 (add-to-list 'org-export-latex-packages-alist '("" "minted"))
+
+;; Render code blocks with their native major mode
+(setq org-src-fontify-natively t)
 
 (setq org-clock-idle-time 5)
 (setq org-startup-truncated nil)

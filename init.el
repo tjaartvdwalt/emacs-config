@@ -21,8 +21,9 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
+
  '(custom-safe-themes (quote ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
- '(global-auto-complete-mode t)
+'(global-auto-complete-mode t)
  '(keep-end-mode t)
  '(persp-nil-name "none")
  '(rails-ws:default-server-type "webrick")
@@ -36,11 +37,12 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 143 :width normal)))))
 
-(load-theme 'solarized-dark)
-
 ;; Dont show the splash screen
 (setq inhibit-splash-screen t)
 (setq tab-width 2)
 (setq-default indent-tabs-mode nil)
 (menu-bar-mode -1)
 (global-linum-mode t)
+
+(elpa-install 'solarized-theme)
+(load-theme 'solarized-dark)

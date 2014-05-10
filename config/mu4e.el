@@ -3,6 +3,11 @@
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
 (require 'mu4e)
 
+;;Set a shortcut for mu4e
+(global-set-key "\C-cr" 'mu4e)
+
+(add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
+
 (setq mu4e-org-contacts-file  "~/org/contacts/google-contacts.org")
 
 ;; mark a message as spam

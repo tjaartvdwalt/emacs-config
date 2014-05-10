@@ -1,3 +1,15 @@
+;; dired+
+(elpa-install 'dired+)
+
+;; used to attach files in mu4e
+(add-hook 'dired-mode-hook 'turn-on-gnus-dired-mode)
+
+(require 'dired+)
+    ;; Configure dired to sort directories first
+    (setq dired-listing-switches "-aBhl --group-directories-first")
+
+(toggle-diredp-find-file-reuse-dir 1)
+
 ;; use dired-x for hiding hiddin files
 (require 'dired-x)
 (setq-default dired-omit-files-p t) ; this is buffer-local variable
