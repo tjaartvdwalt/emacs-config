@@ -6,9 +6,11 @@
 
 (require 'dired+)
     ;; Configure dired to sort directories first
-    (setq dired-listing-switches "-aBhl --group-directories-first")
+    (setq dired-listing-switches "-alh")
 
 (toggle-diredp-find-file-reuse-dir 1)
+(setq  diredp-image-preview-in-tooltip nil)
+
 
 ;; use dired-x for hiding hiddin files
 (require 'dired-x)
