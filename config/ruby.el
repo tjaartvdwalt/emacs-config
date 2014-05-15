@@ -14,5 +14,8 @@
 ;; inf-ruby
 (elpa-install 'inf-ruby)
 (require 'inf-ruby)
-
 (add-hook 'ruby-mode 'auto-make-header)
+
+(elpa-install 'robe)
+(add-hook 'ruby-mode-hook 'robe-mode)
+(add-to-list 'company-backends 'company-ruby)
