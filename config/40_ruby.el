@@ -18,4 +18,4 @@
 
 (elpa-install 'robe)
 (add-hook 'ruby-mode-hook 'robe-mode)
-(add-to-list 'company-backends 'company-ruby)
+(add-to-list 'company-backends 'company-robe)

@@ -1,3 +1,6 @@
-all .el and .elc files in this directory will be loaded by the emacs init file.
+File names starting with 2 digits are executed
 
-In order to exclude files from your emacs config, the convention is to add ! to the file extension.
+Ranges are
+00-19 Emacs config
+20-59 Major modes
+60-99 Minor modes

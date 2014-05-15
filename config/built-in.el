@@ -22,13 +22,3 @@
 			return nil))))
 
 (require 'compile)
-
-(setq compilation-scroll-output t)
-
-(setq eshell-cmpl-cycle-completions nil)
-
-;; automatically close brackets
-(electric-pair-mode t)
-;; delete the selection if you start typing
-(delete-selection-mode 1)
-;;(setq show-paren-style 'expression)
