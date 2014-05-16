@@ -2,6 +2,9 @@
 ;; convenient method to install packages from elpa
 (load "~/.emacs.d/config/00_elpa" 1)
 
+;; load manually installed packages
+(add-to-list 'load-path "~/.emacs.d/manual/")
+
 (elpa-install 'init-loader)
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/config")

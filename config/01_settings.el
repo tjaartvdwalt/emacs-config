@@ -45,7 +45,7 @@
 
 (setq compilation-scroll-output t)
 
-(setq eshell-cmpl-cycle-completions nil)
+;; (setq eshell-cmpl-cycle-completions nil)
 
 ;; automatically close brackets
 (electric-pair-mode t)
