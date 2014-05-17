@@ -1,0 +1,7 @@
+#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
+#name : header
+# --
+;;; package --- summary
+;;; Commentary: $1
+;;; Code:
+$0
