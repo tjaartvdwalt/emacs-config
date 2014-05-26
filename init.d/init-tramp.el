@@ -2,6 +2,7 @@
   :require (sudo-ext)
   :init
   (progn
+    (setq tramp-default-method "scp")
     (defun sudo-edit-current-file ()
       (interactive)
       (let ((position (point)))

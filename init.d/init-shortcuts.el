@@ -15,8 +15,6 @@
 (global-set-key "\C-x." 'mulled/edit-trailing-edges)
 (global-set-key "\C-x," 'mulled/edit-leading-edges)
 
-;; Set a shortcut for compile
-(global-set-key "\C-xc" 'compile)
 
 ;; make whitespace-mode use just basic coloring
 (global-set-key "\C-cw" 'whitespace-mode)

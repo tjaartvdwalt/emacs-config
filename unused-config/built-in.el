@@ -4,7 +4,6 @@
 
 ;; add tramp for editing remote files
 (require 'tramp)
-(setq tramp-default-method "scp")
 
 
 
