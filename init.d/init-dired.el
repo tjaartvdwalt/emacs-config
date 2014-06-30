@@ -32,6 +32,15 @@
     (setq dired-omit-files "^#\\|^\\.[^.].*$") 
     ))
 
+;; use dired-x for hiding hiddin files
+(req-package dired-open
+  :require dired
+  :init
+  (progn
+    (define-key dired-mode-map (kbd ",") 'dired-open-xdg)
+    ))
+
+
 ;; use dired-k to show git status
 (req-package dired-k
   :require dired

@@ -3,6 +3,7 @@
 ;;; Code:
 
 (req-package html
+  :disabled 1
   :mode (("\\.html.erb\\'" . html-mode)
          ("\\.html\\'" . html-mode)
          ))

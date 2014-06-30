@@ -4,7 +4,7 @@
 
 (req-package company
   :commands (company-backends)
-  :bind ("M-," . helm-company)
+  :bind ("M-," . company-complete)
   :init
     (add-hook 'after-init-hook 'global-company-mode))
 
