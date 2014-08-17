@@ -41,5 +41,23 @@
 ;; <M-up>          org-metaup
 ;; <S-down>        org-shiftdown
 
+; 'djcb-org-article' for export org documents to the LaTex 'article', using
+;; XeTeX and some fancy fonts; requires XeTeX (see org-latex-to-pdf-process)
+;;(add-to-list 'org-export-latex-classes
+;;  '("resume"
+;;"\\documentclass[11pt,letter]{moderncv}
+;;\\moderncvstyle{banking}
+;;\\moderncvcolor{red}   
+;;\\pagestyle{empty}
+;;\\usepackage{hyperref}
+;;\\title{}
+;;      [NO-DEFAULT-PACKAGES]
+;;      [NO-PACKAGES]"
+;;     ("\\section{%s}" . "\\section*{%s}")
+;;     ("\\subsection{%s}" . "\\subsection*{%s}")
+;;     ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+;;     ("\\paragraph{%s}" . "\\paragraph*{%s}")
+;;     ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
 (provide 'init-org)
 ;;; init-org ends here

@@ -28,3 +28,4 @@ tramp
 session.*
 /image-dired/
 /.org-id-locations
+/var/
