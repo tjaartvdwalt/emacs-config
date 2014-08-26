@@ -3,6 +3,10 @@
 ;;; Code:
 
 (req-package ispell
+  :bind
+  (("C-c n" . ispell-word)
+   ("C-c s" . ispell-buffer))
+
   :init
   (progn
     (add-hook 'text-mode-hook 'ispell-minor-mode)
