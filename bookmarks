@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("my-classes"
+ (filename . "~/my-classes/")
+ (front-context-string . "cs4280\n  drwxr-x")
+ (rear-context-string . "0K Aug 28 16:28 ")
+ (position . 229))
+(".emacs.d"
+ (filename . "~/.emacs.d/")
+ (front-context-string . "auto-save-list\n ")
+ (rear-context-string . "0K Aug 28 09:57 ")
+ (position . 228))
+("my-dev"
+ (filename . "~/my-dev/")
+ (front-context-string . "1_sandbox\n  drwx")
+ (rear-context-string . "0K Aug 29 08:44 ")
+ (position . 226))
+)
