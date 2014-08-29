@@ -1,0 +1,2 @@
+(req-package gitconfig-mode)
+
