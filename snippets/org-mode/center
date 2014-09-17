@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key:         center
+# group:       
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+#+BEGIN_CENTER
+$0
+#+END_CENTER

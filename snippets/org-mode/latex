@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# key:         latex
+# group:       
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+#+BEGIN:LaTeX
+
+#+END:LaTeX
+

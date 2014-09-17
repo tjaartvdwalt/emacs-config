@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name:        getset
+# group:       
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+void `(file-name-sans-extension (file-name-nondirectory buffer-file-name))`::set${1:aValue}(${2:aType} ${1:$(downcase yas-text)}) {
+     this->${1:$(downcase yas-text)} = ${1:$(downcase yas-text)}
+}
+
+$2 `(file-name-sans-extension (file-name-nondirectory buffer-file-name))`::get$1() {
+   return this->${1:$(downcase yas-text)};
+}

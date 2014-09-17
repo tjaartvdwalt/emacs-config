@@ -1,0 +1,54 @@
+# -*- mode: snippet -*-
+# name:        template
+# group:       
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+# ${1:Project Name} - ${2:Short description}
+# See LICENSE file for copyright and license details.
+
+include config.mk
+
+all: options install
+
+# Compile each source file
+%.o: %.cpp
+	@echo CC $<
+	@\${CC} -c \${CFLAGS} $<
+
+
+\${PROJ}:\${OBJ}
+	@echo CC -o $@ \${OBJ} \${LDFLAGS}
+	@\${CC} -o $@ \${OBJ} \${LDFLAGS}
+
+clean:
+	@echo cleaning
+	@echo rm -f \${PROJ} \${OBJ} \${PROJ}-\${VERSION}.tar.gz
+	@rm -f \${PROJ} \${OBJ} \${PROJ}-\${VERSION}.tar.gz
+
+dist: clean
+	@echo creating dist tarball
+	@mkdir -p \${PROJ}-\${VERSION}
+	@cp -R Makefile config.mk README \${PROJ}-\${VERSION}
+	@cp src -rf \${PROJ}-\${VERSION}
+	@tar -cf \${PROJ}-\${VERSION}.tar \${PROJ}-\${VERSION}
+	@gzip \${PROJ}-\${VERSION}.tar
+	@rm -rf \${PROJ}-\${VERSION}
+
+install: \${PROJ}
+	@echo installing executable file to \${DESTDIR}\${PREFIX}/bin/\${PROJ}
+	@mkdir -p \${DESTDIR}\${PREFIX}/bin
+	@mv -f \${PROJ} \${DESTDIR}\${PREFIX}/bin
+	@chmod 755 \${DESTDIR}\${PREFIX}/bin/\${PROJ}
+#@echo installing manual page to ${DESTDIR}${MANPREFIX}/man1
+# @mkdir -p ${DESTDIR}${MANPREFIX}/man1
+# @sed "s/VERSION/${VERSION}/g" < tree.1 > ${DESTDIR}${MANPREFIX}/man1/tree.1
+# @chmod 644 ${DESTDIR}${MANPREFIX}/man1/tree.1
+
+uninstall:
+	@echo removing executable file from \${DESTDIR}\${PREFIX}/bin
+	@rm -f \${DESTDIR}\${PREFIX}/bin/\${PROJ}
+#@echo removing manual page from ${DESTDIR}${MANPREFIX}/man1
+#@rm -f ${DESTDIR}${MANPREFIX}/man1/tree.1
+
+.PHONY: all options clean dist install uninstall

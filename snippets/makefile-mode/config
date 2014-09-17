@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name:       config
+# key:        config
+# group:      
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+PROJ = ${1: Project Name}
+VERSION = ${2:0.0.1}
+
+# The path where application will be installed
+PREFIX = ${3:$$(yas-choose-value '("\`pwd\`" "/usr/local"))}
+# The path where the manual pages will be installed
+MANPREFIX = \${PREFIX}/share/man
+
+# Search for source files in these dirs
+VPATH = ./src
+# The source files
+SRC = $4
+# Derive object file names from source names
+OBJ = \${SRC:.cpp=.o}
+
+# compiler flags
+CPPFLAGS = $5
+INCS = $6
+LIBS = $7
+CFLAGS = -Wall -Os \${INCS} \${CPPFLAGS}
+LDFLAGS = -g -l \${LIBS}
+
+# compiler command
+CC = g++

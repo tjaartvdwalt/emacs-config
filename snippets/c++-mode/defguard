@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name:        defguard
+# group:       
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+#ifndef `(upcase (file-name-sans-extension (file-name-nondirectory buffer-file-name)))`_`(upcase (file-name-extension buffer-file-name))`
+#define `(upcase (file-name-sans-extension (file-name-nondirectory buffer-file-name)))`_`(upcase (file-name-extension buffer-file-name)))`
+
+    $0
+
+#endif

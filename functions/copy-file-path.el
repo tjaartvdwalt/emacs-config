@@ -6,3 +6,4 @@
                     (buffer-file-name))))
     (when filename
       (x-select-text filename))))
+

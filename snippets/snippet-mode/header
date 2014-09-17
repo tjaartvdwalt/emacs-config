@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name:        header
+# key:         header
+# group:       
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+# -*- mode: snippet -*-
+# name:       ${1:name}
+# key:        $1
+# group:      ${2:group} 
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+
