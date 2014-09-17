@@ -2,7 +2,22 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("my-classes"
+(("org-capture-last-stored-marker"
+ (filename . "~/org/todo.org")
+ (front-context-string . "**** Pomodori <2")
+ (rear-context-string . " [-] pomodoro\n\n\n")
+ (position . 488))
+("org-refile-last-stored"
+ (filename . "~/org/todo.org")
+ (front-context-string . "**** Pomodori <2")
+ (rear-context-string . " [-] pomodoro\n\n\n")
+ (position . 488))
+("org-capture-last-stored"
+ (filename . "~/org/todo.org")
+ (front-context-string . "* Pomodori <2014")
+ (rear-context-string . "\n- [-] pomodoro\n")
+ (position . 1252))
+("my-classes"
  (filename . "~/my-classes/")
  (front-context-string . "cs4280\n  drwxr-x")
  (rear-context-string . "0K Aug 28 16:28 ")

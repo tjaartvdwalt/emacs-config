@@ -4,25 +4,33 @@
 # group:      
 # contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
 # --
+#Project name and version
 PROJ = ${1: Project Name}
 VERSION = ${2:0.0.1}
 
 # The path where application will be installed
 PREFIX = ${3:$$(yas-choose-value '("\`pwd\`" "/usr/local"))}
+
 # The path where the manual pages will be installed
 MANPREFIX = \${PREFIX}/share/man
 
+# The section where the man page should be installed. A list can be found here:
+# https://en.wikipedia.org/wiki/Man_page#Manual_sections
+MANSECTION =${4:1}
+
 # Search for source files in these dirs
 VPATH = ./src
+
 # The source files
-SRC = $4
+SRC = $5
+
 # Derive object file names from source names
 OBJ = \${SRC:.cpp=.o}
 
 # compiler flags
-CPPFLAGS = $5
-INCS = $6
-LIBS = $7
+CPPFLAGS = $6
+INCS = $7
+LIBS = $8
 CFLAGS = -Wall -Os \${INCS} \${CPPFLAGS}
 LDFLAGS = -g -l \${LIBS}
 

@@ -40,15 +40,21 @@ install: \${PROJ}
 	@mkdir -p \${DESTDIR}\${PREFIX}/bin
 	@mv -f \${PROJ} \${DESTDIR}\${PREFIX}/bin
 	@chmod 755 \${DESTDIR}\${PREFIX}/bin/\${PROJ}
-#@echo installing manual page to ${DESTDIR}${MANPREFIX}/man1
-# @mkdir -p ${DESTDIR}${MANPREFIX}/man1
-# @sed "s/VERSION/${VERSION}/g" < tree.1 > ${DESTDIR}${MANPREFIX}/man1/tree.1
-# @chmod 644 ${DESTDIR}${MANPREFIX}/man1/tree.1
+
+install-man:
+	@echo installing manual page to \${DESTDIR}\${MANPREFIX}/man\${MANSECTION}
+	@mkdir -p \${DESTDIR}\${MANPREFIX}/man\${MANSECTION}
+	@cp \${PROJ}.man \${DESTDIR}\${MANPREFIX}/man\${MANSECTION}/\${PROJ}.\${MANSECTION}
+	@chmod 644 \${DESTDIR}\${MANPREFIX}/man\${MANSECTION}/\${PROJ}.\${MANSECTION}
+
+#@sed "s/VERSION/${VERSION}/g" < \${PROJ}.${MANSECTION} > \${DESTDIR}\${MANPREFIX}/man\${MANSECTION}/\${PROJ}.\${MANSECTION}
 
 uninstall:
 	@echo removing executable file from \${DESTDIR}\${PREFIX}/bin
 	@rm -f \${DESTDIR}\${PREFIX}/bin/\${PROJ}
-#@echo removing manual page from ${DESTDIR}${MANPREFIX}/man1
-#@rm -f ${DESTDIR}${MANPREFIX}/man1/tree.1
+
+uninstall-man:
+	@echo removing manual page from \${DESTDIR}\${MANPREFIX}/man\${MANSECTION}
+	@rm -f \${DESTDIR}\${MANPREFIX}/man\${MANSECTION}/\${PROJ}.\${MANSECTION}
 
 .PHONY: all options clean dist install uninstall

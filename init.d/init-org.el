@@ -8,11 +8,11 @@
          ("C-c c" . org-capture))
   :init
   (progn
-    (add-to-list 'org-export-backends 'man)
+    (require 'ox-man)
     ;; use minted for latex exported code blocks
     ;; NB: minted requires pygments to be installed
     (setq org-export-latex-listings 'minted)
-    (add-to-list 'org-export-latex-packages-alist '("" "minted"))
+    ;;(add-to-list 'org-export-latex-packages-alist '("" "minted"))
     (setq org-latex-to-pdf-process (list "latexmk -latexoption=-shell-escape -pdf -bibtex %f"))
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
