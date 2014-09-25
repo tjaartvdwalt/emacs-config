@@ -2,30 +2,43 @@
 ;;; Commentary:
 ;;; Code:
 (req-package org
-  :require (org-contacts org-location-google-maps org-latex)
+  :require (ox-man org-contacts org-location-google-maps org-latex)
   :bind (("C-c l" . org-store-link)
          ("C-c a" . org-agenda)
          ("C-c c" . org-capture))
   :init
   (progn
-    (require 'ox-man)
+    ;; ************* Export *************
     ;; use minted for latex exported code blocks
     ;; NB: minted requires pygments to be installed
+    (setq org-src-fontify-natively t)
+    (setq org-export-latex-minted t)
     (setq org-export-latex-listings 'minted)
-    ;;(add-to-list 'org-export-latex-packages-alist '("" "minted"))
+    ;; (add-to-list 'org-export-latex-packages-alist '("" "minted"))
     (setq org-latex-to-pdf-process (list "latexmk -latexoption=-shell-escape -pdf -bibtex %f"))
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
+
+    ;; ************* Misc *************
     (setq org-src-fontify-natively t)
     (setq org-clock-idle-time 5)
     (setq org-startup-truncated nil)
     (setq org-log-done t)
     (setq org-agenda-files (list "~/org/"))
+    (setq org-checkbox-hierarchical-statistics t)
+    (setq org-list-allow-alphabetical t)
+
+    ;; this is neccesary with org 8.2.7c, otherwise the doctype gets printed at
+    ;; the top of the html page... this is probably a bug
+    (setq org-html-doctype "")
+
+    ;; ************* Mobile org *************
     (setq org-mobile-push "~/Dropbox/org")
     (setq org-mobile-directory "~/Dropbox/org")
-    (setq org-checkbox-hierarchical-statistics t)
     (setq org-html-doctype-alist (list "html5"))
     (setq org-default-notes-file (concat org-directory "~/org/notes.org"))
+
+    ;; ************* Templates *************
     (setq org-capture-templates
           '(("h" "Headline" entry (file "~/org/todo.org")
              "* %? [/]\n")

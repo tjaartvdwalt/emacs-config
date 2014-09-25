@@ -6,6 +6,7 @@
          ;; :with-toc nil
          ;;:makeindex nil
          ;;:with-author nil
+         :publishing-function org-html-publish-to-html
          :html-postamble "Last updated: %d"
          :html-head "<link rel=\"stylesheet\"
                          href=\"mystyle.css\"
@@ -20,12 +21,12 @@
         ("ibook"
          :base-directory "~/my-classes/ibook/org"
          :publishing-directory "~/public_html/ibook"
-         :html-head "test"
+         :publishing-function org-html-publish-to-html
          :html-postamble "")
 
-        ("ibook-css"
+        ("ibook-resources"
          :base-directory "~/my-classes/ibook/org"
-         :base-extension "css"
+         :base-extension "js\\|css"
          :publishing-directory "~/public_html/ibook"
          :recursive t
          :publishing-function org-publish-attachment

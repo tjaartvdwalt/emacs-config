@@ -1,11 +1,11 @@
 (req-package go-mode
 :require (company company-go go-eldoc yasnippet go-snippets gotest)
-:bind
-       (("M-." . godef-jump)
-        ("C-c C-r" . go-remove-unused-imports)
-        ("C-c C-p" . go-test-current-project)
-        ("C-c C-f" . go-test-current-file)
-        ("C-c C-t" . go-test-current-test))
+;; :bind
+;;        (("M-." . godef-jump)
+;;         ("C-c C-r" . go-remove-unused-imports)
+;;         ("C-c C-p" . go-test-current-project)
+;;         ("C-c C-f" . go-test-current-file)
+;;         ("C-c C-t" . go-test-current-test))
 
 :init
 (progn
