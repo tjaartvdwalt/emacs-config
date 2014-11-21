@@ -2,11 +2,18 @@
 
 (req-package yasnippet
   :require (auto-yasnippet ido)
+
+  ;; :commands yas-global-mode
+  ;; :idle (yas-global-mode))
+
   :init
   (progn
     (setq yas-prompt-functions '(yas-ido-prompt))
-    (yas-global-mode t)
-    ))
+    )
+  ;; :config
+  ;; (progn
+  ;;   (yas-global-mode t))
+)
 
 ;;(setq yas-snippet-dirs
 ;;      '("~/.emacs.d/snippets"                 ;; personal snippets

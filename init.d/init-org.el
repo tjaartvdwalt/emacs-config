@@ -56,6 +56,10 @@
     (setq org-refile-targets '((org-agenda-files :maxlevel . 5)))
     ;;(setq org-refile-targets '((("~/org/pomodoro.org" "~/org/todo.org") :maxlevel . 5)))
 
-    (add-hook 'org-mode-hook 'org-mode-reftex-setup)))
+    (add-hook 'org-mode-hook 'org-mode-reftex-setup))
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((latex . t))))
+
 (provide 'init-org)
 ;;; init-org ends here

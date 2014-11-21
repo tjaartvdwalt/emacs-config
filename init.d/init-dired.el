@@ -4,26 +4,28 @@
 
 (req-package dired
     ;; :bind ("g" . 'dired-k))
-  :init
+  :config
   (progn
     ;; Configure dired to sort directories first
     (setq dired-listing-switches "-alh")
     ;; used to attach files in mu4e
     (add-hook 'dired-mode-hook 'turn-on-gnus-dired-mode)
+   (setq diredp-hide-details-initially-flag nil)
     ))
 
 (req-package dired+
   :require dired
-  :init
+  :config
   (progn
-   (toggle-diredp-find-file-reuse-dir 1)
+    (toggle-diredp-find-file-reuse-dir 1)
+    
    (setq  diredp-image-preview-in-tooltip nil)
    ))
 
 ;; use dired-x for hiding hiddin files
 (req-package dired-x
   :require dired
-  :init
+  :config
   (progn
     (setq-default dired-omit-files-p t)
     ;; 1) Hide files that start with # (emacs tmp files)
@@ -35,7 +37,7 @@
 ;; use dired-x for hiding hiddin files
 (req-package dired-open
   :require dired
-  :init
+  :config
   (progn
     (define-key dired-mode-map (kbd ",") 'dired-open-xdg)
     ))
@@ -44,13 +46,24 @@
 ;; use dired-k to show git status
 (req-package dired-k
   :require dired
-  :init
+  :config
   (progn
     ;; use dired-k as alternative to revert buffer. This will refresh git status
     (define-key dired-mode-map (kbd "g") 'dired-k)
     (add-hook 'dired-mode-hook 'dired-k)
     ;;(setq dired-k-style 'git)
     ))
+
+(req-package  dired-toggle-sudo
+  :config
+  (progn
+(define-key dired-mode-map (kbd "C-c C-s") 'dired-toggle-sudo)
+(eval-after-load 'tramp
+ '(progn
+    ;; Allow to use: /sudo:user@host:/path/to/file
+    (add-to-list 'tramp-default-proxies-alist
+		  '(".*" "\\`.+\\'" "/ssh:%h:"))))))
+
 
 (provide 'init-dired)
 ;;; dired ends here

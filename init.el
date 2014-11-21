@@ -28,3 +28,4 @@
 (req-package-finish)
 
 (provide 'init)
+(put 'upcase-region 'disabled nil)

@@ -8,6 +8,9 @@
 
 (setq split-width-threshold 0)
 
+;; new in emacs 24.4.1... set mode so that long lines are trucated
+(setq global-visual-line-mode t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
