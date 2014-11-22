@@ -29,3 +29,5 @@ session.*
 /image-dired/
 /.org-id-locations
 /var/
+/projectile-bookmarks.eld
+/projectile.cache
