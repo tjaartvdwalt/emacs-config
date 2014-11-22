@@ -15,9 +15,12 @@
 
   (add-hook 'c++-mode-hook
             (lambda ()
-              (add-hook 'before-save-hook 'astyle-buffer nil 'buffer-local)))
+              (add-hook 'before-save-hook 'astyle-buffer nil
+                        'buffer-local)))
 
-
+  ;; add c++ headers for completion in includes 
+  (add-to-list
+   'company-c-headers-path-system "/usr/include/c++/4.9.2/")
 
   (eval-after-load 'flycheck
     '(progn

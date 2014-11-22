@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (req-package python
-  :require (anaconda-mode company)
+  :require (anaconda-mode company company-anaconda)
   :interpreter ("python" . python-mode)
   :init
   (progn

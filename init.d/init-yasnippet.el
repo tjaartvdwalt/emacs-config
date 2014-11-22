@@ -10,9 +10,9 @@
   (progn
     (setq yas-prompt-functions '(yas-ido-prompt))
     )
-  ;; :config
-  ;; (progn
-  ;;   (yas-global-mode t))
+  :config
+  (progn
+    (yas-global-mode 1))
 )
 
 ;;(setq yas-snippet-dirs

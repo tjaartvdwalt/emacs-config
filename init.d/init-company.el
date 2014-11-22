@@ -3,7 +3,7 @@
 ;;; Code:
 
 (req-package company
-  :commands (company-backends)
+  :commands (company-backends company-math)
   :bind ("M-," . company-complete)
   :init
     (add-hook 'after-init-hook 'global-company-mode))

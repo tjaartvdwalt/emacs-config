@@ -1,3 +1,3 @@
 (req-package ido
-  :init 
+  :config 
   (ido-mode t))
