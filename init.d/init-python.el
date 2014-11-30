@@ -4,7 +4,7 @@
 (req-package python
   :require (anaconda-mode company company-anaconda)
   :interpreter ("python" . python-mode)
-  :init
+  :config
   (progn
     (add-hook 'python-mode-hook 'anaconda-mode)
     (add-hook 'python-mode-hook 'anaconda-eldoc)

@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (req-package enclose
-:init (enclose-mode t))
+:config (enclose-mode t))
 
 (provide 'init-enclose)
 ;;; init-enclose ends here

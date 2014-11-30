@@ -5,7 +5,7 @@
 ;; js2-mode
 (req-package js2-mode
   :require (jss jquery-doc company company-tern)
-  :init
+  :config
   (progn
     (add-hook 'js2-mode-hook 'jquery-doc-setup)
     (add-to-list 'load-path "/usr/lib/node_modules/tern/emacs/")

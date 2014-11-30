@@ -1,5 +1,5 @@
 (req-package paredit
   :require (paredit-everywhere paredit-menu)
-  :init
+  :config
   (progn
     (add-hook 'prog-mode-hook 'paredit-everywhere-mode)))

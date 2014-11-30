@@ -3,7 +3,7 @@
 ;;; Code:
 
 (req-package multi-web-mode
-  :init
+  :config
   (progn
     (setq mweb-default-major-mode 'html-mode)
     (setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")

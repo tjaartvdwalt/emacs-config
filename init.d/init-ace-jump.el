@@ -1,2 +1,1 @@
-(req-package ace-jump-mode
-  :bind (("C-c SPC" . ace-jump-mode)))
+(req-package ace-jump-mode)

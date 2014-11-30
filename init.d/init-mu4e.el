@@ -1,7 +1,7 @@
 ;; Maybe the config and code should be seperated
 (req-package mu4e
   :require (gnus-dired)
-  :init
+  :config
   (progn
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)

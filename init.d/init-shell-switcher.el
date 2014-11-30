@@ -1,5 +1,5 @@
 (req-package shell-switcher
-  :init
+  :config
   (progn
     (shell-switcher-mode t)
     (define-key shell-switcher-mode-map (kbd "C-=")

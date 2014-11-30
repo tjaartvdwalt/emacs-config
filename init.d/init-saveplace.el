@@ -1,5 +1,5 @@
 (req-package ruby-mode
-  :init
+  :config
   (progn
     (setq save-place-file "~/.emacs.d/saveplace")
     (setq-default save-place t)))

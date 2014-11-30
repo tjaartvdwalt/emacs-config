@@ -1,6 +1,6 @@
 (req-package tramp
   :require (sudo-ext)
-  :init
+  :config
   (progn
     (setq tramp-default-method "scp")
     (defun sudo-edit-current-file ()

@@ -5,7 +5,7 @@
 ;; ruby end
 (req-package ruby-mode
 :require (ruby-end rspec-mode inf-ruby robe company company-robe)
-:init
+:config
 (progn
      (add-hook 'ruby-mode 'auto-make-header)
      (add-hook 'ruby-mode-hook 'robe-mode)

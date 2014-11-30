@@ -1,6 +1,6 @@
 (req-package dired-narrow
   :require dired
-  :init
+  :config
   (progn
         (define-key dired-mode-map (kbd "[") 'dired-narrow-regexp)))
 

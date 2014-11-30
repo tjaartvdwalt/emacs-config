@@ -1,0 +1,5 @@
+(req-package smex
+  :require ido
+  :bind ("M-x" . smex)
+  :config (progn
+            (smex-initialize)))

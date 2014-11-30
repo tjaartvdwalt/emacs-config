@@ -7,7 +7,7 @@
 ;;         ("C-c C-f" . go-test-current-file)
 ;;         ("C-c C-t" . go-test-current-test))
 
-:init
+:config
 (progn
         (add-hook 'before-save-hook 'gofmt-before-save)
         (add-hook 'go-mode-hook 'go-eldoc-setup)

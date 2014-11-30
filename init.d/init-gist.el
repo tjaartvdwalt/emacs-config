@@ -1,5 +1,5 @@
 (req-package gist
-  :init
+  :config
   (progn
     (global-set-key "\C-xg" 'gist-list)
     ;; (global-set-key "\C-xgp" 'gist-buffer)
