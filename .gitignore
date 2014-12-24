@@ -32,3 +32,4 @@ session.*
 /projectile-bookmarks.eld
 /projectile.cache
 /smex-items
+/.dir-locals.el.swp
