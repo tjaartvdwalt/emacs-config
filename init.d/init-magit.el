@@ -3,8 +3,7 @@
 ;;; Code:
 (req-package magit
   :require (magit-filenotify)
-  :bind
-  ("C-x m" . magit-status)
+  :bind ("C-c v m" . magit-status)
   :config
   (progn
      (set-face-foreground 'magit-diff-add "green3")

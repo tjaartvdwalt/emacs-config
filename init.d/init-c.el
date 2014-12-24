@@ -1,5 +1,5 @@
 (req-package cc-mode
-  :require(company company-c-headers company-cmake google-c-style flycheck-google-cpplint)
+  :require(company company-c-headers company-cmake google-c-style) ;;flycheck-google-cpplint)
 
   :config
   (progn
@@ -22,12 +22,13 @@
   (add-to-list
    'company-c-headers-path-system "/usr/include/c++/4.9.2/")
 
-  (eval-after-load 'flycheck
-    '(progn
-       (require 'flycheck-google-cpplint)
-       ;; Add Google C++ Style checker.
-       ;; In default, syntax checked by Clang and Cppcheck.
-       (flycheck-add-next-checker 'c/c++-clang
-                                  'c/c++-googlelint 'append)
-       (add-hook 'c-mode-common-hook 'google-set-c-style)
-       (add-hook 'c-mode-common-hook 'google-make-newline-indent))))
+  ;; (eval-after-load 'flycheck
+  ;;   '(progn
+  ;;      (require 'flycheck-google-cpplint)
+  ;;      ;; Add Google C++ Style checker.
+  ;;      ;; In default, syntax checked by Clang and Cppcheck.
+  ;;      (flycheck-add-next-checker 'c/c++-clang
+  ;;                                 'c/c++-googlelint 'append)
+  ;;      (add-hook 'c-mode-common-hook 'google-set-c-style)
+  ;;      (add-hook 'c-mode-common-hook 'google-make-newline-indent)))
+  )

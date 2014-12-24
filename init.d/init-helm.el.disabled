@@ -1,5 +1,4 @@
 (req-package helm
-  :disabled 1
  :require (helm-config helm-projectile)
  ;; :bind (("M-x" . helm-M-x))
  :config (progn

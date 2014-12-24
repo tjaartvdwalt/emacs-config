@@ -107,7 +107,7 @@
             (message (concat (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-refile-folder") "." (my-mu4e-get-message-year msg)))))
 
     ;;Set a shortcut for mu4e
-    (global-set-key "\C-cr" 'mu4e)
+    (global-set-key "\C-ce" 'mu4e)
 
     ;; mark a message as spam
     (defun mu4e-mark-for-spam (msg)

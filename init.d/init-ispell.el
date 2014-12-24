@@ -4,8 +4,8 @@
 
 (req-package ispell
   :bind
-  (("C-c n" . ispell-word)
-   ("C-c s" . ispell-buffer))
+  (("C-c i w" . ispell-word)
+   ("C-c i b" . ispell-buffer))
 
   :config
   (progn

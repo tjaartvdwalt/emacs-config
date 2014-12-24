@@ -1,2 +1,2 @@
 (req-package ace-jump-buffer
-  :bind (("C-c b" . ace-jump-buffer-wrapper)))
+  :bind (("C-c a" . ace-jump-buffer-wrapper)))
