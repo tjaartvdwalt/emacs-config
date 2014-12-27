@@ -260,13 +260,21 @@
           (if (search account (mu4e-message-field msg :path)) (add-to-list 'value account)))
         (message (car value))))
 
-    (defun dv-mu4e-train-spam (msg)
+    (defun mu4e-train-spam (msg)
   "Train as spam and then mark for deletion."
   (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
                 (shell-quote-argument (mu4e-msg-field msg :path)))))
     (shell-command cmd))
   mu4e-headers-mark-for-spam(msg)
-  (message "Trained as SPAM")
-  )
+  (message "Trained as SPAM"))
 
+    (defun mu4e-train-ham (msg)
+  "Train as spam and then mark for deletion."
+  (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
+                (shell-quote-argument (mu4e-msg-field msg :path)))))
+    (shell-command cmd))
+  mu4e-headers-mark-for-spam(msg)
+  (message "Trained as HAM"))
+
+    
     ))
