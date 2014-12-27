@@ -119,7 +119,7 @@
       (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
       (shell-quote-argument (mu4e-msg-field msg :path)))))
       (shell-command cmd))
-      (message "Trained as SPAM"))
+      (message "Trained as SPAM")
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
     ;; mark a message as spam
@@ -136,7 +136,7 @@
       (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
       (shell-quote-argument (mu4e-msg-field msg :path)))))
       (shell-command cmd))
-      (message "Trained as HAM"))
+      (message "Trained as HAM")
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-inbox-folder")))
 
     ;; move message to inbox
