@@ -9,13 +9,16 @@
     ;; define 'N' (the first letter of the description) as the shortcut
     ;; the 't' argument to add-to-list puts it at the end of the list
     (add-to-list 'mu4e-headers-actions
-                 '("sMark as Spam" . mu4e-headers-mark-for-spam) t)
+                 '("sMark as Spam" . mu4es-mark-for-spam) t)
 
     (add-to-list 'mu4e-view-actions
                  '("sMark as Spam" . mu4e-view-mark-for-spam) t)
 
     (add-to-list 'mu4e-headers-actions
-                 '("iMove to Inbox" . mu4e-headers-mark-for-inbox) t)
+                 '("iMove to Inbox" . mu4e-mark-for-inbox) t)
+
+    (add-to-list 'mu4e-view-actions
+                 '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
 
     ;; general settings
@@ -109,29 +112,40 @@
     ;;Set a shortcut for mu4e
     (global-set-key "\C-ce" 'mu4e)
 
-    ;; mark a message as spam
+    ;; mark a message as spam ind header view
     (defun mu4e-mark-for-spam (msg)
-      "Mark the given message as spam."
-      (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
-
-        ;; mark a message as spam
-    (defun mu4e-headers-mark-for-spam (msg)
-      "Mark messages as spam in headers view."
+      "Train spambayes, and move the message to the spam folder."
       (interactive)
-      (mu4e-mark-for-spam msg))
+      (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
+      (shell-quote-argument (mu4e-msg-field msg :path)))))
+      (shell-command cmd))
+      (message "Trained as SPAM"))
+      (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
     ;; mark a message as spam
     (defun mu4e-view-mark-for-spam (msg)
       "Mark messages as spam in the message view."
       (interactive)
-      (mu4e~view-in-headers-context (mu4e-headers-mark-for-spam msg))
+      (mu4e~view-in-headers-context (mu4e-mark-for-spam msg))
       (mu4e-view-headers-next))
 
     ;; mark a message to move it to the inbox (useful for mail that has been accidentally marked as spam)
-    (defun mu4e-headers-mark-for-inbox (msg)
+    (defun mu4e-mark-for-inbox (msg)
       "Move the current message to the Inbox."
-      (interactive "p")
+      (interactive)
+      (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
+      (shell-quote-argument (mu4e-msg-field msg :path)))))
+      (shell-command cmd))
+      (message "Trained as HAM"))
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-inbox-folder")))
+
+    ;; move message to inbox
+    (defun mu4e-view-mark-for-inbox (msg)
+      "Move message to the inbox in message view."
+      (interactive)
+      (mu4e~view-in-headers-context (mu4e-mark-for-inbox msg))
+      (mu4e-view-headers-next))
+
 
     ;; Choose account label to feed msmtp -a option based on From header
     ;; in Message buffer; This function must be added to
@@ -260,13 +274,6 @@
           (if (search account (mu4e-message-field msg :path)) (add-to-list 'value account)))
         (message (car value))))
 
-    (defun mu4e-train-spam (msg)
-  "Train as spam and then mark for deletion."
-  (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
-                (shell-quote-argument (mu4e-msg-field msg :path)))))
-    (shell-command cmd))
-  mu4e-headers-mark-for-spam(msg)
-  (message "Trained as SPAM"))
 
     (defun mu4e-train-ham (msg)
   "Train as spam and then mark for deletion."
