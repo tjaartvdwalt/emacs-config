@@ -9,7 +9,7 @@
     ;; define 'N' (the first letter of the description) as the shortcut
     ;; the 't' argument to add-to-list puts it at the end of the list
     (add-to-list 'mu4e-headers-actions
-                 '("sMark as Spam" . mu4es-mark-for-spam) t)
+                 '("sMark as Spam" . mu4e-mark-for-spam) t)
 
     (add-to-list 'mu4e-view-actions
                  '("sMark as Spam" . mu4e-view-mark-for-spam) t)
