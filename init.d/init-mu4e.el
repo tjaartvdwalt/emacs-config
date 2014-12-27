@@ -265,7 +265,7 @@
   (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
                 (shell-quote-argument (mu4e-msg-field msg :path)))))
     (shell-command cmd))
-   (mu4e~view-mark-set 'delete)
+  mu4e-headers-mark-for-spam(msg)
   (message "Trained as SPAM")
   )
 
