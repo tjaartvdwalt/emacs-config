@@ -8,5 +8,6 @@
            (setq swoop-use-target-magnifier: nil)
            (define-key isearch-mode-map (kbd "C-o") 'swoop-from-isearch)
            (define-key swoop-map (kbd "C-o") 'swoop-multi-from-swoop)
+           (setq swoop-window-split-direction: 'split-window-horizontally)
            ))
 
