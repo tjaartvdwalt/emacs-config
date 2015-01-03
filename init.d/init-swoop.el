@@ -9,5 +9,6 @@
            (define-key isearch-mode-map (kbd "C-o") 'swoop-from-isearch)
            (define-key swoop-map (kbd "C-o") 'swoop-multi-from-swoop)
            (setq swoop-window-split-direction: 'split-window-horizontally)
+           (setq swoop-window-split-current-window: t)
            ))
 
