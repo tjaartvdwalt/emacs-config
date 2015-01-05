@@ -1,2 +1,2 @@
 (req-package kill-ring-ido
-    :bind ("C-M y" . kill-ring-ido))
+    :bind ("M y" . kill-ring-ido))
