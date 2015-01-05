@@ -1,4 +1,5 @@
 (req-package ace-isearch
+  :require(helm-swoop)
   :config(progn (global-ace-isearch-mode +1)
               (setq ace-isearch-input-idle-delay 0.75)
               ;; I don't like ace-isearch to use helm-swoop... easiest
