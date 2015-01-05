@@ -1,2 +1,2 @@
 (req-package kill-ring-ido
-    :bind ("C-c v m" . magit-status))
+    :bind ("C-M y" . kill-ring-ido))
