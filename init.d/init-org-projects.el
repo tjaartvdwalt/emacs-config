@@ -32,6 +32,15 @@
          :publishing-function org-publish-attachment
          )
 
+        ("ibook-images"
+         :base-directory "~/my-classes/ibook/pictures"
+         :base-extension "jpg\\|svg"
+         :publishing-directory "~/public_html/ibook/pictures"
+         :recursive t
+         :publishing-function org-publish-attachment
+         )
+
+        
         ("ibook-widgets"
          :base-directory "~/my-classes/ibook/apps/widgets"
          :base-extension "js\\|css\\|html"
