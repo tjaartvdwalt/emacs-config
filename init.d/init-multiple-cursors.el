@@ -3,4 +3,5 @@
          ("C-c c n" . mc/mark-next-like-this)
          ("C-c c p" . mc/mark-previous-like-this)
          ("C-c c a" . mc/mark-all-like-this)
-         ("C-c c w" . mc/mark-all-words-like-this)))
+         ("C-c c w" . mc/mark-all-words-like-this)
+         ("C-c c w" . mc/mark-all-dwim)))
