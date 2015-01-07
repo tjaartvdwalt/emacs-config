@@ -1,4 +1,4 @@
-;;; pacakge --- This file contains shortcuts that do not correspond to any init file
+;;; package --- This file contains shortcuts that do not correspond to any init file
 ;;; Commentary:   
 
 ;; Swap c-x and c-u.  This is useful for dvorak layout since u is
