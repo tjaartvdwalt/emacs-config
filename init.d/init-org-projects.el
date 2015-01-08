@@ -34,7 +34,7 @@
 
         ("ibook-images"
          :base-directory "~/my-classes/ibook/pictures"
-         :base-extension "jpg\\|svg\\|gif"
+         :base-extension "jpg\\|svg\\|gif\\|png"
          :publishing-directory "~/public_html/ibook/pictures"
          :recursive t
          :publishing-function org-publish-attachment
