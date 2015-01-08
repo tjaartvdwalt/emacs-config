@@ -49,6 +49,13 @@
          :publishing-function org-publish-attachment
          )
 
+        ("ibook-monocle"
+         :base-directory "~/my-classes/ibook/monocle"
+         :base-extension "js\\|css\\|html"
+         :publishing-directory "~/public_html/ibook/"
+         :recursive t
+         :publishing-function org-publish-attachment
+         )
         
 
         ("blog" :base-directory "~/blog/"
