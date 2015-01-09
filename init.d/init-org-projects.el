@@ -26,7 +26,7 @@
 
         ("ibook-resources"
          :base-directory "~/my-classes/ibook/org"
-         :base-extension "js\\|css"
+         :base-extension "js\\|css\\|png"
          :publishing-directory "~/public_html/ibook"
          :recursive t
          :publishing-function org-publish-attachment
