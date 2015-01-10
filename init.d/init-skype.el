@@ -1,2 +1,2 @@
 (req-package skype
-  :config((setq skype--my-user-handle "rkwtavdw")))
+  :config(setq skype--my-user-handle "rkwtavdw"))
