@@ -1,5 +1,10 @@
 (req-package rebox2
   :config(progn (add-hook 'emacs-lisp-mode-hook (lambda ()
+                                                  (rebox-mode 1)))
+                (add-hook 'python-mode-hook (lambda ()
+                (set (make-local-variable 'rebox-style-loop) '(11 15 17))                           
  (rebox-mode 1)))
+(add-hook 'c-mode-hook (lambda ()
+                           (rebox-mode 1)))
 (add-hook 'c++-mode-hook (lambda ()
  (rebox-mode 1)))))
