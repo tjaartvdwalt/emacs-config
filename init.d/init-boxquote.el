@@ -1,1 +1,1 @@
-(req-package boxquote)
+(req-package rebox2)
