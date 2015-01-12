@@ -33,3 +33,4 @@ session.*
 /projectile.cache
 /smex-items
 /.dir-locals.el.swp
+/.mc-lists.el

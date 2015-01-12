@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: def
+# --
+#+LaTeX: \begin{defn} 
+#+HTML: <div id="definition"><h3>Definition</h3>
+$0
+#+LaTeX: \end{defn}
+#+HTML: </div>
