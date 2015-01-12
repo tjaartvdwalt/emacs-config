@@ -18,9 +18,10 @@
 (global-set-key "\C-cdf" 'find-grep-dired)
 (global-set-key "\C-cdd" 'find-name-dired)
 
-;; (global-set-key (kbd "\C-c i") 'indent-whole-buffer)
 ;; wraps lines in a paragraph to word-wrap characters
-(global-set-key (kbd "\C-cu") 'fill-paragraph)
+(global-set-key (kbd "\C-c u u") 'fill-paragraph)
+(global-set-key (kbd "\C-c u i") 'indent-whole-buffer)
+
 (setq word-wrap 80)
 ;;(global-set-key (kbd "\C-Co") 'occur)
 
