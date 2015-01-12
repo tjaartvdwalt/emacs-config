@@ -20,14 +20,14 @@
 
         ("ibook"
          :base-directory "~/my-classes/ibook/org"
-         :publishing-directory "~/public_html/ibook"
+         :publishing-directory "~/public_html/ibook/www"
          :publishing-function org-html-publish-to-html
          :html-postamble "")
 
         ("ibook-resources"
          :base-directory "~/my-classes/ibook/org"
          :base-extension "js\\|css\\|png"
-         :publishing-directory "~/public_html/ibook"
+         :publishing-directory "~/public_html/ibook/www"
          :recursive t
          :publishing-function org-publish-attachment
          )
@@ -35,7 +35,7 @@
         ("ibook-images"
          :base-directory "~/my-classes/ibook/pictures"
          :base-extension "jpg\\|svg\\|gif\\|png"
-         :publishing-directory "~/public_html/ibook/pictures"
+         :publishing-directory "~/public_html/ibook/www/pictures"
          :recursive t
          :publishing-function org-publish-attachment
          )
@@ -44,7 +44,7 @@
         ("ibook-widgets"
          :base-directory "~/my-classes/ibook/apps/widgets"
          :base-extension "js\\|css\\|html"
-         :publishing-directory "~/public_html/ibook/widgets"
+         :publishing-directory "~/public_html/ibook/www/widgets"
          :recursive t
          :publishing-function org-publish-attachment
          )
@@ -52,7 +52,7 @@
         ("ibook-monocle"
          :base-directory "~/my-classes/ibook/monocle"
          :base-extension "js\\|css\\|html"
-         :publishing-directory "~/public_html/ibook/"
+         :publishing-directory "~/public_html/ibook/www"
          :recursive t
          :publishing-function org-publish-attachment
          )
