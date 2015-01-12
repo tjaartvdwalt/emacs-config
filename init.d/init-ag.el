@@ -1,1 +1,2 @@
-(req-package ag)
+(req-package ag
+  :config(progn (setq ag-highlight-search t)))
