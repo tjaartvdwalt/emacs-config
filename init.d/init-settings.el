@@ -15,7 +15,6 @@
 (setq inhibit-splash-screen t)
 (setq tab-width 2)
 (setq-default indent-tabs-mode nil)
-(menu-bar-mode -1)
 (global-linum-mode t)
 
 
