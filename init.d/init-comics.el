@@ -1,4 +1,3 @@
 (req-package comics
-  :bind(("C-c k l" . comics-favorites-list-comics)
-        ("C-c k f" . comics-fetch-unread-favorites))
+  :bind(("C-c m c" . comics-favorites-list-comics))
   :config (progn (setq comics-use-separate-comic-directories t)))
