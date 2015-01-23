@@ -2,5 +2,5 @@
   :require dired
   :config
   (progn
-    (define-key dired-mode-map (kbd ",") 'dired-open-xdg)))
+    (define-key dired-mode-map (kbd ",") 'tvdw/dired-decrypt-open-xdg)))
 
