@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name:        pass
+# group:       
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+$1
+UserName: $2
+URL: $3
+$0
