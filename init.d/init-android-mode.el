@@ -1,1 +1,2 @@
-(req-package android-mode)
+(req-package android-mode
+    :config(gradle-mode 1))
