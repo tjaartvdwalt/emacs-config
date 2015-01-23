@@ -9,13 +9,13 @@
 
 (defun tvdw/decrypt-to-temp (filename)
   "Decrypts the file into the temp file."
-  (epa-decrypt-file filename (tmp-filename filename))
+  (tvdw/epa-decrypt-file filename (tmp-filename filename))
   (tmp-filename filename))
 
 (defun tvdw/dired-decrypt-open-xdg ()
   "Puts everything together"
   (interactive)
   (if (equal (file-name-extension (dired-filename-at-point)) "gpg")
-    (browse-url-xdg-open (decrypt-to-temp   (dired-filename-at-point)))
+    (browse-url-xdg-open (tvdw/decrypt-to-temp   (dired-filename-at-point)))
     (browse-url-xdg-open (dired-filename-at-point))))
 
