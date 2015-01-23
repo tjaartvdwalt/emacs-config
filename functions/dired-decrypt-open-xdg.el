@@ -9,8 +9,8 @@
 
 (defun tvdw/decrypt-to-temp (filename)
   "Decrypts the file into the temp file."
-  (epa-decrypt-file filename (tmp-filename filename))
-  (tmp-filename filename))
+  (epa-decrypt-file filename (tvdw/tmp-filename filename))
+  (tvdw/tmp-filename filename))
 
 (defun tvdw/dired-decrypt-open-xdg ()
   "Puts everything together"
