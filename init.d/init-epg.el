@@ -1,1 +1,3 @@
-(req-package epg)
+(req-package epg
+    :require (epa-file)
+  :config(epa-file-enable))
