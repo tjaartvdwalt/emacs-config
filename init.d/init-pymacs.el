@@ -5,6 +5,6 @@
 (req-package pymacs
   :config(progn
            (autoload 'pymacs-apply "pymacs")
-(autoload 'pymacs-call "pymacs")
-(autoload 'pymacs-eval "pymacs" nil t)
-(autoload 'pymacs-exec "pymacs" nil t)))
+           (autoload 'pymacs-call "pymacs")
+           (autoload 'pymacs-eval "pymacs" nil t)
+           (autoload 'pymacs-exec "pymacs" nil t)))
