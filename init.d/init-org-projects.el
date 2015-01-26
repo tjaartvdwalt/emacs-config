@@ -1,8 +1,8 @@
 (setq org-format-latex-header "\\documentclass{article}\n\\usepackage[usenames]{color}\n[PACKAGES]\n[DEFAULT-PACKAGES]\n\\usepackage{tikz}\n\\pagestyle{empty}             % do not remove\n% The settings below are copied from fullpage.sty\n\\setlength{\\textwidth}{\\paperwidth}\n\\addtolength{\\textwidth}{-3cm}\n\\setlength{\\oddsidemargin}{1.5cm}\n\\addtolength{\\oddsidemargin}{-2.54cm}\n\\setlength{\\evensidemargin}{\\oddsidemargin}\n\\setlength{\\textheight}{\\paperheight}\n\\addtolength{\\textheight}{-\\headheight}\n\\addtolength{\\textheight}{-\\headsep}\n\\addtolength{\\textheight}{-\\footskip}\n\\addtolength{\\textheight}{-3cm}\n\\setlength{\\topmargin}{1.5cm}\n\\addtolength{\\topmargin}{-2.54cm}")
 (setq org-publish-project-alist
-      '(("i3myway"
-         :base-directory "~/my-classes/i3myway/docs"
-         :publishing-directory "~/public_html/tjaartvdwalt.github.io/i3myway"
+      '(("tjaartvdwalt"
+         :base-directory "~/my-classes/tjaartvdwalt.github.io/"
+         :publishing-directory "~/public_html/tjaartvdwalt.github.io/"
          ;; :section-numbers nil
          ;; :with-toc nil
          ;;:makeindex nil
