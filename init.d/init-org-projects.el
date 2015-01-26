@@ -2,7 +2,7 @@
 (setq org-publish-project-alist
       '(("github"
          :base-directory "~/my-classes/tjaartvdwalt.github.io/src"
-         :publishing-directory "~/my-classes/tjaartvdwalt.github.io"
+         :publishing-directory "~/my-classes/tjaartvdwalt.github.io/site"
          ;; :section-numbers nil
          ;; :with-toc nil
          ;;:makeindex nil
@@ -16,7 +16,7 @@
         ("github-resources"
          :base-directory "~/my-classes/tjaartvdwalt.github.io/src"
          :base-extension "js\\|css\\|png"
-         :publishing-directory "~/public_html/tjaartvdwalt.github.io"
+         :publishing-directory "~/public_html/tjaartvdwalt.github.io/site"
          :recursive t
          :publishing-function org-publish-attachment
          )
