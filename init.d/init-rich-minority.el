@@ -2,4 +2,4 @@
   :config (progn
           (rich-minority-mode 1)
           (setq rm-blacklist '(" Undo-Tree" " 80col" " back" " MRev" " company" " FIC" " Fill" " ga" " Gradle" " Guide" " Par-"
-                               " b-loc" " rebox" " $" " Abbrev" " Projectile.*?"))))
+                               " b-loc" " rebox" " $" " Abbrev" " Projectile"))))
