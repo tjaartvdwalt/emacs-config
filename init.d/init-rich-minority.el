@@ -1,5 +1,5 @@
 (req-package rich-minority
   :config (progn
           (rich-minority-mode 1)
-          (setq rm-blacklist '(" Undo-Tree" " 80col" " MRev" " company" " FIC" " ga" " Guide" " Par-"
-                               " b-loc" " $" " Abbrev"))))
+          (setq rm-blacklist '(" Undo-Tree" " 80col" " back" " MRev" " company" " FIC" " Fill" " ga" " Gradle" " Guide" " Par-"
+                               " b-loc" " rebox" " $" " Abbrev" " Projectile.*?"))))
