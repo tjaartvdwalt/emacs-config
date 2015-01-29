@@ -1,3 +1,3 @@
 (req-package elpy
-  :config(progn ((package-initialize)
+  :init(progn ((package-initialize)
                 (elpy-enable))))
