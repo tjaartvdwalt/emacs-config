@@ -1,2 +1,3 @@
 (req-package elpy
-  :init(progn  (elpy-enable)))
+  :config(progn  (elpy-enable)
+               (elpy-clean-modeline)))
