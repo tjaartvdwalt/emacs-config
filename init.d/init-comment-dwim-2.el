@@ -1,3 +1,3 @@
 (req-package comment-dwim-2
-  config
+  :bind ("M-;" . comment-dwim-2)
   )
