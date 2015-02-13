@@ -1,1 +1,3 @@
-(req-package comment-dwim-2)
+(req-package comment-dwim-2
+  config
+  )
