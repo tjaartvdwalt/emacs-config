@@ -19,6 +19,18 @@
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
 
+    (add-to-list 'org-export-latex-classes
+          '("moderncv"
+             "\\documentclass{moderncv}
+             [NO-DEFAULT-PACKAGES]
+             [PACKAGES]
+             [EXTRA]"
+             ("\\section{%s}" . "\\section*{%s}")
+             ("\\subsection{%s}" . "\\subsection*{%s}")
+             ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+             ("\\paragraph{%s}" . "\\paragraph*{%s}")
+             ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+    
     ;; ************* Misc *************
     (setq org-src-fontify-natively t)
     (setq org-clock-idle-time 5)
