@@ -18,6 +18,15 @@
     (setq org-latex-to-pdf-process (list "latexmk -latexoption=-shell-escape -pdf -bibtex %f"))
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
+
+    (add-to-list 'org-latex-classes
+             '("moderncv"
+               "\\documentclass{moderncv}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
     
     ;; ************* Misc *************
     (setq org-src-fontify-natively t)
