@@ -1,7 +1,7 @@
 ;;; package --- summary
 ;;; Commentary:
 ;;; Code:
-(req-package python
+(req-package python-mode
   ;; :require (anaconda-mode company company-anaconda)
   :interpreter ("python" . python-mode)
   ;; :config
