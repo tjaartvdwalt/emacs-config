@@ -1,3 +1,3 @@
 (req-package py-isort
-  :config((add-hook 'before-save-hook 'py-isort-before-save)))
+  :config(progn (add-hook 'before-save-hook 'py-isort-before-save)))
 
