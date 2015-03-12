@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (req-package org
-  :require (ox-man org-contacts)
+  :require (ox-man org-contacts )
   :bind (("C-c l" . org-store-link)
          ("C-c a" . org-agenda)
          ("C-c c" . org-capture))
