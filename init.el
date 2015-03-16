@@ -41,6 +41,7 @@
 
 ;; require load-dir. this loads all files in the given dirs.
 (require 'req-package)
+(setq req-package-verbose 1)
 (use-package load-dir
   :ensure load-dir
   : (progn
@@ -50,7 +51,6 @@
           ))
 
 ;; show details in *Messages* buffer
-(setq req-package-verbose 1)
 
 ;; actually load the packages
 (req-package-finish)
