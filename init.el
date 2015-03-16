@@ -1,7 +1,7 @@
 ;;; package --- summary
 ;;; Commentary:
 ;;; Code:
-
+ 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,18 +41,18 @@
 
 ;; require load-dir. this loads all files in the given dirs.
 (require 'req-package)
-;; (use-package load-dir
-;;   :ensure load-dir
-;;   :init (progn
-;;   ;; show details in *Messages* buffer
-;;   (setq req-package-verbose 1)
+(use-package load-dir
+  :ensure load-dir
+  :init (progn
+          (load-dir-one "~/.emacs.d/functions")
+          (load-dir-one "~/.emacs.d/init.d")
+          ))
 
-;;   ;; actually load the packages
+;; show details in *Messages* buffer
+(setq req-package-verbose 1)
 
-;;   ))
-  (setq load-dirs '("~/.emacs.d/functions/" "~/.emacs.d/init.d/"))
-  (req-package-finish)
-
+;; actually load the packages
+(req-package-finish)
 
 (provide 'init)
 (put 'upcase-region 'disabled nil)
