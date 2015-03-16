@@ -43,7 +43,7 @@
 (require 'req-package)
 (use-package load-dir
   :ensure load-dir
-  :init (progn
+  : (progn
           (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
           ;; (load-dir-one "~/.emacs.d/functions")
           ;; (load-dir-one "~/.emacs.d/init.d")
@@ -55,11 +55,4 @@
 ;; actually load the packages
 (req-package-finish)
 
-(provide 'init)
 (put 'upcase-region 'disabled nil)
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
