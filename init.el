@@ -41,6 +41,7 @@
 
 ;; require load-dir. this loads all files in the given dirs.
 (require 'req-package)
+(req-package-finish)
 (setq req-package-verbose 1)
 (use-package load-dir
   :ensure load-dir
