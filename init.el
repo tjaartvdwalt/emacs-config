@@ -48,10 +48,10 @@
   (setq req-package-verbose 1)
 
   ;; actually load the packages
-  (req-package-finish)
-          (setq load-dirs '("~/.emacs.d/functions/" "~/.emacs.d/init.d/"))
 
   ))
+  (req-package-finish)
+          (setq load-dirs '("~/.emacs.d/functions/" "~/.emacs.d/init.d/"))
 
 
 (provide 'init)
