@@ -50,7 +50,7 @@
 ;;   ;; actually load the packages
 
 ;;   ))
-  ;;(setq load-dirs '("~/.emacs.d/functions/" "~/.emacs.d/init.d/"))
+  (setq load-dirs '("~/.emacs.d/functions/" "~/.emacs.d/init.d/"))
   (req-package-finish)
 
 
