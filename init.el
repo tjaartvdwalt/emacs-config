@@ -53,6 +53,6 @@
 ;; show details in *Messages* buffer
 
 ;; actually load the packages
-(req-package-finish)
 
 (put 'upcase-region 'disabled nil)
+(req-package-finish)
