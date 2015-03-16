@@ -44,8 +44,7 @@
 (use-package load-dir
   :ensure load-dir
   :init (progn
-          (load-dir-one "~/.emacs.d/functions")
-          (load-dir-one "~/.emacs.d/init.d")))
+          (setq load-dirs ("~/.emacs.d/init.d" "~/.emacs.d/functions"))
 
 ;; show details in *Messages* buffer
 (setq req-package-verbose 1)
