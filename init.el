@@ -35,15 +35,16 @@
 
 ;; install req-package manually, everything else gets installed with req-package
 (elpa-install 'req-package)
+(require 'req-package)
 
 ;; load manually installed packages
 (add-to-list 'load-path "~/.emacs.d/manual/")
 
 (elpa-install 'load-dir)
+(require load-dir)
 (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
 
 ;; require load-dir. this loads all files in the given dirs.
-;; (require 'req-package)
 ;; (setq req-package-verbose 1)
 ;; (req-package load-dir
 ;;   :ensure load-dir
