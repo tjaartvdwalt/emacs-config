@@ -41,7 +41,7 @@
 (add-to-list 'load-path "~/.emacs.d/manual/")
 
 (elpa-install 'load-dirs)
-(require 'load-dirs)
+(require 'load-dir)
 (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
 
 ;; require load-dir. this loads all files in the given dirs.
