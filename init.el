@@ -41,7 +41,6 @@
 
 ;; require load-dir. this loads all files in the given dirs.
 (require 'req-package)
-(req-package-finish)
 (setq req-package-verbose 1)
 (req-package load-dir
   :ensure load-dir
@@ -54,6 +53,6 @@
 ;; show details in *Messages* buffer
 
 ;; actually load the packages
-
 (put 'upcase-region 'disabled nil)
+(req-package-finish)
 (req-package-finish)
