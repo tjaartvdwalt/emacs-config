@@ -41,17 +41,17 @@
 
 ;; require load-dir. this loads all files in the given dirs.
 (require 'req-package)
-(use-package load-dir
-  :ensure load-dir
-  :init (progn
-  ;; show details in *Messages* buffer
-  (setq req-package-verbose 1)
+;; (use-package load-dir
+;;   :ensure load-dir
+;;   :init (progn
+;;   ;; show details in *Messages* buffer
+;;   (setq req-package-verbose 1)
 
-  ;; actually load the packages
+;;   ;; actually load the packages
 
-  ))
+;;   ))
+  (setq load-dirs '("~/.emacs.d/functions/" "~/.emacs.d/init.d/"))
   (req-package-finish)
-          (setq load-dirs '("~/.emacs.d/functions/" "~/.emacs.d/init.d/"))
 
 
 (provide 'init)
