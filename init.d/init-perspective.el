@@ -1,2 +1,2 @@
 (req-package perspective
-  :config((setq persp-mode t)))
+  :config((persp-mode)))
