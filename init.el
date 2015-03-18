@@ -45,7 +45,7 @@
 ;; (elpa-install 'load-dir)
 ;; (require 'load-dir)
 ;; (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
-;; (req-package-finish)
+(req-package-finish)
 
 ;; require load-dir. this loads all files in the given dirs.
 ;; (setq req-package-verbose 1)
