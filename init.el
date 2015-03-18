@@ -47,7 +47,11 @@
 ;; (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
 ;; (load-dirs)
 ;;(load-dir-one "~/.emacs.d/functions")
-(load-dir-one "~/.emacs.d/init.d")
+(setq load-dirs t)
+(setq load-dir-recursive t)
+(load-dirs)
+
+;;(load-dir-one "~/.emacs.d/init.d")
 (message "got here!")
 (req-package-finish)
 (message "done!")
