@@ -46,6 +46,7 @@
 (require 'load-dir)
 ;; (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
 (load-dir-one "~/.emacs.d/functions")
+(load-dir-one "~/.emacs.d/init.d")
 ;;(setq load-dirs t)
 ;;(setq load-dir-recursive t)
 (load-dirs-reload)
