@@ -1,2 +1,2 @@
 (req-package gradle-mode
-  :config(gradle-mode 1))
+    :config(gradle-mode 1))
