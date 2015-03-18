@@ -1,2 +1,1 @@
-(req-package persp-mode
-  :config (setq persp-mode t))
+(req-package persp-mode)
