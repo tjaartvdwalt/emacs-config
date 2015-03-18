@@ -48,6 +48,7 @@
 
 (message "got here!")
 (req-package-finish)
+(message "done!")
 
 ;; require load-dir. this loads all files in the given dirs.
 ;; (setq req-package-verbose 1)
