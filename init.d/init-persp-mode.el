@@ -1,2 +1,5 @@
 (req-package persp-mode
-  :init(persp-mode 1))
+  :init(progn
+         (with-eval-after-load "persp-mode-autoloads"
+           (setq wg-morph-on nil) ;; switch off animation
+           (add-hook 'after-init-hook #'(lambda () (persp-mode 1)))))
