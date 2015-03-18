@@ -49,7 +49,7 @@
 ;;(load-dir-one "~/.emacs.d/functions")
 ;;(setq load-dirs t)
 ;;(setq load-dir-recursive t)
-;;(load-dirs)
+(reload-dirs)
 
 ;;(load-dir-one "~/.emacs.d/init.d")
 (message "got here!")
