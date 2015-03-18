@@ -1,2 +1,1 @@
-(req-package perspective
-  :config((persp-mode)))
+(req-package persp-mode)
