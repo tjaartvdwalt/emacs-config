@@ -5,7 +5,8 @@
   :require (ox-man org-contacts )
   :bind (("C-c l" . org-store-link)
          ("C-c a" . org-agenda)
-         ("C-c c" . org-capture))
+         ;; ("C-c c" . org-capture)
+         )
   :config
   (progn
     ;; ************* Export *************
