@@ -1,5 +1,5 @@
 (req-package persp-mode
-  :config(
+  :init(
           progn
            (with-eval-after-load "persp-mode-autoloads"
              (setq wg-morph-on nil) ;; switch off animation
