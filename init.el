@@ -38,13 +38,15 @@
 (require 'req-package)
 
 ;; load manually installed packages
-(add-to-list 'load-path "~/.emacs.d/manual/")
-(add-to-list 'load-path "~/.emacs.d/functions/")
-(add-to-list 'load-path "~/.emacs.d/init.d/")
+;; (add-to-list 'load-path "~/.emacs.d/manual/")
+;; (add-to-list 'load-path "~/.emacs.d/functions/")
+;; (add-to-list 'load-path "~/.emacs.d/init.d/")
 
-;; (elpa-install 'load-dir)
-;; (require 'load-dir)
-;; (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
+(elpa-install 'load-dir)
+(require 'load-dir)
+(setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
+
+(message "got here!")
 (req-package-finish)
 
 ;; require load-dir. this loads all files in the given dirs.
@@ -55,5 +57,5 @@
 ;;           (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))))
 
 ;; actually load the packages
-(put 'upcase-region 'disabled nil)
+;; (put 'upcase-region 'disabled nil)
 ;; (req-package-finish)
