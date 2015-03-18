@@ -44,7 +44,7 @@
 
 (elpa-install 'load-dir)
 (require 'load-dir)
-(setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
+(setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d" "~/.emacs.d/manual/"))
 
 (message "got here!")
 (req-package-finish)
