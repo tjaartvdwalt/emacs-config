@@ -9,6 +9,7 @@
          )
   :config
   (progn
+    (setq org-beamer-mode t)
     ;; ************* Export *************
     ;; use minted for latex exported code blocks
     ;; NB: minted requires pygments to be installed
