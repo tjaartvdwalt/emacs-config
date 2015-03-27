@@ -9,7 +9,10 @@
          )
   :config
   (progn
+    ;; enable beamer mode
     (setq org-beamer-mode t)
+    ;; use native modes for src
+    (setq org-src-fontify-natively t)
     ;; ************* Export *************
     ;; use minted for latex exported code blocks
     ;; NB: minted requires pygments to be installed
