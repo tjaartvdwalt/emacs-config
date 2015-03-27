@@ -16,13 +16,13 @@
     ;; ************* Export *************
     ;; use minted for latex exported code blocks
     ;; NB: minted requires pygments to be installed
+    
     (setq org-src-fontify-natively t)
-    (setq org-export-latex-minted t)
-    (setq org-export-latex-listings 'minted)
+    ;; (setq org-export-latex-minted t)
+    (setq org-latex-listings 'minted)
     (add-to-list 'org-latex-packages-alist '("" "minted"))
     (setq org-latex-pdf-process '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f")
 )
-    (setq org-latex-to-pdf-process (list "latexmk -latexoption=-shell-escape -pdf -bibtex %f"))
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
 
