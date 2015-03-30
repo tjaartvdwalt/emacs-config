@@ -1,2 +1,2 @@
 (req-package calfw
-  require(progn))
+  require(calfw-org))
