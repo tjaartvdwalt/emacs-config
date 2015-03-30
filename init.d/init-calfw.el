@@ -1,2 +1,2 @@
 (req-package calfw
-  require(calfw-org))
+  require(calfw-org calfw-ical))
