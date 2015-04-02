@@ -7,7 +7,7 @@
   (progn
     (setq mweb-default-major-mode 'html-mode)
     (setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
-                      (js-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
+                      (js2-mode "<script>" "</script>")
                       (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")
                       (rhtml-mode "<%" "%>")))
     (setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5" "erb"))
