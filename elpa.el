@@ -9,6 +9,9 @@
 (add-to-list 'package-archives
     '("melpa" .
       "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives
+    '("melpa-stable" .
+      "http://stable.melpa.org/packages/")
 ;; (add-to-list 'package-archives
 ;;    '("tromney" .
 ;;      "http://tromey.com/elpa"))
