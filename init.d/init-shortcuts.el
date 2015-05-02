@@ -17,8 +17,8 @@
 
 ;; Convenient mark functions
 (global-set-key (kbd "\C-\\. p") 'mark-paragraph)
-(global-set-key (kbd "\C-dot f") 'mark-function)
-(global-set-key (kbd "\C-dot w") 'mark-word)
+(global-set-key (kbd "\C-\\. f") 'mark-function)
+(global-set-key (kbd "\C-\\. w") 'mark-word)
 
 
 (global-set-key "\C-cdf" 'find-grep-dired)
@@ -28,9 +28,9 @@
 (global-set-key (kbd "\C-c u u") 'fill-paragraph)
 (global-set-key (kbd "\C-c u i") 'indent-whole-buffer)
 
-(global-unset-key (kbd "\M--"))
-(global-set-key (kbd "\M-+") 'text-scale-increase)
-(global-set-key (kbd "\M-\-") 'text-scale-decrease)
+(global-unset-key (kbd "\M-\\-"))
+(global-set-key (kbd "\M-\\+") 'text-scale-increase)
+(global-set-key (kbd "\M-\\-") 'text-scale-decrease)
 
 
 (setq word-wrap 80)
