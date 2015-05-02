@@ -1,1 +1,1 @@
-(req-package go-mode)
+(req-package git-blame)
