@@ -15,6 +15,11 @@
 ;; set return to use indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
+;; Convenient mark functions
+(global-set-key "C-.p" 'mark-paragraph)
+(global-set-key "C-.f" 'mark-function)
+
+
 (global-set-key "\C-cdf" 'find-grep-dired)
 (global-set-key "\C-cdd" 'find-name-dired)
 
@@ -25,6 +30,7 @@
 (global-unset-key (kbd "\M--"))
 (global-set-key (kbd "\M-+") 'text-scale-increase)
 (global-set-key (kbd "\M-\-") 'text-scale-decrease)
+
 
 (setq word-wrap 80)
 ;;(global-set-key (kbd "\C-Co") 'occur)
