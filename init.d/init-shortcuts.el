@@ -16,7 +16,7 @@
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;; Convenient mark functions
-(global-set-key (kbd "\C-dot p") 'mark-paragraph)
+(global-set-key (kbd "\C-\\. p") 'mark-paragraph)
 (global-set-key (kbd "\C-dot f") 'mark-function)
 (global-set-key (kbd "\C-dot w") 'mark-word)
 
