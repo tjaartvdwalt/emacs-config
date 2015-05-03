@@ -10,8 +10,7 @@
   :config
   (progn
     (define-key org-mode-map (kbd "C-c SPC") nil)
-    ;; enable beamer mode
-    (setq org-beamer-mode t)
+    
     ;; use native modes for src
     (setq org-src-fontify-natively t)
     ;; ************* Export *************
@@ -36,7 +35,7 @@
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
-(add-to-list 'org-latex-classes
+    (add-to-list 'org-latex-classes
              '("koma-article"
                "\\documentclass{scrartcl}
                 \\usepackage{microtype}
@@ -89,7 +88,11 @@
     (setq org-refile-targets '((org-agenda-files :maxlevel . 5)))
     ;;(setq org-refile-targets '((("~/org/pomodoro.org" "~/org/todo.org") :maxlevel . 5)))
 
+    ;; enable sub modes
+    (add-hook 'org-mode-hook 'turn-on-org-cdlatex)
+    (add-hook 'org-mode-hook 'org-beamer-mode)
     (add-hook 'org-mode-hook 'org-mode-reftex-setup))
+  
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((latex . t))))
