@@ -1,2 +1,1 @@
-(req-package auctex
-  :require preview-latex)
+(req-package auctex)
