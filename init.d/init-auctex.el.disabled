@@ -1,1 +1,1 @@
-(req-package auctex)
+(req-package: auctex)
