@@ -29,9 +29,9 @@
 (global-set-key (kbd "\C-c u u") 'fill-paragraph)
 (global-set-key (kbd "\C-c u i") 'indent-whole-buffer)
 
-(global-unset-key (kbd "\M-\\-"))
-(global-set-key (kbd "\M-\\+") 'text-scale-increase)
-(global-set-key (kbd "\M-\\-") 'text-scale-decrease)
+(global-unset-key (kbd "\M-\-"))
+(global-set-key (kbd "\M-\+") 'text-scale-increase)
+(global-set-key (kbd "\M-\-") 'text-scale-decrease)
 
 
 (setq word-wrap 80)
