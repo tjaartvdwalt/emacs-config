@@ -9,6 +9,7 @@
          )
   :config
   (progn
+    (define-key org-mode-map (kbd "C-c SPC") nil)
     ;; enable beamer mode
     (setq org-beamer-mode t)
     ;; use native modes for src
