@@ -16,11 +16,10 @@
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;; Convenient mark functions
-(global-set-key   (kbd "\C-c SPC p") 'mark-paragraph)
-;; (global-set-key (kbd "\C-\\. p") )
-;; (global-set-key (kbd "\C-\\. f") 'mark-function)
-;; (global-set-key (kbd "\C-\\. w") 'mark-word)
-
+(global-set-key (kbd "\C-c SPC p") 'mark-paragraph)
+(global-set-key (kbd "\C-c SPC f") 'mark-function)
+(global-set-key (kbd "\C-c SPC w") 'mark-word)
+(global-set-key (kbd "\C-c SPC s") 'mark-sexp)
 
 (global-set-key "\C-cdf" 'find-grep-dired)
 (global-set-key "\C-cdd" 'find-name-dired)
