@@ -1,1 +1,2 @@
-(req-package auctex)
+(req-package tex-site
+  :ensure auctex)
