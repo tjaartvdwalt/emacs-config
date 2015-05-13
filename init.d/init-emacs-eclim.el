@@ -6,5 +6,5 @@
            (company-emacs-eclim-setup)
 
            (require 'eclimd)
-           (eclimd-default-workspace)))
+           (eclimd-default-workspace "~/workspace")))
 
