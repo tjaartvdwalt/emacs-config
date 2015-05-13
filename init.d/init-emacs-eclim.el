@@ -3,6 +3,7 @@
   :require(company company-emacs-eclim)
   :config(progn
            (global-eclim-mode)
+           (company-emacs-eclim-setup)
            (require 'eclimd)
-           (company-emacs-eclim-setup)))
+           (eclimd-default-workspace)))
 
