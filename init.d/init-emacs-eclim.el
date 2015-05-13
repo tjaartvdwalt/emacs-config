@@ -1,3 +1,5 @@
 (req-package emacs-eclim
-:require()
-  :config())
+  :require(company-emacs-eclim)
+  :config(progn
+           (company-emacs-eclim-setup)))
+
