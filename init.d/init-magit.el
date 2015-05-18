@@ -6,6 +6,7 @@
   :bind ("C-c v m" . magit-status)
   :config
   (progn
+    (setq magit-last-seen-setup-instructions "1.4.0")
      (set-face-foreground 'magit-diff-add "green3")
      (set-face-foreground 'magit-diff-del "red3")
      (when (not window-system)
