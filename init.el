@@ -28,7 +28,8 @@
  '(size-indication-mode t)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
 
-(set-frame-font "DejaVu Sans Mono-12" nil t)
+(set-frame-font "Inconsolata-13" nil t)
+;; (set-frame-font "DejaVu Sans Mono-12" nil t)
 ;; this script configures our elpa repositories, and supplies a
 ;; convenient method to install packages from elpa
 (load "~/.emacs.d/elpa" 1)
