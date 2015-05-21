@@ -33,7 +33,5 @@
 (global-set-key (kbd "\M-\+") 'text-scale-increase)
 (global-set-key (kbd "\M-\-") 'text-scale-decrease)
 
-
-(setq word-wrap 80)
-;;(global-set-key (kbd "\C-Co") 'occur)
+(global-set-key (kbd "\C-c m s") 'speedbar)
 
