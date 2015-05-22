@@ -1,3 +1,3 @@
-(req-package easy-kill
+(req-package easy-mark
   :config
-  (global-set-key [remap kill-ring-save] 'easy-kill))
+  (global-set-key [remap remap mark-sexp] 'easy-mark))
