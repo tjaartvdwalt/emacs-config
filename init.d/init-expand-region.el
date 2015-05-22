@@ -1,2 +1,2 @@
-(req-package expand-region
-  :bind ("C-c SPC r" . er/expand-region))
+;; (req-package expand-region
+;;   :bind ("C-c SPC r" . er/expand-region))
