@@ -1,0 +1,1 @@
+(req-package gitignore-mode)
