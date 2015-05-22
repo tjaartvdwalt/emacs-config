@@ -1,2 +1,1 @@
-(req-package projectile-speedbar
-  :ensure projectile-emacs)
+(req-package projectile-speedbar)
