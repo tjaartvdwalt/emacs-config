@@ -7,6 +7,6 @@
            (helm-autoresize-mode 1)
            (global-set-key (kbd "M-x") 'helm-M-x)
            (add-to-list 'helm-completing-read-handlers-alist '(find-file . ido))
-           (add-to-list 'helm-completing-read-handlers-alist '(find-dired . ido))
+           (add-to-list 'helm-completing-read-handlers-alist '(dired . ido))
            ;;(global-set-key (kbd "C-x C-f") 'helm-find-files)
            ))
