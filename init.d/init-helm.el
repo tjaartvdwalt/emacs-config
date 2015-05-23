@@ -5,5 +5,6 @@
            (require 'helm-config)
            (helm-mode 1)
            (helm-autoresize-mode 1)
-           (global-set-key (kbd "C-x C-f") 'helm-find-files)))
+           ;;(global-set-key (kbd "C-x C-f") 'helm-find-files)
+           ))
            ;; (add-to-list 'helm-completing-read-handlers-alist (find-file . ido)
