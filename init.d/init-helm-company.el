@@ -1,5 +1,5 @@
 (req-package helm-company
-  :config (
+  :config (progn
            (eval-after-load 'company
              '(progn
                 (define-key company-mode-map (kbd "C-.") 'helm-company)
