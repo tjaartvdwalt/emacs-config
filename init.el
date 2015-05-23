@@ -54,9 +54,9 @@
 (load-dirs-reload)
 
 ;;(load-dir-one "~/.emacs.d/init.d")
-(message "got here!")
+;; (message "got here!")
 (req-package-finish)
-(message "done!")
+;; (message "done!")
 
 ;; require load-dir. this loads all files in the given dirs.
 ;; (setq req-package-verbose 1)
