@@ -4,6 +4,7 @@
   :bind (("C-c h a" . helm-ag)
          ("C-c h s" . helm-swoop)
          ("C-c h l" . helm-locate)
+         ("C-c h r" . helm-regexp)
          )
  :config (progn
            ;; (require 'helm-config)
