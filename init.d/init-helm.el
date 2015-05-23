@@ -1,6 +1,6 @@
 (req-package helm
  :require (helm-config)
- :bind (("M-x" . helm-M-x))
+ ;; :bind (("M-x" . helm-M-x))
  :config (progn
            (require 'helm-config)
            (helm-mode 1)
