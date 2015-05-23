@@ -1,1 +1,2 @@
-(req-package  helm-projectile)
+(req-package  helm-projectile
+  :config ((helm-projectile-on)))
