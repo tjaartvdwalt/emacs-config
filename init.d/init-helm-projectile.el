@@ -1,2 +1,4 @@
 (req-package  helm-projectile
-  :config ((helm-projectile-on)))
+  :config (progn
+            (setq projectile-completion-system 'helm)
+             (helm-projectile-on)))
