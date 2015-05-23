@@ -2,7 +2,7 @@
  :require (helm-config)
  ;; :bind (("M-x" . helm-M-x))
  :config (progn
-           (require 'helm-config)
+           ;; (require 'helm-config)
            (helm-mode 1)
            (helm-autoresize-mode 1)
            (global-set-key (kbd "M-x") 'helm-M-x)
