@@ -7,9 +7,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(auto-indent-next-pair-timer-geo-mean (quote ((default 0.0005 0))))
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
@@ -19,6 +16,9 @@
     (company-go company-elisp company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-ropemacs company-cmake company-capf
                 (company-dabbrev-code company-gtags company-etags company-keywords)
                 company-oddmuse company-files company-dabbrev)))
+ '(custom-safe-themes
+   (quote
+    ("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(gac-automatically-push-p t)
  '(global-auto-complete-mode t)
  '(keep-end-mode t)
@@ -26,6 +26,7 @@
  '(rails-ws:default-server-type "webrick")
  '(show-paren-mode t)
  '(size-indication-mode t)
+ '(tool-bar-mode nil)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
 
 (set-frame-font "Cousine-13" nil t)
@@ -73,4 +74,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "Cousine" :foundry "monotype" :slant normal :weight normal :height 128 :width normal)))))
