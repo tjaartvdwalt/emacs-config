@@ -1,2 +1,2 @@
-(req-package helm-ag
-    :bind ("C-c s a" . helm-ag))
+(req-package helm-ack
+    :bind ("C-c s a" . helm-ack))
