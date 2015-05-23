@@ -1,6 +1,8 @@
 (req-package helm
  ;; :require (helm-config)
  ;; :bind (("M-x" . helm-M-x))
+  :bind (("C-c h a" . helm-ag)
+         ("C-c h s" . helm-swoop))
  :config (progn
            ;; (require 'helm-config)
            ;; (helm-mode 1)
