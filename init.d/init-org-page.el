@@ -7,4 +7,6 @@
             (setq op/personal-google-analytics-id "UA-63610941-1")
             (setq op/theme-root-directory "~/.emacs.d/elpa/org-page-20150428.525/themes/")
             (setq op/theme 'mdo)
+            (setq op/site-main-title "Tjaart's blog")
+            (setq op/site-sub-title "A blog about bloggerol")
 ))
