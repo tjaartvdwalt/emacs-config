@@ -11,8 +11,8 @@
             (setq op/site-main-title "Tjaart's blog")
             (setq op/site-sub-title "A blog about bloggerol")
             (setq op/confound-email t)
-            (setq op/category-config-alist
-                  (cons '("blog" ;; category name goes here
-                          :category-index t)
-            op/category-config-alist))
+            ;; (setq op/category-config-alist
+            ;;       (cons '("blog" ;; category name goes here
+            ;;               :category-index t)
+            ;; op/category-config-alist))
             ))
