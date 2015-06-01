@@ -2,7 +2,7 @@
 (setq org-publish-project-alist
       '(("github"
          :base-directory "~/my-classes/tjaartvdwalt.github.io/src"
-         :publishing-directory "~/my-classes/tjaartvdwalt.github.io/site"
+         :publishing-directory "~/my-code/my-projects/tjaartvdwalt.github.io"
          ;; :section-numbers nil
          ;; :with-toc nil
          ;;:makeindex nil
