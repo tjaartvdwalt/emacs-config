@@ -1,9 +1,9 @@
 (req-package org-page
   :config (progn
             (setq op/repository-directory "~/my-code/my-projects/tjaartvdwalt.github.io")
-            (setq op/site-domain "http://tjaartvdwalt.github.io/org-pages-test/")
+            (setq op/site-domain "http://tjaartvdwalt.github.io")
             (setq op/repository-org-branch "source")
-            (setq op/repository-html-branch "gh-pages")
+            (setq op/repository-html-branch "master")
             (setq op/personal-github-link "https://github.com/tjaartvdwalt")
             (setq op/personal-avatar "http://www.gravatar.com/avatar/802e5786235d6cfa93279d29c6626c4c?s=100")
             (setq op/personal-google-analytics-id "UA-63610941-1")
