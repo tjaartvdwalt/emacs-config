@@ -2,6 +2,7 @@
   :config (progn
             (setq op/repository-directory "~/org-page")
             (setq op/site-domain "http://tjaartvdwalt.github.io/org-pages-test/")
+            (setq op/repository-org-branch "master")
             (setq op/repository-html-branch "gh-pages")
             (setq op/personal-github-link "https://github.com/tjaartvdwalt")
             (setq op/personal-avatar "http://www.gravatar.com/avatar/802e5786235d6cfa93279d29c6626c4c?s=100")
