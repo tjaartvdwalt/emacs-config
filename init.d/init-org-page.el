@@ -9,5 +9,4 @@
             (setq op/theme 'mdo)
             (setq op/site-main-title "Tjaart's blog")
             (setq op/site-sub-title "A blog about bloggerol")
-            (setq op/category-config-alist "blog")
-))
+            (setq op/confound-email t)))
