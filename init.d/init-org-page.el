@@ -1,6 +1,6 @@
 (req-package org-page
   :config (progn
-            (setq op/repository-directory "~/org-page")
+            (setq op/repository-directory "~/my-code/my-projects/tjaartvdwalt.github.io")
             (setq op/site-domain "http://tjaartvdwalt.github.io/org-pages-test/")
             (setq op/repository-org-branch "source")
             (setq op/repository-html-branch "gh-pages")
