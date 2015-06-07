@@ -5,6 +5,7 @@
   :bind (("M-x" . helm-M-x)
          ("C-c h a" . helm-ag)
          ("C-c h k" . helm-show-kill-ring)
+         ("C-c h m" . helm-mini)
          ("C-c h s" . helm-swoop)
          ("C-c h l" . helm-locate)
          ("C-c h r" . helm-regexp)
