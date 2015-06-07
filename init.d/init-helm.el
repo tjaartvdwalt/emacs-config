@@ -9,8 +9,8 @@
          ("C-c h i" . helm-all-mark-rings)
          ("C-c h s" . helm-swoop)
          ("C-c h l" . helm-locate)
-         ("C-c h r" . helm-regexp)
-         )
+         ("C-c h r" . helm-regexp))
+
  :config (progn
            (require 'helm-config)
            (helm-mode t)
