@@ -1,7 +1,8 @@
 (req-package golden-ratio
   :config(progn
            (golden-ratio-mode 1)
-
+           (setq golden-ratio-auto-scale t)
+           
            ;; exclude golden-ratio from helm
            (defun pl/helm-alive-p ()
              (if (boundp 'helm-alive-p)
