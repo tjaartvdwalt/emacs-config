@@ -12,7 +12,7 @@
            (require 'helm-config)
            (helm-mode t)
            (helm-autoresize-mode t)
-           (setq helm-M-x-fuzzy-match t)
+           ;; (setq helm-M-x-fuzzy-match t)
            (setq helm-imenu-fuzzy-match t)
            (setq helm-apropos-fuzzy-match t)
            (setq helm-lisp-fuzzy-completion t)
