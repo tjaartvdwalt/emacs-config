@@ -17,6 +17,8 @@
            (require 'helm-config)
            (helm-mode t)
            (helm-autoresize-mode t)
+           (setq helm-autoresize-max-height 80)
+           
            (setq helm-M-x-fuzzy-match t)
            (setq helm-imenu-fuzzy-match t)
            (setq helm-apropos-fuzzy-match t)
