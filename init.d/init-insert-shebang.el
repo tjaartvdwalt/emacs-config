@@ -1,3 +1,3 @@
-(req-package insert-shebang
-  :config (progn
-            (add-hook 'find-file-hook 'insert-shebang)))
+(req-package insert-shebang)
+  ;; :config (progn
+  ;;           (add-hook 'find-file-hook 'insert-shebang))
