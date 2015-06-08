@@ -12,9 +12,10 @@
          ("C-c h f" . helm-find)
          ("C-c h l" . helm-locate)
          ("C-c h k" . helm-show-kill-ring)
-         ("C-c h m" . helm-mini)
+         ("C-c h m" . helm-man-woman)
          ("C-c h SPC" . helm-all-mark-rings)
          ("C-c h r" . helm-regexp))
+         ("C-c h b" . helm-resume))
 
  :config (progn
            (require 'helm-config)
