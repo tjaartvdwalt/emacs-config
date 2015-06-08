@@ -7,7 +7,7 @@
          ("C-x b" . helm-mini)
          ("C-x C-f" . helm-find-files)
          ("C-c h a" . helm-ag)
-          ("C-c h *" . helm-calcul-expression)
+          ("C-c h =" . helm-calcul-expression)
          ("C-c h g" . helm-google-suggest)
          ("C-c h s" . helm-surfraw)
          ("C-c h /" . helm-find)
