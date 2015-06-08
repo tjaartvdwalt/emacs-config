@@ -4,6 +4,8 @@
  ;; :bind (("M-x" . helm-M-x))
   :bind (("M-x" . helm-M-x)
          ("M-y" . helm-show-kill-ring)
+         ("C-x b" . helm-mini)
+         ("C-x C-f" . helm-find-files)
          ("C-c h a" . helm-ag)
           ("C-c h c" . helm-calcul-expression)
          ("C-c h g" . helm-google-suggest)
