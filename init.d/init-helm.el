@@ -9,6 +9,7 @@
          ("C-c h a" . helm-ag)
           ("C-c h c" . helm-calcul-expression)
          ("C-c h g" . helm-google-suggest)
+         ("C-c h s" . helm-surfraw)
          ("C-c h /" . helm-find)
          ("C-c h l" . helm-locate)
          ("C-c h k" . helm-show-kill-ring)
