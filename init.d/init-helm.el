@@ -13,7 +13,7 @@
          ("C-c h l" . helm-locate)
          ("C-c h k" . helm-show-kill-ring)
          ("C-c h m" . helm-mini)
-         ("C-c h i" . helm-all-mark-rings)
+         ("C-c h SPC" . helm-all-mark-rings)
          ("C-c h r" . helm-regexp))
 
  :config (progn
