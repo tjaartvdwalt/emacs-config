@@ -32,7 +32,6 @@
            (setq helm-buffers-fuzzy-matching t)
            (setq helm-recentf-fuzzy-match t)
            (setq helm-semantic-fuzzy-match t)
-           (setq helm-imenu-fuzzy-match    t)
            (setq helm-M-x-fuzzy-match t)
            (setq helm-imenu-fuzzy-match t)
            (setq helm-apropos-fuzzy-match t)
