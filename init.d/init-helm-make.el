@@ -1,1 +1,2 @@
-(req-package helm-make)
+(req-package helm-make
+      :bind (("C-c c" . helm-helm-commands)))
