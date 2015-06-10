@@ -1,1 +1,2 @@
-(req-package helm-dired-recent-dirs)
+(req-package helm-dired-recent-dirs
+    :bind (("C-c h t" . helm-dired-recent-dirs)))
