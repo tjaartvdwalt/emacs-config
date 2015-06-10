@@ -18,6 +18,7 @@
          ("C-c h e" . helm-list-elisp-packages)
          ("C-c h SPC" . helm-all-mark-rings)
          ("C-c h r" . helm-regexp)
+         ("C-c h i" . helm-semantic)
          ("C-c h b" . helm-resume))
 
  :config (progn
@@ -29,7 +30,9 @@
            
 
            (setq helm-buffers-fuzzy-matching t)
-           (setq helm-recentf-fuzzy-match    t)
+           (setq helm-recentf-fuzzy-match t)
+           (setq helm-semantic-fuzzy-match t)
+           (setq helm-imenu-fuzzy-match    t)
            (setq helm-M-x-fuzzy-match t)
            (setq helm-imenu-fuzzy-match t)
            (setq helm-apropos-fuzzy-match t)
