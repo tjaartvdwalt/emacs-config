@@ -23,7 +23,7 @@
 
  :config (progn
            (require 'helm-config)
-           (semantic-mode 1)
+           (semantic-mode t)
            (helm-mode t)
            (helm-autoresize-mode t)
            (setq helm-autoresize-max-height 80)
