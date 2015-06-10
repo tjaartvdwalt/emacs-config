@@ -18,7 +18,7 @@
          ("C-c h e" . helm-list-elisp-packages)
          ("C-c h SPC" . helm-all-mark-rings)
          ("C-c h r" . helm-regexp)
-         ("C-c h i" . helm-semantic)
+         ("C-c h i" . helm-semantic-or-imenu)
          ("C-c h b" . helm-resume))
 
  :config (progn
