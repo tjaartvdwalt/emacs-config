@@ -3,4 +3,4 @@
 ;; pip clf
 
 (req-package helm-commandlinefu
-      :bind ("C-c h s" . helm-commandlinefu-search-clf))
+      :bind ("C-c h f" . helm-commandlinefu-search-clf))
