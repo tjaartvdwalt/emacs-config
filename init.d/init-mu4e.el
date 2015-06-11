@@ -112,6 +112,23 @@
     ;;Set a shortcut for mu4e
     (global-set-key "\C-ce" 'mu4e)
 
+    (defun mu4e-msgv-action-view-in-browser (msg)
+      "View the body of the message in a web browser."
+      (interactive)
+      (let ((html (mu4e-msg-field (mu4e-message-at-point t) :body-html))
+            (tmpfile (format "%s/%d.html" temporary-file-directory (random))))
+        (unless html (error "No html part for this message"))
+        (with-temp-file tmpfile
+        (insert
+            "<html>"
+            "<head><meta http-equiv=\"content-type\""
+            "content=\"text/html;charset=UTF-8\">"
+           html))
+        (browse-url (concat "file://" tmpfile))))
+
+    (add-to-list 'mu4e-view-actions
+      '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
+    
     ;; mark a message as spam ind header view
     (defun mu4e-mark-for-spam (msg)
       "Train spambayes, and move the message to the spam folder."
@@ -281,7 +298,4 @@
                 (shell-quote-argument (mu4e-msg-field msg :path)))))
     (shell-command cmd))
   mu4e-headers-mark-for-spam(msg)
-  (message "Trained as HAM"))
-
-    
-    ))
+  (message "Trained as HAM"))))
