@@ -1,5 +1,17 @@
 (req-package bts-github
   :require(bts)
-  :bind ("C-c vi" . )
+  :bind (("C-c vin" . bts:ticket-new)
+         ("C-c vis" . bts:summary-open))
+
+  
+;; (global-set-key (kbd "M-b s")   ')
+;; (global-set-key (kbd "M-b p n") 'bts:project-new)
+;; (global-set-key (kbd "M-b p u") 'bts:project-update)
+;; (global-set-key (kbd "M-b p d") 'bts:project-remove)
+;; (global-set-key (kbd "M-b p D") 'bts:project-remove-all)
+;; (global-set-key (kbd "M-b q n") 'bts:query-new)
+;; (global-set-key (kbd "M-b q u") 'bts:query-update)
+;; (global-set-key (kbd "M-b q d") 'bts:query-remove)
+;; (global-set-key (kbd "M-b q D") 'bts:query-remove-all)
 
   )
