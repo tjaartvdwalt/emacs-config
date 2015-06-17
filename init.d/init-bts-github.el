@@ -13,5 +13,5 @@
 ;; (global-set-key (kbd "M-b q u") 'bts:query-update)
 ;; (global-set-key (kbd "M-b q d") 'bts:query-remove)
 ;; (global-set-key (kbd "M-b q D") 'bts:query-remove-all)
-3
+
   )
