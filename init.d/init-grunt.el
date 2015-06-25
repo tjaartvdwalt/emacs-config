@@ -1,3 +1,3 @@
 (req-package grunt
-  :bind (("M-." . grunt-exec))
+  :bind (("M-C-g" . grunt-exec))
 )
