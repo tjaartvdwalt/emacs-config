@@ -1,4 +1,5 @@
 (req-package web-mode
+  :requires (yasnippet)
   :config
   (progn
     (setq web-mode-enable-css-colorization t)
@@ -18,4 +19,9 @@
     (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.sass\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
-    (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))))
+    (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+
+    (add-hook 'web-mode-hook
+              #'(lambda ()
+                  (yas-activate-extra-mode 'html-mode)))
+    ))
