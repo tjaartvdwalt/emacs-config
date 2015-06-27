@@ -1,7 +1,7 @@
 ;; custom snippets go in ~/.emac.d/snippets
 
 (req-package yasnippet
-  :require (auto-yasnippet company)
+  :require (auto-yasnippet)
 
   ;; :init
   ;; (progn
