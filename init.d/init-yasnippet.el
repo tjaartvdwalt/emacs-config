@@ -8,5 +8,5 @@
   ;;   (setq yas-prompt-functions '(yas-ido-prompt)))
   :config
   (progn
-    ;; (add-to-list 'company-backends 'company-yasnippet)
+    (add-to-list 'company-backends 'company-yasnippet)
     (yas-global-mode 1)))
