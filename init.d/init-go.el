@@ -1,5 +1,5 @@
 (req-package go-mode
-:require (company company-go go-eldoc yasnippet go-snippets gotest)
+:require (company go-eldoc yasnippet go-snippets gotest)
 ;; :bind
 ;;        (("M-." . godef-jump)
 ;;         ("C-c C-r" . go-remove-unused-imports)
