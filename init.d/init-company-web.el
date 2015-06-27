@@ -1,5 +1,5 @@
 (req-package company-web
-  :require (company)
+  :require (company company-backends)
   
   :config(
         (add-to-list 'company-backends 'company-web-html)
