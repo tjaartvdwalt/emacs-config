@@ -1,1 +1,2 @@
-(req-package shell-mode)
+(req-package shell-mode
+  :config ())
