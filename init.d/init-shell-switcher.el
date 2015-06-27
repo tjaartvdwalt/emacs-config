@@ -1,3 +1,4 @@
+#!/bin/zsh -f
 (req-package shell-switcher
   :config
   (progn

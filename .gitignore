@@ -34,3 +34,6 @@ session.*
 /smex-items
 /.dir-locals.el.swp
 /.mc-lists.el
+/.bts-project
+/.python-environments/
+/semanticdb/
