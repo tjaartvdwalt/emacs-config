@@ -1,8 +1,9 @@
 (req-package company-web
-  :require (company company-backends)
+  :require (company company-backends web-mode)
   
   :config(
           (define-key web-mode-map (kbd "M-,") 'company-web-html)
+
           (add-hook 'web-mode-hook (lambda ()
                                      (set (make-local-variable 'company-backends) '(company-web-html company-files))
                                      (company-mode t)))
