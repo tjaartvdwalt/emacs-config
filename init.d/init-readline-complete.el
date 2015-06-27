@@ -6,4 +6,4 @@
   :config
   (progn
     (add-to-list 'ac-modes 'eshell-mode)
-    (add-hook 'eshell-mode-hook 'ac-rlc-setup-sources)))
+    (add-hook 'shell-mode-hook 'ac-rlc-setup-sources)))
