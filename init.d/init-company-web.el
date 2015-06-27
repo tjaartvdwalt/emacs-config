@@ -13,6 +13,6 @@
         ;; (add-to-list 'company-backends 'company-web-slim)
 
         (add-hook 'web-mode-hook
-          #'(lambda ()
+          '(lambda ()
               (yas-activate-extra-mode 'html-mode)))
         ))
