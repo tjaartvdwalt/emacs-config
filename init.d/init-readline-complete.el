@@ -5,5 +5,5 @@
   :require (autocomplete)
   :config
   (progn
-    (add-to-list 'ac-modes 'eshell-mode)
+    (add-to-list 'ac-modes 'shell-mode)
     (add-hook 'shell-mode-hook 'ac-rlc-setup-sources)))
