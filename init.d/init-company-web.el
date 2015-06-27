@@ -1,6 +1,6 @@
 (req-package company-web
 
-  :require (company-backends web-mode)
+  :require (company web-mode)
 
   :config(
           ;; (define-key web-mode-map (kbd "M-,") 'company-web-html)
