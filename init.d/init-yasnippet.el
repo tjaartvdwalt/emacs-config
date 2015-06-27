@@ -7,11 +7,4 @@
   ;; (progn
   ;;   (setq yas-prompt-functions '(yas-ido-prompt)))
   :config
-  (progn
-    (add-to-list 'company-backends 'company-yasnippet)
-        (add-hook 'web-mode-hook
-          '(lambda ()
-              (yas-activate-extra-mode 'html-mode)))
-
-    
     (yas-global-mode 1)))
