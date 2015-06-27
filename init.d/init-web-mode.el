@@ -24,4 +24,8 @@
     (add-hook 'web-mode-hook
               #'(lambda ()
                   (yas-activate-extra-mode 'html-mode)))
+
+    (add-hook 'web-mode-hook
+              #'(lambda ()
+                  (yas-activate-extra-mode 'css-mode)))
     ))
