@@ -1,7 +1,7 @@
 (req-package company-web
 
   :require (company web-mode)
-
+  :commands company-web-html
   :config(
           ;; (define-key web-mode-map (kbd "M-,") 'company-web-html)
 
