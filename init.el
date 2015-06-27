@@ -11,11 +11,6 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
- '(company-backends
-   (quote
-    (company-go company-elisp company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-ropemacs company-cmake company-capf
-                (company-dabbrev-code company-gtags company-etags company-keywords)
-                company-oddmuse company-files company-dabbrev)))
  '(custom-safe-themes
    (quote
     ("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
