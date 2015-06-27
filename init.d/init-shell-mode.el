@@ -1,0 +1,1 @@
+(req-package shell-mode)
