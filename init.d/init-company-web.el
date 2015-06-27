@@ -1,4 +1,4 @@
-(req-package
+(req-package company-web
   :require (company)
   
   :config(
