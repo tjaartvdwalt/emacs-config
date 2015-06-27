@@ -7,4 +7,4 @@
   ;; (progn
   ;;   (setq yas-prompt-functions '(yas-ido-prompt)))
   :config
-    (yas-global-mode 1)))
+    (yas-global-mode 1))
