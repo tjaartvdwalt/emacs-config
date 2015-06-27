@@ -4,4 +4,3 @@
            (global-eclim-mode)
            (require 'eclimd)
            (setq eclimd-default-workspace "~/workspace")))
-
