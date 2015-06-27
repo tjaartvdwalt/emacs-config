@@ -1,10 +1,9 @@
 (req-package web-mode
   :config
   (progn
-
     (setq web-mode-enable-css-colorization t)
     (setq web-mode-enable-auto-pairing t)
-    
+    (setq web-mode-enable-current-element-highlight t)
     ;; add extensions to mode list
     (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
