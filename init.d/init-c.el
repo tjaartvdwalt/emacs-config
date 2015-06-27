@@ -1,5 +1,5 @@
 (req-package cc-mode
-  :require(company company-c-headers company-cmake google-c-style) ;;flycheck-google-cpplint)
+  :require(google-c-style) ;;flycheck-google-cpplint)
 
   :config
   (progn
@@ -19,8 +19,8 @@
                         'buffer-local)))
 
   ;; add c++ headers for completion in includes 
-  (add-to-list
-   'company-c-headers-path-system "/usr/include/c++/4.9.2/")
+  ;; (add-to-list
+  ;;  'company-c-headers-path-system "/usr/include/c++/4.9.2/")
 
   ;; (eval-after-load 'flycheck
   ;;   '(progn
