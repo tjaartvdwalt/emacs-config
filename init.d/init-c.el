@@ -5,7 +5,7 @@
   (progn
     (define-key c-mode-map (kbd "C-,") 'ff-find-other-file)
     (define-key c++-mode-map (kbd "C-,") 'ff-find-other-file)
-    (add-to-list 'company-backends 'company-c-headers))
+    ;; (add-to-list 'company-backends 'company-c-headers))
 
   ;; This mode hook runs astyle on the buffer after every save. Similar
   ;; to the way go-mode works for emacs
