@@ -12,7 +12,4 @@
         ;; (add-to-list 'company-backends 'company-web-jade)
         ;; (add-to-list 'company-backends 'company-web-slim)
 
-        (add-hook 'web-mode-hook
-          '(lambda ()
-              (yas-activate-extra-mode 'html-mode)))
         ))
