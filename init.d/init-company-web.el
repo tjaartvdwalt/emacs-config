@@ -2,7 +2,7 @@
 
   :require (company company-backends web-mode)
 
-  :init(
+  :config(
           ;; (define-key web-mode-map (kbd "M-,") 'company-web-html)
 
           ;; (add-hook 'web-mode-hook (lambda ()
