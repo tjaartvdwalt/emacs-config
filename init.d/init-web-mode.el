@@ -1,5 +1,5 @@
 (req-package web-mode
-  :requires (yasnippet)
+  :requires (yasnippet flycheck)
   :config
   (progn
     (setq web-mode-enable-css-colorization t)
@@ -29,10 +29,7 @@
               #'(lambda ()
                   (yas-activate-extra-mode 'css-mode)))
 
-    (eval-after-load 'flycheck
-  '(progn
-     ;; Install: pacaur -S tidyhtml
-     (flycheck-add-mode 'html-tidy 'web-mode)
-     ;; Install: pacaur -S csslint
-     (flycheck-add-mode 'scss 'web-mode)))
-    ))
+    ;; Install: pacaur -S tidyhtml
+    (flycheck-add-mode 'html-tidy 'web-mode)
+    ;; Install: pacaur -S csslint
+    (flycheck-add-mode 'scss 'web-mode)))
