@@ -33,6 +33,6 @@
   '(progn
      ;; Install: pacaur -S tidyhtml
      (flycheck-add-mode 'html-tidy 'web-mode)
-     
+     ;; Install: pacaur -S csslint
      (flycheck-add-mode 'css-csslint 'web-mode)))
     ))
