@@ -28,4 +28,11 @@
     (add-hook 'web-mode-hook
               #'(lambda ()
                   (yas-activate-extra-mode 'css-mode)))
+
+    (eval-after-load 'flycheck
+  '(progn
+     ;; Install: pacaur -S tidyhtml
+     (flycheck-add-mode 'html-tidy 'web-mode)
+     
+     (flycheck-add-mode 'css-csslint 'web-mode)))
     ))
