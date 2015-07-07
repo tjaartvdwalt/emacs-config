@@ -35,7 +35,7 @@
            (setq helm-imenu-fuzzy-match t)
            (setq helm-apropos-fuzzy-match t)
            (setq helm-lisp-fuzzy-completion t)
-           
+           (setq enable-recursive-minibuffers t)
            ;; (add-to-list 'helm-completing-read-handlers-alist '(find-file . ido))
            ;; (add-to-list 'helm-completing-read-handlers-alist '(dired . ido))
            ;; (global-unset-key (kbd "M-x"))
