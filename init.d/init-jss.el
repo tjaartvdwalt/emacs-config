@@ -1,1 +1,1 @@
-(require jss)
+(req-package jss)
