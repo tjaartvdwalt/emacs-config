@@ -4,5 +4,5 @@
   :config (progn
             (setq projectile-completion-system 'helm)
             (helm-projectile-on)
-            (setq projectile-switch-project-action 'helm-projectile-find-dir)
+            (setq projectile-switch-project-action 'helm-projectile)
             ))
