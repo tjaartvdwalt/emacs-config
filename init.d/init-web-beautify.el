@@ -20,6 +20,4 @@
           (eval-after-load 'css-mode
             '(add-hook 'css-mode-hook
                        (lambda ()
-                         (add-hook 'before-save-hook 'web-beautify-css-buffer t t)))))
-
-  )
+                         (add-hook 'before-save-hook 'web-beautify-css-buffer t t))))))
