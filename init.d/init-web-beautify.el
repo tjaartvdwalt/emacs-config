@@ -2,8 +2,8 @@
 
   :config(
           
-          (eval-after-load 'js2-mode
-            '(add-hook 'js2-mode-hook
+          (eval-after-load 'js-mode
+            '(add-hook 'js-mode-hook
                        (lambda ()
                          (add-hook 'before-save-hook 'web-beautify-js-buffer t t))))
 
