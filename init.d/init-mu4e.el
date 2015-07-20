@@ -19,7 +19,7 @@
 
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
-
+    
 
     ;; general settings
     (setq mail-user-agent 'mu4e-user-agent ; mu4e as default mail agent
@@ -221,8 +221,10 @@
                   account-vars)
           (error "No email account found"))))
 
-    (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
+    ;; (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
+    (add-hook 'mu4e-compose-pre-hook 'helm-mu-contacts)
 
+    
     ;; returns all the accounts configured in 'my-mu4e-account-alist'
     (defun my-mu4e-find-accounts ()
       "Returns the configured mu4e accounts by using the configuration list 'my-mu4e-account-alist'"
