@@ -17,6 +17,7 @@
  '(gac-automatically-push-p t)
  '(global-auto-complete-mode t)
  '(keep-end-mode t)
+ '(magit-push-arguments nil)
  '(persp-nil-name "none")
  '(rails-ws:default-server-type "webrick")
  '(show-paren-mode t)
