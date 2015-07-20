@@ -1,7 +1,7 @@
 (req-package web-beautify
   :require(js-mode json-mode sgml-mode css-mode)
 
-  :config(progn
+  :init(progn
            (add-hook 'js-mode-hook
                      (lambda ()
                        (add-hook 'before-save-hook 'web-beautify-js-buffer t t)))
@@ -10,3 +10,4 @@
                      (lambda ()
                        (add-hook 'before-save-hook 'web-beautify-js-buffer t t)))
            ))
+
