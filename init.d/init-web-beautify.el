@@ -1,7 +1,7 @@
 (req-package web-beautify
 
   :config(
-          
+
           (eval-after-load 'js-mode
             '(add-hook 'js-mode-hook
                        (lambda ()
