@@ -3,12 +3,12 @@
   :config((eval-after-load 'js-mode
             '(add-hook 'js-mode-hook
                        (lambda ()
-                         (add-hook 'before-save-hook 'web-beautify-js t t))))
+                         (add-hook 'before-save-hook 'web-beautify-js))))
 
           (eval-after-load 'json-mode
             '(add-hook 'json-mode-hook
                        (lambda ()
-                         (add-hook 'before-save-hook 'web-beautify-js t t))))
+                         (add-hook 'before-save-hook 'web-beautify-js))))
 
           ;; (eval-after-load 'web-mode
           ;;   '(add-hook 'web-mode-hook
