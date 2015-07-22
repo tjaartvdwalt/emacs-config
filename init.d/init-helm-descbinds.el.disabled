@@ -1,0 +1,6 @@
+(req-package helm-descbinds
+  :defines(helm-descbinds-mode)
+  :requires(helm)
+  :bind (("C-c h z" . helm-descbinds)))
+  :config (progn
+            (helm-descbinds-mode 1))
