@@ -2,7 +2,6 @@
   :requires (tern auto-complete)
   :config (progn
             (setq tern-ac-sync t))
-
   :init (progn
          (add-hook 'js-mode-hook
                       (lambda ()
