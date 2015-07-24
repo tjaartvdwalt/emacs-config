@@ -1,5 +1,9 @@
 (req-package tern-auto-complete
-  :requires (tern)
+  :requires (tern auto-complete)
   :config (progn
-            (require 'tern-auto-complete)
-            (tern-ac-setup)))
+            (setq tern-ac-sync t)
+            (add-hook 'js-mode-hook (add-to-list 'ac-sources 'ac-source-tern-completion))
+
+            ))
+
+
