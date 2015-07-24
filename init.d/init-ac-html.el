@@ -1,5 +1,5 @@
 (req-package ac-html
-  :requires (autocomplete web-mode)
+  :require (autocomplete web-mode)
   :config(progn (
                  (add-hook 'web-mode-hook 'ac-html-enable)
                  (add-to-list 'web-mode-ac-sources-alist
