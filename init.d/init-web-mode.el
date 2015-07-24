@@ -1,5 +1,5 @@
 (req-package web-mode
-  :requires (yasnippet flycheck)
+  :require (yasnippet flycheck)
   :config
   (progn
     (setq web-mode-enable-css-colorization t)
