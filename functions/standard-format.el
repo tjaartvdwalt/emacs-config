@@ -1,4 +1,4 @@
-(defun astyle-buffer ()
+(defun format-buffer ()
   (interactive
    "Applies Javascript standard-format to the current buffer.
 https://www.npmjs.com/package/standard-format")
@@ -6,7 +6,16 @@ https://www.npmjs.com/package/standard-format")
   (setq total-chars (point-max))
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
-  (astyle-region (point-min) (point-max))
+  (message point-max)
+  ;; (standard-format-region (point-min) (point-max))
   (goto-char temp-point))
-;; (cond ((eq total-chars (point-max)) )
-;;(t (goto-line temp-line))
+
+
+ (defun standard-format-region (pmin pmax)
+    (shell-command-on-region pmin pmax
+                             "standard-format"
+                             (current-buffer) t
+                             (get-buffer-create "*standard-format Errors*") t))
+
+(format-buffer)
+(standard-format-region (0) (1))
