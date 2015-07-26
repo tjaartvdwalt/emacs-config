@@ -1,5 +1,4 @@
-(
-  :config(progn
+( :config(progn
           (setq-default flycheck-disabled-checkers
                         (append flycheck-disabled-checkers
                                 '(javascript-jshint)))
