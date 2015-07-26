@@ -1,5 +1,5 @@
 (req-package js-mode
-  :config(
+  :config(progn
 
           (setq-default flycheck-disabled-checkers
                         (append flycheck-disabled-checkers
