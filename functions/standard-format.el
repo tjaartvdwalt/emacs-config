@@ -6,7 +6,7 @@ https://www.npmjs.com/package/standard-format")
   (setq total-chars (point-max))
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
-  ;; (standard-format-region (point-min) (point-max))
+  (standard-format-region (point-min) (point-max))
   (goto-char temp-point))
 
 
