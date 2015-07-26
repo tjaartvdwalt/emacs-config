@@ -17,4 +17,4 @@ https://www.npmjs.com/package/standard-format")
                              (get-buffer-create "*standard-format Errors*") t))
 
 (format-buffer)
-(standard-format-region (0) (1))
+(standard-format-region (point-min) (point-max))
