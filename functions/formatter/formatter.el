@@ -39,8 +39,8 @@
 
 (defun formatter-test-region (pmin pmax)
 
-   (shell-command-on-region pmin pmax
-                             (get-formatter-command)))
+   (print (shell-command-on-region pmin pmax
+                             (get-formatter-command))))
 
 
 (defun formatter-format-region (pmin pmax)
