@@ -18,8 +18,8 @@
 (defun get-formatter-command ()
   (dolist (f formatter-formatters)
     (if (member major-mode (formatter-modes f))
-         (setq command (formatter-command f))))
-   (print command))
+        (setq command (formatter-command f))))
+  (print command))
 
  ;;;###autoload
 (defun formatter-format-buffer ()
@@ -30,7 +30,9 @@
   (setq temp-point (point))
   (print  "error")
   (if (=(length (formatter-test-region (point-min) (point-max))) 0)
-      (formatter-format-region (point-min) (point-max)))
+      (progn
+        (formatter-format-region (point-min) (point-max))))
+
   ;; (print )
 
   ;; (goto-char temp-point)
@@ -39,8 +41,8 @@
 
 (defun formatter-test-region (pmin pmax)
 
-   (print (shell-command-on-region pmin pmax
-                             (get-formatter-command))))
+  (print (shell-command-on-region pmin pmax
+                                  (get-formatter-command))))
 
 
 (defun formatter-format-region (pmin pmax)
