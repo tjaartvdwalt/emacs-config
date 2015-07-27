@@ -8,7 +8,6 @@ https://www.npmjs.com/package/standard-format"
   (standard-format-region (point-min) (point-max))
   (goto-char temp-point))
 
-
 (defun standard-format-region (pmin pmax)
   (shell-command-on-region pmin pmax
                            "standard-format -"
