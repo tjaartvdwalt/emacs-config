@@ -28,13 +28,9 @@
   (setq total-chars (point-max))
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
-  (message "test region: %d " (formatter-test-region (point-min) (point-max))) 
-  (print  "startswith")
-  (print (string-prefix-p "stdin: Error" (formatter-test-region (point-min) (point-max))))
-  
-  (print(length (formatter-test-region (point-min) (point-max))))
-  ;; (formatter-test-region (point-min) (point-max))
-  (if (=(length (formatter-test-region (point-min) (point-max))) 0)
+
+  ;; if the formatter-test-region returned successfully
+  (if (= (formatter-test-region (point-min) (point-max)) 0))
       (progn
         (print "in if")
         (formatter-format-region (point-min) (point-max))))
