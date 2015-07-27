@@ -29,6 +29,8 @@
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
   (formatter-format-region (point-min) (point-max) f)
+  (print (formatter-format-region (point-min) (point-max) f))
+
   (goto-char temp-point))
 
 
