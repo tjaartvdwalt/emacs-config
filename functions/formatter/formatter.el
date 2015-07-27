@@ -7,11 +7,11 @@
 (setq formatters nil)
 
 (setq javascript-standard-format (make-formatter
-                                  :command ("standard-format -")
+                                  :command '("standard-format -")
                                   :modes '(js-mode js2-mode js3-mode emacs-lisp-mode)))
 
 (setq c-astyle-format (make-formatter
-                       :command ("astyle")
+                       :command '("astyle")
                        :modes '(c-mode c++-mode)))
 
 (setq formatters (list javascript-standard-format c-astyle-format))
