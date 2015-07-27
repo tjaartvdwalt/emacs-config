@@ -10,9 +10,11 @@ https://www.npmjs.com/package/standard-format")
   (goto-char temp-point))
 
 
- (defun standard-format-region (pmin pmax)
+(defun standard-format-region (pmin pmax)
+  (print  pmin)
+  (print  pmax)
     (shell-command-on-region pmin pmax
-                             "standard-format"
+                             "standard-format -"
                              (current-buffer) t
                              (get-buffer-create "*standard-format Errors*") t))
 
