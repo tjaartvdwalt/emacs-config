@@ -1,3 +1,3 @@
-(add-to-list 'load-path "~/.emacs.d/functions/formatter/formatter.el")
+(add-to-list 'load-path "~/.emacs.d/functions/formatter/")
 
 (require 'formatter)
