@@ -1,7 +1,7 @@
 (defun format-buffer ()
-  (interactive
    "Applies Javascript standard-format to the current buffer.
-https://www.npmjs.com/package/standard-format")
+https://www.npmjs.com/package/standard-format"
+  (interactive)
 
   (setq total-chars (point-max))
   (setq temp-line (line-number-at-pos))
