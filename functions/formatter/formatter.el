@@ -12,35 +12,6 @@
                        :command "astyle"
                        :modes '(c-mode c++-mode))
 
-
-
-;;;###autoload
-(defun formatter ()
-  (setq formatters ())
-
-
-  
-
-  )
-
-
-
-(defmacro formatter-define-format (symbol docstring &rest properties)
-  "Define SYMBOL as command syntax checker with DOCSTRING and PROPERTIES."
-
-  (let ((command (plist-get properties :command))
-        (modes (plist-get properties :modes)))
-    (append formatters '(modes command))))
-
-
-
-
-
-
-
-
-
-
 ;;;###autoload
 (defun formatter-format-buffer ()
   "Format the current buffer with the apropriate formatter."
