@@ -12,7 +12,7 @@
 
        (make-formatter
         :command "standard-format -"
-        :modes '(js-mode js2-mode js3-mode emacs-lisp-mode))
+        :modes '(js-mode js2-mode js3-mode))
 
        ))
 
