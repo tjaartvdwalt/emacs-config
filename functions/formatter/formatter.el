@@ -19,10 +19,12 @@
 (defun get-format-command ()
   (dolist (f formatters)
     (if (member major-mode (formatter-modes f))
-         (setq command (formatter-command f)))   
-    )
-   (command)
+         (setq command (formatter-command f))))
+   (message command)
   )
+
+(get-format-command)
+(setq command "test")
 
 ;;;###autoload
 (defun formatter-format-buffer ()
