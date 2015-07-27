@@ -11,8 +11,6 @@ https://www.npmjs.com/package/standard-format")
 
 
 (defun standard-format-region (pmin pmax)
-  (print  pmin)
-  (print  pmax)
     (shell-command-on-region pmin pmax
                              "standard-format -"
                              (current-buffer) t
