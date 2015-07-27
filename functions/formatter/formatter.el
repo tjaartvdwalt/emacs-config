@@ -45,8 +45,9 @@
   )
 
 (defun formatter-test-region (pmin pmax)
-   (prin1-to-string (shell-command-on-region pmin pmax
-                                  (get-formatter-command))))
+  ;; return the shell return code 0 = success
+   (shell-command-on-region pmin pmax
+                                  (get-formatter-command)))
 
 
 (defun formatter-format-region (pmin pmax)
