@@ -4,23 +4,25 @@
 
 (cl-defstruct formatter command modes)
 
-(setq formatters nil)
+(setq formatter-formatters
+      (list
+       (make-formatter
+        :command '("astyle")
+        :modes '(c-mode c++-mode))
 
-(setq javascript-standard-format (make-formatter
-                                  :command '("standard-format -")
-                                  :modes '(js-mode js2-mode js3-mode emacs-lisp-mode)))
+       (make-formatter
+        :command '("standard-format -")
+        :modes '(js-mode js2-mode js3-mode emacs-lisp-mode))
 
-(setq c-astyle-format (make-formatter
-                       :command '("astyle")
-                       :modes '(c-mode c++-mode)))
+       ))
 
 (setq formatters (list javascript-standard-format c-astyle-format))
 
-(defun get-format-command ()
-  (dolist (f formatters)
+(defun get-formatter-command ()
+  (dolist (f formatter-formatters)
     (if (member major-mode (formatter-modes f))
          (setq command (formatter-command f))))
-   (command)
+   (print command)
   )
 
  ;;;###autoload
