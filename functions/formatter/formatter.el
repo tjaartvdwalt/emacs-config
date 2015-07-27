@@ -4,25 +4,25 @@
 
 (cl-defstruct formatter command modes)
 
-(setq formatters '())
+(setq formatters nil)
 
 (setq javascript-standard-format (make-formatter
                                   :command "standard-format -"
-                                  :modes '(js-mode js2-mode js3-mode)))
-(add-to-list 'formatters 'javascript-standard-format)
+                                  :modes '(js-mode js2-mode js3-mode emacs-lisp-mode)))
 
-(print formatters)
 (setq c-astyle-format (make-formatter
                        :command "astyle"
                        :modes '(c-mode c++-mode)))
-(add-to-list 'formatters 'c-astyle-format)
 
-(defun get-formatter ()
-    (dolist (formatter formatters)
-      (setq value (cons elt value))))
-    (member major-mode formatters) 
+(setq formatters (list javascript-standard-format c-astyle-format))
 
+(defun get-format-command ()
+  (dolist (f formatters)
+    (if (member major-mode (formatter-modes f))
+         (setq command (formatter-command f)))   
     )
+  (print command)
+  )
 
 ;;;###autoload
 (defun formatter-format-buffer ()
@@ -31,13 +31,13 @@
   (setq total-chars (point-max))
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
-  (formatter-format-region 'get-formatter (point-min) (point-max))
+  (formatter-format-region (point-min) (point-max))
   (goto-char temp-point))
 
 
 (defun formatter-format-region (pmin pmax)
 
   (shell-command-on-region pmin pmax
-                           "standard-format -"
+                           (get-format-command)
                            (current-buffer) t
-                           (get-buffer-create "*standard-format Errors*") t))
+                           (get-buffer-create "*Formatter Errors*") t))
