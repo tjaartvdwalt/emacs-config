@@ -20,8 +20,7 @@
   (dolist (f formatter-formatters)
     (if (member major-mode (formatter-modes f))
          (setq command (formatter-command f))))
-   (print command)
-  )
+   (print command))
 
  ;;;###autoload
 (defun formatter-format-buffer ()
@@ -37,7 +36,7 @@
 (defun formatter-format-region (pmin pmax)
 
   (shell-command-on-region pmin pmax
-                           (get-format-command)
+                           (get-formatter-command)
                            (current-buffer) t
                            (get-buffer-create "*Formatter Errors*") t))
 
