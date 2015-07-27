@@ -31,11 +31,11 @@
   (print  "error")
 
   (print "na")
-  (prin1-to-string (formatter-test-region (point-min) (point-max)))
-  ;; (if (=(length (formatter-test-region (point-min) (point-max))) 0)
-  ;;     (progn
-  ;;       (print "in if")
-  ;;       (formatter-format-region (point-min) (point-max))))
+  ;; (formatter-test-region (point-min) (point-max))
+  (if (=(length (formatter-test-region (point-min) (point-max))) 0)
+      (progn
+        (print "in if")
+        (formatter-format-region (point-min) (point-max))))
 
   ;; (print )
 
@@ -43,8 +43,8 @@
   )
 
 (defun formatter-test-region (pmin pmax)
-   (shell-command-on-region pmin pmax
-                                  (get-formatter-command)))
+   (prin1-to-string (shell-command-on-region pmin pmax
+                                  (get-formatter-command))))
 
 
 (defun formatter-format-region (pmin pmax)
