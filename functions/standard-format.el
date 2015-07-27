@@ -1,5 +1,5 @@
 (defun format-buffer ()
-   "Applies Javascript standard-format to the current buffer.
+"Applies Javascript standard-format to the current buffer.
 https://www.npmjs.com/package/standard-format"
   (interactive)
 
