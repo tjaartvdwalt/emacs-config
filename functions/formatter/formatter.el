@@ -31,7 +31,7 @@
   (print  "error")
 
   (print "na")
-  (formatter-test-region (point-min) (point-max))
+  (message (formatter-test-region (point-min) (point-max)))
   ;; (if (=(length (formatter-test-region (point-min) (point-max))) 0)
   ;;     (progn
   ;;       (print "in if")
