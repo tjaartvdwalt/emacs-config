@@ -17,8 +17,10 @@
                        :modes '(c-mode c++-mode)))
 (add-to-list 'formatters 'c-astyle-format)
 
-(defun get-formatter
-    (member 'major-mode formatters) 
+(defun get-formatter ()
+    (dolist (formatter formatters)
+      (setq value (cons elt value))))
+    (member major-mode formatters) 
 
     )
 
