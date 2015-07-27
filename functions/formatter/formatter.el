@@ -31,6 +31,7 @@
   (print  "error")
 
   (print "na")
+  (string-prefix-p "stdin: Error" (formatter-test-region (point-min) (point-max)))
   (print(length (formatter-test-region (point-min) (point-max))))
   ;; (formatter-test-region (point-min) (point-max))
   (if (=(length (formatter-test-region (point-min) (point-max))) 0)
