@@ -23,9 +23,6 @@
    (message command)
   )
 
-(get-format-command)
-(setq command "test")
-
 ;;;###autoload
 (defun formatter-format-buffer ()
   "Format the current buffer with the apropriate formatter."
