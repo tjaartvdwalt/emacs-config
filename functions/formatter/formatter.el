@@ -33,7 +33,8 @@
   ;; (print )
   ;; (formatter-format-region (point-min) (point-max))
 
-  (goto-char temp-point))
+  ;; (goto-char temp-point)
+  )
 
 
 (defun formatter-test-region (pmin pmax)
