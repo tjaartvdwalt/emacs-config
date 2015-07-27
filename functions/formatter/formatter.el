@@ -21,7 +21,7 @@
     (if (member major-mode (formatter-modes f))
          (setq command (formatter-command f)))   
     )
-  (print command)
+  ;; (print command)
   )
 
 ;;;###autoload
