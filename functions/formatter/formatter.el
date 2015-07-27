@@ -30,15 +30,12 @@
   (setq temp-point (point))
 
   ;; if the formatter-test-region returned successfully
-  (if (= (formatter-test-region (point-min) (point-max)) 0))
+  (if (= (formatter-test-region (point-min) (point-max)) 0)
       (progn
         (print "in if")
         (formatter-format-region (point-min) (point-max))))
 
-  ;; (print )
-
-  (goto-char temp-point)
-  )
+  (goto-char temp-point))
 
 (defun formatter-test-region (pmin pmax)
   ;; return the shell return code 0 = success
