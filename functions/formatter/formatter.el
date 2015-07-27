@@ -30,8 +30,8 @@
   (setq temp-point (point))
   (print  "error")
 
-  (formatter-test-region (point-min) (point-max))
   (print "na")
+  (formatter-test-region (point-min) (point-max))
   ;; (if (=(length (formatter-test-region (point-min) (point-max))) 0)
   ;;     (progn
   ;;       (print "in if")
