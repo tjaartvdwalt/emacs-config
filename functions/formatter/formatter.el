@@ -23,7 +23,7 @@
    (message command)
   )
 
-;;;###autoload
+ ;;;###autoload
 (defun formatter-format-buffer ()
   "Format the current buffer with the apropriate formatter."
   (interactive)
