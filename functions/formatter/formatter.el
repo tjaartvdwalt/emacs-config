@@ -49,4 +49,4 @@
                            (get-buffer-create "*Formatter Errors*") t))
 
 (provide 'formatter)
-;;; formatter ends here)
+;;; formatter ends here
