@@ -43,8 +43,7 @@
   (shell-command-on-region pmin pmax
                            (get-formatter-command)
                            (current-buffer) t
-                           (get-buffer-create "*Formatter Errors*") t)
-  )
+                           (get-buffer-create "*Formatter Errors*") t))
 
 (provide 'formatter)
 ;;; formatter ends here)
