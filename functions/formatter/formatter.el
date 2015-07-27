@@ -32,11 +32,11 @@
   (goto-char temp-point))
 
 
-(defun formatter-format-region (pmin pmax)
+(defun formatter-format-region (pmin pmax overwrite)
 
   (shell-command-on-region pmin pmax
                            (get-formatter-command)
-                           (current-buffer) f
+                           (current-buffer) 'overwrite
                            (get-buffer-create "*Formatter Errors*") t))
 
 (provide 'formatter)
