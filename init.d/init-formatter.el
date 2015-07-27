@@ -4,4 +4,4 @@
 
 (add-hook 'js-mode-hook
           (lambda ()
-            (add-hook 'before-save-hook 'formatter nil 'buffer-local)))
+            (add-hook 'before-save-hook 'formatter-format-buffer nil 'buffer-local)))
