@@ -16,8 +16,6 @@
 
        ))
 
-(setq formatters (list javascript-standard-format c-astyle-format))
-
 (defun get-formatter-command ()
   (dolist (f formatter-formatters)
     (if (member major-mode (formatter-modes f))
