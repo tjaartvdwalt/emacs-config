@@ -35,11 +35,11 @@
 
 (defun formatter-format-region (pmin pmax)
 
-  (print "test"
+
     (shell-command-on-region pmin pmax
                            (get-formatter-command)
                            (current-buffer) nil)
-   )
+
 
   ;; (shell-command-on-region pmin pmax
   ;;                          (get-formatter-command)
