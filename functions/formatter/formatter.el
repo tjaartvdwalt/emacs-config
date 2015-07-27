@@ -37,8 +37,8 @@
 
 
     (shell-command-on-region pmin pmax
-                           (get-formatter-command)
-                           (current-buffer) nil)
+                             (get-formatter-command)
+                             (current-buffer))
 
 
   ;; (shell-command-on-region pmin pmax
