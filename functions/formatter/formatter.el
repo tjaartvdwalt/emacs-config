@@ -19,7 +19,7 @@
   (dolist (f formatter-formatters)
     (if (member major-mode (formatter-modes f))
         (setq command (formatter-command f))))
-  (print command))
+  (prin1-to-string command))
 
  ;;;###autoload
 (defun formatter-format-buffer ()
