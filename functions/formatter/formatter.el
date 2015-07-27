@@ -40,16 +40,10 @@
 
 
 (defun formatter-format-region (pmin pmax)
-
-
-    (shell-command-on-region pmin pmax
-                             (get-formatter-command))
-
-
-  ;; (shell-command-on-region pmin pmax
-  ;;                          (get-formatter-command)
-  ;;                          (current-buffer) 'overwrite
-  ;;                          (get-buffer-create "*Formatter Errors*") t)
+  (shell-command-on-region pmin pmax
+                           (get-formatter-command)
+                           (current-buffer) t
+                           (get-buffer-create "*Formatter Errors*") t)
   )
 
 (provide 'formatter)
