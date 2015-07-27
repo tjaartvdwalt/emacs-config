@@ -17,7 +17,7 @@
                        :command "astyle"
                        :modes '(c-mode c++-mode)))
 
-(add-to-list 'formatters 'javascript-standard-format)
+(add-to-list 'formatters 'c-astyle-format)
 
 ;;;###autoload
 (defun formatter-format-buffer ()
