@@ -33,6 +33,13 @@
   (goto-char temp-point))
 
 
+(defun formatter-test-region (pmin pmax)
+
+
+    (shell-command-on-region pmin pmax
+                             (get-formatter-command))
+
+
 (defun formatter-format-region (pmin pmax)
 
 
