@@ -2,11 +2,27 @@
   "Free keys."
   :group 'convenience)
 
+(cl-defstruct formatter command modes)
+
+(setq javascript-standard-format (make-formatter
+                                  :command "standard-format -"
+                                  :modes '(js-mode js2-mode js3-mode)))
+
+(setq c-astyle-format (make-formatter
+                       :command "astyle"
+                       :modes '(c-mode c++-mode))
+
+
 
 ;;;###autoload
 (defun formatter ()
+  (setq formatters ())
+
+
   
+
   )
+
 
 
 (defmacro formatter-define-format (symbol docstring &rest properties)
@@ -14,22 +30,11 @@
 
   (let ((command (plist-get properties :command))
         (modes (plist-get properties :modes)))
-    (append 'formatters '(modes command))))
+    (append formatters '(modes command))))
 
 
-(formatter-define-format javascript-standard-format
-                         ""
 
-                         :command ("standard-format -")
-                         :modes (js-mode js2-mode js3-mode))
 
-(formatter-define-format c-astyle-format
-                         ""
-
-                         :command ("standard-format -")
-                         :modes (c-mode c++-mode))
-
-(print major-mode)
 
 
 
@@ -47,10 +52,9 @@
   (goto-char temp-point))
 
 
-(defun formatter-format-region (pmin pmax)g
-  (shell-command-on-region pmin pmax
-                           "standard-format -"
-                           (current-buffer) t
-                           (get-buffer-create "*standard-format Errors*") t))
+(defun formatter-format-region (pmin pmax)
 
-
+       (shell-command-on-region pmin pmax
+                                "standard-format -"
+                                (current-buffer) t
+                                (get-buffer-create "*standard-format Errors*") t))
