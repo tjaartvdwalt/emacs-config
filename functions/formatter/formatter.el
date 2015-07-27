@@ -35,7 +35,7 @@
 
 (defun formatter-format-region (pmin pmax overwrite)
 
-  (print
+  (print "test"
     (shell-command-on-region pmin pmax
                            (get-formatter-command)
                            (current-buffer) 'overwrite)
