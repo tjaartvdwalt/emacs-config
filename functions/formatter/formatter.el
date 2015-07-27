@@ -19,7 +19,7 @@
   (dolist (f formatter-formatters)
     (if (member major-mode (formatter-modes f))
         (setq command (formatter-command f))))
-  (val command))
+  command)
 
  ;;;###autoload
 (defun formatter-format-buffer ()
