@@ -9,15 +9,18 @@
 (setq javascript-standard-format (make-formatter
                                   :command "standard-format -"
                                   :modes '(js-mode js2-mode js3-mode)))
-
 (add-to-list 'formatters 'javascript-standard-format)
 
 (print formatters)
 (setq c-astyle-format (make-formatter
                        :command "astyle"
                        :modes '(c-mode c++-mode)))
-
 (add-to-list 'formatters 'c-astyle-format)
+
+(defun get-formatter
+    (member 'major-mode formatters) 
+
+    )
 
 ;;;###autoload
 (defun formatter-format-buffer ()
@@ -26,7 +29,7 @@
   (setq total-chars (point-max))
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
-  (formatter-format-region (point-min) (point-max))
+  (formatter-format-region 'get-formatter (point-min) (point-max))
   (goto-char temp-point))
 
 
