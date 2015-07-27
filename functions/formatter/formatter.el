@@ -41,10 +41,11 @@
                            (current-buffer) 'overwrite)
    )
 
-  (shell-command-on-region pmin pmax
-                           (get-formatter-command)
-                           (current-buffer) 'overwrite
-                           (get-buffer-create "*Formatter Errors*") t))
+  ;; (shell-command-on-region pmin pmax
+  ;;                          (get-formatter-command)
+  ;;                          (current-buffer) 'overwrite
+  ;;                          (get-buffer-create "*Formatter Errors*") t)
+  )
 
 (provide 'formatter)
 ;;; formatter ends here)
