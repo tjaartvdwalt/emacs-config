@@ -28,7 +28,7 @@
   (setq total-chars (point-max))
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
-  (formatter-format-region (point-min) (point-max) nil)
+  (formatter-format-region (point-min) (point-max) 'f)
 
   (goto-char temp-point))
 
