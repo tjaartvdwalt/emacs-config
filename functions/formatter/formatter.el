@@ -40,3 +40,6 @@
                            (get-format-command)
                            (current-buffer) t
                            (get-buffer-create "*Formatter Errors*") t))
+
+(provide 'formatter)
+;;; formatter ends here)
