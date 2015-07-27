@@ -28,7 +28,8 @@
   (setq total-chars (point-max))
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
-  (print   (formatter-test-region (point-min) (point-max)))
+  (print  "error")
+  (print  (formatter-test-region (point-min) (point-max)))
   ;; (formatter-format-region (point-min) (point-max))
 
   (goto-char temp-point))
@@ -36,8 +37,8 @@
 
 (defun formatter-test-region (pmin pmax)
 
-    (shell-command-on-region pmin pmax
-                             (get-formatter-command)))
+   (if (shell-command-on-region pmin pmax
+                             (get-formatter-command))))
 
 
 (defun formatter-format-region (pmin pmax)
