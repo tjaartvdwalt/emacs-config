@@ -29,7 +29,7 @@
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
   (print  "error")
-  (print  (formatter-test-region (point-min) (point-max)))
+  (print (length (formatter-test-region (point-min) (point-max))))
   ;; (formatter-format-region (point-min) (point-max))
 
   (goto-char temp-point))
