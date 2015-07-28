@@ -33,6 +33,7 @@
   (if (/= (formatter-format-region (point-min) (point-max)) 0)
       (progn
         (revert-buffer t t t)))
+  (save-buffer)
         ;; (formatter-format-region (point-min) (point-max));;))
   (goto-char temp-point))
 
