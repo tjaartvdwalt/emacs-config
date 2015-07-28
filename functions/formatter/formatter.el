@@ -43,10 +43,10 @@
 
 
 (defun formatter-format-region (pmin pmax)
-  (shell-command-on-region pmin pmax
+  (with-temp-buffer (shell-command-on-region pmin pmax
                            (get-formatter-command)
                            t t
-                           (get-buffer-create "*Formatter Errors*") t))
+                           (get-buffer-create "*Formatter Errors*") t)))
 
 (provide 'formatter)
 ;;; formatter ends here
