@@ -32,7 +32,7 @@
   ;; if the formatter-test-region returned successfully
   (if (/= (formatter-format-region (point-min) (point-max)) 0)
        (progn
-     (undo)
+     (undo)))
         ;; (formatter-format-region (point-min) (point-max));;))
 
   (goto-char temp-point))
