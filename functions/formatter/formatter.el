@@ -31,7 +31,8 @@
 
   ;; if the formatter-test-region returned successfully
   (if (/= (formatter-format-region (point-min) (point-max)) 0)
-       (progn
+      (progn
+        (revert-buffer t t t)
      (undo)))
         ;; (formatter-format-region (point-min) (point-max));;))
 
