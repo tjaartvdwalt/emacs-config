@@ -29,20 +29,12 @@
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
 
-  ;; if the formatter-test-region returned successfully
+  ;; if the formatter-format-region returned successfully
   (if (/= (formatter-format-region (point-min) (point-max)) 0)
       (progn
-        (revert-buffer t t t)
-     (undo)))
+        (revert-buffer t t t)))
         ;; (formatter-format-region (point-min) (point-max));;))
-
   (goto-char temp-point))
-
-(defun formatter-test-region (pmin pmax)
-  ;; return the shell return code 0 = success
-   (shell-command-on-region pmin pmax
-                                  (get-formatter-command)))
-
 
 (defun formatter-format-region (pmin pmax)
   (shell-command-on-region pmin pmax
