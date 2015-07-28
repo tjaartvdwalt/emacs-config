@@ -32,9 +32,12 @@
   ;; if the formatter-format-region returned successfully
   (if (/= (formatter-format-region (point-min) (point-max)) 0)
       (progn
+
         (revert-buffer t t t)))
+  (remove-hook 'before-save-hook 'formatter-format-buffer t t)
   (save-buffer)
-        ;; (formatter-format-region (point-min) (point-max));;))
+  (add-hook 'before-save-hook 'formatter-format-buffer t t)
+  ;; (formatter-format-region (point-min) (point-max));;))
   (goto-char temp-point))
 
 (defun formatter-format-region (pmin pmax)
