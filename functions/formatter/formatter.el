@@ -30,7 +30,7 @@
   (setq temp-point (point))
 
   ;; Save the buffer after first removing the hook to prevent infinite loop
-  (remove-hook 'before-save-hook 'formatter-format-buffer t t)
+  (remove-hook 'before-save-hook 'formatter-format-buffer t)
   (save-buffer)
   (add-hook 'before-save-hook 'formatter-format-buffer t t)
 
