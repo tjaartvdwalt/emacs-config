@@ -1,3 +1,4 @@
 (req-package smartparens
-  :require (smartparens-config))
+  :config (
+           (require 'smartparens-config)))
 
