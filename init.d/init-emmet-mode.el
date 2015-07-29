@@ -1,6 +1,2 @@
-(req-package 
-  :require ()
-  :init (progn
-          ))
-:config (progn
-          ))
+(req-package emmet-mode)
+
