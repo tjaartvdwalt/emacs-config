@@ -1,3 +1,4 @@
 (req-package smartparens-config
-  :ensure smartparens)
+  :ensure smartparens
+  :config (smartparens-global-mode))
 
