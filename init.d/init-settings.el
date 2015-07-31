@@ -1,11 +1,3 @@
-;; ;; ;; This script leads all the .el files in a given directory.
-;;  (load "~/.emacs.d/load-directory" 1)
-;;  (require 'load-directory)
-;;  ;; load manually installed files 
-;;  (load-directory "~/.emacs.d/manual" 1)
-;;  (load-directory "~/.emacs.d/config" 1)
-;;  (load-directory "~/.emacs.d/config/functions" 1)
-
 (setq split-width-threshold 0)
 
 ;; new in emacs 24.4.1... set mode so that long lines are trucated
