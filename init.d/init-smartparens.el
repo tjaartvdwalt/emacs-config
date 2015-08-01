@@ -14,5 +14,4 @@
             (define-key smartparens-mode-map (kbd "C-M-n") 'sp-next-sexp)
             (define-key smartparens-mode-map (kbd "C-M-p") 'sp-previous-sexp)
 
-            (define-key smartparens-mode-map (kbd "C-M-k") 'sp-kill-sexp)
-            ))
+            (define-key smartparens-mode-map (kbd "C-M-k") 'sp-kill-sexp)))
