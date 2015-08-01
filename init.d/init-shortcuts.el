@@ -13,7 +13,7 @@
 ;; (global-set-key "\C-cy" 'toggle-window-split)
 
 ;; set return to use indent
-(define-key global-map (kbd "RET") 'newline-and-indent)
+;; (define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;; Convenient mark functions
 (global-set-key (kbd "\C-c SPC p") 'mark-paragraph)
