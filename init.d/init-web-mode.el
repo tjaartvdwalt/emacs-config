@@ -21,36 +21,32 @@
     (add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 
-    (setq web-mode-ac-sources-alist
-          '(("css" . (ac-source-css-property))
-            ("html" . (ac-source-words-in-buffer ac-source-abbrev))))
-
-    (setq web-mode-ac-sources-alist
-  '(("php" . (ac-source-yasnippet ac-source-php-auto-yasnippets))
-    ("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
-    ("css" . (ac-source-css-property ac-source-emmet-css-snippets))))
-
-(add-hook 'web-mode-before-auto-complete-hooks
-          '(lambda ()
-             (let ((web-mode-cur-language
-                    (web-mode-language-at-pos)))
-               (if (string= web-mode-cur-language "php")
-                   (yas-activate-extra-mode 'php-mode)
-                 (yas-deactivate-extra-mode 'php-mode))
-               (if (string= web-mode-cur-language "css")
-                   (setq emmet-use-css-transform t)
-                 (setq emmet-use-css-transform nil)))))
-
     
-    (add-hook 'web-mode-hook
-              #'(lambda ()
-                  (yas-activate-extra-mode 'html-mode)))
+  (setq web-mode-ac-sources-alist
+        '(("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
+          ("css" . (ac-source-css-property ac-source-emmet-css-snippets))))
 
-    (add-hook 'web-mode-hook
-              #'(lambda ()
-                  (yas-activate-extra-mode 'css-mode)))
+  (add-hook 'web-mode-before-auto-complete-hooks
+            '(lambda ()
+               (let ((web-mode-cur-language
+                      (web-mode-language-at-pos)))
+                 (if (string= web-mode-cur-language "php")
+                     (yas-activate-extra-mode 'php-mode)
+                   (yas-deactivate-extra-mode 'php-mode))
+                 (if (string= web-mode-cur-language "css")
+                     (setq emmet-use-css-transform t)
+                   (setq emmet-use-css-transform nil)))))
 
-    ;; Install: pacaur -S tidyhtml
-    (flycheck-add-mode 'html-tidy 'web-mode)
-    ;; Install: pacaur -S csslint
-    (flycheck-add-mode 'scss 'web-mode)))
+  
+  (add-hook 'web-mode-hook
+            #'(lambda ()
+                (yas-activate-extra-mode 'html-mode)))
+
+  (add-hook 'web-mode-hook
+            #'(lambda ()
+                (yas-activate-extra-mode 'css-mode)))
+
+  ;; Install: pacaur -S tidyhtml
+  (flycheck-add-mode 'html-tidy 'web-mode)
+  ;; Install: pacaur -S csslint
+  (flycheck-add-mode 'scss 'web-mode)))
