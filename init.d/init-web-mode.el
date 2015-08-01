@@ -39,9 +39,9 @@
               '(lambda ()
                  (let ((web-mode-cur-language
                         (web-mode-language-at-pos)))
-                   (if (string= web-mode-cur-language "php")
-                       (yas-activate-extra-mode 'php-mode)
-                     (yas-deactivate-extra-mode 'php-mode))
+                   (if (string= web-mode-cur-language "html")
+                       (yas-activate-extra-mode 'html-mode)
+                     ;; (yas-deactivate-extra-mode 'php-mode))
                    (if (string= web-mode-cur-language "css")
                        (setq emmet-use-css-transform t)
                      (setq emmet-use-css-transform nil)
