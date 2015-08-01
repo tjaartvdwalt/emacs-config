@@ -54,12 +54,12 @@
 
     
     (add-hook 'web-mode-hook
-              #'(lambda ()
-                  (yas-activate-extra-mode 'html-mode)))
+              '(lambda ()
+                 (yas-activate-extra-mode 'html-mode)))
 
     (add-hook 'web-mode-hook
-              #'(lambda ()
-                  (yas-activate-extra-mode 'css-mode)))
+              '(lambda ()
+                 (yas-activate-extra-mode 'css-mode)))
 
     ;; Install: pacaur -S tidyhtml
     (flycheck-add-mode 'html-tidy 'web-mode)
