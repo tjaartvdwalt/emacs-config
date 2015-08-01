@@ -18,6 +18,7 @@
 
 ;; automatically close brackets
 (electric-pair-mode t)
+(fset 'yes-or-no-p 'y-or-n-p)
 ;; delete the selection if you start typing
 (delete-selection-mode 1)
 ;;(setq show-paren-style 'expression)
