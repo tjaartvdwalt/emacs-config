@@ -44,7 +44,8 @@
                      (yas-deactivate-extra-mode 'php-mode))
                    (if (string= web-mode-cur-language "css")
                        (setq emmet-use-css-transform t)
-                     (setq emmet-use-css-transform nil))
+                     (setq emmet-use-css-transform nil)
+                     (yas-activate-extra-mode 'css-mode))
                    )))
 
     (setq web-mode-ac-sources-alist
