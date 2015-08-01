@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: req-package
-# key: req-package
+# name: config
+# key: config
 # binding: direct-keybinding
 # --
-(req-package $1)$0
+:config($1)$0
