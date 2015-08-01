@@ -6,7 +6,7 @@
     (setq web-mode-enable-auto-pairing t)
     (setq web-mode-enable-current-element-highlight t)
     (setq web-mode-enable-current-column-highlight t)
-    
+
     ;; add extensions to mode list
     (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
@@ -24,7 +24,7 @@
     (setq web-mode-ac-sources-alist
           '(("css" . (ac-source-css-property))
             ("html" . (ac-source-words-in-buffer ac-source-abbrev))))
-    
+
     (add-hook 'web-mode-hook
               #'(lambda ()
                   (yas-activate-extra-mode 'html-mode)))
