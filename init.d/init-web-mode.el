@@ -21,6 +21,10 @@
     (add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 
+    (setq web-mode-ac-sources-alist
+          '(("css" . (ac-source-css-property))
+            ("html" . (ac-source-words-in-buffer ac-source-abbrev))))
+    
     (add-hook 'web-mode-hook
               #'(lambda ()
                   (yas-activate-extra-mode 'html-mode)))
