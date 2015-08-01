@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (req-package readline-complete
-  :require (autocomplete)
+  :require (auto-complete)
   :config
   (progn
     (add-to-list 'ac-modes 'shell-mode)
