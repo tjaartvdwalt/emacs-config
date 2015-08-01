@@ -1,2 +1,2 @@
-(req-package mocha-snippet
+(req-package mocha-snippets
   :require yasnippet)
