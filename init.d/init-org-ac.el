@@ -1,4 +1,4 @@
 (req-package org-ac
-  :require(org-mode auto-complete)
+  :require(org auto-complete)
   :config(progn
            (org-ac/config-default)))
