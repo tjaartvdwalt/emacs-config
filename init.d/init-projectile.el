@@ -1,4 +1,5 @@
 (req-package projectile
+  :diminish projectile-mode
   :config
   (progn
     (projectile-global-mode +1)
