@@ -1,4 +1,5 @@
 (req-package guide-key
+  :diminish guide-key-mode
   :config
   (progn
     (setq guide-key/idle-delay 0.5)
@@ -11,4 +12,4 @@
 
   ;; :init(progn(
   ;;             )))
-)
+  )
