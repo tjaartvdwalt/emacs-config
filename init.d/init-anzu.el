@@ -1,4 +1,5 @@
 (req-package anzu
-:config(global-anzu-mode +1))
+  :diminish anzu-mode
+  :config(global-anzu-mode +1))
 
 
