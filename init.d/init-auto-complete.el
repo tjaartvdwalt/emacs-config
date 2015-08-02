@@ -1,4 +1,5 @@
 (req-package auto-complete
+  :diminish auto-complete-mode
   :require (yasnippet auto-complete-config)
   :config (progn
             (setq ac-use-fuzzy t)
