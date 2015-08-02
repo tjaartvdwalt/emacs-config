@@ -1,10 +1,11 @@
 (req-package golden-ratio
+  :diminish golden-ratio-mode
   :init(progn
-           (defcustom golden-ratio-extra-commands
-             '(windmove-left windmove-right windmove-down windmove-up ace-window)
-             "List of extra commands used to jump to other window."
-             :group 'golden-ratio
-             :type '(repeat symbol))
+         (defcustom golden-ratio-extra-commands
+           '(windmove-left windmove-right windmove-down windmove-up ace-window)
+           "List of extra commands used to jump to other window."
+           :group 'golden-ratio
+           :type '(repeat symbol))
          )
   :config(progn
            (golden-ratio-mode 1)
