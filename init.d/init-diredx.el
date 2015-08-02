@@ -1,6 +1,6 @@
 ;; use dired-x for hiding hiddin files
 (req-package dired-x
-  :diminish omit-mode
+  :diminish dired-omit-mode
   :require dired
   :config
   (progn
