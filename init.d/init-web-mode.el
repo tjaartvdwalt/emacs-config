@@ -42,26 +42,27 @@
                    (if (string= web-mode-cur-language "html")
                        (yas-activate-extra-mode 'html-mode))
                    ;; (yas-deactivate-extra-mode 'php-mode))
-                 (if (string= web-mode-cur-language "css")
-                     (setq emmet-use-css-transform t)
-                   (setq emmet-use-css-transform nil))
-                 )))
+                   (if (string= web-mode-cur-language "css")
+                       (setq emmet-use-css-transform t)
+                     (setq emmet-use-css-transform nil))
+                   )))
 
-  (setq web-mode-ac-sources-alist
-        '(("php" . (ac-source-php-auto-yasnippets ac-source-yasnippet))
-          ("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
-          ("css" . (ac-source-css-property))))
+    (setq web-mode-ac-sources-alist
+          '(("php" . (ac-source-php-auto-yasnippets ac-source-yasnippet))
+            ("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
+            ("css" . (ac-source-css-property))))
 
-  
-  ;; (add-hook 'web-mode-hook
-  ;;           '(lambda ()
-  ;;              (yas-activate-extra-mode 'html-mode)))
+    
+    ;; (add-hook 'web-mode-hook
+    ;;           '(lambda ()
+    ;;              (yas-activate-extra-mode 'html-mode)))
 
-  ;; (add-hook 'web-mode-hook
-  ;;           #'(lambda ()
-  ;;               (yas-activate-extra-mode 'css-mode)))
+    ;; (add-hook 'web-mode-hook
+    ;;           #'(lambda ()
+    ;;               (yas-activate-extra-mode 'css-mode)))
 
-  ;; Install: pacaur -S tidyhtml
-  (flycheck-add-mode 'html-tidy 'web-mode)
-  ;; Install: pacaur -S csslint
-  (flycheck-add-mode 'scss 'web-mode)))
+    ;; Install: pacaur -S tidyhtml
+    (flycheck-add-mode 'html-tidy 'web-mode)
+    ;; Install: pacaur -S csslint
+    ;; (flycheck-add-mode 'scss 'web-mode)
+    ))
