@@ -1,1 +1,1 @@
-(req-package sass-mode)
+(req-package scss-mode)
