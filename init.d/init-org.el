@@ -22,33 +22,33 @@
     (setq org-latex-listings 'minted)
     (add-to-list 'org-latex-packages-alist '("" "minted"))
     (setq org-latex-pdf-process '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f")
-)
+          )
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
 
     (add-to-list 'org-latex-classes
-             '("moderncv"
-               "\\documentclass{moderncv}"
-               ("\\section{%s}" . "\\section*{%s}")
-               ("\\subsection{%s}" . "\\subsection*{%s}")
-               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-               ("\\paragraph{%s}" . "\\paragraph*{%s}")
-               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+                 '("moderncv"
+                   "\\documentclass{moderncv}"
+                   ("\\section{%s}" . "\\section*{%s}")
+                   ("\\subsection{%s}" . "\\subsection*{%s}")
+                   ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                   ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                   ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
     (add-to-list 'org-latex-classes
-             '("koma-article"
-               "\\documentclass{scrartcl}
+                 '("koma-article"
+                   "\\documentclass{scrartcl}
                 \\usepackage{microtype}
                 \\usepackage{tgtermes}
                 \\usepackage[scale=.9]{tgheros}
                 \\usepackage{tgcursor}
                 \\usepackage{paralist}
                 \\newcommand{\\rc}{$^{14}C$}"
-               ("\\section{%s}" . "\\section*{%s}")
-               ("\\subsection{%s}" . "\\subsection*{%s}")
-               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-               ("\\paragraph{%s}" . "\\paragraph*{%s}")
-               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+                   ("\\section{%s}" . "\\section*{%s}")
+                   ("\\subsection{%s}" . "\\subsection*{%s}")
+                   ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                   ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                   ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
     
     ;; ************* Misc *************
@@ -91,7 +91,8 @@
     ;; enable sub modes
     (add-hook 'org-mode-hook 'org-cdlatex-mode)
     (add-hook 'org-mode-hook 'org-beamer-mode)
-    (add-hook 'org-mode-hook 'org-mode-reftex-setup))
+    ;; (add-hook 'org-mode-hook 'org-mode-reftex-setup)
+    )
   
   (org-babel-do-load-languages
    'org-babel-load-languages
