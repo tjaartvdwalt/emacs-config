@@ -1,5 +1,5 @@
 (req-package smart-mode-line
-  :disable
+  :disabled
   :config (progn
 	    (setq sml/no-confirm-load-theme t)
             (sml/setup)
