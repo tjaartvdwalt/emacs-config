@@ -1,6 +1,6 @@
 ;;; package --- summary
 ;;; Commentary:
-;;; On Arch linux I have `hunspell' and `hunspell-en' installed.
+;;; On Arch linux I have `aspell' and `aspell-en' installed.
 ;;; According to http://www.emacswiki.org/emacs/InteractiveSpell this
 ;;; gets automatically configured in emacs 24.4+
 ;;;
