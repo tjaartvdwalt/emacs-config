@@ -1,3 +1,2 @@
 (req-package powerline
-  :config(
-          (powerline-default-theme)))
+  :config((powerline-default-theme)))
