@@ -1,4 +1,5 @@
 (req-package web-mode
+  :defer t
   :require (yasnippet flycheck)
   :config
   (progn
