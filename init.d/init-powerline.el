@@ -1,2 +1,3 @@
 (req-package powerline
-  :init((powerline-default-theme)))
+  :defer t
+  :config((powerline-default-theme)))
