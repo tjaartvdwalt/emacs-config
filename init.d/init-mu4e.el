@@ -1,5 +1,6 @@
 ;; Maybe the config and code should be seperated
 (req-package mu4e
+  :defer t
   :require (gnus-dired)
   :config
   (progn
@@ -119,23 +120,23 @@
             (tmpfile (format "%s/%d.html" temporary-file-directory (random))))
         (unless html (error "No html part for this message"))
         (with-temp-file tmpfile
-        (insert
-            "<html>"
-            "<head><meta http-equiv=\"content-type\""
-            "content=\"text/html;charset=UTF-8\">"
+          (insert
+           "<html>"
+           "<head><meta http-equiv=\"content-type\""
+           "content=\"text/html;charset=UTF-8\">"
            html))
         (browse-url (concat "file://" tmpfile))))
 
     (add-to-list 'mu4e-view-actions
-      '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
+                 '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
     
     ;; mark a message as spam ind header view
     (defun mu4e-mark-for-spam (msg)
       "Train spambayes, and move the message to the spam folder."
       (interactive)
       (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
-      (shell-quote-argument (mu4e-msg-field msg :path)))))
-      (shell-command cmd))
+                          (shell-quote-argument (mu4e-msg-field msg :path)))))
+        (shell-command cmd))
       (message "Trained as SPAM")
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
@@ -151,8 +152,8 @@
       "Move the current message to the Inbox."
       (interactive)
       (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
-      (shell-quote-argument (mu4e-msg-field msg :path)))))
-      (shell-command cmd))
+                          (shell-quote-argument (mu4e-msg-field msg :path)))))
+        (shell-command cmd))
       (message "Trained as HAM")
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-inbox-folder")))
 
@@ -295,9 +296,9 @@
 
 
     (defun mu4e-train-ham (msg)
-  "Train as spam and then mark for deletion."
-  (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
-                (shell-quote-argument (mu4e-msg-field msg :path)))))
-    (shell-command cmd))
-  mu4e-headers-mark-for-spam(msg)
-  (message "Trained as HAM"))))
+      "Train as spam and then mark for deletion."
+      (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
+                          (shell-quote-argument (mu4e-msg-field msg :path)))))
+        (shell-command cmd))
+      mu4e-headers-mark-for-spam(msg)
+      (message "Trained as HAM"))))
