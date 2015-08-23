@@ -1,2 +1,3 @@
 (req-package powerline
-  :config((powerline-default-theme)))
+  :config(progn
+           (add-hook 'after-init-hook powerline-default-theme)))
