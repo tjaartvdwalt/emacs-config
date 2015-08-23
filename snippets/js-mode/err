@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
+# name: console.error
+# key: error
+# binding: direct-keybinding
+# --
+console.error($0)

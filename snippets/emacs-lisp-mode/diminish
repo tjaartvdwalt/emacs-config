@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: diminish
+# key: diminish
+# binding: direct-keybinding
+# --
+:diminish $0

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: req-package
+# key: req-package
+# binding: direct-keybinding
+# --
+(req-package $1)$0
