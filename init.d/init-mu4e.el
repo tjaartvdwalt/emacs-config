@@ -1,6 +1,5 @@
 ;; Maybe the config and code should be seperated
 (req-package mu4e
-  :defer t
   :require (gnus-dired)
   :config
   (progn
