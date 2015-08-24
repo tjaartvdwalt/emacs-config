@@ -4,7 +4,6 @@
 
 (req-package column-enforce-mode
   :diminish column-enforce-mode
-  :defer 1
   :config (progn (add-hook 'prog-mode-hook 'column-enforce-mode)
                  ;; (global-set-key "\C-ce" 'column-enforce-mode)
                  ))
