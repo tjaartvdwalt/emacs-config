@@ -74,6 +74,8 @@ from https://github.com/bradfitz/goimports."
       ;; output in case of success.
       (if (zerop (call-process standardfmt-command nil errbuf nil "--format" tmpfile))
           (progn
+            (message point-min)
+            (message point-max)
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
                 (message "Buffer is already gofmted")
               (go--apply-rcs-patch patchbuf)
