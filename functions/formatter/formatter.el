@@ -77,8 +77,8 @@ from https://github.com/bradfitz/goimports."
               (message "Applied gofmt")))
         (message "Could not apply gofmt"))
 
-      ;; (kill-buffer patchbuf)
-      ;; (delete-file tmpfile)
+      (kill-buffer patchbuf)
+      (delete-file tmpfile)
       )))
 
 (defun go--apply-rcs-patch (patch-buffer)
