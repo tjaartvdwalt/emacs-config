@@ -41,7 +41,7 @@
 
 (provide 'formatter)
 ;;; formatter ends here
-(defcustom standardfmt-command "snazzy"
+(defcustom standardfmt-command "standard"
   "The 'gofmt' command.
 Some users may replace this with 'goimports'
 from https://github.com/bradfitz/goimports."
