@@ -5,3 +5,4 @@
 (add-hook 'js-mode-hook
           (lambda ()
             (add-hook 'before-save-hook 'standardfmt t t)))
+
