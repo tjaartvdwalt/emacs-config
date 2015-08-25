@@ -54,7 +54,6 @@ from https://github.com/bradfitz/goimports."
   (interactive)
   (let ((tmpfile (make-temp-file "standardfmt" nil ".js"))
         (patchbuf (get-buffer-create "*Standard patch*"))
-        (errbuf (if gofmt-show-errors (get-buffer-create "*Standard Errors*")))
         (coding-system-for-read 'utf-8)
         (coding-system-for-write 'utf-8))
 
@@ -79,8 +78,7 @@ from https://github.com/bradfitz/goimports."
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
                 (message "Buffer is already gofmted")
               (go--apply-rcs-patch patchbuf)
-              (message "Applied gofmt"))
-            (if errbuf (gofmt--kill-error-buffer errbuf)))
+              (message "Applied gofmt")))
         (message "Could not apply gofmt"))
 
       ;; (kill-buffer patchbuf)
