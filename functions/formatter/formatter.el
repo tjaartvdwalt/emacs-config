@@ -76,16 +76,16 @@ from https://github.com/bradfitz/goimports."
           (progn
             ;; (message point-min)
             ;; (message point-max)
-            (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile)
-            (go--apply-rcs-patch patchbuf)
-            (message "Applied gofmt"))
-        (if errbuf (gofmt--kill-error-buffer errbuf)))
-      (message "Could not apply gofmt")
-      (if errbuf (gofmt--process-errors (buffer-file-name) tmpfile errbuf)))
+            (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
+                (message "Buffer is already gofmted")
+              (go--apply-rcs-patch patchbuf)
+              (message "Applied gofmt"))
+            (if errbuf (gofmt--kill-error-buffer errbuf)))
+        (message "Could not apply gofmt"))
 
-    (kill-buffer patchbuf)
-    (delete-file tmpfile)
-    ))
+      ;; (kill-buffer patchbuf)
+      ;; (delete-file tmpfile)
+      )))
 
 (defun go--apply-rcs-patch (patch-buffer)
   "Apply an RCS-formatted diff from PATCH-BUFFER to the current buffer."
@@ -142,10 +142,3 @@ from https://github.com/bradfitz/goimports."
         (replace-match (file-name-nondirectory filename) t t nil 1))
       (compilation-mode)
       (display-buffer errbuf))))
-
-(defun gofmt--kill-error-buffer (errbuf)
-  (let ((win (get-buffer-window errbuf)))
-    (if win
-        (quit-window t win)
-      (kill-buffer errbuf))))
-
