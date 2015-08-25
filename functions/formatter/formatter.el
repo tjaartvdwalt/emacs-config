@@ -74,9 +74,9 @@ from https://github.com/bradfitz/goimports."
           (progn
             ;; (message point-min)
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
-                (message "Buffer is already gofmted")
-              (go--apply-rcs-patch patchbuf)
-              (message "Applied gofmt")))
+                ;; (message "Buffer is already gofmted")
+                (go--apply-rcs-patch patchbuf))
+            (message "Applied gofmt"))
         (message "Could not apply gofmt"))
 
       ;; (kill-buffer patchbuf)
