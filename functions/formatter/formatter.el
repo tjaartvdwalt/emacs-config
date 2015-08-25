@@ -1,6 +1,6 @@
-;; (defgroup formatter ()
-;;   "Free keys."
-;;   :group 'convenience)
+(defgroup formatter ()
+  "Free keys."
+  :group 'convenience)
 
 ;; (cl-defstruct formatter command modes)
 
