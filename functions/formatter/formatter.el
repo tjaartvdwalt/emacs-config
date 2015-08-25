@@ -11,7 +11,7 @@
         :modes '(c-mode c++-mode))
 
        (make-formatter
-        :command "standard"
+        :command "snazzy --format --stdin"
         :modes '(js-mode js2-mode js3-mode))
        ))
 
@@ -41,7 +41,7 @@
 
 (provide 'formatter)
 ;;; formatter ends here
-(defcustom standardfmt-command "standard-format"
+(defcustom standardfmt-command "snazzy"
   "The 'gofmt' command.
 Some users may replace this with 'goimports'
 from https://github.com/bradfitz/goimports."
@@ -74,9 +74,9 @@ from https://github.com/bradfitz/goimports."
           (progn
             ;; (message point-min)
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
-                ;; (message "Buffer is already gofmted")
-                (go--apply-rcs-patch patchbuf))
-            (message "Applied gofmt"))
+                (message "Buffer is already gofmted")
+              (go--apply-rcs-patch patchbuf)
+              (message "Applied gofmt")))
         (message "Could not apply gofmt"))
 
       ;; (kill-buffer patchbuf)
