@@ -52,9 +52,9 @@ from https://github.com/bradfitz/goimports."
 (defun standardfmt ()
   "Format the current buffer according to the gofmt tool."
   (interactive)
-  (let ((tmpfile (make-temp-file "gofmt" nil ".go"))
-        (patchbuf (get-buffer-create "*Gofmt patch*"))
-        (errbuf (if gofmt-show-errors (get-buffer-create "*Gofmt Errors*")))
+  (let ((tmpfile (make-temp-file "standardfmt" nil ".js"))
+        (patchbuf (get-buffer-create "*Standard patch*"))
+        (errbuf (if gofmt-show-errors (get-buffer-create "*Standard Errors*")))
         (coding-system-for-read 'utf-8)
         (coding-system-for-write 'utf-8))
 
