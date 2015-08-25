@@ -2,7 +2,7 @@
   "Free keys."
   :group 'convenience)
 
-;; (cl-defstruct formatter command modes)
+(cl-defstruct formatter command modes)
 
 ;; (setq formatter-formatters
 ;;       (list
