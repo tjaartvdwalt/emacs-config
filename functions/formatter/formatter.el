@@ -128,3 +128,16 @@ from https://github.com/bradfitz/goimports."
              (t
               (error "invalid rcs patch or internal error in go--apply-rcs-patch")))))))))
 
+(defun gofmt--process-errors (filename tmpfile errbuf)
+  (with-current-buffer errbuf
+    (if (eq gofmt-show-errors 'echo)
+        (progn
+          (message "%s" (buffer-string))
+          (gofmt--kill-error-buffer errbuf))
+      ;; Convert the gofmt stderr to something understood by the compilation mode.
+      (goto-char (point-min))
+      (insert "gofmt errors:\n")
+      (while (search-forward-regexp (concat "^\\(" (regexp-quote tmpfile) "\\):") nil t)
+        (replace-match (file-name-nondirectory filename) t t nil 1))
+      (compilation-mode)
+      (display-buffer errbuf))))
