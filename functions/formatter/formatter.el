@@ -59,10 +59,10 @@ from https://github.com/bradfitz/goimports."
 
     (save-restriction
       (widen)
-      (if errbuf
-          (with-current-buffer errbuf
-            (setq buffer-read-only nil)
-            (erase-buffer)))
+      ;; (if errbuf
+      ;;     (with-current-buffer errbuf
+      ;;       (setq buffer-read-only nil)
+      ;;       (erase-buffer)))
       (with-current-buffer patchbuf
         (erase-buffer))
       (write-region nil nil tmpfile)
@@ -70,10 +70,9 @@ from https://github.com/bradfitz/goimports."
       ;; We're using errbuf for the mixed stdout and stderr output. This
       ;; is not an issue because gofmt -w does not produce any stdout
       ;; output in case of success.
-      (if (zerop (call-process standardfmt-command nil errbuf nil "--format" tmpfile))
+      (if (zerop (call-process standardfmt-command nil nil nil "--format" tmpfile))
           (progn
             ;; (message point-min)
-            (message patchbuf)
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
                 (message "Buffer is already gofmted")
               (go--apply-rcs-patch patchbuf)
