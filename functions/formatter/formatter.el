@@ -82,8 +82,9 @@ from https://github.com/bradfitz/goimports."
         (message "Could not apply gofmt")
         (if errbuf (gofmt--process-errors (buffer-file-name) tmpfile errbuf)))
 
-      (kill-buffer patchbuf)
-      (delete-file tmpfile))))
+      ;; (kill-buffer patchbuf)
+      ;; (delete-file tmpfile)
+      )))
 
 (defun go--apply-rcs-patch (patch-buffer)
   "Apply an RCS-formatted diff from PATCH-BUFFER to the current buffer."
