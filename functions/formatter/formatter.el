@@ -40,8 +40,15 @@
 
 
 (provide 'formatter)
-(defcustom standardfmt-command "snazzy --format")
 ;;; formatter ends here
+(defcustom standardfmt-command "snazzle --format"
+  "The 'gofmt' command.
+Some users may replace this with 'goimports'
+from https://github.com/bradfitz/goimports."
+  :type 'string
+  :group 'go)
+
+
 (defun standardfmt ()
   "Format the current buffer according to the gofmt tool."
   (interactive)
@@ -65,7 +72,7 @@
       ;; We're using errbuf for the mixed stdout and stderr output. This
       ;; is not an issue because gofmt -w does not produce any stdout
       ;; output in case of success.
-      (if (zerop (call-process "snazzy" nil errbuf nil "-w" tmpfile))
+      (if (zerop (call-process standardfmt-command nil errbuf nil "-w" tmpfile))
           (progn
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
                 (message "Buffer is already gofmted")
