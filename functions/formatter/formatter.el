@@ -39,8 +39,6 @@
 ;;                            (get-buffer-create "*Formatter Errors*") t))
 
 
-;; (provide 'formatter)
-;; ;;; formatter ends here
 (defcustom standardfmt-command "standard"
   "The 'gofmt' command.
 Some users may replace this with 'goimports'
@@ -138,3 +136,6 @@ from https://github.com/bradfitz/goimports."
         (replace-match (file-name-nondirectory filename) t t nil 1))
       (compilation-mode)
       (display-buffer errbuf))))
+
+(provide 'formatter)
+;;; formatter ends here
