@@ -1,7 +1,7 @@
-;; (add-to-list 'load-path "~/.emacs.d/functions/formatter/")
+(add-to-list 'load-path "~/.emacs.d/functions/formatter/")
 
-;; (require 'formatter)
+(require 'formatter)
 
-;; (add-hook 'js-mode-hook
-;;           (lambda ()
-;;             (add-hook 'before-save-hook 'formatter-format-buffer t t)))
+(add-hook 'js-mode-hook
+          (lambda ()
+            (add-hook 'before-save-hook 'standardfmt t t)))
