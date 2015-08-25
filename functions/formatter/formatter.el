@@ -38,6 +38,8 @@
                            t t
                            (get-buffer-create "*Formatter Errors*") t))
 
+(defcustom standardfmt-command "snazzy --format")
+
 (provide 'formatter)
 ;;; formatter ends here
 (defun standardfmt ()
@@ -63,7 +65,7 @@
       ;; We're using errbuf for the mixed stdout and stderr output. This
       ;; is not an issue because gofmt -w does not produce any stdout
       ;; output in case of success.
-      (if (zerop (call-process gofmt-command nil errbuf nil "-w" tmpfile))
+      (if (zerop (call-process standardfmt-command nil errbuf nil "-w" tmpfile))
           (progn
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
                 (message "Buffer is already gofmted")
