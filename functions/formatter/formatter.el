@@ -65,7 +65,6 @@ from https://github.com/bradfitz/goimports."
             (erase-buffer)))
       (with-current-buffer patchbuf
         (erase-buffer))
-
       (write-region nil nil tmpfile)
 
       ;; We're using errbuf for the mixed stdout and stderr output. This
@@ -74,7 +73,7 @@ from https://github.com/bradfitz/goimports."
       (if (zerop (call-process standardfmt-command nil errbuf nil "--format" tmpfile))
           (progn
             ;; (message point-min)
-            ;; (message point-max)
+            (message patchbuf)
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
                 (message "Buffer is already gofmted")
               (go--apply-rcs-patch patchbuf)
