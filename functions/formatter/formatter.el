@@ -11,7 +11,7 @@
         :modes '(c-mode c++-mode))
 
        (make-formatter
-        :command "snazzy --format"
+        :command "standard"
         :modes '(js-mode js2-mode js3-mode))
        ))
 
