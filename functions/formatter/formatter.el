@@ -50,7 +50,7 @@ from https://github.com/bradfitz/goimports."
 
 
 (defun standardfmt ()
-  "Format the current buffer according to the gofmt tool."
+  "Format the current buffer according to the standardfmt tool."
   (interactive)
   (let ((tmpfile (make-temp-file "standardfmt" nil ".js"))
         (patchbuf (get-buffer-create "*Standard patch*"))
@@ -126,7 +126,7 @@ from https://github.com/bradfitz/goimports."
               (with-current-buffer target-buffer
                 (go--goto-line (- from line-offset))
                 (incf line-offset len)
-                (go--delete-whole-line len)))
+                (kill-whole-line len)))
              (t
               (error "invalid rcs patch or internal error in go--apply-rcs-patch")))))))))
 
