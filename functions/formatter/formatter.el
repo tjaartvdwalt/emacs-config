@@ -29,17 +29,7 @@
   (setq temp-line (line-number-at-pos))
   (setq temp-point (point))
 
-  ;; Save the buffer after first removing the hook to prevent infinite loop
-  (remove-hook 'before-save-hook 'formatter-format-buffer t)
-  (save-buffer)
-  (add-hook 'before-save-hook 'formatter-format-buffer t t)
-
-  ;; if the formatter-format-region returned successfully
-  (if (/= (formatter-format-region (point-min) (point-max)) 0)
-      (progn
-        ;; if formatting failed we revert to the version we just saved
-        (revert-buffer t t t)))
-  ;; (formatter-format-region (point-min) (point-max));;))
+  (formatter-format-region (point-min) (point-max))
   (goto-char temp-point))
 
 (defun formatter-format-region (pmin pmax)
