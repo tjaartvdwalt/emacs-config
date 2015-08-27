@@ -74,10 +74,10 @@
          (mu4e-sent-folder "/tjaart@tjaart.co.za/Sent")
          (mu4e-trash-folder "/tjaart@tjaart.co.za/Trash")
          (user-mail-address "tjaart@tjaart.co.za")
-         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
+         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za")
          ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
-         (setq mu4e-sent-messages-behavior 'delete)
-         )
+         (setq mu4e-sent-messages-behavior 'delete))
+        
         ("tajvdw@gmail.com"
          (mu4e-inbox-folder "/tajvdw@gmail.com/INBOX")
          (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
@@ -86,10 +86,9 @@
          (mu4e-sent-folder "/tajvdw@gmail.com/Sent")
          (mu4e-trash-folder "/tajvdw@gmail.com/Trash")
          (user-mail-address "tajvdw@gmail.com")
-         (mu4e-compose-signature "Tjaart van der Walt" )
-         (setq mu4e-sent-messages-behavior 'delete)
-
-         )
+         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
+         (setq mu4e-sent-messages-behavior 'delete))
+        
         ("tav9wc@mail.umsl.edu"
          (mu4e-inbox-folder "/tav9wc@mail.umsl.edu/INBOX")
          (my-mu4e-refile-folder "/tav9wc@mail.umsl.edu/Archives")
@@ -97,7 +96,7 @@
          (mu4e-drafts-folder "/tav9wc@mail.umsl.edu/Drafts")
          (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent")
          (mu4e-trash-folder "/tav9wc@mail.umsl.edu/Trash")
-         (mu4e-compose-signature "Tjaart van der Walt" )
+         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
          (user-mail-address "tav9wc@mail.umsl.edu")
          (smtpmail-smtp-server "smtp.office365.com")
          (smtpmail-stream-type starttls)
