@@ -74,7 +74,7 @@
          (mu4e-sent-folder "/tjaart@tjaart.co.za/Sent")
          (mu4e-trash-folder "/tjaart@tjaart.co.za/Trash")
          (user-mail-address "tjaart@tjaart.co.za")
-         (mu4e-compose-signature "Tjaart van der Walt" )
+         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
          ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
          (setq mu4e-sent-messages-behavior 'delete)
          )
