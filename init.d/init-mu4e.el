@@ -106,7 +106,7 @@
     ;; archive messages to the folder corresponding to the current year
     (setq mu4e-refile-folder
           (lambda (msg)
-            ;;(message (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-refile-folder"))
+            (message (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-refile-folder"))
             (message (concat (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-refile-folder") "." (my-mu4e-get-message-year msg)))))
 
     ;;Set a shortcut for mu4e
