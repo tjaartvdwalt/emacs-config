@@ -78,6 +78,9 @@ from https://github.com/bradfitz/goimports."
               (message "Applied gofmt"))
             (if errbuf (gofmt--kill-error-buffer errbuf)))
         (message "Could not apply gofmt")
+        ;; Here we differ a little from gofmt. the `standard --format' command does not produce nice output.
+        ;; Instead we run the `standard' command again without the `--format' switch, and display this output
+        ;; in the errbuf instead
         (if errbuf (progn
                      (with-current-buffer errbuf
                        (erase-buffer))
