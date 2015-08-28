@@ -52,15 +52,16 @@ from https://github.com/bradfitz/goimports."
   (interactive)
   (let ((tmpfile (make-temp-file "standardfmt" nil ".js"))
         (patchbuf (get-buffer-create "*Standard patch*"))
+        (errbuf (if gofmt-show-errors (get-buffer-create "*Gofmt Errors*")))
         (coding-system-for-read 'utf-8)
         (coding-system-for-write 'utf-8))
 
     (save-restriction
       (widen)
-      ;; (if errbuf
-      ;;     (with-current-buffer errbuf
-      ;;       (setq buffer-read-only nil)
-      ;;       (erase-buffer)))
+      (if errbuf
+          (with-current-buffer errbuf
+            (setq buffer-read-only nil)
+            (erase-buffer)))
       (with-current-buffer patchbuf
         (erase-buffer))
       (write-region nil nil tmpfile)
@@ -68,18 +69,19 @@ from https://github.com/bradfitz/goimports."
       ;; We're using errbuf for the mixed stdout and stderr output. This
       ;; is not an issue because gofmt -w does not produce any stdout
       ;; output in case of success.
-      (if (zerop (call-process standardfmt-command nil nil nil "--format" tmpfile))
+      (if (zerop (call-process standardfmt-command nil errbuf nil "--format" tmpfile))
           (progn
             ;; (message point-min)
             (if (zerop (call-process-region (point-min) (point-max) "diff" nil patchbuf nil "-n" "-" tmpfile))
                 (message "Buffer is already gofmted")
               (go--apply-rcs-patch patchbuf)
-              (message "Applied gofmt")))
-        (message "Could not apply gofmt"))
+              (message "Applied gofmt"))
+            (if errbuf (gofmt--kill-error-buffer errbuf)))
+        (message "Could not apply gofmt")
+        (if errbuf (gofmt--process-errors (buffer-file-name) tmpfile errbuf)))
 
       (kill-buffer patchbuf)
-      (delete-file tmpfile)
-      )))
+      (delete-file tmpfile))))
 
 (defun go--apply-rcs-patch (patch-buffer)
   "Apply an RCS-formatted diff from PATCH-BUFFER to the current buffer."
