@@ -139,5 +139,12 @@ from https://github.com/bradfitz/goimports."
       (compilation-mode)
       (display-buffer errbuf))))
 
+(defun gofmt--kill-error-buffer (errbuf)
+  (let ((win (get-buffer-window errbuf)))
+    (if win
+        (quit-window t win)
+      (kill-buffer errbuf))))
+
+
 (provide 'formatter)
 ;;; formatter ends here
