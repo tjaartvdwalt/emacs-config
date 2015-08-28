@@ -79,7 +79,7 @@ from https://github.com/bradfitz/goimports."
             (if errbuf (gofmt--kill-error-buffer errbuf)))
         (message "Could not apply gofmt")
         (if errbuf (progn
-                     (call-process standardfmt-command nil errbuf nil nil tmpfile)
+                     (call-process standardfmt-command nil errbuf nil "" tmpfile)
                      (gofmt--process-errors (buffer-file-name) tmpfile errbuf)
                      )))
 
