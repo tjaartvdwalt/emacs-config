@@ -16,7 +16,7 @@
          ("C-c h k" . helm-show-kill-ring)
          ("C-c h m" . helm-man-woman)
          ("C-c h p" . helm-do-pdfgrep)
-         ("C-c h e" . helm-list-elisp-packages)
+         ("C-c h e" . helm-mu-contacts)
          ("C-c h SPC" . helm-all-mark-rings)
          ("C-c h r" . helm-regexp)
          ("C-c h i" . helm-semantic-or-imenu)
