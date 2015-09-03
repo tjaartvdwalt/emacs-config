@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 #contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
 # name: promise.then
-# key: then
+# key: .then
 # binding: direct-keybinding
 # --
 $1.then(function resolve ($2) {
