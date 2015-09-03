@@ -1,11 +1,11 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 #contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
 # name: promise.then
-# key: .then
+# key: then
 # binding: direct-keybinding
 # --
-$1.then(function resolve ($2) {
+then(function resolve ($1) {
 $0
-}, function reject ($3) {
+}, function reject ($2) {
 
 })
