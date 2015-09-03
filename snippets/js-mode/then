@@ -4,8 +4,8 @@
 # key: then
 # binding: direct-keybinding
 # --
-then(function resolve ($1) {
+then(function ($1) {
 $0
-}, function reject ($2) {
+}, function ($2) {
 
 })
