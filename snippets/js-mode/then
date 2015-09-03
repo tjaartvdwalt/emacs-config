@@ -5,8 +5,7 @@
 # binding: direct-keybinding
 # --
 $1.then(function resolve ($2) {
-  resolve($3)
-}, function reject ($4) {
-  reject($5)
-})
 $0
+}, function reject ($3) {
+
+})
