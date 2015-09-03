@@ -9,3 +9,4 @@ $1.then(function resolve ($2) {
 }, function reject ($4) {
   reject($5)
 })
+$0
