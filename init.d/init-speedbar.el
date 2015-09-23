@@ -1,4 +1,5 @@
 (req-package speedbar
-  :bind ("C-\" . speedbar))
 
-:config())
+  :config((progn
+            (global-unset-key (kbd "M-\\")))))
+
