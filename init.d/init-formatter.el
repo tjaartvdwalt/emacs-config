@@ -4,5 +4,6 @@
 
 (add-hook 'js-mode-hook
           (lambda ()
-            (add-hook 'before-save-hook 'standardfmt t t)))
+            (unless (derived-mode-p 'json-mode)
+              (add-hook 'before-save-hook 'standardfmt t t))))
 
