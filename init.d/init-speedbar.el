@@ -2,5 +2,5 @@
 
   :config((progn
             ;; (global-set-key (kbd "C-cs\\\") nil))))
-            (global-set-key (kbd "C-cs") 'speedbar))))
+            (global-set-key (kbd "C-c s") 'speedbar))))
 
