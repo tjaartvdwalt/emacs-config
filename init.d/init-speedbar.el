@@ -3,4 +3,5 @@
 
 
 (defun speedbar-disp()
-  "Format the current buffer according to the standardfmt tool."(call-process "i3-msg "workspace 4:emacs; resize shrink left""))
+  "Format the current buffer according to the standardfmt tool."
+  (call-process "i3-msg 'workspace 4:emacs; resize shrink left'"))
