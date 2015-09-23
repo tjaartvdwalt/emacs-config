@@ -1,1 +1,2 @@
-(req-package projectile-speedbar)
+(req-package projectile-speedbar
+  :config((setq projectile-speedbar-projectile-speedbar-enable t)))
