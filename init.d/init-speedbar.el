@@ -1,4 +1,4 @@
 (req-package speedbar
-  :bind ("C-\ " . speedbar))
+  :bind ("C-\" . speedbar))
 
 :config())
