@@ -1,10 +1,10 @@
-(setq split-width-threshold 0)
+(setq split-width-threshold 120)
 
 ;; new in emacs 24.4.1... set mode so that long lines are trucated
 (setq global-visual-line-mode t)
 
 (global-hl-line-mode 1)
-
+(scroll-bar-mode -1)
 ;; Dont show the splash screen
 (setq inhibit-splash-screen t)
 (setq tab-width 2)
