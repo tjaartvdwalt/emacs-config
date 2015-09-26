@@ -1,5 +1,5 @@
 ;;; package --- This file contains shortcuts that do not correspond to any init file
-;;; Commentary:   
+;;; Commentary:
 
 ;; Swap c-x and c-u.  This is useful for dvorak layout since u is
 ;; on the home row and x is difficult to reach
@@ -8,7 +8,7 @@
 
 ;; use ibuffer instead of buffer-menu
 (substitute-key-definition
-           'list-buffers 'ibuffer global-map global-map)
+ 'list-buffers 'ibuffer global-map global-map)
 
 ;; (global-set-key "\C-cy" 'toggle-window-split)
 
@@ -34,4 +34,3 @@
 (global-set-key (kbd "\M-\-") 'text-scale-decrease)
 
 (global-set-key (kbd "\C-c m s") 'speedbar)
-
