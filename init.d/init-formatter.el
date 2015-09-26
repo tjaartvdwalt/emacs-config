@@ -5,7 +5,8 @@
 (add-hook 'js-mode-hook
           (lambda ()
             (unless (derived-mode-p 'json-mode)
-              (local-set-key (kbd "C-c x") 'standardfmt))))
+              (local-unset-key (kbd "\C-c u i"))
+              (local-set-key (kbd "C-c u i") 'standardfmt))))
 
 
 ;; (add-hook 'js-mode-hook
