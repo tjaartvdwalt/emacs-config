@@ -39,7 +39,7 @@
 ;;                            (get-buffer-create "*Formatter Errors*") t))
 
 
-(defcustom standardfmt-command "standard"
+(defcustom standardfmt-command "standard-format"
   "The 'gofmt' command.
 Some users may replace this with 'goimports'
 from https://github.com/bradfitz/goimports."
