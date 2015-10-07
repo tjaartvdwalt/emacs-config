@@ -6,7 +6,8 @@
           (lambda ()
             (unless (derived-mode-p 'json-mode)
               ;; (local-unset-key (kbd "\C-c u i"))
-              (global-set-key (kbd "C-c u i") 'standardfmt))))
+              (add-hook 'after-save-hook 'standardfmt t t))))
+              ;; (global-set-key (kbd "C-c u i") 'standardfmt))))
 
 
 ;; (add-hook 'js-mode-hook
