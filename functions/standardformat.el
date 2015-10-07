@@ -1,2 +1,4 @@
 (revert-buffer true true nil)
-(call-process standardfmt-command nil errbuf nil "" tmpfile)
+        (errbuf (get-buffer-create "*Standardformat Errors*"))
+
+(call-process "standard-format" nil errbuf nil "-w" (buffer-file-name))
