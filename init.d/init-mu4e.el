@@ -4,7 +4,8 @@
   :config
   (progn
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
-    (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
+    ;; (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
+    (add-hook 'mu4e-compose-pre-hook 'helm-mu-contacts)
     (setq mu4e-org-contacts-file  "~/org/contacts/google-contacts.org")
     ;; define 'N' (the first letter of the description) as the shortcut
     ;; the 't' argument to add-to-list puts it at the end of the list
