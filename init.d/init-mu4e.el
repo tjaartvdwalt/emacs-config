@@ -3,15 +3,7 @@
   :require (gnus-dired)
   :config
   (progn
-;; (defvar mu4e-main-mode-map
-;;   (let ((map (make-sparse-keymap)))
-;;     (define-key map "C" 'mu4e-compose-new)
-;;     map)
-
-     (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
-
-
-
+    (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
 
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     ;; (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
@@ -30,7 +22,7 @@
 
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
-    
+
 
     ;; general settings
     (setq mail-user-agent 'mu4e-user-agent ; mu4e as default mail agent
@@ -88,7 +80,7 @@
          (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za")
          ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
          (setq mu4e-sent-messages-behavior 'delete))
-        
+
         ("tajvdw@gmail.com"
          (mu4e-inbox-folder "/tajvdw@gmail.com/INBOX")
          (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
@@ -99,7 +91,7 @@
          (user-mail-address "tajvdw@gmail.com")
          (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
          (setq mu4e-sent-messages-behavior 'delete))
-        
+
         ("tav9wc@mail.umsl.edu"
          (mu4e-inbox-folder "/tav9wc@mail.umsl.edu/INBOX")
          (my-mu4e-refile-folder "/tav9wc@mail.umsl.edu/Archives")
@@ -138,7 +130,7 @@
 
     (add-to-list 'mu4e-view-actions
                  '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
-    
+
     ;; mark a message as spam ind header view
     (defun mu4e-mark-for-spam (msg)
       "Train spambayes, and move the message to the spam folder."
@@ -233,8 +225,8 @@
 
     ;; (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
     ;; (add-hook 'mu4e-compose-pre-hook 'helm-mu-contacts)
-    
-    
+
+
     ;; returns all the accounts configured in 'my-mu4e-account-alist'
     (defun my-mu4e-find-accounts ()
       "Returns the configured mu4e accounts by using the configuration list 'my-mu4e-account-alist'"
