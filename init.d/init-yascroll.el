@@ -1,2 +1,2 @@
 (req-package yascroll
-  :config((global-yascroll-bar-mode )))
+  :config((global-yascroll-bar-mode)))
