@@ -3,6 +3,16 @@
   :require (gnus-dired)
   :config
   (progn
+;; (defvar mu4e-main-mode-map
+;;   (let ((map (make-sparse-keymap)))
+;;     (define-key map "C" 'mu4e-compose-new)
+;;     map)
+
+     (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
+
+
+
+
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     ;; (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
     ;; (add-hook 'mu4e-compose-pre-hook 'helm-mu-contacts)
