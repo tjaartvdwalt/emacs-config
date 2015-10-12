@@ -62,6 +62,10 @@
     ;;               (yas-activate-extra-mode 'css-mode)))
 
     ;; Install: pacaur -S tidyhtml
+               (add-hook 'web-mode-hook
+
+                             (add-hook 'after-save-hook 'indent-whole-buffer t t))
+
     (flycheck-add-mode 'html-tidy 'web-mode)))
 
     ;; Install: pacaur -S csslint
