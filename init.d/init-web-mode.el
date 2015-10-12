@@ -62,9 +62,10 @@
     ;;               (yas-activate-extra-mode 'css-mode)))
 
     ;; Install: pacaur -S tidyhtml
-    (add-hook 'web-mode-hook
-              #'(lambda ()
-              (add-hook 'after-save-hook 'indent-whole-buffer t t)))
+               (add-hook 'web-mode-hook
+                         (lambda ()
+                           (message "test")
+                         (add-hook 'after-save-hook 'indent-whole-buffer t t)))
 
     (flycheck-add-mode 'html-tidy 'web-mode)))
 
