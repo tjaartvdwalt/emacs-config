@@ -52,7 +52,7 @@
             ("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
             ("css" . (ac-source-css-property))))
 
-    
+
     ;; (add-hook 'web-mode-hook
     ;;           '(lambda ()
     ;;              (yas-activate-extra-mode 'html-mode)))
@@ -62,10 +62,10 @@
     ;;               (yas-activate-extra-mode 'css-mode)))
 
     ;; Install: pacaur -S tidyhtml
-               (add-hook 'web-mode-hook
-                             (add-hook 'after-save-hook 'indent-whole-buffer t t))
+    (add-hook 'web-mode-hook
+              (add-hook 'after-save-hook 'indent-whole-buffer t t))
 
     (flycheck-add-mode 'html-tidy 'web-mode)))
 
-    ;; Install: pacaur -S csslint
-    ;; (flycheck-add-mode 'scss 'web-mode)
+;; Install: pacaur -S csslint
+;; (flycheck-add-mode 'scss 'web-mode)
