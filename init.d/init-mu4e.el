@@ -48,14 +48,13 @@
             (:to          . 22)
             (:subject     . nil)))
 
-    (setq ;;mu4e-refile-folder "/tajvdw@gmail.com/Archives"
-     mu4e-sent-folder "/tjaart@tjaart.co.za/Sent"
-     mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts"
-     ;;mu4e-spam-folder "/tjaart@tjaart.co.za/[Gmail].Spam"
-     mu4e-trash-folder "/tjaart@tjaart.co.za/Trash"
-     user-mail-address "tjaart@tjaart.co.za"
-     user-full-name  "Tjaart van der Walt"
-     )
+    ;; (setq ;;mu4e-refile-folder "/tajvdw@gmail.com/Archives"
+    ;;  mu4e-sent-folder "/tjaart@tjaart.co.za/Sent"
+    ;;  mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts"
+    ;;  ;;mu4e-spam-folder "/tjaart@tjaart.co.za/[Gmail].Spam"
+    ;;  mu4e-trash-folder "/tjaart@tjaart.co.za/Trash"
+    ;;  user-mail-address "tjaart@tjaart.co.za"
+    ;;  user-full-name  "Tjaart van der Walt")
 
     ;; sending mail
     (setq message-send-mail-function 'message-send-mail-with-sendmail
@@ -190,6 +189,7 @@
                   (cond
                    ((string-match "tjaart@tjaart.co.za" from) "tjaart")
                    ((string-match "tajvdw@gmail.com" from) "tajvdw")
+                   ((string-match "tjaart@solmates.co" from) "solmates")
                    ((string-match "tav9wc@mail.umsl.edu" from) "tav9wc"))))
               (setq message-sendmail-extra-arguments (list '"-a" account))))))
     (setq message-sendmail-envelope-from 'header)
