@@ -179,6 +179,7 @@
     ;; sending message since message-send-mail-hook is processed right
     ;; before sending message.
     (defun choose-msmtp-account ()
+      (message "choose-msmtp-account")
       (if (message-mail-p)
           (save-excursion
             (let*
