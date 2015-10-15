@@ -189,7 +189,6 @@
                   (cond
                    ((string-match "tjaart@tjaart.co.za" from) "tjaart")
                    ((string-match "tajvdw@gmail.com" from) "tajvdw")
-                   ((string-match "tjaart@solmates.co" from) "solmates")
                    ((string-match "tav9wc@mail.umsl.edu" from) "tav9wc"))))
               (setq message-sendmail-extra-arguments (list '"-a" account))))))
     (setq message-sendmail-envelope-from 'header)
