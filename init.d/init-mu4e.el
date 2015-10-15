@@ -8,7 +8,6 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     ;; (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
     ;; (add-hook 'mu4e-compose-pre-hook 'helm-mu-contacts)
-    (setq mu4e-org-contacts-file  "~/org/contacts/google-contacts.org")
     ;; define 'N' (the first letter of the description) as the shortcut
     ;; the 't' argument to add-to-list puts it at the end of the list
     (add-to-list 'mu4e-headers-actions
@@ -32,12 +31,10 @@
           mu4e-compose-dont-reply-to-self t ; don't reply to myself
           ;; mu4e-compose-complete-only-personal t ; only personal messages get in the address book
           message-signature "Tjaart van der Walt" ; signature
-          message-kill-buffer-on-exit t ; don't keep message buffers around
-          )
+          message-kill-buffer-on-exit t ; don't keep message buffers around)
 
-
-    ;; update every 3 minutes
-    (setq mu4e-update-interval 180)
+    ;; update every 5 minutes
+    ;; (setq mu4e-update-interval 300)
 
     ;; default Maildir
     (setq mu4e-maildir "~/Maildir/")
@@ -79,6 +76,17 @@
          (user-mail-address "tjaart@tjaart.co.za")
          (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za")
          ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
+         (setq mu4e-sent-messages-behavior 'delete))
+
+        ("tjaart@solmates.co"
+         (mu4e-inbox-folder "/tjaart@solmates.co/INBOX")
+         (my-mu4e-refile-folder "/tjaart@solmates.co/Archives")
+         (my-mu4e-spam-folder "/tjaart@solmates.co/Spam")
+         (mu4e-drafts-folder "/tjaart@solmates.co/Drafts")
+         (mu4e-sent-folder "/tjaart@solmates.co/Sent")
+         (mu4e-trash-folder "/tjaart@solmates.co/Trash")
+         (user-mail-address "tjart@solmates.co")
+         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
          (setq mu4e-sent-messages-behavior 'delete))
 
         ("tajvdw@gmail.com"
