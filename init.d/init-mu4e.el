@@ -84,7 +84,7 @@
          (mu4e-drafts-folder "/tjaart@solmates.co/Drafts")
          (mu4e-sent-folder "/tjaart@solmates.co/Sent")
          (mu4e-trash-folder "/tjaart@solmates.co/Trash")
-         (user-mail-address "tjart@solmates.co")
+         (user-mail-address "tjaart@solmates.co")
          (mu4e-compose-signature "Tjaart van der Walt\nTechnical Co-founder" )
          (setq mu4e-sent-messages-behavior 'delete))
 
