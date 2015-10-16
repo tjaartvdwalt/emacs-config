@@ -85,7 +85,7 @@
          (mu4e-sent-folder "/tjaart@solmates.co/Sent")
          (mu4e-trash-folder "/tjaart@solmates.co/Trash")
          (user-mail-address "tjart@solmates.co")
-         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
+         (mu4e-compose-signature "Tjaart van der Walt\nTechnical Co-founder" )
          (setq mu4e-sent-messages-behavior 'delete))
 
         ("tajvdw@gmail.com"
@@ -233,8 +233,6 @@
           (error "No email account found"))))
 
     (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
-    ;; (add-hook 'mu4e-compose-pre-hook 'helm-mu-contacts)
-
 
     ;; returns all the accounts configured in 'my-mu4e-account-alist'
     (defun my-mu4e-find-accounts ()
