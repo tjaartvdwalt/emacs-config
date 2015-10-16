@@ -53,7 +53,7 @@
      mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts"
      ;;mu4e-spam-folder "/tjaart@tjaart.co.za/[Gmail].Spam"
      mu4e-trash-folder "/tjaart@tjaart.co.za/Trash"
-     user-mail-address "tjaart@tjaart.co.za"
+     ;; user-mail-address "tjaart@tjaart.co.za"
      user-full-name  "Tjaart van der Walt")
 
     ;; sending mail
