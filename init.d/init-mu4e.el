@@ -30,7 +30,7 @@
           mu4e-html2text-command "w3m -dump -T text/html" ; html to text
           mu4e-compose-dont-reply-to-self t ; don't reply to myself
           ;; mu4e-compose-complete-only-personal t ; only personal messages get in the address book
-          message-signature "Tjaart van der Walt" ; signature
+;          message-signature "Tjaart van der Walt" ; signature
           message-kill-buffer-on-exit t) ; don't keep message buffers around
 
     ;; update every 5 minutes
