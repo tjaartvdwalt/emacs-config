@@ -89,8 +89,8 @@
     ;;(setq org-refile-targets '((("~/org/pomodoro.org" "~/org/todo.org") :maxlevel . 5)))
 
     ;; enable sub modes
-    (add-hook 'org-mode-hook 'org-cdlatex-mode)
-    (add-hook 'org-mode-hook 'org-beamer-mode)
+    ;; (add-hook 'org-mode-hook 'org-cdlatex-mode)
+    ;; (add-hook 'org-mode-hook 'org-beamer-mode)
     ;; (add-hook 'org-mode-hook 'org-mode-reftex-setup)
     )
   
