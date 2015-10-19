@@ -24,7 +24,7 @@
     ;; (setq org-latex-pdf-process '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f")
     ;;       )
 
-         (setq org-latex-pdf-process '("latexmk %f")
+         (setq org-latex-pdf-process '("latexmk -shell-escape %f"))
 
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
