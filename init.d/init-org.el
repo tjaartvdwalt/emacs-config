@@ -21,8 +21,8 @@
     ;; (setq org-export-latex-minted t)
     (setq org-latex-listings 'minted)
     (add-to-list 'org-latex-packages-alist '("" "minted"))
-    (setq org-latex-pdf-process '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f")
-          )
+    ;; (setq org-latex-pdf-process '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f")
+    ;;       )
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
 
