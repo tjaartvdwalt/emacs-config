@@ -23,6 +23,9 @@
     (add-to-list 'org-latex-packages-alist '("" "minted"))
     ;; (setq org-latex-pdf-process '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f" "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f")
     ;;       )
+
+         (setq org-latex-pdf-process '("latexmk %f")
+
     ;; Render code blocks with their native major mode
     (setq org-export-html-style-include-default nil)
 
