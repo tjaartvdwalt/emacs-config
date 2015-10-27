@@ -6,6 +6,8 @@
       js-doc-license "MIT")
 
 (add-hook 'js-mode-hook
-          #'(lambda ()
-              (define-key js-mode-map "\C-cdi" 'js-doc-insert-function-doc)
-              (define-key js-mode-map "@" 'js-doc-insert-tag)))))
+          (lambda ()
+              (define-key js-mode-map (kbd "C-cdi") 'js-doc-insert-function-doc)
+              (define-key js-mode-map (kbd "@") 'js-doc-insert-tag)))))
+
+;; (define-key js-mode-map (kbd "M-.") nil)
