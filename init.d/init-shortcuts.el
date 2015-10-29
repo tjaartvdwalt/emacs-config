@@ -34,3 +34,6 @@
 (global-set-key (kbd "\M-\-") 'text-scale-decrease)
 
 (global-set-key (kbd "\C-c m s") 'speedbar)
+
+(global-unset-key (kbd "M-DEL"))
+(global-set-key (kbd "M-DEL") 'kill-whole-line)
