@@ -6,5 +6,6 @@
             (sml/apply-theme 'dark) 
             ;; (setq sml/mode-width "full")
             )
-:init (sml/setup)
+  :init (progn
+         (sml/setup))
   )
