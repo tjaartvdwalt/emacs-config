@@ -1,1 +1,1 @@
-(req-package node-repl)
+(req-package nodejs-repl)
