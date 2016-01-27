@@ -2,14 +2,15 @@
 ;;; Commentary:
 ;;; Code:
 (req-package magit
-  :require (magit-filenotify)
+  ;; :require (magit-filenotify)
   :bind ("C-c v m" . magit-status)
   :config
   (progn
     (setq magit-revert-buffers "ask")
-    (setq magit-last-seen-setup-instructions "1.4.0")
+    (setq magit-last-seen-setup-instructions "1.4.0")    ))
+
     ;; (when (not window-system)
     ;; (set-face-background 'magit-item-highlight "black"))
-    (add-hook 'magit-status-mode-hook (lambda () (magit-filenotify-mode t)))))
+    ;; (add-hook 'magit-status-mode-hook (lambda () (magit-filenotify-mode t)))
 (provide 'init-magit)
 ;;; init-magit ends here
