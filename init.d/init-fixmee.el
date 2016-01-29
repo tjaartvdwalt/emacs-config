@@ -1,6 +1,6 @@
 (req-package fixmee
   :config (progn
-  ;; (global-fixmee-mode t)
+  (global-fixmee-mode t)
   (setq fixmee-smartrep-prefix "C-cf")
   (setq fixmee-goto-nextmost-urgent-keystrokes '("C-cff"))
   (setq fixmee-goto-prevmost-urgent-keystrokes '("C-cfF"))
