@@ -315,7 +315,7 @@
 (with-eval-after-load 'mu4e
 (setq mu4e-contexts
 `( ,(make-mu4e-context
-:name "btjaart@tjaart.co.za"
+:name "atjaart@tjaart.co.za"
 :enter-func (lambda () (mu4e-message "Switch to: tjaart@tjaart.co.za"))
 ;; leave-func not defined
 :match-func (lambda (msg)
@@ -332,7 +332,7 @@
 "www.tjaart.co.za\n"))))
 
 ,(make-mu4e-context
-:name "tajvdw@gmail.com"
+:name "btajvdw@gmail.com"
 :enter-func (lambda () (mu4e-message "Switch to: tajvdw@gmail.com"))
 ;; leave-fun not defined
 :match-func (lambda (msg)
