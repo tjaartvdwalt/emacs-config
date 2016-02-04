@@ -2,7 +2,7 @@
 (req-package mu4e
   :require (gnus-dired)
   :config
-  :disabled
+  :disabled true
   (progn
     (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
 
