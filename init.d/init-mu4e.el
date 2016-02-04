@@ -312,9 +312,9 @@
 
 
 
-
+(with-eval-after-load 'mu4e
 (setq mu4e-contexts
-'((make-mu4e-context
+`( ,(make-mu4e-context
 :name "tjaart@tjaart.co.za"
 :enter-func (lambda () (mu4e-message "tjaart@tjaart.co.za"))
 ;; leave-func not defined
@@ -329,7 +329,8 @@
 ( mu4e-compose-signature .
 (concat
 "Tjaart van der Walt\n"
-"www.tjaart.co.za\n"))))))
+"www.tjaart.co.za\n")))))))
+
 ;; ,(make-mu4e-context
 ;; :name "Work"
 ;; :enter-func (lambda () (mu4e-message "Switch to the Work context"))
