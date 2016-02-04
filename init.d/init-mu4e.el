@@ -314,7 +314,7 @@
 
 
 (setq mu4e-contexts
-'( ,(make-mu4e-context
+'((make-mu4e-context
 :name "tjaart@tjaart.co.za"
 :enter-func (lambda () (mu4e-message "tjaart@tjaart.co.za"))
 ;; leave-func not defined
