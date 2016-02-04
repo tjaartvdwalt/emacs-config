@@ -48,13 +48,13 @@
             (:to          . 22)
             (:subject     . nil)))
 
-    (setq ;;mu4e-refile-folder "/tajvdw@gmail.com/Archives"
-     mu4e-sent-folder "/tjaart@tjaart.co.za/Sent"
-     mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts"
-     ;;mu4e-spam-folder "/tjaart@tjaart.co.za/[Gmail].Spam"
-     mu4e-trash-folder "/tjaart@tjaart.co.za/Trash"
-     user-mail-address "tjaart@tjaart.co.za"
-     user-full-name  "Tjaart van der Walt")
+    ;; (setq ;;mu4e-refile-folder "/tajvdw@gmail.com/Archives"
+    ;;  mu4e-sent-folder "/tjaart@tjaart.co.za/Sent"
+    ;;  mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts"
+    ;;  ;;mu4e-spam-folder "/tjaart@tjaart.co.za/[Gmail].Spam"
+    ;;  mu4e-trash-folder "/tjaart@tjaart.co.za/Trash"
+    ;;  user-mail-address "tjaart@tjaart.co.za"
+    ;;  user-full-name  "Tjaart van der Walt")
 
     ;; sending mail
     (setq message-send-mail-function 'message-send-mail-with-sendmail
@@ -323,14 +323,16 @@
 (when msg
 (mu4e-message-contact-field-matches msg
 :to "tjaart@tjaart.co.za")))
-:vars '( ( user-mail-address
-. "tjaart@tjaart.co.za" )
-( user-full-name
-. "Tjaart van der Walt" )
-( mu4e-compose-signature .
-(concat
-"Tjaart van der Walt\n"
-"www.tjaart.co.za\n"))))
+:vars '((mu4e-inbox-folder "/tjaart@tjaart.co.za/INBOX")
+         (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
+         (my-mu4e-spam-folder "/tjaart@tjaart.co.za/Spam")
+         (mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts")
+         (mu4e-sent-folder "/tjaart@tjaart.co.za/Sent")
+         (mu4e-trash-folder "/tjaart@tjaart.co.za/Trash")
+         (user-mail-address "tjaart@tjaart.co.za")
+         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za")
+         ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
+         (setq mu4e-sent-messages-behavior 'delete)))
 
 ,(make-mu4e-context
 :name "btajvdw@gmail.com"
@@ -340,13 +342,15 @@
 (when msg
 (mu4e-message-contact-field-matches msg
 :to "tajvdw@gmail.com")))
-:vars '( ( user-mail-address
-. "tajvdw@gmail.com" )
-( user-full-name
-. "Tjaart van der Walt" )
-( mu4e-compose-signature .
-(concat
-"Tjaart van der Walt\n")))))))
+:vars '((mu4e-inbox-folder "/tajvdw@gmail.com/INBOX")
+         (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
+         (my-mu4e-spam-folder "/tajvdw@gmail.com/Spam")
+         (mu4e-drafts-folder "/tajvdw@gmail.com/Drafts")
+         (mu4e-sent-folder "/tajvdw@gmail.com/Sent")
+         (mu4e-trash-folder "/tajvdw@gmail.com/Trash")
+         (user-mail-address "tajvdw@gmail.com")
+         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
+         (setq mu4e-sent-messages-behavior 'delete))))))
 
 ;; ;; set `mu4e-context-policy` and `mu4e-compose-policy` to tweak when mu4e should
 ;; ;; guess or ask the correct context, e.g.
