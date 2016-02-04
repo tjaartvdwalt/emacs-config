@@ -338,15 +338,14 @@
 :match-func (lambda (msg)
 (when msg
 (mu4e-message-contact-field-matches msg
-:to "aderleth@miskatonic.example.com")))
+:to "tajvdw@gmail.com")))
 :vars '( ( user-mail-address
-. "aderleth@miskatonic.example.com" )
+. "tajvdw@gmail.com" )
 ( user-full-name
-. "Alice Derleth" )
+. "Tjaart van der Walt" )
 ( mu4e-compose-signature .
 (concat
-"Prof. Alice Derleth\n"
-"Miskatonic University, Dept. of Occult Sciences\n")))))))
+"Tjaart van der Walt\n")))))))
 
 ;; ;; set `mu4e-context-policy` and `mu4e-compose-policy` to tweak when mu4e should
 ;; ;; guess or ask the correct context, e.g.
