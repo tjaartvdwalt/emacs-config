@@ -316,7 +316,7 @@
 (setq mu4e-contexts
 `( ,(make-mu4e-context
 :name "tjaart@tjaart.co.za"
-:enter-func (lambda () (mu4e-message "tjaart@tjaart.co.za"))
+:enter-func (lambda () (mu4e-message "Switch to: tjaart@tjaart.co.za"))
 ;; leave-func not defined
 :match-func (lambda (msg)
 (when msg
@@ -329,24 +329,25 @@
 ( mu4e-compose-signature .
 (concat
 "Tjaart van der Walt\n"
-"www.tjaart.co.za\n")))))))
+"www.tjaart.co.za\n"))))
 
-;; ,(make-mu4e-context
-;; :name "Work"
-;; :enter-func (lambda () (mu4e-message "Switch to the Work context"))
-;; ;; leave-fun not defined
-;; :match-func (lambda (msg)
-;; (when msg
-;; (mu4e-message-contact-field-matches msg
-;; :to "aderleth@miskatonic.example.com")))
-;; :vars '( ( user-mail-address
-;; . "aderleth@miskatonic.example.com" )
-;; ( user-full-name
-;; . "Alice Derleth" )
-;; ( mu4e-compose-signature .
-;; (concat
-;; "Prof. Alice Derleth\n"
-;; "Miskatonic University, Dept. of Occult Sciences\n"))))))
+,(make-mu4e-context
+:name "tajvdw@gmail.com"
+:enter-func (lambda () (mu4e-message "Switch to: tajvdw@gmail.com"))
+;; leave-fun not defined
+:match-func (lambda (msg)
+(when msg
+(mu4e-message-contact-field-matches msg
+:to "aderleth@miskatonic.example.com")))
+:vars '( ( user-mail-address
+. "aderleth@miskatonic.example.com" )
+( user-full-name
+. "Alice Derleth" )
+( mu4e-compose-signature .
+(concat
+"Prof. Alice Derleth\n"
+"Miskatonic University, Dept. of Occult Sciences\n")))))))
+
 ;; ;; set `mu4e-context-policy` and `mu4e-compose-policy` to tweak when mu4e should
 ;; ;; guess or ask the correct context, e.g.
 ;; ;; start with the first (default) context;
