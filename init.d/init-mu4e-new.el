@@ -13,8 +13,8 @@
                              (when msg
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tjaart@tjaart.co.za")))
-               :vars '((mu4e-inbox-folder       . "/tjaart@tjaart.co.za/INBOX")
-                       (setq mu4e-maildir "~/Maildir/tjaart@tjaart.co.za")
+               :vars '((mu4e-inbox-folder      . "/tjaart@tjaart.co.za/INBOX")
+                       (setq mu4e-maildir      . "~/Maildir/tjaart@tjaart.co.za")
                        (my-mu4e-refile-folder  . "/tajvdw@gmail.com/Archives")
                        (my-mu4e-spam-folder    . "/tjaart@tjaart.co.za/Spam")
                        (mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
@@ -33,13 +33,13 @@
                              (when msg
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tajvdw@gmail.com")))
-               :vars '((mu4e-inbox-folder       . "/tajvdw@gmail.com/INBOX")
-                       (setq mu4e-maildir "~/Maildir/tajvdw@gmail.com")
+               :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
+                       (setq mu4e-maildir      . "~/Maildir/tajvdw@gmail.com")
                        (my-mu4e-refile-folder  . "/tajvdw@gmail.com/Archives")
                        (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
                        (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
                        (mu4e-sent-folder       . "/tajvdw@gmail.com/Sent")
                        (mu4e-trash-folder      . "/tajvdw@gmail.com/Trash")
                        (user-mail-address      . "tajvdw@gmail.com")
-                       (mu4e-compose-signature ."Tjaart van der Walt\nwww.tjaart.co.za" )
+                       (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
                        (setq mu4e-sent-messages-behavior 'delete)))))))
