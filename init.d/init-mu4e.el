@@ -61,56 +61,56 @@
           sendmail-program "/usr/bin/msmtp"
           user-full-name "Tjaart van der Walt")
 
-    ;; Configuring multiple accounts.
-    ;; This variable is a list of lists where the outer list is the email account name
-    ;; and the inner list is the directories associated with that account.
-    (defvar my-mu4e-account-alist
-      '(("tjaart@tjaart.co.za"
-         (mu4e-inbox-folder "/tjaart@tjaart.co.za/INBOX")
-         (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
-         (my-mu4e-spam-folder "/tjaart@tjaart.co.za/Spam")
-         (mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts")
-         (mu4e-sent-folder "/tjaart@tjaart.co.za/Sent")
-         (mu4e-trash-folder "/tjaart@tjaart.co.za/Trash")
-         (user-mail-address "tjaart@tjaart.co.za")
-         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za")
-         ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
-         (setq mu4e-sent-messages-behavior 'delete))
+    ;; ;; Configuring multiple accounts.
+    ;; ;; This variable is a list of lists where the outer list is the email account name
+    ;; ;; and the inner list is the directories associated with that account.
+    ;; (defvar my-mu4e-account-alist
+    ;;   '(("tjaart@tjaart.co.za"
+    ;;      (mu4e-inbox-folder "/tjaart@tjaart.co.za/INBOX")
+    ;;      (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
+    ;;      (my-mu4e-spam-folder "/tjaart@tjaart.co.za/Spam")
+    ;;      (mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts")
+    ;;      (mu4e-sent-folder "/tjaart@tjaart.co.za/Sent")
+    ;;      (mu4e-trash-folder "/tjaart@tjaart.co.za/Trash")
+    ;;      (user-mail-address "tjaart@tjaart.co.za")
+    ;;      (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za")
+    ;;      ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
+    ;;      (setq mu4e-sent-messages-behavior 'delete))
 
-        ("tjaart@solmates.co"
-         (mu4e-inbox-folder "/tjaart@solmates.co/INBOX")
-         (my-mu4e-refile-folder "/tjaart@solmates.co/Archives")
-         (my-mu4e-spam-folder "/tjaart@solmates.co/Spam")
-         (mu4e-drafts-folder "/tjaart@solmates.co/Drafts")
-         (mu4e-sent-folder "/tjaart@solmates.co/Sent")
-         (mu4e-trash-folder "/tjaart@solmates.co/Trash")
-         (user-mail-address "tjaart@solmates.co")
-         (mu4e-compose-signature "Tjaart van der Walt\nTechnical Co-founder" )
-         (setq mu4e-sent-messages-behavior 'delete))
+    ;;     ("tjaart@solmates.co"
+    ;;      (mu4e-inbox-folder "/tjaart@solmates.co/INBOX")
+    ;;      (my-mu4e-refile-folder "/tjaart@solmates.co/Archives")
+    ;;      (my-mu4e-spam-folder "/tjaart@solmates.co/Spam")
+    ;;      (mu4e-drafts-folder "/tjaart@solmates.co/Drafts")
+    ;;      (mu4e-sent-folder "/tjaart@solmates.co/Sent")
+    ;;      (mu4e-trash-folder "/tjaart@solmates.co/Trash")
+    ;;      (user-mail-address "tjaart@solmates.co")
+    ;;      (mu4e-compose-signature "Tjaart van der Walt\nTechnical Co-founder" )
+    ;;      (setq mu4e-sent-messages-behavior 'delete))
 
-        ("tajvdw@gmail.com"
-         (mu4e-inbox-folder "/tajvdw@gmail.com/INBOX")
-         (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
-         (my-mu4e-spam-folder "/tajvdw@gmail.com/Spam")
-         (mu4e-drafts-folder "/tajvdw@gmail.com/Drafts")
-         (mu4e-sent-folder "/tajvdw@gmail.com/Sent")
-         (mu4e-trash-folder "/tajvdw@gmail.com/Trash")
-         (user-mail-address "tajvdw@gmail.com")
-         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
-         (setq mu4e-sent-messages-behavior 'delete))
+    ;;     ("tajvdw@gmail.com"
+    ;;      (mu4e-inbox-folder "/tajvdw@gmail.com/INBOX")
+    ;;      (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
+    ;;      (my-mu4e-spam-folder "/tajvdw@gmail.com/Spam")
+    ;;      (mu4e-drafts-folder "/tajvdw@gmail.com/Drafts")
+    ;;      (mu4e-sent-folder "/tajvdw@gmail.com/Sent")
+    ;;      (mu4e-trash-folder "/tajvdw@gmail.com/Trash")
+    ;;      (user-mail-address "tajvdw@gmail.com")
+    ;;      (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
+    ;;      (setq mu4e-sent-messages-behavior 'delete))
 
-        ("tav9wc@mail.umsl.edu"
-         (mu4e-inbox-folder "/tav9wc@mail.umsl.edu/INBOX")
-         (my-mu4e-refile-folder "/tav9wc@mail.umsl.edu/Archives")
-         (my-mu4e-spam-folder "/tav9wc@mail.umsl.edu/Spam")
-         (mu4e-drafts-folder "/tav9wc@mail.umsl.edu/Drafts")
-         (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent")
-         (mu4e-trash-folder "/tav9wc@mail.umsl.edu/Trash")
-         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
-         (user-mail-address "tav9wc@mail.umsl.edu")
-         (smtpmail-smtp-server "smtp.office365.com")
-         (smtpmail-stream-type starttls)
-         (smtpmail-smtp-service 587))))
+    ;;     ("tav9wc@mail.umsl.edu"
+    ;;      (mu4e-inbox-folder "/tav9wc@mail.umsl.edu/INBOX")
+    ;;      (my-mu4e-refile-folder "/tav9wc@mail.umsl.edu/Archives")
+    ;;      (my-mu4e-spam-folder "/tav9wc@mail.umsl.edu/Spam")
+    ;;      (mu4e-drafts-folder "/tav9wc@mail.umsl.edu/Drafts")
+    ;;      (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent")
+    ;;      (mu4e-trash-folder "/tav9wc@mail.umsl.edu/Trash")
+    ;;      (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
+    ;;      (user-mail-address "tav9wc@mail.umsl.edu")
+    ;;      (smtpmail-smtp-server "smtp.office365.com")
+    ;;      (smtpmail-stream-type starttls)
+    ;;      (smtpmail-smtp-service 587))))
 
     ;; archive messages to the folder corresponding to the current year
     (setq mu4e-refile-folder
