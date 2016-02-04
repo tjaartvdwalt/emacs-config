@@ -323,14 +323,14 @@
 (when msg
 (mu4e-message-contact-field-matches msg
 :to "tjaart@tjaart.co.za")))
-:vars '((mu4e-inbox-folder "/tjaart@tjaart.co.za/INBOX")
-         (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
-         (my-mu4e-spam-folder "/tjaart@tjaart.co.za/Spam")
-         (mu4e-drafts-folder "/tjaart@tjaart.co.za/Drafts")
-         (mu4e-sent-folder "/tjaart@tjaart.co.za/Sent")
-         (mu4e-trash-folder "/tjaart@tjaart.co.za/Trash")
-         (user-mail-address "tjaart@tjaart.co.za")
-         (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za")
+:vars '((mu4e-inbox-folder       . "/tjaart@tjaart.co.za/INBOX")
+         (my-mu4e-refile-folder  . "/tajvdw@gmail.com/Archives")
+         (my-mu4e-spam-folder    . "/tjaart@tjaart.co.za/Spam")
+         (mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
+         (mu4e-sent-folder       . "/tjaart@tjaart.co.za/Sent")
+         (mu4e-trash-folder      . "/tjaart@tjaart.co.za/Trash")
+         (user-mail-address      . "tjaart@tjaart.co.za")
+         (mu4e-compose-signature .  "Tjaart van der Walt\nwww.tjaart.co.za")
          ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
          (setq mu4e-sent-messages-behavior 'delete)))
 
@@ -342,13 +342,13 @@
 (when msg
 (mu4e-message-contact-field-matches msg
 :to "tajvdw@gmail.com")))
-:vars '((mu4e-inbox-folder "/tajvdw@gmail.com/INBOX")
-         (my-mu4e-refile-folder "/tajvdw@gmail.com/Archives")
-         (my-mu4e-spam-folder "/tajvdw@gmail.com/Spam")
-         (mu4e-drafts-folder "/tajvdw@gmail.com/Drafts")
-         (mu4e-sent-folder "/tajvdw@gmail.com/Sent")
-         (mu4e-trash-folder "/tajvdw@gmail.com/Trash")
-         (user-mail-address "tajvdw@gmail.com")
+:vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
+         (my-mu4e-refile-folder . "/tajvdw@gmail.com/Archives")
+         (my-mu4e-spam-folder   . "/tajvdw@gmail.com/Spam")
+         (mu4e-drafts-folder    . "/tajvdw@gmail.com/Drafts")
+         (mu4e-sent-folder      . "/tajvdw@gmail.com/Sent")
+         (mu4e-trash-folder     . "/tajvdw@gmail.com/Trash")
+         (user-mail-address     . "tajvdw@gmail.com")
          (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
          (setq mu4e-sent-messages-behavior 'delete))))))
 
