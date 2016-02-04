@@ -41,12 +41,12 @@
 
     ;; set custom header fields
     ;;(setq mu4e-headers-date-format "%Y-%m-%d %H:%M")
-    ;; (setq mu4e-headers-fields
-    ;;       '((:human-date  . 24)
-    ;;         (:flags       . 6)
-    ;;         (:from        . 22)
-    ;;         (:to          . 22)
-    ;;         (:subject     . nil)))
+    (setq mu4e-headers-fields
+          '((:human-date  . 24)
+            (:flags       . 6)
+            (:from        . 22)
+            (:to          . 22)
+            (:subject     . nil)))
 
     ;; (setq ;;mu4e-refile-folder "/tajvdw@gmail.com/Archives"
     ;;  mu4e-sent-folder "/tjaart@tjaart.co.za/Sent"
@@ -138,39 +138,39 @@
     (add-to-list 'mu4e-view-actions
                  '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
 
-    ;; ;; mark a message as spam ind header view
-    ;; (defun mu4e-mark-for-spam (msg)
-    ;;   "Train spambayes, and move the message to the spam folder."
-    ;;   (interactive)
-    ;;   (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
-    ;;                       (shell-quote-argument (mu4e-msg-field msg :path)))))
-    ;;     (shell-command cmd))
-    ;;   (message "Trained as SPAM")
-    ;;   (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
+    ;; mark a message as spam ind header view
+    (defun mu4e-mark-for-spam (msg)
+      "Train spambayes, and move the message to the spam folder."
+      (interactive)
+      (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
+                          (shell-quote-argument (mu4e-msg-field msg :path)))))
+        (shell-command cmd))
+      (message "Trained as SPAM")
+      (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
-    ;; ;; mark a message as spam
-    ;; (defun mu4e-view-mark-for-spam (msg)
-    ;;   "Mark messages as spam in the message view."
-    ;;   (interactive)
-    ;;   (mu4e~view-in-headers-context (mu4e-mark-for-spam msg))
-    ;;   (mu4e-view-headers-next))
+    ;; mark a message as spam
+    (defun mu4e-view-mark-for-spam (msg)
+      "Mark messages as spam in the message view."
+      (interactive)
+      (mu4e~view-in-headers-context (mu4e-mark-for-spam msg))
+      (mu4e-view-headers-next))
 
-    ;; ;; mark a message to move it to the inbox (useful for mail that has been accidentally marked as spam)
-    ;; (defun mu4e-mark-for-inbox (msg)
-    ;;   "Move the current message to the Inbox."
-    ;;   (interactive)
-    ;;   (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
-    ;;                       (shell-quote-argument (mu4e-msg-field msg :path)))))
-    ;;     (shell-command cmd))
-    ;;   (message "Trained as HAM")
-    ;;   (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-inbox-folder")))
+    ;; mark a message to move it to the inbox (useful for mail that has been accidentally marked as spam)
+    (defun mu4e-mark-for-inbox (msg)
+      "Move the current message to the Inbox."
+      (interactive)
+      (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
+                          (shell-quote-argument (mu4e-msg-field msg :path)))))
+        (shell-command cmd))
+      (message "Trained as HAM")
+      (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-inbox-folder")))
 
-    ;; ;; move message to inbox
-    ;; (defun mu4e-view-mark-for-inbox (msg)
-    ;;   "Move message to the inbox in message view."
-    ;;   (interactive)
-    ;;   (mu4e~view-in-headers-context (mu4e-mark-for-inbox msg))
-    ;;   (mu4e-view-headers-next))
+    ;; move message to inbox
+    (defun mu4e-view-mark-for-inbox (msg)
+      "Move message to the inbox in message view."
+      (interactive)
+      (mu4e~view-in-headers-context (mu4e-mark-for-inbox msg))
+      (mu4e-view-headers-next))
 
 
     ;; Choose account label to feed msmtp -a option based on From header
@@ -260,32 +260,32 @@
                     (setq value (cdr var))))))
         (message (car value))))
 
-    ;; (defun my-mu4e-get-maildir-for-multiple-accounts(maildir seperator)
-    ;;   (let ( (value)
-    ;;          (identity ""))
-    ;;     (dolist (account (my-mu4e-find-accounts))
-    ;;       (add-to-list 'value (concat "maildir:" (my-mu4e-find-folder account maildir))))
-    ;;     (dotimes (number (- (length value) 1) identity)
-    ;;       (setq identity (concat identity (nth number value) " " seperator " ")))
-    ;;     (setq identity (concat identity (nth (- (length value) 1) value)))))
+    (defun my-mu4e-get-maildir-for-multiple-accounts(maildir seperator)
+      (let ( (value)
+             (identity ""))
+        (dolist (account (my-mu4e-find-accounts))
+          (add-to-list 'value (concat "maildir:" (my-mu4e-find-folder account maildir))))
+        (dotimes (number (- (length value) 1) identity)
+          (setq identity (concat identity (nth number value) " " seperator " ")))
+        (setq identity (concat identity (nth (- (length value) 1) value)))))
 
-    ;; ;; let* binds the var directly after computing its local value.
-    ;; (let*((draft "flag:draft")
-    ;;       (unread "flag:unread")
-    ;;       (trash "flag:trashed")
-    ;;       (trash-and-not-spam (concat trash " AND NOT "
-    ;;                                   (my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "AND NOT"))))
-    ;;   (setq mu4e-bookmarks
-    ;;         `(
-    ;;           (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-inbox-folder" "OR") "Messages in Inbox"      ?i)
-    ;;           (,(concat unread " AND NOT " trash-and-not-spam) "Unread messages"      ?u)
-    ;;           (,(concat "date:today..now AND NOT " trash-and-not-spam) "Today's messages"     ?t)
-    ;;           (,(concat "date:7d..now AND NOT " trash-and-not-spam) "Last 7 days"          ?w)
-    ;;           (,(concat "mime:image/* AND NOT " trash-and-not-spam) "Messages with images" ?p)
-    ;;           (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-sent-folder" "OR") "Sent Mail" ?s)
-    ;;           (,(my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "OR") "Spam" ?S)
-    ;;           (,(concat trash) "Trashed messages" ?T)
-    ;;           (,(concat draft) "Draft messages" ?d))))
+    ;; let* binds the var directly after computing its local value.
+    (let*((draft "flag:draft")
+          (unread "flag:unread")
+          (trash "flag:trashed")
+          (trash-and-not-spam (concat trash " AND NOT "
+                                      (my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "AND NOT"))))
+      ;; (setq mu4e-bookmarks
+      ;;       `(
+      ;;         (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-inbox-folder" "OR") "Messages in Inbox"      ?i)
+      ;;         (,(concat unread " AND NOT " trash-and-not-spam) "Unread messages"      ?u)
+      ;;         (,(concat "date:today..now AND NOT " trash-and-not-spam) "Today's messages"     ?t)
+      ;;         (,(concat "date:7d..now AND NOT " trash-and-not-spam) "Last 7 days"          ?w)
+      ;;         (,(concat "mime:image/* AND NOT " trash-and-not-spam) "Messages with images" ?p)
+      ;;         (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-sent-folder" "OR") "Sent Mail" ?s)
+      ;;         (,(my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "OR") "Spam" ?S)
+      ;;         (,(concat trash) "Trashed messages" ?T)
+      ;;         (,(concat draft) "Draft messages" ?d))))
 
     ;; Parse the year field from the message date.
     (defun my-mu4e-get-message-year(msg)
@@ -302,14 +302,14 @@
         (message (car value))))
 
 
-  ;;   (defun mu4e-train-ham (msg)
-  ;;     "Train as spam and then mark for deletion."
-  ;;     (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
-  ;;                         (shell-quote-argument (mu4e-msg-field msg :path)))))
-  ;;       (shell-command cmd))
-  ;;     mu4e-headers-mark-for-spam(msg)
-  ;;     (message "Trained as HAM")))
-  ;; )
+    (defun mu4e-train-ham (msg)
+      "Train as spam and then mark for deletion."
+      (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
+                          (shell-quote-argument (mu4e-msg-field msg :path)))))
+        (shell-command cmd))
+      mu4e-headers-mark-for-spam(msg)
+      (message "Trained as HAM")))
+  )
 
 
 
