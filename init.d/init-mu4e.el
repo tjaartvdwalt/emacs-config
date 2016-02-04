@@ -41,12 +41,12 @@
 
     ;; set custom header fields
     ;;(setq mu4e-headers-date-format "%Y-%m-%d %H:%M")
-    (setq mu4e-headers-fields
-          '((:human-date  . 24)
-            (:flags       . 6)
-            (:from        . 22)
-            (:to          . 22)
-            (:subject     . nil)))
+    ;; (setq mu4e-headers-fields
+    ;;       '((:human-date  . 24)
+    ;;         (:flags       . 6)
+    ;;         (:from        . 22)
+    ;;         (:to          . 22)
+    ;;         (:subject     . nil)))
 
     ;; (setq ;;mu4e-refile-folder "/tajvdw@gmail.com/Archives"
     ;;  mu4e-sent-folder "/tjaart@tjaart.co.za/Sent"
