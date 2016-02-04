@@ -138,39 +138,39 @@
     (add-to-list 'mu4e-view-actions
                  '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
 
-    ;; mark a message as spam ind header view
-    (defun mu4e-mark-for-spam (msg)
-      "Train spambayes, and move the message to the spam folder."
-      (interactive)
-      (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
-                          (shell-quote-argument (mu4e-msg-field msg :path)))))
-        (shell-command cmd))
-      (message "Trained as SPAM")
-      (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
+    ;; ;; mark a message as spam ind header view
+    ;; (defun mu4e-mark-for-spam (msg)
+    ;;   "Train spambayes, and move the message to the spam folder."
+    ;;   (interactive)
+    ;;   (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
+    ;;                       (shell-quote-argument (mu4e-msg-field msg :path)))))
+    ;;     (shell-command cmd))
+    ;;   (message "Trained as SPAM")
+    ;;   (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
-    ;; mark a message as spam
-    (defun mu4e-view-mark-for-spam (msg)
-      "Mark messages as spam in the message view."
-      (interactive)
-      (mu4e~view-in-headers-context (mu4e-mark-for-spam msg))
-      (mu4e-view-headers-next))
+    ;; ;; mark a message as spam
+    ;; (defun mu4e-view-mark-for-spam (msg)
+    ;;   "Mark messages as spam in the message view."
+    ;;   (interactive)
+    ;;   (mu4e~view-in-headers-context (mu4e-mark-for-spam msg))
+    ;;   (mu4e-view-headers-next))
 
-    ;; mark a message to move it to the inbox (useful for mail that has been accidentally marked as spam)
-    (defun mu4e-mark-for-inbox (msg)
-      "Move the current message to the Inbox."
-      (interactive)
-      (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
-                          (shell-quote-argument (mu4e-msg-field msg :path)))))
-        (shell-command cmd))
-      (message "Trained as HAM")
-      (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-inbox-folder")))
+    ;; ;; mark a message to move it to the inbox (useful for mail that has been accidentally marked as spam)
+    ;; (defun mu4e-mark-for-inbox (msg)
+    ;;   "Move the current message to the Inbox."
+    ;;   (interactive)
+    ;;   (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
+    ;;                       (shell-quote-argument (mu4e-msg-field msg :path)))))
+    ;;     (shell-command cmd))
+    ;;   (message "Trained as HAM")
+    ;;   (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "mu4e-inbox-folder")))
 
-    ;; move message to inbox
-    (defun mu4e-view-mark-for-inbox (msg)
-      "Move message to the inbox in message view."
-      (interactive)
-      (mu4e~view-in-headers-context (mu4e-mark-for-inbox msg))
-      (mu4e-view-headers-next))
+    ;; ;; move message to inbox
+    ;; (defun mu4e-view-mark-for-inbox (msg)
+    ;;   "Move message to the inbox in message view."
+    ;;   (interactive)
+    ;;   (mu4e~view-in-headers-context (mu4e-mark-for-inbox msg))
+    ;;   (mu4e-view-headers-next))
 
 
     ;; Choose account label to feed msmtp -a option based on From header
@@ -260,14 +260,14 @@
                     (setq value (cdr var))))))
         (message (car value))))
 
-    (defun my-mu4e-get-maildir-for-multiple-accounts(maildir seperator)
-      (let ( (value)
-             (identity ""))
-        (dolist (account (my-mu4e-find-accounts))
-          (add-to-list 'value (concat "maildir:" (my-mu4e-find-folder account maildir))))
-        (dotimes (number (- (length value) 1) identity)
-          (setq identity (concat identity (nth number value) " " seperator " ")))
-        (setq identity (concat identity (nth (- (length value) 1) value)))))
+    ;; (defun my-mu4e-get-maildir-for-multiple-accounts(maildir seperator)
+    ;;   (let ( (value)
+    ;;          (identity ""))
+    ;;     (dolist (account (my-mu4e-find-accounts))
+    ;;       (add-to-list 'value (concat "maildir:" (my-mu4e-find-folder account maildir))))
+    ;;     (dotimes (number (- (length value) 1) identity)
+    ;;       (setq identity (concat identity (nth number value) " " seperator " ")))
+    ;;     (setq identity (concat identity (nth (- (length value) 1) value)))))
 
     ;; ;; let* binds the var directly after computing its local value.
     ;; (let*((draft "flag:draft")
@@ -302,14 +302,14 @@
         (message (car value))))
 
 
-    (defun mu4e-train-ham (msg)
-      "Train as spam and then mark for deletion."
-      (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
-                          (shell-quote-argument (mu4e-msg-field msg :path)))))
-        (shell-command cmd))
-      mu4e-headers-mark-for-spam(msg)
-      (message "Trained as HAM")))
-  )
+  ;;   (defun mu4e-train-ham (msg)
+  ;;     "Train as spam and then mark for deletion."
+  ;;     (let* ((cmd (format "sb_filter.py -g < %s >/dev/null"
+  ;;                         (shell-quote-argument (mu4e-msg-field msg :path)))))
+  ;;       (shell-command cmd))
+  ;;     mu4e-headers-mark-for-spam(msg)
+  ;;     (message "Trained as HAM")))
+  ;; )
 
 
 
