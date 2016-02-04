@@ -2,7 +2,6 @@
 (req-package mu4e
   :require (gnus-dired)
   :config
-  :disabled t
   (progn
     (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
 
@@ -276,17 +275,17 @@
           (trash "flag:trashed")
           (trash-and-not-spam (concat trash " AND NOT "
                                       (my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "AND NOT"))))
-      ;; (setq mu4e-bookmarks
-      ;;       `(
-      ;;         (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-inbox-folder" "OR") "Messages in Inbox"      ?i)
-      ;;         (,(concat unread " AND NOT " trash-and-not-spam) "Unread messages"      ?u)
-      ;;         (,(concat "date:today..now AND NOT " trash-and-not-spam) "Today's messages"     ?t)
-      ;;         (,(concat "date:7d..now AND NOT " trash-and-not-spam) "Last 7 days"          ?w)
-      ;;         (,(concat "mime:image/* AND NOT " trash-and-not-spam) "Messages with images" ?p)
-      ;;         (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-sent-folder" "OR") "Sent Mail" ?s)
-      ;;         (,(my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "OR") "Spam" ?S)
-      ;;         (,(concat trash) "Trashed messages" ?T)
-      ;;         (,(concat draft) "Draft messages" ?d))))
+      (setq mu4e-bookmarks
+            `(
+              (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-inbox-folder" "OR") "Messages in Inbox"      ?i)
+              (,(concat unread " AND NOT " trash-and-not-spam) "Unread messages"      ?u)
+              (,(concat "date:today..now AND NOT " trash-and-not-spam) "Today's messages"     ?t)
+              (,(concat "date:7d..now AND NOT " trash-and-not-spam) "Last 7 days"          ?w)
+              (,(concat "mime:image/* AND NOT " trash-and-not-spam) "Messages with images" ?p)
+              (,(my-mu4e-get-maildir-for-multiple-accounts "mu4e-sent-folder" "OR") "Sent Mail" ?s)
+              (,(my-mu4e-get-maildir-for-multiple-accounts "my-mu4e-spam-folder" "OR") "Spam" ?S)
+              (,(concat trash) "Trashed messages" ?T)
+              (,(concat draft) "Draft messages" ?d))))
 
     ;; Parse the year field from the message date.
     (defun my-mu4e-get-message-year(msg)
@@ -331,7 +330,7 @@
          (mu4e-sent-folder       . "/tjaart@tjaart.co.za/Sent")
          (mu4e-trash-folder      . "/tjaart@tjaart.co.za/Trash")
          (user-mail-address      . "tjaart@tjaart.co.za")
-         (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za")
+         (mu4e-compose-signature .  "Tjaart van der Walt\nwww.tjaart.co.za")
          ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
          (setq mu4e-sent-messages-behavior 'delete)))
 
