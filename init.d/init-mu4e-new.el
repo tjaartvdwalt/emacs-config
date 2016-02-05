@@ -2,6 +2,9 @@
   :require (gnus-dired)
   :config
   (progn
+    ;;Set a shortcut for mu4e
+    (global-set-key "\C-ce" 'mu4e)
+
     (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mu4e-maildir "~/Maildir/")
