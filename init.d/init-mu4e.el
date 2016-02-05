@@ -143,10 +143,6 @@
     (defun mu4e-mark-for-spam (msg)
       "Train spambayes, and move the message to the spam folder."
       (interactive)
-      (let* ((cmd (format "sb_filter.py -s < %s >/dev/null"
-                          (shell-quote-argument (mu4e-msg-field msg :path)))))
-        (shell-command cmd))
-      (message "Trained as SPAM")
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
     ;; mark a message as spam
