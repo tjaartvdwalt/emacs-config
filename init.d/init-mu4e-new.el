@@ -19,7 +19,6 @@
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
     (setq mu4e-context-policy 'ask)
-
     (setq mu4e-contexts
           `( ,(make-mu4e-context
                :name "atjaart@tjaart.co.za"
