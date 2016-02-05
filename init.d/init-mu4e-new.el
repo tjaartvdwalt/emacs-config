@@ -9,7 +9,7 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mu4e-maildir "~/Maildir/")
 
-    
+
     (add-to-list 'mu4e-headers-actions
                  '("sMark as Spam" . mu4e-mark-for-spam) t)
 
@@ -18,7 +18,8 @@
       (interactive)
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
-    
+    (setq mu4e-context-policy 'ask)
+
     (setq mu4e-contexts
           `( ,(make-mu4e-context
                :name "atjaart@tjaart.co.za"
@@ -29,7 +30,6 @@
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tjaart@tjaart.co.za")))
                :vars '((mu4e-inbox-folder      . "/tjaart@tjaart.co.za/INBOX")
-                       (setq mu4e-maildir      . "~/Maildir/tjaart@tjaart.co.za")
                        (my-mu4e-refile-folder  . "/tajvdw@gmail.com/Archives")
                        (my-mu4e-spam-folder    . "/tjaart@tjaart.co.za/Spam")
                        (mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
@@ -49,7 +49,6 @@
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tajvdw@gmail.com")))
                :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
-                       (setq mu4e-maildir      . "~/Maildir/tajvdw@gmail.com")
                        (my-mu4e-refile-folder  . "/tajvdw@gmail.com/Archives")
                        (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
                        (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
