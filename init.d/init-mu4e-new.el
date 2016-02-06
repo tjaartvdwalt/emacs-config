@@ -9,6 +9,8 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mu4e-maildir "~/Maildir/")
 
+    (add-to-list 'mu4e-view-actions
+                 '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
 
     (add-to-list 'mu4e-headers-actions
                  '("sMark as Spam" . mu4e-mark-for-spam) t)
@@ -18,10 +20,8 @@
       (interactive)
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
-        (add-to-list 'mu4e-view-actions
-                 '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
 
-    
+
     (setq mu4e-bookmarks
           `(
             (,("mu4e-inbox-folder") "Messages in Inbox"      ?i)
