@@ -11,4 +11,4 @@
            "<head><meta http-equiv=\"content-type\""
            "content=\"text/html;charset=UTF-8\">"
            html))
-        (browse-url (concat "file://" tmpfile))))
+        (browse-url (concat "file://" tmpfile)))))
