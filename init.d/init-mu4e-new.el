@@ -18,14 +18,18 @@
       (interactive)
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
-          (setq mu4e-bookmarks
-            `(
-              (,("mu4e-inbox-folder") "Messages in Inbox"      ?i)
-              (,(concat trash) "Trashed messages" ?T)
-              (,(concat draft) "Draft messages" ?d))
-       )
+        (add-to-list 'mu4e-view-actions
+                 '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
 
     
+    (setq mu4e-bookmarks
+          `(
+            (,("mu4e-inbox-folder") "Messages in Inbox"      ?i)
+            (,(concat trash) "Trashed messages" ?T)
+            (,(concat draft) "Draft messages" ?d))
+          )
+
+
     (setq mu4e-context-policy 'ask)
     (setq mu4e-contexts
           `( ,(make-mu4e-context
