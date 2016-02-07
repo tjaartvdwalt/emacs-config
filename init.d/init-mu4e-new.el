@@ -21,13 +21,16 @@
       (mu4e-mark-set 'move (my-mu4e-find-folder (my-mu4e-get-message-account msg) "my-mu4e-spam-folder")))
 
 
+    (let*((draft "flag:draft")
+          (unread "flag:unread")
+          (trash "flag:trashed"))
 
-    (setq mu4e-bookmarks
-          `(
-            (,("mu4e-inbox-folder") "Messages in Inbox"      ?i)
-            (,(concat trash) "Trashed messages" ?T)
-            (,(concat draft) "Draft messages" ?d))
-          )
+      (setq mu4e-bookmarks
+            `(
+              (,("mu4e-inbox-folder") "Messages in Inbox"      ?i)
+              (,(concat trash) "Trashed messages" ?T)
+              (,(concat draft) "Draft messages" ?d))
+            ))
 
 
     (setq mu4e-context-policy 'ask)
