@@ -34,7 +34,7 @@
             `(
               (,unread "Unread messages"      ?u)
               (,trash "Trashed messages" ?T)
-              (,(concat draft) "Draft messages" ?d))))
+              (,draft "Draft messages" ?d))))
 
 
     (setq mu4e-context-policy 'ask)
