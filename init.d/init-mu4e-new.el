@@ -40,7 +40,7 @@
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
     (setq   mu4e-maildir-shortcuts
-            '("mu4e-inbox-folder"     . ?a)
+            ("mu4e-inbox-folder"     . ?a)
               ("/tjaart@tjaart.co.za/INBOX" . ?i)
               ("/work"        . ?w)
               ("/sent"        . ?s)))
