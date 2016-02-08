@@ -57,6 +57,10 @@
             (,"flag:trashed"       "Trashed messages"     ?T)
             (,"flag:draft"         "Draft messages"       ?d)))
 
+    (setq message-send-mail-function 'my-mu4e-sent-account
+          sendmail-program "/usr/bin/msmtp"
+          user-full-name "Tjaart van der Walt")
+    
 
     (setq mu4e-context-policy 'ask)
     (setq mu4e-contexts
@@ -71,6 +75,7 @@
                :vars '((mu4e-inbox-folder      . "/tjaart@tjaart.co.za/INBOX")
                        (mu4e-refile-folder     . "/tjaart@tjaart.co.za/Archives")
                        (my-mu4e-spam-folder    . "/tjaart@tjaart.co.za/Spam")
+                       (my-mu4e-sent-account   . "tjaart")
                        (mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
                        (mu4e-sent-folder       . "/tjaart@tjaart.co.za/Sent")
                        (mu4e-trash-folder      . "/tjaart@tjaart.co.za/Trash")
