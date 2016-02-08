@@ -8,6 +8,9 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mail-user-agent 'mu4e-user-agent)
     (setq mu4e-maildir "~/Maildir")
+    (setq mu4e-use-fancy-chars t)
+    (setq mu4e-view-show-images t)
+
 
     (setq mu4e-headers-fields
           '((:human-date  . 24)
@@ -28,11 +31,11 @@
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
     (setq   mu4e-maildir-shortcuts
-    '(("/archive"     . ?a)
-      ((mu4e-inbox-folder) . ?i)
-      ("/work"        . ?w)
-      ("/sent"        . ?s)))
-    
+            '(("/archive"     . ?a)
+              ((mu4e-inbox-folder) . ?i)
+              ("/work"        . ?w)
+              ("/sent"        . ?s)))
+
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
           `(
