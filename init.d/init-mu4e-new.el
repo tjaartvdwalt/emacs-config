@@ -6,6 +6,7 @@
     (global-set-key "\C-ce" 'mu4e)
     (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
+    (setq mail-user-agent 'mu4e-user-agent)
     (setq mu4e-maildir "~/Maildir")
 
     (setq mu4e-headers-fields
