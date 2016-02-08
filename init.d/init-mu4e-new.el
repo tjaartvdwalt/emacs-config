@@ -11,7 +11,6 @@
     (setq mu4e-use-fancy-chars t)
     (setq mu4e-view-show-images t)
 
-
     (setq mu4e-headers-fields
           '((:human-date  . 24)
             (:flags       . 6)
