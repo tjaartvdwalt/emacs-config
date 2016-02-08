@@ -66,7 +66,7 @@
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tajvdw@gmail.com")))
                :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
-                       (my-mu4e-refile-folder  . "/tajvdw@gmail.com/Archives")
+                       (mu4e-refile-folder     . "/tajvdw@gmail.com/Archives")
                        (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
                        (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
                        (mu4e-sent-folder       . "/tajvdw@gmail.com/Sent")
