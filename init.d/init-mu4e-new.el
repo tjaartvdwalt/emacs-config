@@ -11,6 +11,7 @@
     (setq mu4e-use-fancy-chars t)
     (setq mu4e-view-show-images t)
     (setq mu4e-view-prefer-html t)
+    (setq message-kill-buffer-on-exit t)
 
     ;; (setq mu4e-headers-fields
     ;;       '((:human-date  . 24)
