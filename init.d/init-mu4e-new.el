@@ -31,7 +31,7 @@
 
     (setq   mu4e-maildir-shortcuts
             '(("/archive"     . ?a)
-              ("Inbox" . ?i)
+              ("/tjaart@tjaart.co.za/INBOX" . ?i)
               ("/work"        . ?w)
               ("/sent"        . ?s)))
 
