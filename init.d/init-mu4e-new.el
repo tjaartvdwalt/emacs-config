@@ -4,7 +4,6 @@
   (progn
     ;;Set a shortcut for mu4e
     (global-set-key "\C-ce" 'mu4e)
-
     (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mu4e-maildir "~/Maildir")
@@ -13,6 +12,12 @@
                  '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
                  '("sMark as Spam" . mu4e-mark-for-spam) t)
+    (add-to-list 'mu4e-view-actions
+                 '("sMark as Spam" . mu4e-view-mark-for-spam) t)
+    (add-to-list 'mu4e-headers-actions
+                 '("iMove to Inbox" . mu4e-mark-for-inbox) t)
+    (add-to-list 'mu4e-view-actions
+                 '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
 
     (setq mu4e-context-policy 'ask)
