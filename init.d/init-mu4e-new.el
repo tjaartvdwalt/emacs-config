@@ -58,7 +58,7 @@
             (,"flag:trashed"       "Trashed messages"     ?T)
             (,"flag:draft"         "Draft messages"       ?d)))
 
-    (setq message-send-mail-function (message my-mu4e-sent-account)
+    (setq message-send-mail-function '((message my-mu4e-sent-account))
           sendmail-program "/usr/bin/msmtp"
           user-full-name "Tjaart van der Walt")
     
