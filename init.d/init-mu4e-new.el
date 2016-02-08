@@ -31,7 +31,7 @@
 
     (setq   mu4e-maildir-shortcuts
             '(("/archive"     . ?a)
-              (mu4e-inbox-folder . ?i)
+              ('mu4e-inbox-folder . ?i)
               ("/work"        . ?w)
               ("/sent"        . ?s)))
 
