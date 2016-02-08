@@ -31,7 +31,7 @@
 
     (setq   mu4e-maildir-shortcuts
             '(("/archive"     . ?a)
-              ('mu4e-inbox-folder . ?i)
+              ((message mu4e-inbox-folder) . ?i)
               ("/work"        . ?w)
               ("/sent"        . ?s)))
 
@@ -83,3 +83,8 @@
                        (user-mail-address      . "tajvdw@gmail.com")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
                        (setq mu4e-sent-messages-behavior 'delete)))))))
+
+
+(setq test "ab")
+
+(message test)
