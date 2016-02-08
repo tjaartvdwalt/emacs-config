@@ -14,6 +14,11 @@
     (setq message-kill-buffer-on-exit t)
     (setq mu4e-update-interval 300)
 
+    (setq mu4e-view-show-images t
+      mu4e-show-images t
+      mu4e-view-image-max-width 800)
+
+
     ;; (setq mu4e-headers-fields
     ;;       '((:human-date  . 24)
     ;;         (:flags       . 6)
