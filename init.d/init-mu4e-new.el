@@ -39,11 +39,12 @@
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
-    (setq   mu4e-maildir-shortcuts
-            '(("/archive"     . ?a)
-              ("/tjaart@tjaart.co.za/INBOX" . ?i)
-              ("/work"        . ?w)
-              ("/sent"        . ?s)))
+    (setq mu4e-maildir-shortcuts
+          `(
+            (,"mu4e-inbox-folder"  ?a)))
+              ;; ("/tjaart@tjaart.co.za/INBOX" . ?i)
+              ;; ("/work"        . ?w)
+              ;; ("/sent"        . ?s)))
 
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
