@@ -9,6 +9,13 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mu4e-maildir "~/Maildir")
 
+    (add-to-list 'mu4e-view-actions
+                 '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
+
+    (add-to-list 'mu4e-headers-actions
+                 '("sMark as Spam" . mu4e-mark-for-spam) t)
+
+
     (setq mu4e-context-policy 'ask)
     (setq mu4e-contexts
           `( ,(make-mu4e-context
