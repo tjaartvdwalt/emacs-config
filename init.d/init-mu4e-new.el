@@ -38,15 +38,16 @@
                  '("iMove to Inbox" . mu4e-mark-for-inbox) t)
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
-    (setq draft "test")
-    (setq test2 '(("test"     . ?a)))
-    (defcustom   mu4e-maildir-shortcuts test2)
-    ;;           ("/tjaart@tjaart.co.za/INBOX" . ?i)
-    ;;           ("/work"        . ?w)
-    ;;           ("/sent"        . ?s)))
 
-    (custom-set-variables
-'(mu4e-maildir-shortcuts (quote (("test" . ?w)))))
+;;     (setq draft "test")
+;;     (setq test2 '(("test"     . ?a)))
+;;     (defcustom   mu4e-maildir-shortcuts test2)
+;;     ;;           ("/tjaart@tjaart.co.za/INBOX" . ?i)
+;;     ;;           ("/work"        . ?w)
+;;     ;;           ("/sent"        . ?s)))
+
+;;     (custom-set-variables
+;; '(mu4e-maildir-shortcuts (quote (("test" . ?w)))))
     
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
