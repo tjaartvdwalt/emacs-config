@@ -20,6 +20,7 @@
  '(magit-push-arguments nil)
  '(persp-nil-name "none")
  '(rails-ws:default-server-type "webrick")
+ '(send-mail-function (quote smtpmail-send-it))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
