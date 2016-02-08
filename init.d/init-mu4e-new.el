@@ -39,7 +39,7 @@
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
     (let*((draft "test")))
-    (setq   mu4e-maildir-shortcuts
+    (defvar   mu4e-maildir-shortcuts
             '((draft)     . ?a))
     ;;           ("/tjaart@tjaart.co.za/INBOX" . ?i)
     ;;           ("/work"        . ?w)
