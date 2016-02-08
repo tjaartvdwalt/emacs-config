@@ -41,7 +41,7 @@
 
     (setq mu4e-maildir-shortcuts
           `(
-            (,"mu4e-inbox-folder"  ?a)))
+            (,"mu4e-inbox-folder" "Inbox"  ?a)))
               ;; ("/tjaart@tjaart.co.za/INBOX" . ?i)
               ;; ("/work"        . ?w)
               ;; ("/sent"        . ?s)))
