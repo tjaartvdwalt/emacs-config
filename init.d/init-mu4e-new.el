@@ -27,14 +27,12 @@
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
     ;; let* binds the var directly after computing its local value.
-    (let*((draft "flag:draft")
-          (unread "flag:unread")
-          (trash "flag:trashed"))
-      (setq mu4e-bookmarks
-            `(
-              (,unread "Unread messages"      ?u)
-              (,trash "Trashed messages" ?T)
-              (,draft "Draft messages" ?d))))
+    (setq mu4e-bookmarks
+          `(
+            (,"flag:unread"   "Unread messages"      ?u)
+            (,"flag:sent"     "Sent messages"        ?u)
+            (,"flag:trashed"  "Trashed messages"     ?T)
+            (,"flag:draft"    "Draft messages"       ?d)))
 
 
     (setq mu4e-context-policy 'ask)
