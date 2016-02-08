@@ -8,6 +8,13 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mu4e-maildir "~/Maildir")
 
+    (setq mu4e-headers-fields
+          '((:human-date  . 24)
+            (:flags       . 6)
+            (:from        . 22)
+            (:to          . 22)
+            (:subject     . nil)))
+
     (add-to-list 'mu4e-view-actions
                  '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
