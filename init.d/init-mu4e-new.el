@@ -48,7 +48,7 @@
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
           `(
-            (, (message mu4e-inbox-folder)  "Messages in Inbox"    ?i)
+            (,"flag:inbox"  "Messages in Inbox"    ?i)
             (,"flag:unread"        "Unread messages"      ?u)
             (,"flag:sent"          "Sent messages"        ?S)
             (,"flag:trashed"       "Trashed messages"     ?T)
