@@ -30,7 +30,7 @@
     (setq mu4e-bookmarks
           `(
             (,"flag:unread"   "Unread messages"      ?u)
-            (,"flag:sent"     "Sent messages"        ?u)
+            (,"flag:sent"     "Sent messages"        ?S)
             (,"flag:trashed"  "Trashed messages"     ?T)
             (,"flag:draft"    "Draft messages"       ?d)))
 
