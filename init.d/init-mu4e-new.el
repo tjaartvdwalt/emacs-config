@@ -47,7 +47,7 @@
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tjaart@tjaart.co.za")))
                :vars '((mu4e-inbox-folder      . "/tjaart@tjaart.co.za/INBOX")
-                       (mu4e-refile-folder  . "/tajvdw@gmail.com/Archives")
+                       (mu4e-refile-folder     . "/tjaart@tjaart.co.za/Archives")
                        (my-mu4e-spam-folder    . "/tjaart@tjaart.co.za/Spam")
                        (mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
                        (mu4e-sent-folder       . "/tjaart@tjaart.co.za/Sent")
