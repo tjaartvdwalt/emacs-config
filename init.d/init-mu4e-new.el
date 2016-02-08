@@ -43,7 +43,7 @@
             ("mu4e-inbox-folder"     . ?a)
               ("/tjaart@tjaart.co.za/INBOX" . ?i)
               ("/work"        . ?w)
-              ("/sent"        . ?s)))
+              ("/sent"        . ?s))
 
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
