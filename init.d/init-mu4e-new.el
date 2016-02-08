@@ -58,7 +58,7 @@
             (,"flag:trashed"       "Trashed messages"     ?T)
             (,"flag:draft"         "Draft messages"       ?d)))
 
-    (setq message-send-mail-function '(mu4e-refile-folder)
+    (setq message-send-mail-function 'mu4e-refile-folder
           sendmail-program "/usr/bin/msmtp"
           user-full-name "Tjaart van der Walt")
     
