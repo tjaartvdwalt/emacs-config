@@ -52,7 +52,7 @@
       (message (message mu4e-inbox-folder)))
 (test)
     
-    (setq mu4e-maildir-shortcuts '((mu4e-inbox-folder . ?i)))
+    (setq mu4e-maildir-shortcuts '(("/Inbox" . ?i)))
 
 (setq mu4e-bookmarks
           `(
