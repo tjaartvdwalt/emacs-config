@@ -14,7 +14,7 @@
     (setq message-kill-buffer-on-exit t)
     (setq mu4e-update-interval 300)
     (setq mu4e-view-show-addresses t)
-    
+
     (setq mu4e-view-show-images t
           mu4e-show-images t
           mu4e-view-image-max-width 800)
@@ -40,16 +40,16 @@
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
-;;     (setq draft "test")
-;;     (setq test2 '(("test"     . ?a)))
-;;     (defcustom   mu4e-maildir-shortcuts test2)
-;;     ;;           ("/tjaart@tjaart.co.za/INBOX" . ?i)
-;;     ;;           ("/work"        . ?w)
-;;     ;;           ("/sent"        . ?s)))
+    ;;     (setq draft "test")
+    ;;     (setq test2 '(("test"     . ?a)))
+    ;;     (defcustom   mu4e-maildir-shortcuts test2)
+    ;;     ;;           ("/tjaart@tjaart.co.za/INBOX" . ?i)
+    ;;     ;;           ("/work"        . ?w)
+    ;;     ;;           ("/sent"        . ?s)))
 
     (custom-set-variables
-'(mu4e-maildir-shortcuts (quote (("test" . ?w)))))
-    
+     '(mu4e-maildir-shortcuts (quote (("test" . ?w)))))
+
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
           `(
@@ -62,7 +62,7 @@
     (setq message-send-mail-function 'mu4e-refile-folder
           sendmail-program "/usr/bin/msmtp"
           user-full-name "Tjaart van der Walt")
-    
+
 
     (setq mu4e-context-policy 'ask)
     (setq mu4e-contexts
