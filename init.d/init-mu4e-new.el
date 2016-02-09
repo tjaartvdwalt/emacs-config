@@ -47,8 +47,8 @@
 ;;     ;;           ("/work"        . ?w)
 ;;     ;;           ("/sent"        . ?s)))
 
-;;     (custom-set-variables
-;; '(mu4e-maildir-shortcuts (quote (("test" . ?w)))))
+    (custom-set-variables
+'(mu4e-maildir-shortcuts (quote (("test" . ?w)))))
     
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
