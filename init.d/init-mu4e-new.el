@@ -49,10 +49,10 @@
 
     (defun test ()
       (interactive)
-      (message "test"))
+      (message (message mu4e-inbox-folder)))
 (test)
     
-    (setq mu4e-maildir-shortcuts '(((test) . ?w)))
+    (setq mu4e-maildir-shortcuts '(((message mu4e-inbox-folder) . ?w)))
 
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
