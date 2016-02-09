@@ -47,14 +47,9 @@
     ;;     ;;           ("/work"        . ?w)
     ;;     ;;           ("/sent"        . ?s)))
 
-    (defun test ()
-      (interactive)
-      (message (message mu4e-inbox-folder)))
-(test)
-    
     (setq mu4e-maildir-shortcuts '(("/Inbox" . ?i)))
 
-(setq mu4e-bookmarks
+    (setq mu4e-bookmarks
           `(
             (,"flag:inbox"  "Messages in Inbox"    ?i)
             (,"flag:unread"        "Unread messages"      ?u)
