@@ -52,7 +52,7 @@
       (message (message mu4e-inbox-folder)))
 (test)
     
-    (setq mu4e-maildir-shortcuts '(((message mu4e-inbox-folder) . ?w)))
+    (setq mu4e-maildir-shortcuts '(((message mu4e-inbox-folder) . ?i)))
 
     ;; let* binds the var directly after computing its local value.
     (setq mu4e-bookmarks
