@@ -20,7 +20,7 @@
           mu4e-view-image-max-width 800)
 
     (setq mu4e-headers-fields
-          '((:human-date  . 14)
+          '((:human-date  . 12)
             (:flags       . 6)
             (:from        . 22)
             (:to          . 22)
