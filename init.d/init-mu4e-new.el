@@ -49,6 +49,16 @@
     (setq message-send-mail-function 'message-send-mail-with-sendmail)
     (setq  sendmail-program "/usr/bin/msmtp")
 
+        ;; Parse the year field from the message date.
+    (defun my-mu4e-get-message-year(msg)
+      (let ((year (decode-time (mu4e-message-field msg :date))))
+        (message (number-to-string (nth 5 year)))))
+
+        ;; archive messages to the folder corresponding to the current year
+    (setq mu4e-refile-folder
+          (lambda (msg)
+            (message (concat (message my-mu4e-refile-folder) "." (my-mu4e-get-message-year msg)))))
+
 
     (setq mu4e-context-policy 'ask)
     (setq mu4e-contexts
@@ -63,7 +73,7 @@
 
                :vars '((mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
                        (mu4e-inbox-folder      . "/tjaart@tjaart.co.za/INBOX")
-                       (mu4e-refile-folder     . "/tjaart@tjaart.co.za/Archives")
+                       (my-mu4e-refile-folder     . "/tjaart@tjaart.co.za/Archives")
                        (my-mu4e-spam-folder    . "/tjaart@tjaart.co.za/Spam")
                        (mu4e-sent-folder       . "/tjaart@tjaart.co.za/Sent")
                        (mu4e-trash-folder      . "/tjaart@tjaart.co.za/Trash")
