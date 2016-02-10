@@ -46,6 +46,7 @@
             (,"flag:trashed"       "Trashed messages"     ?T)
             (,"flag:draft"         "Draft messages"       ?d)))
 
+    (setq message-send-mail-function 'message-send-mail-with-sendmail)
     (setq  sendmail-program "/usr/bin/msmtp")
 
 
