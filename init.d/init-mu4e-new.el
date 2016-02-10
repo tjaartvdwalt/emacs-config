@@ -72,20 +72,27 @@
                              (when msg
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tjaart@tjaart.co.za")))
-               :vars '((mu4e-inbox-folder      . "/tjaart@tjaart.co.za/INBOX")
+
+               :vars '((mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
+                       (mu4e-inbox-folder      . "/tjaart@tjaart.co.za/INBOX")
                        (mu4e-refile-folder     . "/tjaart@tjaart.co.za/Archives")
                        (my-mu4e-spam-folder    . "/tjaart@tjaart.co.za/Spam")
-                       (my-mu4e-sent-account   . "tjaart")
-                       (mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
                        (mu4e-sent-folder       . "/tjaart@tjaart.co.za/Sent")
                        (mu4e-trash-folder      . "/tjaart@tjaart.co.za/Trash")
+
                        (user-mail-address      . "tjaart@tjaart.co.za")
+                       (my-mu4e-sent-account   . "tjaart")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za")
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
                        (setq mu4e-sent-messages-behavior 'delete)
                        (mu4e-maildir-shortcuts .
-                                               (((message mu4e-inbox-folder)     . ?a)
-                                                ((message mu4e-inbox-folder)       . ?i)))))
+                                               (("/tjaart@tjaart.co.za/Archives"     . ?a)
+                                                ("/tjaart@tjaart.co.za/Drafts"      . ?d)
+                                                ("/tjaart@tjaart.co.za/INBOX"       . ?i)
+                       ("/tjaart@tjaart.co.za/Spam" .?S)
+                       ("/tjaart@tjaart.co.za/Sent" .?s)
+                       ("/tjaart@tjaart.co.za/Trash" .?)
+                                                ))))
 
                ,(make-mu4e-context
                  :name "btajvdw@gmail.com"
