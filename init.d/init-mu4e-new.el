@@ -65,7 +65,7 @@
     (setq mu4e-context-policy 'ask)
     (setq mu4e-contexts
           `( ,(make-mu4e-context
-               :name "atjaart@tjaart.co.za"
+               :name "ttjaart@tjaart.co.za"
                :enter-func (lambda () (mu4e-message "Switch to: tjaart@tjaart.co.za"))
                ;; leave-func not defined
                :match-func (lambda (msg)
@@ -86,28 +86,80 @@
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
                        (setq mu4e-sent-messages-behavior 'delete)
                        (mu4e-maildir-shortcuts .
-                                               (("/tjaart@tjaart.co.za/Archives"     . ?a)
-                                                ("/tjaart@tjaart.co.za/Drafts"      . ?d)
-                                                ("/tjaart@tjaart.co.za/INBOX"       . ?i)
-                       ("/tjaart@tjaart.co.za/Spam" .?S)
-                       ("/tjaart@tjaart.co.za/Sent" .?s)
-                       ("/tjaart@tjaart.co.za/Trash" .?)
-                                                ))))
+                                               (("/tjaart@tjaart.co.za/Archives"  . ?a)
+                                                ("/tjaart@tjaart.co.za/Drafts"    . ?d)
+                                                ("/tjaart@tjaart.co.za/INBOX"     . ?i)
+                                                ("/tjaart@tjaart.co.za/Spam"      . ?S)
+                                                ("/tjaart@tjaart.co.za/Sent"      . ?s)
+                                                ("/tjaart@tjaart.co.za/Trash"     . ?t)))
+                       ))
 
-               ,(make-mu4e-context
-                 :name "btajvdw@gmail.com"
-                 :enter-func (lambda () (mu4e-message "Switch to: tajvdw@gmail.com"))
-                 ;; leave-fun not defined
-                 :match-func (lambda (msg)
-                               (when msg
-                                 (mu4e-message-contact-field-matches msg
-                                                                     :to "tajvdw@gmail.com")))
-                 :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
-                         (mu4e-refile-folder     . "/tajvdw@gmail.com/Archives")
-                         (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
-                         (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
-                         (mu4e-sent-folder       . "/tajvdw@gmail.com/Sent")
-                         (mu4e-trash-folder      . "/tajvdw@gmail.com/Trash")
-                         (user-mail-address      . "tajvdw@gmail.com")
-                         (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
-                         (setq mu4e-sent-messages-behavior 'delete)))))))
+             ,(make-mu4e-context
+               :name "gtajvdw@gmail.com"
+               :enter-func (lambda () (mu4e-message "Switch to: tajvdw@gmail.com"))
+               ;; leave-fun not defined
+               :match-func (lambda (msg)
+                             (when msg
+                               (mu4e-message-contact-field-matches msg
+                                                                   :to "tajvdw@gmail.com")))
+               :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
+                       (mu4e-refile-folder     . "/tajvdw@gmail.com/Archives")
+                       (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
+                       (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
+                       (mu4e-sent-folder       . "/tajvdw@gmail.com/Sent")
+                       (mu4e-trash-folder      . "/tajvdw@gmail.com/Trash")
+                       (user-mail-address      . "tajvdw@gmail.com")
+                       (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
+                       (setq mu4e-sent-messages-behavior 'delete)
+                       (mu4e-maildir-shortcuts .
+                                               (("/tajvdw@gmail.com/Archives"  . ?a)
+                                                ("/tajvdw@gmail.com/Drafts"    . ?d)
+                                                ("/tajvdw@gmail.com/INBOX"     . ?i)
+                                                ("/tajvdw@gmail.com/Spam"      . ?S)
+                                                ("/tajvdw@gmail.com/Sent"      . ?s)
+                                                ("/tajvdw@gmail.com/Trash"     . ?t)))))
+
+             ,(make-mu4e-context
+               :name "utav9wc@mail.umsl.edu"
+               :enter-func (lambda () (mu4e-message "Switch to: tav9wc"))
+               ;; leave-fun not defined
+               :match-func (lambda (msg)
+                             (when msg
+                               (mu4e-message-contact-field-matches msg
+                                                                   :to "tav9wc@mail.umsl.edu")))
+               :vars '((mu4e-inbox-folder      . "/tav9wc@mail.umsl.edu/INBOX")
+                       (mu4e-refile-folder     . "/tav9wc@mail.umsl.edu/Archives")
+                       (my-mu4e-spam-folder    . "/tav9wc@mail.umsl.edu/Spam")
+                       (mu4e-drafts-folder     . "/tav9wc@mail.umsl.edu/Drafts")
+                       (mu4e-sent-folder       . "/tav9wc@mail.umsl.edu/Sent")
+                       (mu4e-trash-folder      . "/tav9wc@mail.umsl.edu/Trash")
+                       (user-mail-address      . "tav9wc@mail.umsl.edu")
+                       (smtpmail-smtp-server "smtp.office365.com")
+                       (smtpmail-stream-type starttls)
+                       (smtpmail-smtp-service 587)
+                       (mu4e-compose-signature . "Tjaart van der Walt" )
+                       (setq mu4e-sent-messages-behavior 'delete)
+                       (mu4e-maildir-shortcuts .
+                                               (("/tav9wc@mail.umsl.edu/Archives"  . ?a)
+                                                ("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
+                                                ("/tav9wc@mail.umsl.edu/INBOX"     . ?i)
+                                                ("/tav9wc@mail.umsl.edu/Spam"      . ?S)
+                                                ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
+                                                ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))
+
+             ;;     ("tav9wc@mail.umsl.edu"
+             ;;      (mu4e-inbox-folder "/tav9wc@mail.umsl.edu/INBOX")
+             ;;      (my-mu4e-refile-folder "/tav9wc@mail.umsl.edu/Archives")
+             ;;      (my-mu4e-spam-folder "/tav9wc@mail.umsl.edu/Spam")
+             ;;      (mu4e-drafts-folder "/tav9wc@mail.umsl.edu/Drafts")
+             ;;      (mu4e-sent-folder "/tav9wc@mail.umsl.edu/Sent")
+             ;;      (mu4e-trash-folder "/tav9wc@mail.umsl.edu/Trash")
+             ;;      (mu4e-compose-signature "Tjaart van der Walt\nwww.tjaart.co.za" )
+             ;;      (user-mail-address "tav9wc@mail.umsl.edu")
+             ;;      (smtpmail-smtp-server "smtp.office365.com")
+             ;;      (smtpmail-stream-type starttls)
+             ;;      (smtpmail-smtp-service 587)
+             )))
+
+
+  ))))
