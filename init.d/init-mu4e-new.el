@@ -46,9 +46,7 @@
             (,"flag:trashed"       "Trashed messages"     ?T)
             (,"flag:draft"         "Draft messages"       ?d)))
 
-    (setq message-send-mail-function 'mu4e-refile-folder
-          sendmail-program "/usr/bin/msmtp"
-          user-full-name "Tjaart van der Walt")
+    (setq  sendmail-program "/usr/bin/msmtp")
 
 
     (setq mu4e-context-policy 'ask)
@@ -137,21 +135,5 @@
                                                 ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
                                                 ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))
 
-        (defun choose-msmtp-account ()
-      (if (message-mail-p)
-          (save-excursion
-            (let*
-                ((from (save-restriction
-                         (message-narrow-to-headers)
-                         (message-fetch-field "from")))
-                 (account
-                  (cond
-                   ((string-match "tjaart@tjaart.co.za" from) "tjaart")
-                   ((string-match "tajvdw@gmail.com" from) "tajvdw")
-                   ((string-match "tjaart@solmates.co" from) "solmates")
-                   ((string-match "tav9wc@mail.umsl.edu" from) "tav9wc"))))
-              (setq message-sendmail-extra-arguments (list '"-a" account))))))
-    (setq message-sendmail-envelope-from 'header)
-    (add-hook 'message-send-mail-hook 'choose-msmtp-account)
 
     ))
