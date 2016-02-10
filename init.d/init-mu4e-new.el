@@ -21,10 +21,11 @@
 
     (setq mu4e-headers-fields
           '((:human-date  . 12)
+            (:subject     . 40)
             (:flags       . 5)
             (:from        . 22)
             (:to          . 22)
-            (:subject     . nil)))
+            ))
 
      (add-to-list 'mu4e-view-actions
                  '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
