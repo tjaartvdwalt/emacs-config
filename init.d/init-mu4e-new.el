@@ -85,7 +85,7 @@
                        (setq mu4e-sent-messages-behavior 'delete)
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Archives"     . ?a)
-                                                ("/tjaart@tjaart.co.za/INBOX"       . ?i))))
+                                                ("/tjaart@tjaart.co.za/INBOX"       . ?i)))))
 
                ,(make-mu4e-context
                  :name "btajvdw@gmail.com"
