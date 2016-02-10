@@ -82,22 +82,25 @@
                        (user-mail-address      . "tjaart@tjaart.co.za")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za")
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
-                       (setq mu4e-sent-messages-behavior 'delete)))
+                       (setq mu4e-sent-messages-behavior 'delete)
+                       (mu4e-maildir-shortcuts .
+                                               (("/tjaart@tjaart.co.za/Archives"     . ?a)
+                                                ("/tjaart@tjaart.co.za/INBOX"       . ?i))))
 
-             ,(make-mu4e-context
-               :name "btajvdw@gmail.com"
-               :enter-func (lambda () (mu4e-message "Switch to: tajvdw@gmail.com"))
-               ;; leave-fun not defined
-               :match-func (lambda (msg)
-                             (when msg
-                               (mu4e-message-contact-field-matches msg
-                                                                   :to "tajvdw@gmail.com")))
-               :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
-                       (mu4e-refile-folder     . "/tajvdw@gmail.com/Archives")
-                       (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
-                       (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
-                       (mu4e-sent-folder       . "/tajvdw@gmail.com/Sent")
-                       (mu4e-trash-folder      . "/tajvdw@gmail.com/Trash")
-                       (user-mail-address      . "tajvdw@gmail.com")
-                       (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
-                       (setq mu4e-sent-messages-behavior 'delete)))))))
+               ,(make-mu4e-context
+                 :name "btajvdw@gmail.com"
+                 :enter-func (lambda () (mu4e-message "Switch to: tajvdw@gmail.com"))
+                 ;; leave-fun not defined
+                 :match-func (lambda (msg)
+                               (when msg
+                                 (mu4e-message-contact-field-matches msg
+                                                                     :to "tajvdw@gmail.com")))
+                 :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
+                         (mu4e-refile-folder     . "/tajvdw@gmail.com/Archives")
+                         (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
+                         (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
+                         (mu4e-sent-folder       . "/tajvdw@gmail.com/Sent")
+                         (mu4e-trash-folder      . "/tajvdw@gmail.com/Trash")
+                         (user-mail-address      . "tajvdw@gmail.com")
+                         (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
+                         (setq mu4e-sent-messages-behavior 'delete)))))))
