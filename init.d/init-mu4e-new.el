@@ -8,7 +8,7 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mail-user-agent 'mu4e-user-agent)
     (setq mu4e-maildir "~/Maildir")
-    (setq mu4e-use-fancy-chars t)
+    ;; (setq mu4e-use-fancy-chars t)
     (setq mu4e-view-show-images t)
     (setq mu4e-view-prefer-html t)
     (setq message-kill-buffer-on-exit t)
@@ -28,7 +28,7 @@
             ))
 
     (add-to-list 'mu4e-view-actions
-                 '("bView in browser" . mu4e-action-view-in-browser) t)
+                 '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
                  '("bView in browser" . mu4e-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
