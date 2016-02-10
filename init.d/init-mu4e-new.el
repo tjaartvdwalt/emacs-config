@@ -59,7 +59,7 @@
           (lambda (msg)
             (message (concat (message my-mu4e-refile-folder) "." (my-mu4e-get-message-year msg)))))
 
-    (setq mu4e-context-policy 'ask)
+    (setq mu4e-context-policy 'ask-if-none)
     (setq mu4e-contexts
           `( ,(make-mu4e-context
                :name "ttjaart@tjaart.co.za"
