@@ -21,7 +21,7 @@
 
     (setq mu4e-headers-fields
           '((:human-date  . 12)
-            (:subject     . 40)
+            (:subject     . 50)
             (:flags       . 5)
             (:from        . 22)
             (:to          . 22)
