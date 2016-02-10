@@ -20,7 +20,7 @@
           mu4e-view-image-max-width 800)
 
     (setq mu4e-headers-fields
-          '((:human-date  . 24)
+          '((:human-date  . 14)
             (:flags       . 6)
             (:from        . 22)
             (:to          . 22)
@@ -84,8 +84,7 @@
                        (setq mu4e-sent-messages-behavior 'delete)
                        (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (mu4e-maildir-shortcuts .
-                                               (("/tjaart@tjaart.co.za/Archives"  . ?a)
-                                                ("/tjaart@tjaart.co.za/Drafts"    . ?d)
+                                               (("/tjaart@tjaart.co.za/Drafts"    . ?d)
                                                 ("/tjaart@tjaart.co.za/INBOX"     . ?i)
                                                 ("/tjaart@tjaart.co.za/Spam"      . ?S)
                                                 ("/tjaart@tjaart.co.za/Sent"      . ?s)
@@ -110,8 +109,7 @@
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
                        (setq mu4e-sent-messages-behavior 'delete)
                        (mu4e-maildir-shortcuts .
-                                               (("/tajvdw@gmail.com/Archives"  . ?a)
-                                                ("/tajvdw@gmail.com/Drafts"    . ?d)
+                                               (("/tajvdw@gmail.com/Drafts"    . ?d)
                                                 ("/tajvdw@gmail.com/INBOX"     . ?i)
                                                 ("/tajvdw@gmail.com/Spam"      . ?S)
                                                 ("/tajvdw@gmail.com/Sent"      . ?s)
@@ -138,8 +136,7 @@
                        (mu4e-compose-signature . "Tjaart van der Walt" )
                        (setq mu4e-sent-messages-behavior 'delete)
                        (mu4e-maildir-shortcuts .
-                                               (("/tav9wc@mail.umsl.edu/Archives"  . ?a)
-                                                ("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
+                                               (("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
                                                 ("/tav9wc@mail.umsl.edu/INBOX"     . ?i)
                                                 ("/tav9wc@mail.umsl.edu/Spam"      . ?S)
                                                 ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
