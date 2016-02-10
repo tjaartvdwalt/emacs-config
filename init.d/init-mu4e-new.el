@@ -28,7 +28,7 @@
             ))
 
     (add-to-list 'mu4e-view-actions
-                 '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
+                 '("bView in browser" . mu4e-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
                  '("bView in browser" . mu4e-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
