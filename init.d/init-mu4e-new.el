@@ -26,7 +26,7 @@
             (:to          . 22)
             (:subject     . nil)))
 
-    (add-to-list 'mu4e-view-actions
+     (add-to-list 'mu4e-view-actions
                  '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
                  '("bView in browser" . mu4e-action-view-in-browser) t)
@@ -58,7 +58,6 @@
     (setq mu4e-refile-folder
           (lambda (msg)
             (message (concat (message my-mu4e-refile-folder) "." (my-mu4e-get-message-year msg)))))
-
 
     (setq mu4e-context-policy 'ask)
     (setq mu4e-contexts
@@ -102,7 +101,7 @@
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tajvdw@gmail.com")))
                :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
-                       (mu4e-refile-folder     . "/tajvdw@gmail.com/Archives")
+                       (my-mu4e-refile-folder     . "/tajvdw@gmail.com/Archives")
                        (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
                        (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
                        (mu4e-sent-folder       . "/tajvdw@gmail.com/Sent")
@@ -127,7 +126,7 @@
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tav9wc@mail.umsl.edu")))
                :vars '((mu4e-inbox-folder      . "/tav9wc@mail.umsl.edu/INBOX")
-                       (mu4e-refile-folder     . "/tav9wc@mail.umsl.edu/Archives")
+                       (my-mu4e-refile-folder     . "/tav9wc@mail.umsl.edu/Archives")
                        (my-mu4e-spam-folder    . "/tav9wc@mail.umsl.edu/Spam")
                        (mu4e-drafts-folder     . "/tav9wc@mail.umsl.edu/Drafts")
                        (mu4e-sent-folder       . "/tav9wc@mail.umsl.edu/Sent")
