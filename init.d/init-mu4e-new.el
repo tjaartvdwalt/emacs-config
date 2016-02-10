@@ -74,6 +74,7 @@
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za")
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
                        (setq mu4e-sent-messages-behavior 'delete)
+                       (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Archives"  . ?a)
                                                 ("/tjaart@tjaart.co.za/Drafts"    . ?d)
@@ -134,4 +135,23 @@
                                                 ("/tav9wc@mail.umsl.edu/INBOX"     . ?i)
                                                 ("/tav9wc@mail.umsl.edu/Spam"      . ?S)
                                                 ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
-                                                ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))))
+                                                ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))
+
+        (defun choose-msmtp-account ()
+      (if (message-mail-p)
+          (save-excursion
+            (let*
+                ((from (save-restriction
+                         (message-narrow-to-headers)
+                         (message-fetch-field "from")))
+                 (account
+                  (cond
+                   ((string-match "tjaart@tjaart.co.za" from) "tjaart")
+                   ((string-match "tajvdw@gmail.com" from) "tajvdw")
+                   ((string-match "tjaart@solmates.co" from) "solmates")
+                   ((string-match "tav9wc@mail.umsl.edu" from) "tav9wc"))))
+              (setq message-sendmail-extra-arguments (list '"-a" account))))))
+    (setq message-sendmail-envelope-from 'header)
+    (add-hook 'message-send-mail-hook 'choose-msmtp-account)
+
+    ))
