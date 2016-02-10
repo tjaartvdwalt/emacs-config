@@ -84,8 +84,8 @@
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
                        (setq mu4e-sent-messages-behavior 'delete)
                        (mu4e-maildir-shortcuts .
-                                               (("/tjaart@tjaart.co.za/Archives"     . ?a)
-                                                ("/tjaart@tjaart.co.za/INBOX"       . ?i)))))
+                                               (((message mu4e-inbox-folder)     . ?a)
+                                                ((message mu4e-inbox-folder)       . ?i)))))
 
                ,(make-mu4e-context
                  :name "btajvdw@gmail.com"
