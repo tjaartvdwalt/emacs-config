@@ -1,2 +1,2 @@
 (req-package git-timemachine
-    :bind ("C-c vt" . git-timemachine))
+    :bind ("C-c mt" . git-timemachine))
