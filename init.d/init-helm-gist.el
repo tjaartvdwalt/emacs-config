@@ -1,1 +1,2 @@
-(req-package helm-gist)
+(req-package helm-gist
+  :require(helm gist))
