@@ -3,4 +3,4 @@
 # key: require
 # binding: direct-keybinding
 # --
-:config($1)$0
+:require($1)$0
