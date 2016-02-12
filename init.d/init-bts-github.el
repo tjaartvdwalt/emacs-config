@@ -1,7 +1,5 @@
 (req-package bts-github
-  :require(bts)
-  :bind (("C-c vin" . bts:ticket-new)
-         ("C-c vis" . bts:summary-open))
+  :require(bts))
 
   
 ;; (global-set-key (kbd "M-b s")   ')
