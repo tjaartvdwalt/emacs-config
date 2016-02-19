@@ -1,7 +1,9 @@
-(global-set-key (kbd "C-c n") (npm-version))
+(global-set-key (kbd "C-c n") 'npm-version)
 (defun npm-version()
   (interactive)
-  ((shell-command "npm version")))
+  (shell-command "npm version")
+(switch-to-buffer "*Shell Command Output*")
+  )
 (defun standardfmt ()
   "Format the current buffer using standard-format."
   (interactive)
