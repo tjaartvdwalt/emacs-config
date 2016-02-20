@@ -62,7 +62,7 @@ from https://github.com/bradfitz/goimports."
           (with-current-buffer errbuf
             (setq buffer-read-only nil)
             (erase-buffer)))
-      (with-current-buffer patchbuf
+      (with-nt-buffer patchbuf
         (erase-buffer))
       (write-region nil nil tmpfile)
 
