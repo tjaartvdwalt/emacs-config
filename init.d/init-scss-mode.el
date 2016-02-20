@@ -1,3 +1,5 @@
+;; you need to install scss lint
+;; gem install scss_lint
 (req-package scss-mode
   :config(progn
            ;; (setq css-indent-offset 2)
