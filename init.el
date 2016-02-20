@@ -39,7 +39,6 @@
 
 ;; load manually installed packages
 (add-to-list 'load-path "~/.emacs.d/manual/")
-(add-to-list 'load-path "~/.emacs.d/manual/dired")
 ;; (add-to-list 'load-path "~/.emacs.d/functions/")
 ;; (add-to-list 'load-path "~/.emacs.d/init.d/")
 
@@ -48,6 +47,7 @@
 ;; (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
 (load-dir-one "~/.emacs.d/functions")
 (load-dir-one "~/.emacs.d/init.d")
+(load-dir-one "~/.emacs.d/init.d/dired")
 ;;(setq load-dirs t)
 ;;(setq load-dir-recursive t)
 (load-dirs-reload)
