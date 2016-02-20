@@ -1,4 +1,4 @@
-(defun sassfmt ()
+(defun scssfmt ()
   "Format the current buffer using sass-convert."
   (interactive)
   (let ((errbuf (get-buffer-create "*Sass Convert Errors*")))
