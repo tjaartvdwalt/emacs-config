@@ -4,7 +4,5 @@
            ;; (flycheck-add-mode 'scss-lint 'scss-mode)
 
            (add-hook 'scss-mode-hook
-              (add-hook 'after-save-hook 'standardfmt t t))
-
-           ))
+              (add-hook 'after-save-hook 'standardfmt t t))))
 
