@@ -39,6 +39,7 @@
 
 ;; load manually installed packages
 (add-to-list 'load-path "~/.emacs.d/manual/")
+(add-to-list 'load-path "~/.emacs.d/manual/dired")
 ;; (add-to-list 'load-path "~/.emacs.d/functions/")
 ;; (add-to-list 'load-path "~/.emacs.d/init.d/")
 
