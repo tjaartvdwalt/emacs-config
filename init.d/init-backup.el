@@ -1,5 +1,5 @@
- (setq vc-make-backup-files t)
- 
+(setq vc-make-backup-files t)
+
 (setq version-control t ;; Use version numbers for backups.
       kept-new-versions 10 ;; Number of newest versions to keep.
       kept-old-versions 0 ;; Number of oldest versions to keep.
@@ -44,4 +44,3 @@
 ;; put autosave files in temp
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
- 
