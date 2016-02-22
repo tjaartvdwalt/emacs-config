@@ -1,4 +1,4 @@
-(setq vc-make-backup-files t)
+ (setq vc-make-backup-files t)
  
 (setq version-control t ;; Use version numbers for backups.
       kept-new-versions 10 ;; Number of newest versions to keep.
