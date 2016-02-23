@@ -86,7 +86,7 @@
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za")
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
                        (setq mu4e-sent-messages-behavior 'delete)
-                       (message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
+                       (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Drafts"    . ?d)
                                                 ("/tjaart@tjaart.co.za/INBOX"     . ?i)
@@ -111,7 +111,7 @@
                        (user-mail-address      . "tajvdw@gmail.com")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
                        (setq mu4e-sent-messages-behavior 'delete)
-                       (message-sendmail-extra-arguments (list '"-a tajvdw@gmail.com"))
+                       (setq message-sendmail-extra-arguments (list '"-a tajvdw@gmail.com"))
                        (mu4e-maildir-shortcuts .
                                                (("/tajvdw@gmail.com/Drafts"    . ?d)
                                                 ("/tajvdw@gmail.com/INBOX"     . ?i)
@@ -139,7 +139,7 @@
                        (smtpmail-smtp-service 587)
                        (mu4e-compose-signature . "Tjaart van der Walt" )
                        (setq mu4e-sent-messages-behavior 'delete)
-                       (message-sendmail-extra-arguments (list '"-a tav9wc@mail.umsl.edu"))
+                       (setq message-sendmail-extra-arguments (list '"-a tav9wc@mail.umsl.edu"))
                        (mu4e-maildir-shortcuts .
                                                (("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
                                                 ("/tav9wc@mail.umsl.edu/INBOX"     . ?i)
