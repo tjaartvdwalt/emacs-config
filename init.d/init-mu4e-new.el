@@ -39,6 +39,7 @@
 
     (setq mu4e-bookmarks
           `(
+            (,"flag:inbox"        "Inbox messages"        ?i)
             (,"flag:unread"        "Unread messages"      ?u)
             (,"flag:sent"          "Sent messages"        ?S)
             (,"flag:trashed"       "Trashed messages"     ?T)
@@ -143,7 +144,4 @@
                                                 ("/tav9wc@mail.umsl.edu/INBOX"     . ?i)
                                                 ("/tav9wc@mail.umsl.edu/Spam"      . ?S)
                                                 ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
-                                                ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))
-
-
-    ))
+                                                ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))))
