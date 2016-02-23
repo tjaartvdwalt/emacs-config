@@ -113,7 +113,7 @@
                        (mu4e-sent-messages-behavior 'delete)
                        (mu4e-bookmarks
                              `(
-                               (,(concat "maildir:" "Inbox")      "Inbox messages"       ?i)
+                               (, "maildir:Inbox"      "Inbox messages"      ?i)
                                (,"flag:unread"        "Unread messages"      ?u)
                                (,"flag:sent"          "Sent messages"        ?S)
                                (,"flag:trashed"       "Trashed messages"     ?T)
