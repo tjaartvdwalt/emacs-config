@@ -92,8 +92,7 @@
                                                 ("/tjaart@tjaart.co.za/INBOX"     . ?i)
                                                 ("/tjaart@tjaart.co.za/Spam"      . ?S)
                                                 ("/tjaart@tjaart.co.za/Sent"      . ?s)
-                                                ("/tjaart@tjaart.co.za/Trash"     . ?t)))
-                       ))
+                                                ("/tjaart@tjaart.co.za/Trash"     . ?t)))))
 
              ,(make-mu4e-context
                :name "gtajvdw@gmail.com"
