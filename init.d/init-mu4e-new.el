@@ -39,7 +39,7 @@
 
     (setq mu4e-bookmarks
           `(
-            (,"mu4e-inbox-folder"  "Inbox messages"       ?i)
+            (,((concat "maildir:" mu4e-inbox-folder))  "Inbox messages"       ?i)
             (,"flag:unread"        "Unread messages"      ?u)
             (,"flag:sent"          "Sent messages"        ?S)
             (,"flag:trashed"       "Trashed messages"     ?T)
