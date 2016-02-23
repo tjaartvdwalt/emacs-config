@@ -37,14 +37,6 @@
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
-    (setq mu4e-bookmarks
-          `(
-            (,(concat "maildir:" "Inbox")      "Inbox messages"       ?i)
-            (,"flag:unread"        "Unread messages"      ?u)
-            (,"flag:sent"          "Sent messages"        ?S)
-            (,"flag:trashed"       "Trashed messages"     ?T)
-            (,"flag:draft"         "Draft messages"       ?d)))
-
     (setq message-send-mail-function 'message-send-mail-with-sendmail)
     (setq  sendmail-program "/usr/bin/msmtp")
 
@@ -112,6 +104,14 @@
                        (user-mail-address      . "tajvdw@gmail.com")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
                        (setq mu4e-sent-messages-behavior 'delete)
+                           (setq mu4e-bookmarks
+          `(
+            (,(concat "maildir:" "Inbox")      "Inbox messages"       ?i)
+            (,"flag:unread"        "Unread messages"      ?u)
+            (,"flag:sent"          "Sent messages"        ?S)
+            (,"flag:trashed"       "Trashed messages"     ?T)
+            (,"flag:draft"         "Draft messages"       ?d)))
+
                        (mu4e-maildir-shortcuts .
                                                (("/tajvdw@gmail.com/Drafts"    . ?d)
                                                 ("/tajvdw@gmail.com/INBOX"     . ?i)
