@@ -81,7 +81,7 @@
                        (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (setq mu4e-bookmarks
                              `(
-                               (,(concat "maildir:" "Inbox")      "Inbox messages"       ?i)
+                               (,("maildir:Inbox"      "Inbox messages"      ?i)
                                (,"flag:unread"        "Unread messages"      ?u)
                                (,"flag:sent"          "Sent messages"        ?S)
                                (,"flag:trashed"       "Trashed messages"     ?T)
