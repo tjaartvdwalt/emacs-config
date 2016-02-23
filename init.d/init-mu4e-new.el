@@ -85,7 +85,7 @@
                        (my-mu4e-sent-account   . "tjaart")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za")
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
-                       (mu4e-sent-messages-behavior 'delete)
+                       (setq mu4e-sent-messages-behavior 'delete)
                        (message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Drafts"    . ?d)
@@ -111,7 +111,7 @@
                        (mu4e-trash-folder      . "/tajvdw@gmail.com/Trash")
                        (user-mail-address      . "tajvdw@gmail.com")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
-                       (mu4e-sent-messages-behavior 'delete)
+                       (setq mu4e-sent-messages-behavior 'delete)
                        (message-sendmail-extra-arguments (list '"-a tajvdw@gmail.com"))
                        (mu4e-maildir-shortcuts .
                                                (("/tajvdw@gmail.com/Drafts"    . ?d)
@@ -139,7 +139,7 @@
                        (smtpmail-stream-type starttls)
                        (smtpmail-smtp-service 587)
                        (mu4e-compose-signature . "Tjaart van der Walt" )
-                       (mu4e-sent-messages-behavior 'delete)
+                       (setq mu4e-sent-messages-behavior 'delete)
                        (message-sendmail-extra-arguments (list '"-a tav9wc@mail.umsl.edu"))
                        (mu4e-maildir-shortcuts .
                                                (("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
