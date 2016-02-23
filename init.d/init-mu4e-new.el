@@ -110,8 +110,8 @@
                        (mu4e-trash-folder      . "/tajvdw@gmail.com/Trash")
                        (user-mail-address      . "tajvdw@gmail.com")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
-                       (setq mu4e-sent-messages-behavior 'delete)
-                       (setq mu4e-bookmarks
+                       (mu4e-sent-messages-behavior 'delete)
+                       (mu4e-bookmarks
                              `(
                                (,(concat "maildir:" "Inbox")      "Inbox messages"       ?i)
                                (,"flag:unread"        "Unread messages"      ?u)
