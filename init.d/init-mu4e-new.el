@@ -81,11 +81,11 @@
                        (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (setq mu4e-bookmarks
                              `(
-                               (,("maildir:Inbox"      "Inbox messages"      ?i)
+                               (,"maildir:Inbox"      "Inbox messages"      ?i)
                                (,"flag:unread"        "Unread messages"      ?u)
                                (,"flag:sent"          "Sent messages"        ?S)
                                (,"flag:trashed"       "Trashed messages"     ?T)
-                               (,"flag:draft"         "Draft messages"       ?d))))
+                               (,"flag:draft"         "Draft messages"       ?d)))
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Drafts"    . ?d)
                                                 ("/tjaart@tjaart.co.za/INBOX"     . ?i)
