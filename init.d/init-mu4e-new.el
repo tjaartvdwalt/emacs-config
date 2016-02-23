@@ -37,6 +37,14 @@
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
+    (setq mu4e-bookmarks
+          `(
+            (,"maildir:"           "Inbox messages"       ?i)
+            (,"flag:unread"        "Unread messages"      ?u)
+            (,"flag:sent"          "Sent messages"        ?S)
+            (,"flag:trashed"       "Trashed messages"     ?T)
+            (,"flag:draft"         "Draft messages"       ?d)))
+
     (setq message-send-mail-function 'message-send-mail-with-sendmail)
     (setq  sendmail-program "/usr/bin/msmtp")
 
@@ -77,15 +85,8 @@
                        (my-mu4e-sent-account   . "tjaart")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za")
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
-                       (setq mu4e-sent-messages-behavior 'delete)
-                       (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
-                       (setq mu4e-bookmarks
-                             `(
-                               (,"maildir:Inbox"      "Inbox messages"      ?i)
-                               (,"flag:unread"        "Unread messages"      ?u)
-                               (,"flag:sent"          "Sent messages"        ?S)
-                               (,"flag:trashed"       "Trashed messages"     ?T)
-                               (,"flag:draft"         "Draft messages"       ?d)))
+                       (mu4e-sent-messages-behavior 'delete)
+                       (message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Drafts"    . ?d)
                                                 ("/tjaart@tjaart.co.za/INBOX"     . ?i)
@@ -111,14 +112,7 @@
                        (user-mail-address      . "tajvdw@gmail.com")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
                        (mu4e-sent-messages-behavior 'delete)
-                       (mu4e-bookmarks
-                             `(
-                               (,"maildir:Inbox"      "Inbox messages"      ?i)
-                               (,"flag:unread"        "Unread messages"      ?u)
-                               (,"flag:sent"          "Sent messages"        ?S)
-                               (,"flag:trashed"       "Trashed messages"     ?T)
-                               (,"flag:draft"         "Draft messages"       ?d)))
-
+                       (message-sendmail-extra-arguments (list '"-a tajvdw@gmail.com"))
                        (mu4e-maildir-shortcuts .
                                                (("/tajvdw@gmail.com/Drafts"    . ?d)
                                                 ("/tajvdw@gmail.com/INBOX"     . ?i)
@@ -145,7 +139,8 @@
                        (smtpmail-stream-type starttls)
                        (smtpmail-smtp-service 587)
                        (mu4e-compose-signature . "Tjaart van der Walt" )
-                       (setq mu4e-sent-messages-behavior 'delete)
+                       (mu4e-sent-messages-behavior 'delete)
+                       (message-sendmail-extra-arguments (list '"-a tav9wc@mail.umsl.edu"))
                        (mu4e-maildir-shortcuts .
                                                (("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
                                                 ("/tav9wc@mail.umsl.edu/INBOX"     . ?i)
