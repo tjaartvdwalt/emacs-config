@@ -79,6 +79,13 @@
                        ;; don't save messages to Sent Messages, Gmail/IMAP takes care of this
                        (setq mu4e-sent-messages-behavior 'delete)
                        (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
+                       (setq mu4e-bookmarks
+                             `(
+                               (,(concat "maildir:" "Inbox")      "Inbox messages"       ?i)
+                               (,"flag:unread"        "Unread messages"      ?u)
+                               (,"flag:sent"          "Sent messages"        ?S)
+                               (,"flag:trashed"       "Trashed messages"     ?T)
+                               (,"flag:draft"         "Draft messages"       ?d)))
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Drafts"    . ?d)
                                                 ("/tjaart@tjaart.co.za/INBOX"     . ?i)
@@ -104,13 +111,13 @@
                        (user-mail-address      . "tajvdw@gmail.com")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
                        (setq mu4e-sent-messages-behavior 'delete)
-                           (setq mu4e-bookmarks
-          `(
-            (,(concat "maildir:" "Inbox")      "Inbox messages"       ?i)
-            (,"flag:unread"        "Unread messages"      ?u)
-            (,"flag:sent"          "Sent messages"        ?S)
-            (,"flag:trashed"       "Trashed messages"     ?T)
-            (,"flag:draft"         "Draft messages"       ?d)))
+                       (setq mu4e-bookmarks
+                             `(
+                               (,(concat "maildir:" "Inbox")      "Inbox messages"       ?i)
+                               (,"flag:unread"        "Unread messages"      ?u)
+                               (,"flag:sent"          "Sent messages"        ?S)
+                               (,"flag:trashed"       "Trashed messages"     ?T)
+                               (,"flag:draft"         "Draft messages"       ?d)))
 
                        (mu4e-maildir-shortcuts .
                                                (("/tajvdw@gmail.com/Drafts"    . ?d)
