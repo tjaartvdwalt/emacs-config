@@ -1,3 +1,3 @@
-(req-package color-theme-sanityinc-tomorrow
+(req-package base16-theme
   :config (progn
-            (load-theme 'sanityinc-tomorrow-night)))
+            (load-theme 'base16-tomorrow-dark)))
