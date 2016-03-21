@@ -77,7 +77,7 @@
                                                                    :to "tjaart@tjaart.co.za")))
 
                :vars '((mu4e-drafts-folder     . "/tjaart@tjaart.co.za/Drafts")
-                       (mu4e-inbox-folder      . "/tjaart@tjaart.co.za/INBOX")
+                       (mu4e-inbox-folder      . "/tjaart@tjaart.co.za/Inbox")
                        (my-mu4e-refile-folder     . "/tjaart@tjaart.co.za/Archives")
                        (my-mu4e-spam-folder    . "/tjaart@tjaart.co.za/Spam")
                        (mu4e-sent-folder       . "/tjaart@tjaart.co.za/Sent")
@@ -91,7 +91,7 @@
                        (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Drafts"    . ?d)
-                                                ("/tjaart@tjaart.co.za/INBOX"     . ?i)
+                                                ("/tjaart@tjaart.co.za/Inbox"     . ?i)
                                                 ("/tjaart@tjaart.co.za/Spam"      . ?S)
                                                 ("/tjaart@tjaart.co.za/Sent"      . ?s)
                                                 ("/tjaart@tjaart.co.za/Trash"     . ?t)))))
@@ -104,7 +104,7 @@
                              (when msg
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tajvdw@gmail.com")))
-               :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/INBOX")
+               :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/Inbox")
                        (my-mu4e-refile-folder     . "/tajvdw@gmail.com/Archives")
                        (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
                        (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
@@ -116,7 +116,7 @@
                        (setq message-sendmail-extra-arguments (list '"-a tajvdw@gmail.com"))
                        (mu4e-maildir-shortcuts .
                                                (("/tajvdw@gmail.com/Drafts"    . ?d)
-                                                ("/tajvdw@gmail.com/INBOX"     . ?i)
+                                                ("/tajvdw@gmail.com/Inbox"     . ?i)
                                                 ("/tajvdw@gmail.com/Spam"      . ?S)
                                                 ("/tajvdw@gmail.com/Sent"      . ?s)
                                                 ("/tajvdw@gmail.com/Trash"     . ?t)))))
@@ -129,7 +129,7 @@
                              (when msg
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tav9wc@mail.umsl.edu")))
-               :vars '((mu4e-inbox-folder      . "/tav9wc@mail.umsl.edu/INBOX")
+               :vars '((mu4e-inbox-folder      . "/tav9wc@mail.umsl.edu/Inbox")
                        (my-mu4e-refile-folder     . "/tav9wc@mail.umsl.edu/Archives")
                        (my-mu4e-spam-folder    . "/tav9wc@mail.umsl.edu/Spam")
                        (mu4e-drafts-folder     . "/tav9wc@mail.umsl.edu/Drafts")
@@ -144,7 +144,7 @@
                        (setq message-sendmail-extra-arguments (list '"-a tav9wc@mail.umsl.edu"))
                        (mu4e-maildir-shortcuts .
                                                (("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
-                                                ("/tav9wc@mail.umsl.edu/INBOX"     . ?i)
+                                                ("/tav9wc@mail.umsl.edu/Inbox"     . ?i)
                                                 ("/tav9wc@mail.umsl.edu/Spam"      . ?S)
                                                 ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
                                                 ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))))
