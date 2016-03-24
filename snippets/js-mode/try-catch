@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 #contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
-# name: try-catch
-# key: try-catch
+# name: try/catch
+# key: try/catch
 # binding: direct-keybinding
 # --
 try {
