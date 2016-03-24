@@ -4,4 +4,5 @@
 # key: error
 # binding: direct-keybinding
 # --
-console.error($0)
+console.error($1)
+$0
