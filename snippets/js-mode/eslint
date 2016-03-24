@@ -4,4 +4,5 @@
 # key: eslint
 # binding: direct-keybinding
 # --
-// eslint-disable-line ${2:$$(yas-choose-value '("no-unused-vars" "no-new"))}
+// eslint-disable-line ${1:$$(yas-choose-value '("no-unused-vars" "no-new"))}
+$0
