@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
+# name: co
+# key: co
+# binding: direct-keybinding
+# --
+co(function * () {
+  $0
+})
