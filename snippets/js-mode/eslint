@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
+# name: eslint-disable-line
+# key: eslint
+# binding: direct-keybinding
+# --
+// eslint-disable-line ${2:$$(yas-choose-value '("no-unused-vars" "no-new"))}
