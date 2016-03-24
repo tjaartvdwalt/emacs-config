@@ -1,0 +1,16 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
+# name: try-catch
+# key: try-catch
+# binding: direct-keybinding
+# --
+try {
+  $1
+} catch (err) {
+  $2
+}
+
+$0
+o(function * () {
+  $0
+})
