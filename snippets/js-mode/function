@@ -4,5 +4,7 @@
 # binding: direct-keybinding
 # --
 function $1 ($2) {
-  $0
+  $3
 }
+
+$0
