@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
+# name: require
+# key: require
+# binding: direct-keybinding
+# --
+var $1 = require('$2')
+$0
