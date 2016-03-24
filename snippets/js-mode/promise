@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
+# name: return new Promise()
+# key: ret_promise
+# binding: direct-keybinding
+# --
+new Promise(function promise (resolve, reject) {
+})
