@@ -4,6 +4,8 @@
 # key: then
 # binding: direct-keybinding
 # --
-then(function ($1) {
-  $0
+then(function ($1, err) {
+  $2
 })
+
+$0
