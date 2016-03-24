@@ -5,3 +5,4 @@
 # binding: direct-keybinding
 # --
 /* global $1 */
+$0
