@@ -4,4 +4,4 @@
 # key: global
 # binding: direct-keybinding
 # --
-/* global $0 */
+/* global $1 */
