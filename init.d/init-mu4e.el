@@ -2,70 +2,70 @@
   :require (gnus-dired)
   :config
   (progn
+    (require 'mu4e-contrib)
     ;;Set a shortcut for mu4e
     (global-set-key "\C-ce" 'mu4e)
     (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mail-user-agent 'mu4e-user-agent)
     (setq mu4e-maildir "~/Maildir")
-    ;; (setq mu4e-use-fancy-chars t)
-    (setq mu4e-view-show-images t)
-    (setq mu4e-view-prefer-html t)
-    (setq message-kill-buffer-on-exit t)
-    (setq mu4e-update-interval 300)
-    (setq mu4e-view-show-addresses t)
+    ;; ;; (setq mu4e-use-fancy-chars t)
+    ;; (setq mu4e-view-show-images t)
+    ;; (setq mu4e-view-prefer-html t)
+    ;; (setq message-kill-buffer-on-exit t)
+    ;; (setq mu4e-update-interval 300)
+    ;; (setq mu4e-view-show-addresses t)
 
-    (setq mu4e-view-show-images t
-          mu4e-show-images t
-          mu4e-view-image-max-width 800)
+    ;; (setq mu4e-view-show-images t
+    ;;       mu4e-show-images t
+    ;;       mu4e-view-image-max-width 800)
 
-    (require 'mu4e-contrib)
-    (setq mu4e-html2text-command 'mu4e-shr2text)
-    (setq mu4e-headers-fields
-          '((:human-date  . 12)
-            (:subject     . 5q0)
-            (:flags       . 5)
-            (:from        . 22)
-            (:to          . 22)))
+    ;; (setq mu4e-html2text-command 'mu4e-shr2text)
+    ;; (setq mu4e-headers-fields
+    ;;       '((:human-date  . 12)
+    ;;         (:subject     . 5q0)
+    ;;         (:flags       . 5)
+    ;;         (:from        . 22)
+    ;;         (:to          . 22)))
 
-    (add-to-list 'mu4e-view-actions
-                 '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
-    (add-to-list 'mu4e-headers-actions
-                 '("sMark as Spam" . mu4e-mark-for-spam) t)
-    (add-to-list 'mu4e-view-actions
-                 '("sMark as Spam" . mu4e-view-mark-for-spam) t)
-    (add-to-list 'mu4e-headers-actions
-                 '("iMove to Inbox" . mu4e-mark-for-inbox) t)
-    (add-to-list 'mu4e-view-actions
-                 '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
+    ;; (add-to-list 'mu4e-view-actions
+    ;;              '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
+    ;; (add-to-list 'mu4e-headers-actions
+    ;;              '("sMark as Spam" . mu4e-mark-for-spam) t)
+    ;; (add-to-list 'mu4e-view-actions
+    ;;              '("sMark as Spam" . mu4e-view-mark-for-spam) t)
+    ;; (add-to-list 'mu4e-headers-actions
+    ;;              '("iMove to Inbox" . mu4e-mark-for-inbox) t)
+    ;; (add-to-list 'mu4e-view-actions
+    ;;              '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
-    (setq mu4e-bookmarks
-          `(
-            ;; (,"maildir:"           "Inbox messages"       ?i)
-            (,"flag:unread"        "Unread messages"      ?u)
-            (,"flag:sent"          "Sent messages"        ?S)
-            (,"flag:trashed"       "Trashed messages"     ?T)
-            (,"flag:draft"         "Draft messages"       ?d)))
+    ;; (setq mu4e-bookmarks
+    ;;       `(
+    ;;         ;; (,"maildir:"           "Inbox messages"       ?i)
+    ;;         (,"flag:unread"        "Unread messages"      ?u)
+    ;;         (,"flag:sent"          "Sent messages"        ?S)
+    ;;         (,"flag:trashed"       "Trashed messages"     ?T)
+    ;;         (,"flag:draft"         "Draft messages"       ?d)))
 
-    (setq message-send-mail-function 'message-send-mail-with-sendmail)
-    (setq  sendmail-program "/usr/bin/msmtp")
+    ;; (setq message-send-mail-function 'message-send-mail-with-sendmail)
+    ;; (setq  sendmail-program "/usr/bin/msmtp")
 
-    ;; Parse the year field from the message date.
-    (defun my-mu4e-get-message-year(msg)
-      (let ((year (decode-time (mu4e-message-field msg :date))))
-        (message (number-to-string (nth 5 year)))))
+    ;; ;; Parse the year field from the message date.
+    ;; (defun my-mu4e-get-message-year(msg)
+    ;;   (let ((year (decode-time (mu4e-message-field msg :date))))
+    ;;     (message (number-to-string (nth 5 year)))))
 
-    (defun mu4e-mark-for-spam (msg)
-      "Move the message to the spam folder."
-      (interactive)
-      (mu4e-mark-set 'move my-mu4e-spam-folder))
+    ;; (defun mu4e-mark-for-spam (msg)
+    ;;   "Move the message to the spam folder."
+    ;;   (interactive)
+    ;;   (mu4e-mark-set 'move my-mu4e-spam-folder))
 
-    ;; archive messages to the folder corresponding to the current year
-    (setq mu4e-refile-folder
-          (lambda (msg)
-            (message (concat (message my-mu4e-refile-folder) "." (my-mu4e-get-message-year msg)))))
+    ;; ;; archive messages to the folder corresponding to the current year
+    ;; (setq mu4e-refile-folder
+    ;;       (lambda (msg)
+    ;;         (message (concat (message my-mu4e-refile-folder) "." (my-mu4e-get-message-year msg)))))
 
-    (setq mu4e-context-policy 'ask-if-none)
+    ;; (setq mu4e-context-policy 'ask-if-none)
     (setq mu4e-contexts
           `( ,(make-mu4e-context
                :name "ttjaart@tjaart.co.za"
