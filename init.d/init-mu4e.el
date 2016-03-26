@@ -23,7 +23,7 @@
     (setq mu4e-html2text-command 'mu4e-shr2text)
     ;; (setq mu4e-headers-fields
     ;;       '((:human-date  . 12)
-    ;;         (:subject     . 5q0)
+    ;;         (:subject     . 50)
     ;;         (:flags       . 5)
     ;;         (:from        . 22)
     ;;         (:to          . 22)))
