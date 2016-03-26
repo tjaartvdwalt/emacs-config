@@ -20,13 +20,13 @@
           mu4e-show-images t
           mu4e-view-image-max-width 800)
 
-    (setq mu4e-html2text-command 'mu4e-shr2text)
-    (setq mu4e-headers-fields
-          '((:human-date  . 12)
-            (:subject     . 5q0)
-            (:flags       . 5)
-            (:from        . 22)
-            (:to          . 22)))
+    ;; (setq mu4e-html2text-command 'mu4e-shr2text)
+    ;; (setq mu4e-headers-fields
+    ;;       '((:human-date  . 12)
+    ;;         (:subject     . 5q0)
+    ;;         (:flags       . 5)
+    ;;         (:from        . 22)
+    ;;         (:to          . 22)))
 
     ;; (add-to-list 'mu4e-view-actions
     ;;              '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
