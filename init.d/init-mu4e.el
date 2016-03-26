@@ -7,7 +7,7 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mu4e-maildir "~/Maildir/tjaart@tjaart.co.za")
 (setq mu4e-drafts-folder "/Drafts")
-(setq mu4e-sent-folder   "/.Sent")
+(setq mu4e-sent-folder   "/Sent")
 (setq mu4e-trash-folder  "/Trash")
     )
   )
