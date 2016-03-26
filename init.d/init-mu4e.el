@@ -9,12 +9,12 @@
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mail-user-agent 'mu4e-user-agent)
     (setq mu4e-maildir "~/Maildir")
-    ;; ;; (setq mu4e-use-fancy-chars t)
-    ;; (setq mu4e-view-show-images t)
-    ;; (setq mu4e-view-prefer-html t)
-    ;; (setq message-kill-buffer-on-exit t)
-    ;; (setq mu4e-update-interval 300)
-    ;; (setq mu4e-view-show-addresses t)
+    ;; (setq mu4e-use-fancy-chars t)
+    (setq mu4e-view-show-images t)
+    (setq mu4e-view-prefer-html t)
+    (setq message-kill-buffer-on-exit t)
+    (setq mu4e-update-interval 300)
+    (setq mu4e-view-show-addresses t)
 
     ;; (setq mu4e-view-show-images t
     ;;       mu4e-show-images t
