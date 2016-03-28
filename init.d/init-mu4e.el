@@ -63,7 +63,7 @@
     ;; archive messages to the folder corresponding to the current year
     (setq mu4e-refile-folder
           (lambda (msg)
-            (message (concat (message my-mu4e-refile-folder) "/" (my-mu4e-get-message-year msg)))))
+            (message (concat (message my-mu4e-refile-folder) "." (my-mu4e-get-message-year msg)))))
 
     (setq mu4e-context-policy 'ask-if-none)
     (setq mu4e-contexts
