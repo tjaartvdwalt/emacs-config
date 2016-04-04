@@ -91,7 +91,7 @@
                        (setq message-sendmail-extra-arguments (list '"-a tjaart@tjaart.co.za"))
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Drafts"    . ?d)
-                                                ("/tjaart@tjaart.co.za/Inbox"     . ?i)
+                                                ("/tjaart@tjaart.co.za/.INBOX"     . ?i)
                                                 ("/tjaart@tjaart.co.za/Spam"      . ?S)
                                                 ("/tjaart@tjaart.co.za/Sent"      . ?s)
                                                 ("/tjaart@tjaart.co.za/Trash"     . ?t)))))
