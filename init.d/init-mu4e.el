@@ -104,12 +104,12 @@
                              (when msg
                                (mu4e-message-contact-field-matches msg
                                                                    :to "tajvdw@gmail.com")))
-               :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/Inbox")
-                       (my-mu4e-refile-folder  . "/tajvdw@gmail.com/Archives")
-                       (my-mu4e-spam-folder    . "/tajvdw@gmail.com/Spam")
+               :vars '((mu4e-inbox-folder      . "/tajvdw@gmail.com/.INBOX")
+                       (my-mu4e-refile-folder  . "/tajvdw@gmail.com/.Archives")
+                       (my-mu4e-spam-folder    . "/tajvdw@gmail.com/[Gmail]/.Spam")
                        (mu4e-drafts-folder     . "/tajvdw@gmail.com/Drafts")
-                       (mu4e-sent-folder       . "/tajvdw@gmail.com/Sent")
-                       (mu4e-trash-folder      . "/tajvdw@gmail.com/Trash")
+                       (mu4e-sent-folder       . "/tajvdw@gmail.com/[Gmail]/.Sent Mail")
+                       (mu4e-trash-folder      . "/tajvdw@gmail.com/[Gmail]/.Trash")
                        (user-mail-address      . "tajvdw@gmail.com")
                        (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
                        (setq mu4e-sent-messages-behavior 'delete)
