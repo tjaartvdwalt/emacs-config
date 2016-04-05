@@ -125,6 +125,31 @@
                                                 ("/tajvdw@gmail.com/Trash"     . ?t)))))
 
              ,(make-mu4e-context
+               :name "stjaart@getsolmates.com"
+               :enter-func (lambda () (mu4e-message "Switch to: tjaart@getsolmates.com"))
+               ;; leave-fun not defined
+               :match-func (lambda (msg)
+                             (when msg
+                               (mu4e-message-contact-field-matches msg
+                                                                   :to "tjaart@getsolmates.com")))
+               :vars '((mu4e-inbox-folder      . "/tjaart@getsolmates.com/Inbox")
+                       (my-mu4e-refile-folder  . "/tjaart@getsolmates.com/Archives")
+                       (my-mu4e-spam-folder    . "/tjaart@getsolmates.com/[Gmail]/.Spam")
+                       (mu4e-drafts-folder     . "/tjaart@getsolmates.com/[Gmail]/.Drafts")
+                       (mu4e-sent-folder       . "/tjaart@getsolmates.com/[Gmail]/.Sent Mail")
+                       (mu4e-trash-folder      . "/tjaart@getsolmates.com/[Gmail]/.Trash")
+                       (user-mail-address      . "tjaart@getsolmates.com")
+                       (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
+                       (setq mu4e-sent-messages-behavior 'delete)
+                       (setq message-sendmail-extra-arguments (list '"-a tjaart@getsolmats.com"))
+                       (mu4e-maildir-shortcuts .
+                                               (("/tjaart@getsolmates.com/Drafts"    . ?d)
+                                                ("/tjaart@getsolmates.com/Inbox"     . ?i)
+                                                ("/tjaart@getsolmates.com/Spam"      . ?S)
+                                                ("/tjaart@getsolmates.com/Sent"      . ?s)
+                                                ("/tjaart@getsolmates.com/Trash"     . ?t)))))
+
+             ,(make-mu4e-context
                :name "utav9wc@mail.umsl.edu"
                :enter-func (lambda () (mu4e-message "Switch to: tav9wc"))
                ;; leave-fun not defined
