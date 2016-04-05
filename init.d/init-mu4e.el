@@ -14,6 +14,7 @@
     (setq mu4e-view-prefer-html t)
     (setq message-kill-buffer-on-exit t)
     (setq mu4e-update-interval 300)
+    (setq mu4e-headers-results-limit 1000)
     (setq mu4e-view-show-addresses t)
 
     ;;rename files when moving - NEEDED FOR MBSYNC
