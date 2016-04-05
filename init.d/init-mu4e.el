@@ -16,6 +16,10 @@
     (setq mu4e-update-interval 300)
     (setq mu4e-view-show-addresses t)
 
+    ;;rename files when moving - NEEDED FOR MBSYNC
+    (setq mu4e-change-filenames-when-moving t)
+
+
     (setq mu4e-view-show-images t
           mu4e-show-images t
           mu4e-view-image-max-width 800)
