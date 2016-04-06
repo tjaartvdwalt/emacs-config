@@ -22,7 +22,7 @@
 
     (add-hook 'mu4e-index-updated-hook
   (defun new-mail-notification ()
-    (shell-command "export DISPLAY=:0;notify-send You have new mail!")))
+    (shell-command "export DISPLAY=:0;notify-send 'Somethings changed in your Inbox!'")))
 
     (setq mu4e-view-show-images t
           mu4e-show-images t
