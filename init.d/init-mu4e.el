@@ -21,8 +21,12 @@
     (setq mu4e-change-filenames-when-moving t)
 
     (add-hook 'mu4e-index-updated-hook
-  (defun new-mail-notification ()
-    (shell-command "aplay /usr/lib/libreoffice/share/gallery/sounds/laser.wav & export DISPLAY=:0;notify-send 'You have new mail!'")))
+              (defun new-mail-notification ()
+                (shell-command "aplay /usr/lib/libreoffice/share/gallery/sounds/laser.wav")
+                (shell-command "export DISPLAY=:0;notify-send 'You have new mail!'")))
+
+
+
 
     (setq mu4e-view-show-images t
           mu4e-show-images t
