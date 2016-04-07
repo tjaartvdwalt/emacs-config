@@ -35,9 +35,9 @@
     (add-to-list 'mu4e-view-actions
                  '("bView in browser" . mu4e-msgv-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
-                 '("cMark as Spam" . mu4e-mark-for-spam) t)
+                 '("SMark as Spam" . mu4e-mark-for-spam) t)
     (add-to-list 'mu4e-view-actions
-                 '("cMark as Spam" . mu4e-view-mark-for-spam) t)
+                 '("SMark as Spam" . mu4e-view-mark-for-spam) t)
     (add-to-list 'mu4e-headers-actions
                  '("iMove to Inbox" . mu4e-mark-for-inbox) t)
     (add-to-list 'mu4e-view-actions
