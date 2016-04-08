@@ -24,6 +24,8 @@
           mu4e-show-images t
           mu4e-view-image-max-width 800)
 
+    ;; Make html text more readable
+    (setq shr-color-visible-luminance-min 70)
     (setq mu4e-html2text-command 'mu4e-shr2text)
     (setq mu4e-headers-fields
           '((:human-date  . 12)
