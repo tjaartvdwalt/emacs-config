@@ -1,9 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
-# name: promise.catch
-# key: catch
-# binding: direct-keybinding
-# --
-catch(function ($1) {
-  $0
-})

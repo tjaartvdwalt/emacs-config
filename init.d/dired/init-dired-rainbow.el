@@ -1,6 +1,0 @@
-(req-package dired-rainbow
-  : require dired
-  :config( progn
-           
-          (dired-rainbow-define src "#ffffff" ("el"))
-          ))
