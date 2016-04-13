@@ -10,5 +10,5 @@
 (global-set-key (kbd "C-c n p p") (lambda () (interactive) (npm-patch) (npm-publish)))
 (global-set-key (kbd "C-c n p m") (lambda () (interactive) (npm-patch) (npm-publish)))
 (global-set-key (kbd "C-c n p M") (lambda () (interactive) (npm-patch) (npm-publish)))
-                (global-set-key (kbd "C-c n t") 'npm-test)
-                (global-set-key (kbd "C-c n v") 'npm-version)
+(global-set-key (kbd "C-c n t") 'npm-test)
+(global-set-key (kbd "C-c n v") 'npm-version)
