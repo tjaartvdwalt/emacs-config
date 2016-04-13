@@ -4,4 +4,4 @@
 (req-package tern
   :diminish tern-mode
   :config (progn
-            (add-hook 'js-mode-hook (lambda () (tern-mode t)))))
+            (add-hook 'js2-mode-hook (lambda () (tern-mode t)))))
