@@ -10,8 +10,8 @@
 (global-set-key (kbd "C-c n p") 'npm-publish)
 (global-set-key (kbd "C-c n p")             (lambda ()
                                               (npm-patch)
-                                               (npm-patch)
+                                              (npm-patch)
 
-)
-(global-set-key (kbd "C-c n t") 'npm-test)
-(global-set-key (kbd "C-c n v") 'npm-version)
+                                              )
+                (global-set-key (kbd "C-c n t") 'npm-test)
+                (global-set-key (kbd "C-c n v") 'npm-version)
