@@ -3,6 +3,7 @@
 
 (global-set-key (kbd "C-c n i") 'npm-install)
 (global-set-key (kbd "C-c n n") 'npm-new)
+(global-set-key (kbd "C-c n r") 'npm-run)
 (global-set-key (kbd "C-c n d") 'npm-new-dependency)
 (global-set-key (kbd "C-c n e") 'npm-nodemon-exec)
 (global-set-key (kbd "C-c n p") 'npm-publish)
