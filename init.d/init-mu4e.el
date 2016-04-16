@@ -37,13 +37,13 @@
     (add-to-list 'mu4e-view-actions
                  '("View in browser" . mu4e-msgv-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
-                 '("Mark as Spam" . mu4e-mark-for-spam) t)
+                 '("sMark as Spam" . mu4e-mark-for-spam) t)
     (add-to-list 'mu4e-view-actions
-                 '("Mark as Spam" . mu4e-view-mark-for-spam) t)
+                 '("sMark as Spam" . mu4e-view-mark-for-spam) t)
     (add-to-list 'mu4e-headers-actions
-                 '("Move to Inbox" . mu4e-mark-for-inbox) t)
+                 '("iMove to Inbox" . mu4e-mark-for-inbox) t)
     (add-to-list 'mu4e-view-actions
-                 '("Move to Inbox" . mu4e-view-mark-for-inbox) t)
+                 '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
 
     (setq mu4e-bookmarks
           `(
