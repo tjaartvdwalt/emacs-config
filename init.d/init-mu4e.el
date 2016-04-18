@@ -41,7 +41,7 @@
     (add-to-list 'mu4e-headers-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
     (add-to-list 'mu4e-view-actions
-                 '("lMark as Spam" . mu4e-view-mark-for-spam) t)
+                 '("lMark as Spam" . mu4e-mark-for-spam) t)
     (add-to-list 'mu4e-headers-actions
                  '("iMove to Inbox" . mu4e-mark-for-inbox) t)
     (add-to-list 'mu4e-view-actions
