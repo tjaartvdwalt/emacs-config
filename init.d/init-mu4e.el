@@ -45,7 +45,7 @@
     (add-to-list 'mu4e-headers-actions
                  '("iMove to Inbox" . mu4e-mark-for-inbox) t)
     (add-to-list 'mu4e-view-actions
-                 '("iMove to Inbox" . mu4e-view-mark-for-inbox) t)
+                 '("iMove to Inbox" . mu4e-mark-for-inbox) t)
 
     (setq mu4e-bookmarks
           `(
