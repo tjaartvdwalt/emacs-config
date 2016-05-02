@@ -2,10 +2,7 @@
           (lambda ()
             (unless (derived-mode-p 'json-mode)
               ;; (local-unset-key (kbd "\C-c u i"))
-              ;; (add-hook 'after-save-hook 'standardfmt t t)
-              )
-              )
-          )
+              (add-hook 'after-save-hook 'standardfmt t t))))
               ;; (global-set-key (kbd "C-c u i") 'standardfmt))))
 
 
