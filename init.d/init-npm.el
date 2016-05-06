@@ -10,6 +10,6 @@
 (global-set-key (kbd "C-c n f") (lambda () (interactive) (shell-command "fixpack")))
 (global-set-key (kbd "C-c n p p") (lambda () (interactive) (shell-command "npmPp &")))
 (global-set-key (kbd "C-c n p m") (lambda () (interactive) (shell-command "npmPm &")))
-(global-set-key (kbd "C-c n p M") (lambda () (interactive) (shell-command "npmPp &")))
+(global-set-key (kbd "C-c n p M") (lambda () (interactive) (shell-command "npmPM &")))
 (global-set-key (kbd "C-c n t") 'npm-test)
 (global-set-key (kbd "C-c n v") 'npm-version)
