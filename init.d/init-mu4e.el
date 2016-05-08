@@ -39,7 +39,7 @@
     (add-to-list 'mu4e-view-actions
                  '("bView in browser" . mu4e-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
-                 '("lMark as Spam" . mu4e-mark-for-spam) t)
+                 '("lMark as Spam" . mu4e-mark-for-spam . mu4e-headers-next) t)
     (add-to-list 'mu4e-view-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
     (add-to-list 'mu4e-headers-actions
