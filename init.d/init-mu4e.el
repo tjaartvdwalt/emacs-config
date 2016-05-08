@@ -50,7 +50,7 @@
     (setq mu4e-bookmarks
           `(
             ;; (,"maildir:"           "Inbox messages"       ?i)
-            (,"flag:unread"        "Unread messages"      ?u)
+            (,"flag:unread AND NOT flag:trashed AND NOT my-mu4e-spam-folder"        "Unread messages"      ?u)
             (,"flag:sent"          "Sent messages"        ?S)
             (,"flag:trashed"       "Trashed messages"     ?T)
             (,"flag:draft"         "Draft messages"       ?d)))
