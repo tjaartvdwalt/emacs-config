@@ -41,11 +41,11 @@
     (add-to-list 'mu4e-headers-actions
                  '("lMark as Spam" . mu4e-spam-and-next) t)
 
-(defun mu4e-spam-and-next () (
-                                                 (interactive)
-                                                 (mu4e-mark-for-spam)
-                                                 (mu4e-headers-next)
-                                                 ))
+    (defun mu4e-spam-and-next () (
+                                  (interactive)
+                                  (mu4e-mark-for-spam)
+                                  (mu4e-headers-next)
+                                  ))
     (add-to-list 'mu4e-view-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
     (add-to-list 'mu4e-headers-actions
