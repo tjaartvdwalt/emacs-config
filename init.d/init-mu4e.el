@@ -40,8 +40,10 @@
                  '("bView in browser" . mu4e-action-view-in-browser) t)
     (add-to-list 'mu4e-headers-actions
                  '("lMark as Spam" . (lambda () (
-                                                 mu4e-mark-for-spam
-                                                 mu4e-headers-next))) t)
+                                                 (mu4e-mark-for-spam)
+                                                 (mu4e-headers-next)
+                                                 ))
+) t)
 
         (defun mu4e-view-mark-for-spam (msg)
       "Mark messages as spam in the message view."
