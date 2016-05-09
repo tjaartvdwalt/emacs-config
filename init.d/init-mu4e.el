@@ -42,14 +42,8 @@
                  '("lMark as Spam" . (lambda () (
                                                  (mu4e-mark-for-spam)
                                                  (mu4e-headers-next)
-                                                 ))
-) t)
+                                                 ))) t)
 
-        (defun mu4e-view-mark-for-spam (msg)
-      "Mark messages as spam in the message view."
-      (interactive)
-      (mu4e~view-in-headers-context (mu4e-mark-for-spam msg))
-      (mu4e-view-headers-next))
 
     (add-to-list 'mu4e-view-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
