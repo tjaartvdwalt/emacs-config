@@ -24,6 +24,11 @@
           mu4e-show-images t
           mu4e-view-image-max-width 800)
 
+    (add-hook 'mu4e-compose-mode-hook
+              (defun cpb-compose-setup ()
+                "Outgoing mails get format=flowed."
+                (use-hard-newlines t 'guess)))
+
     ;; Make html text more readable
     (setq shr-color-visible-luminance-min 70)
     (setq mu4e-html2text-command 'mu4e-shr2text)
@@ -43,8 +48,8 @@
 
     (defun mu4e-spam-and-next ()
       (interactive)
-       (mu4e-mark-for-spam)
-       (mu4e-headers-next))
+      (mu4e-mark-for-spam)
+      (mu4e-headers-next))
     (add-to-list 'mu4e-view-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
     (add-to-list 'mu4e-headers-actions
