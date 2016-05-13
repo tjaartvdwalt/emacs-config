@@ -29,7 +29,7 @@
                 "Outgoing mails get format=flowed."
                 (use-hard-newlines t 'guess)))
 
-    (define-key mu4e-compose-mode-map (kbd "M-p") 'fill-paragraph)
+    (define-key mu4e-compose-mode-map (kbd "M-RET") 'fill-paragraph)
 
 
     ;; Make html text more readable
