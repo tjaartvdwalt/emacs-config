@@ -6,7 +6,7 @@
     ;;Set a shortcut for mu4e
     (global-set-key "\C-ce" 'mu4e)
     ;; (define-key mu4e-main-mode-map (kbd "C") 'helm-mu-contacts)
-(mu4e-compose-complete-only-personal t)
+    (mu4e-compose-complete-only-personal t)
     (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e")
     (setq mail-user-agent 'mu4e-user-agent)
     (setq mu4e-maildir "~/Maildir")
