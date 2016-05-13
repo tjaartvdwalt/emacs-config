@@ -29,6 +29,9 @@
                 "Outgoing mails get format=flowed."
                 (use-hard-newlines t 'guess)))
 
+    (define-key mu4e-compose-mode-map (kbd "C-p") 'fill-paragraph)
+
+
     ;; Make html text more readable
     (setq shr-color-visible-luminance-min 70)
     (setq mu4e-html2text-command 'mu4e-shr2text)
