@@ -1,7 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/manual/emacs-redmine")
 (require 'redmine)
 
-defun redmine-solmates ()
+(defun redmine-solmates ()
   (interactive)
   (setq redmine-program "~/.emacs.d/manual/emacs-redmine/redmine.py")
   (setq redmine-project-name "solmates")
