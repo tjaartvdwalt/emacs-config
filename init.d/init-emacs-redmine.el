@@ -7,4 +7,5 @@
   (setq redmine-project-name "solmates")
   (setq redmine-login-key "ddbc1a5e78c1e933f2972074d92931826e21badd")
   (setq redmine-url "http://www.hostedredmine.com/")
-  (redmine-show-sprints))
+  ;; (redmine-show-sprints)
+  )
