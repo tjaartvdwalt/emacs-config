@@ -5,6 +5,6 @@
   (interactive)
   (setq redmine-program "~/.emacs.d/manual/emacs-redmine/redmine.py")
   (setq redmine-project-name "solmates")
-  (setq redmine-login-key "e1e1419c22432fdb3144b72b8ef5872c9c8430ce")
-  (setq redmine-url "http://www.hostedredmine.com/projects/solmates")
+  (setq redmine-login-key "ddbc1a5e78c1e933f2972074d92931826e21badd")
+  (setq redmine-url "http://www.hostedredmine.com/")
   (redmine-show-sprints))
