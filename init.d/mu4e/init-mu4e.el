@@ -158,7 +158,7 @@
                        (mu4e-sent-folder       . "/tjaart@getsolmates.com/[Gmail]/.Sent Mail")
                        (mu4e-trash-folder      . "/tjaart@getsolmates.com/[Gmail]/.Trash")
                        (user-mail-address      . "tjaart@getsolmates.com")
-                       (mu4e-compose-signature . "Tjaart van der Walt\nwww.tjaart.co.za" )
+                       (mu4e-compose-signature . "Tjaart van der Walt" )
                        (setq mu4e-sent-messages-behavior 'delete)
                        (setq message-sendmail-extra-arguments (list '"-a tjaart@getsolmats.com"))
                        (mu4e-maildir-shortcuts .
