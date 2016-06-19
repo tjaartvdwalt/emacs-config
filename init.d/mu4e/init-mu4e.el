@@ -50,7 +50,8 @@
       (interactive)
       (mu4e-mark-for-spam)
       (mu4e-headers-next))
-    (add-to-list 'mu4e-view-actions '("ViewInBrowser" . mu4e-action-view-in-browser) t)
+    (add-to-list 'mu4e-view-actions
+                 '("ViewInBrowser" . mu4e-action-view-in-browser) t)
     
     (add-to-list 'mu4e-view-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
