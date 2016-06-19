@@ -52,7 +52,7 @@
     (add-to-list 'mu4e-headers-actions
                  '("lMark as Spam" . mu4e-spam-and-next) t)
     (add-to-list 'mu4e-view-actions
-                 '("ViewInBrowser" . mu4e-action-view-in-browser) t)
+                 '("bViewInBrowser" . mu4e-action-view-in-browser) t)
     
     (add-to-list 'mu4e-view-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
