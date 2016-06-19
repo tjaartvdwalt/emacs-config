@@ -42,10 +42,7 @@
             (:from        . 22)
             (:to          . 22)))
 
-    (add-to-list 'mu4e-headers-actions
-                 '("bView in browser" . mu4e-action-view-in-browser) t)
-    (add-to-list 'mu4e-view-actions
-                 '("bView in browser" . mu4e-action-view-in-browser) t)
+
     (add-to-list 'mu4e-headers-actions
                  '("lMark as Spam" . mu4e-spam-and-next) t)
 
@@ -53,6 +50,8 @@
       (interactive)
       (mu4e-mark-for-spam)
       (mu4e-headers-next))
+    (add-to-list 'mu4e-view-actions '("ViewInBrowser" . mu4e-action-view-in-browser) t)
+    
     (add-to-list 'mu4e-view-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
     (add-to-list 'mu4e-headers-actions
