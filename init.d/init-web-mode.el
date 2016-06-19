@@ -52,9 +52,9 @@
             ("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
             ("css" . (ac-source-css-property))))
 
-    (add-hook 'web-mode-hook
-              '(lambda ()
-                (add-hook 'after-save-hook (message "after save hook") t t)))
+    ;; (add-hook 'web-mode-hook
+    ;;           '(lambda ()
+    ;;             (add-hook 'after-save-hook (message "after save hook") t t)))
     ;; (add-hook 'web-mode-hook
     ;;           '(lambda ()
     ;;              (yas-activate-extra-mode 'html-mode)))
