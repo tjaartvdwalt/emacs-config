@@ -7,7 +7,7 @@
 (global-set-key (kbd "C-c n s") 'npm-new-dependency)
 (global-set-key (kbd "C-c n d") 'npm-new-dev-dependency)
 (global-set-key (kbd "C-c n e") 'npm-nodemon-exec)
-(global-set-key (kbd "C-c n f") (lambda () (interactive) (call-process "fixpack" nil nil)))
+(global-set-key (kbd "C-c n f") (lambda () (interactive) (start-process "fixpack" "*NPM Commands*")))
 ;; (global-set-key (kbd "C-c n f") (lambda () (interactive) (shell-command "fixpack")))
 (global-set-key (kbd "C-c n p p") (lambda () (interactive) (shell-command "npmPp &")))
 (global-set-key (kbd "C-c n p m") (lambda () (interactive) (shell-command "npmPm &")))
