@@ -1,4 +1,4 @@
 
 ("image")
 
-(("image" (:foreground "green") "jpeg" nil nil nil nil))
+(("image" (:foreground "green") "jpg" nil nil nil nil))
