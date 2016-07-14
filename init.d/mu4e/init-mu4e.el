@@ -58,20 +58,14 @@
                  '("lMark as Spam" . mu4e-spam-and-next) t)
     (add-to-list 'mu4e-view-actions
                  '("bViewInBrowser" . mu4e-action-view-in-browser) t)
-    
+
     (add-to-list 'mu4e-view-actions
                  '("lMark as Spam" . mu4e-mark-for-spam) t)
 
-    ;; (add-to-list 'mu4e-headers-actions
-;;              '("sMark as spam" . mu4e-register-msg-as-spam) t)
-;; (add-to-list 'mu4e-headers-actions
-;;              '("hMark as ham" . mu4e-register-msg-as-ham) t)
-
-    
     (add-to-list 'mu4e-headers-actions
                  '("iMove to Inbox" . mu4e-mark-for-inbox) t)
-    ;; (add-to-list 'mu4e-view-actions
-    ;;              '("iMove to Inbox" . mu4e-mark-for-inbox) t)
+    (add-to-list 'mu4e-view-actions
+                 '("iMove to Inbox" . mu4e-mark-for-inbox) t)
 
     (setq mu4e-bookmarks
           `(
@@ -88,7 +82,7 @@
     (defun my-mu4e-get-message-year(msg)
       (let ((year (decode-time (mu4e-message-field msg :date))))
         (message (number-to-string (nth 5 year)))))
-    
+
     ;; archive messages to the folder corresponding to the current year
     (setq mu4e-refile-folder
           (lambda (msg)
