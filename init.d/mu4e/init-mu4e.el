@@ -44,7 +44,7 @@
 
 
 
-    (defun mu4e-spam-and-next ()
+    (defun mu4e-spam-and-next (msg)
       (interactive)
       (mu4e-mark-for-spam)
       (mu4e-headers-next))
