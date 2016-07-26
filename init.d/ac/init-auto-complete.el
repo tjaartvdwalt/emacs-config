@@ -7,4 +7,5 @@
             (global-auto-complete-mode 1)
             (setq ac-auto-start nil)
             (ac-flyspell-workaround)
-            (define-key ac-mode-map (kbd "TAB") 'auto-complete)))
+            ;; (define-key ac-mode-map (kbd "TAB") 'auto-complete)
+            ))
