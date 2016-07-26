@@ -1,4 +1,4 @@
-(add-hook 'js2-mode-hook
+(add-hook 'js-mode-hook
           (lambda ()
             (unless (derived-mode-p 'json-mode)
               ;; (local-unset-key (kbd "\C-c u i"))
