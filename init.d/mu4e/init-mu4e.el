@@ -46,13 +46,14 @@
     (defun mu4e-mark-for-spam (msg)
       "Move the message to the spam folder."
       (interactive)
-      (mu4e-mark-set 'move my-mu4e-spam-folder))
+      (mu4e-mark-set 'move my-mu4e-spam-folder)
+      )
 
 
     (defun mu4e-spam-and-next (msg)
       (interactive)
-      (mu4e-mark-for-spam msg)
-      ;; (mu4e-view-headers-next)
+      ;; (mu4e-mark-for-spam msg)
+      (mu4e-view-headers-next)
       )
 
     (add-to-list 'mu4e-view-actions
