@@ -11,7 +11,7 @@
     (setq mu4e-maildir "~/Maildir")
     ;; (setq mu4e-use-fancy-chars t)
     (setq mu4e-view-show-images t)
-    (setq mu4e-view-prefer-html t)
+    (setq mu4e-view-prefer-html f)
     (setq message-kill-buffer-on-exit t)
     (setq mu4e-update-interval 300)
     (setq mu4e-headers-results-limit 1000)
