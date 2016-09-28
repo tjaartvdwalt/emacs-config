@@ -32,9 +32,9 @@
     (define-key mu4e-compose-mode-map (kbd "M-RET") 'fill-paragraph)
 
 
-    ;; Make html text more readable
-    (setq shr-color-visible-luminance-min 70)
-    (setq mu4e-html2text-command 'mu4e-shr2text)
+    ;; ;; Make html text more readable
+    ;; (setq shr-color-visible-luminance-min 70)
+    ;; (setq mu4e-html2text-command 'mu4e-shr2text)
     (setq mu4e-headers-fields
           '((:human-date  . 12)
             (:subject     . 50)
