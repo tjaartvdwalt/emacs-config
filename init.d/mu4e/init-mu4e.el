@@ -52,6 +52,7 @@
 
     (defun mu4e-view-spam (msg)
       (interactive)
+      (mu4e-mark-at-point 'move my-mu4e-spam-folder)
       (mu4e-view-mark-custom)
       (mu4e-view-headers-next)
       )
@@ -65,7 +66,7 @@
                  '("lMark as Spam" . mu4e-view-spam) t)
 
     (add-to-list 'mu4e-headers-actions
-                 '("iMove to Inbox" . mu4e-mark-for-inbox) t)
+                 '("iMove to Inbox" . ) t)
     (add-to-list 'mu4e-view-actions
                  '("iMove to Inbox" . mu4e-mark-for-inbox) t)
 
