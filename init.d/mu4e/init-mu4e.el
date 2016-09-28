@@ -93,7 +93,7 @@
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@tjaart.co.za/Drafts"    . ?d)
                                                 ("/tjaart@tjaart.co.za/INBOX"     . ?i)
-                                                ("/tjaart@tjaart.co.za/Spam"      . ?S)
+                                                ("/tjaart@tjaart.co.za/Spam"      . ?l)
                                                 ("/tjaart@tjaart.co.za/Sent"      . ?s)
                                                 ("/tjaart@tjaart.co.za/Trash"     . ?t)))))
 
@@ -118,7 +118,7 @@
                        (mu4e-maildir-shortcuts .
                                                (("/tajvdw@gmail.com/Drafts"    . ?d)
                                                 ("/tajvdw@gmail.com/Inbox"     . ?i)
-                                                ("/tajvdw@gmail.com/Spam"      . ?S)
+                                                ("/tajvdw@gmail.com/Spam"      . ?l)
                                                 ("/tajvdw@gmail.com/Sent"      . ?s)
                                                 ("/tajvdw@gmail.com/Trash"     . ?t)))))
 
@@ -143,7 +143,7 @@
                        (mu4e-maildir-shortcuts .
                                                (("/tjaart@getsolmates.com/Drafts"    . ?d)
                                                 ("/tjaart@getsolmates.com/Inbox"     . ?i)
-                                                ("/tjaart@getsolmates.com/Spam"      . ?S)
+                                                ("/tjaart@getsolmates.com/Spam"      . ?l)
                                                 ("/tjaart@getsolmates.com/Sent"      . ?s)
                                                 ("/tjaart@getsolmates.com/Trash"     . ?t)))))
 
@@ -171,6 +171,6 @@
                        (mu4e-maildir-shortcuts .
                                                (("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
                                                 ("/tav9wc@mail.umsl.edu/Inbox"     . ?i)
-                                                ("/tav9wc@mail.umsl.edu/Junk E-Mail" . ?S)
+                                                ("/tav9wc@mail.umsl.edu/Junk E-Mail" . ?l)
                                                 ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
                                                 ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))))
