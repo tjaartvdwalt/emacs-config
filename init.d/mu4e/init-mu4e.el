@@ -54,7 +54,7 @@
       (interactive)
       ;; (mu4e-mark-at-point 'move my-mu4e-spam-folder)
       (message my-mu4e-spam-folder)
-      (message(docid (mu4e-message-field msg :docid)))
+      (message(mu4e-message-field msg :docid))
       (mu4e~proc-move msg my-mu4e-spam-folder)
       (mu4e-view-headers-next)
       )
