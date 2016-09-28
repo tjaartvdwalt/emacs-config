@@ -52,7 +52,8 @@
     (defun mu4e-spam-and-next (msg)
       (interactive)
       (mu4e-mark-for-spam msg)
-      (mu4e-view-headers-next))
+      ;; (mu4e-view-headers-next)
+      )
 
     (add-to-list 'mu4e-view-actions
                  '("bViewInBrowser" . mu4e-action-view-in-browser) t)
