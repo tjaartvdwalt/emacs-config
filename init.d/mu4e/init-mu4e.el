@@ -171,6 +171,6 @@
                        (mu4e-maildir-shortcuts .
                                                (("/tav9wc@mail.umsl.edu/Drafts"    . ?d)
                                                 ("/tav9wc@mail.umsl.edu/Inbox"     . ?i)
-                                                ("/tav9wc@mail.umsl.edu/Spam"      . ?S)
+                                                ("/tav9wc@mail.umsl.edu/Junk E-Mail" . ?S)
                                                 ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
                                                 ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))))
