@@ -47,11 +47,12 @@
       "Move the message to the spam folder, and move to the next message"
       (interactive)
       (mu4e-mark-set 'move my-mu4e-spam-folder)
-      (mu4e-view-headers-next))
+      (mu4e-headers-next))
 
 
     (defun mu4e-view-spam (msg)
       (interactive)
+      (mu4e-view-mark-custom)
       (mu4e-view-headers-next)
       )
 
