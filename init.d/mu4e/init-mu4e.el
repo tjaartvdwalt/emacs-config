@@ -157,7 +157,7 @@
                                                                    :to "tav9wc@mail.umsl.edu")))
                :vars '((mu4e-inbox-folder      . "/tav9wc@mail.umsl.edu/Inbox")
                        (my-mu4e-refile-folder  . "/tav9wc@mail.umsl.edu/Archives")
-                       (my-mu4e-spam-folder    . "/tav9wc@mail.umsl.edu/Spam")
+                       (my-mu4e-spam-folder    . "/tav9wc@mail.umsl.edu/Junk E-Mail")
                        (mu4e-drafts-folder     . "/tav9wc@mail.umsl.edu/Drafts")
                        (mu4e-sent-folder       . "/tav9wc@mail.umsl.edu/Sent")
                        (mu4e-trash-folder      . "/tav9wc@mail.umsl.edu/Trash")
