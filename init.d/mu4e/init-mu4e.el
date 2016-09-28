@@ -52,8 +52,8 @@
 
     (defun mu4e-view-spam (msg)
       (interactive)
-      ;; (mu4e-mark-at-point 'move my-mu4e-spam-folder)
       (message my-mu4e-spam-folder)
+       (mu4e-mark-at-point mark target)
       (mu4e~proc-move (mu4e-message-field msg :docid) my-mu4e-spam-folder)
       (mu4e-view-headers-next)
       )
