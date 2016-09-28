@@ -42,29 +42,8 @@
             (:from        . 22)
             (:to          . 22)))
 
-
-    (defun mu4e-headers-spam (msg)
-      "Move the message to the spam folder, and move to the next message"
-      (interactive)
-      (mu4e-mark-set 'move my-mu4e-spam-folder)
-      (mu4e-headers-next))
-
-
-    (defun mu4e-view-spam (msg)
-      (interactive)
-      (message my-mu4e-spam-folder)
-       (mu4e-mark-at-point mark target)
-      (mu4e~proc-move (mu4e-message-field msg :docid) my-mu4e-spam-folder)
-      (mu4e-view-headers-next)
-      )
-
     (add-to-list 'mu4e-view-actions
                  '("bViewInBrowser" . mu4e-action-view-in-browser) t)
-
-    (add-to-list 'mu4e-headers-actions
-                 '("lMark as Spam" . mu4e-headers-spam) t)
-    (add-to-list 'mu4e-view-actions
-                 '("lMark as Spam" . mu4e-view-spam) t)
 
     (add-to-list 'mu4e-headers-actions
                  '("iMove to Inbox" . mu4e-mark-for-inbox) t)
