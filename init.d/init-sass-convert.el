@@ -2,8 +2,6 @@
           (lambda ()
               (add-hook 'after-save-hook 'scssfmt t t)))
 
-
-
 (defun scssfmt ()
   "Format the current buffer using sass-convert."
   (interactive)
