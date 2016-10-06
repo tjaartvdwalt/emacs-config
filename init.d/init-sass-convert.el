@@ -2,7 +2,7 @@
   (when (eq major-mode 'scss-mode)
     (message "save scss")))
 
-(add-hook 'after-save-hook #'my-scss-save-hook)
+(add-hook 'after-save-hook #'my-scss-after-save-hook)
 
 (add-hook 'scss-mode-hook (lambda ()
               (add-hook 'after-save-hook 'scssfmt)))
