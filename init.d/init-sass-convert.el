@@ -1,7 +1,8 @@
 ;; for some reason adding the after-save-hook to the major mode does not want to work (similar to what I did in init-standard-format.el)
 
 (add-hook 'after-save-hook (lambda ()
-                             (when (eq major-mode 'scss-mode) (progn 'scssfmt))))
+                             (when (eq major-mode 'scss-mode)
+                               (progn 'scssfmt))))
 
 (defun scssfmt ()
   "Format the current buffer using sass-convert."
