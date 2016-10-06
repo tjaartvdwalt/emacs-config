@@ -5,7 +5,6 @@
 (defun scssfmt ()
   "Format the current buffer using sass-convert."
   (interactive)
-  (message "fomat scss")
   (let ((errbuf (get-buffer-create "*Sass Convert Errors*")))
     (with-current-buffer errbuf
       (erase-buffer))
