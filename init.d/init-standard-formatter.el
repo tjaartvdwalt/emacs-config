@@ -3,6 +3,7 @@
             (unless (derived-mode-p 'json-mode)
               (add-hook 'after-save-hook 'standardfmt t t))))
 
+
 (defun standardfmt ()
   "Format the current buffer using standard-format."
   (interactive)
