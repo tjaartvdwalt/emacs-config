@@ -1,9 +1,5 @@
 (add-hook 'after-save-hook (lambda ()
-  (when (eq major-mode 'scss-mode)
-    (message "save scss"))))
-
-(add-hook 'scss-mode-hook (lambda ()
-              (add-hook 'after-save-hook 'scssfmt)))
+  (when (eq major-mode 'scss-mode) 'scssfmt)))
 
 (defun scssfmt ()
   "Format the current buffer using sass-convert."
