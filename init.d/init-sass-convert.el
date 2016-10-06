@@ -1,4 +1,4 @@
-(add-hook 'after-save-hook (defun my-scss-after-save-hook ()
+(add-hook 'after-save-hook (lambda ()
   (when (eq major-mode 'scss-mode)
     (message "save scss"))))
 
