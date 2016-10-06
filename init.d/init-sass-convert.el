@@ -1,5 +1,4 @@
-(add-hook 'scss-mode-hook
-          (lambda ()
+(add-hook 'scss-mode-hook (lambda ()
               (add-hook 'after-save-hook 'scssfmt t t)))
 
 (defun scssfmt ()
