@@ -1,2 +1,2 @@
-(add-hook 'js
+;;(add-hook 'js				;
           
