@@ -29,9 +29,9 @@
                 "Outgoing mails get format=flowed."
                 (use-hard-newlines t 'guess)))
 
-    (add-hook 'mu4e-mark-execute-pre-hook
-              (lambda (mark msg)
-                (cond ((member mark '(refile)) (mu4e-action-retag-message msg "-\\Inbox")))))
+    ;; (add-hook 'mu4e-mark-execute-pre-hook
+    ;;           (lambda (mark msg)
+    ;;             (cond ((member mark '(refile)) (mu4e-action-retag-message msg "-\\Inbox")))))
 
     (define-key mu4e-compose-mode-map (kbd "M-RET") 'fill-paragraph)
 
