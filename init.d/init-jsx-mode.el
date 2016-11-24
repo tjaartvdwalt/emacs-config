@@ -1,0 +1,1 @@
+(req-package jsx-mode)
