@@ -49,10 +49,10 @@
                      (setq emmet-use-css-transform nil))
                    )))
 
-    (setq web-mode-ac-sources-alist
-          '(("php" . (ac-source-php-auto-yasnippets ac-source-yasnippet))
-            ("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
-            ("css" . (ac-source-css-property))))
+    ;; (setq web-mode-ac-sources-alist
+    ;;       '(("php" . (ac-source-php-auto-yasnippets ac-source-yasnippet))
+    ;;         ("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
+    ;;         ("css" . (ac-source-css-property))))
 
     ;; (add-hook 'web-mode-hook
     ;;           '(lambda ()
