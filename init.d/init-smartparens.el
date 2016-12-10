@@ -6,4 +6,4 @@
  ;; (sp-with-modes '(rhtml-mode)
  ;;   (sp-local-pair "<" ">")
  ;; (sp-local-pair "")
- )))
+ ))
