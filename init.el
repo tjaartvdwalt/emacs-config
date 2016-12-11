@@ -25,6 +25,9 @@
  '(global-auto-complete-mode t)
  '(keep-end-mode t)
  '(magit-push-arguments nil)
+ '(package-selected-packages
+   (quote
+    (yascroll yaml-mode yafolding web-mode web-beautify visible-mark undo-tree typescript-mode tern-auto-complete sudo-ext smartparens smart-mode-line smart-compile show-marks shell-switcher scss-mode ruby-end rspec-mode robe req-package repo readline-complete rainbow-identifiers rainbow-delimiters python-mode py-isort py-autopep8 powerline pony-mode password-store org-present org-page org-gcal org-bullets org-autolist org-ac nhexl-mode mwe-log-commands mu4e-alert mocha-snippets markdown-mode+ mark-tools magit-svn magit-annex load-dir kite jss json-mode js-doc jedi jade-mode insert-shebang igrep ibuffer-vc ibuffer-tramp ibuffer-git html-to-markdown helm-themes helm-swoop helm-rubygems-org helm-pydoc helm-projectile helm-open-github helm-mode-manager helm-make helm-helm-commands helm-gtags helm-google helm-gitignore helm-flyspell helm-flycheck helm-firefox helm-dired-recent-dirs helm-dash helm-commandlinefu helm-c-yasnippet helm-ag haml-mode guide-key gradle-mode gotest google-c-style golden-ratio go-snippets go-eldoc gitconfig git-blame git-auto-commit-mode git-annex gist gh-md ggtags fuzzy free-keys findr expand-region ereader enh-ruby-mode enclose emr emamux emacs-eclim elpy electric-case eclim easy-kill dockerfile-mode disk discover-my-major discover diredful dired-toggle-sudo dired-open dired-narrow dired-k dired-imenu dired+ diff-hl comment-dwim-2 command-log-mode column-enforce-mode coffee-mode cdlatex browse-url-dwim base16-theme back-button auto-yasnippet auctex anzu ag ac-js2 ac-ispell ac-etags ac-emoji ac-emmet)))
  '(persp-nil-name "none")
  '(rails-ws:default-server-type "webrick")
  '(send-mail-function (quote smtpmail-send-it))
