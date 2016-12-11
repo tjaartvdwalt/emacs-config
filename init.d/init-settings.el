@@ -17,7 +17,7 @@
 ;; (setq eshell-cmpl-cycle-completions nil)
 
 ;; automatically close brackets
-;; (electric-pair-mode t)
+(electric-pair-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
 ;; delete the selection if you start typing
 (delete-selection-mode 1)
