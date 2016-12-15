@@ -1,7 +1,7 @@
-(add-hook 'js-mode-hook
-          (lambda ()
-            (unless (derived-mode-p 'json-mode)
-              (add-hook 'after-save-hook 'standardfmt t t))))
+;; (add-hook 'js-mode-hook
+;;           (lambda ()
+;;             (unless (derived-mode-p 'json-mode)
+;;               (add-hook 'after-save-hook 'standardfmt t t))))
 
 
 (defun standardfmt ()
