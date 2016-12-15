@@ -9,8 +9,8 @@
            ;;               (append flycheck-disabled-checkers
            ;;                       '(javascript-jshint)))
            ;; (flycheck-add-mode 'javascript-standard 'js-mode)
-           ;; (flycheck-add-mode 'javascript-standard 'web-mode))
-  )
+           ;; (flycheck-add-mode 'javascript-standard 'web-mode)
+  ))
 
 
 
