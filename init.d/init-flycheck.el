@@ -4,6 +4,7 @@
   :config(progn
            
            (add-hook 'after-init-hook 'global-flycheck-mode)
+(add-hook 'javascript-mode-hook 'flycheck-mode)
 
            ;; set javascript standard checekr as default
            (setq-default flycheck-disabled-checkers
