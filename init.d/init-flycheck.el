@@ -1,5 +1,4 @@
 (req-package flycheck
-  :require (flycheck-flow)
   :diminish flycheck-mode
   :config(progn
 
