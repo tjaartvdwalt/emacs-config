@@ -30,7 +30,7 @@
 (global-set-key (kbd "<C-prior>") 'beginning-of-buffer)
 (global-set-key (kbd "<C-next>") 'end-of-buffer)
 
-(global-set-key (kbd "C-,") 'er/expand-region)
+(global-set-key (kbd "C-.") 'er/expand-region)
 
 
 ;; Convenient mark functions
