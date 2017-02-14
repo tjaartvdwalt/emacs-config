@@ -32,7 +32,6 @@
 
 (global-set-key (kbd "C-.") 'er/expand-region)
 
-
 (global-set-key "\C-cdf" 'find-grep-dired)
 (global-set-key "\C-cdd" 'find-name-dired)
 
