@@ -23,8 +23,8 @@
 (global-unset-key (kbd "<C-prior>"))
 (global-unset-key (kbd "<C-next>"))
 
-(global-set-key (kbd "<C-left>") 'backward-word)
-(global-set-key (kbd "<C-right>") 'forward-word)
+(global-set-key (kbd "<C-left>") 'backward-sexp)
+(global-set-key (kbd "<C-right>") 'forward-sexp)
 (global-set-key (kbd "<C-up>") 'backward-paragraph)
 (global-set-key (kbd "<C-down>") 'forward-paragraph)
 (global-set-key (kbd "<C-prior>") 'beginning-of-buffer)
