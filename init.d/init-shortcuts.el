@@ -20,15 +20,15 @@
 (global-unset-key (kbd "<C-right>"))
 (global-unset-key (kbd "<M-left>"))
 (global-unset-key (kbd "<M-right>"))
-(global-unset-key (kbd "<C-M-left>"))
-(global-unset-key (kbd "<C-M-right>"))
+(global-unset-key (kbd "<C-prior>"))
+(global-unset-key (kbd "<C-next>"))
 
 (global-set-key (kbd "<C-left>") 'backward-word)
 (global-set-key (kbd "<C-right>") 'forward-word)
 (global-set-key (kbd "<M-left>") 'backward-paragraph)
 (global-set-key (kbd "<M-right>") 'forward-paragraph)
-(global-set-key (kbd "<C-M-left>") 'backward-page)
-(global-set-key (kbd "<C-M-right>") 'forward-page)
+(global-set-key (kbd "<C-prior>") 'beginning-of-buffer)
+(global-set-key (kbd "<C-next>") 'end-of-buffer)
 
 
 
