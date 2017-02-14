@@ -15,6 +15,23 @@
 ;; set return to use indent
 ;; (define-key global-map (kbd "RET") 'newline-and-indent)
 
+;; my custom navigation functions
+(global-unset-key (kbd "<C-left>"))
+(global-unset-key (kbd "<C-right>"))
+(global-unset-key (kbd "<M-left>"))
+(global-unset-key (kbd "<M-right>"))
+(global-unset-key (kbd "<C-M-left>"))
+(global-unset-key (kbd "<C-M-right>"))
+
+(global-set-key (kbd "<C-left>") 'backward-word)
+(global-set-key (kbd "<C-right>") 'forward-word)
+(global-set-key (kbd "<M-left>") 'backward-paragraph)
+(global-set-key (kbd "<M-right>") 'forward-paragraph)
+(global-set-key (kbd "<C-M-left>") 'backward-page)
+(global-set-key (kbd "<C-M-right>") 'forward-page)
+
+
+
 ;; Convenient mark functions
 (global-set-key (kbd "\C-c SPC p") 'mark-paragraph)
 (global-set-key (kbd "\C-c SPC f") 'mark-function)
