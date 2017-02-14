@@ -14,7 +14,7 @@
 
 ;; set return to use indent
 ;; (define-key global-map (kbd "RET") 'newline-and-indent)
-
+ 
 ;; my custom navigation functions
 (global-unset-key (kbd "<C-left>"))
 (global-unset-key (kbd "<C-right>"))
