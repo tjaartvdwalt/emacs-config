@@ -18,15 +18,15 @@
 ;; my custom navigation functions
 (global-unset-key (kbd "<C-left>"))
 (global-unset-key (kbd "<C-right>"))
-(global-unset-key (kbd "<M-left>"))
-(global-unset-key (kbd "<M-right>"))
+(global-unset-key (kbd "<C-up>"))
+(global-unset-key (kbd "<C-down>"))
 (global-unset-key (kbd "<C-prior>"))
 (global-unset-key (kbd "<C-next>"))
 
 (global-set-key (kbd "<C-left>") 'backward-word)
 (global-set-key (kbd "<C-right>") 'forward-word)
-(global-set-key (kbd "<M-left>") 'backward-paragraph)
-(global-set-key (kbd "<M-right>") 'forward-paragraph)
+(global-set-key (kbd "<C-up>") 'backward-paragraph)
+(global-set-key (kbd "<C-down>") 'forward-paragraph)
 (global-set-key (kbd "<C-prior>") 'beginning-of-buffer)
 (global-set-key (kbd "<C-next>") 'end-of-buffer)
 
