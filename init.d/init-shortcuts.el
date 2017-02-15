@@ -31,6 +31,8 @@
 (global-set-key (kbd "<M-right>") 'forward-sexp)
 (global-set-key (kbd "<C-up>") 'backward-paragraph)
 (global-set-key (kbd "<C-down>") 'forward-paragraph)
+(global-set-key (kbd "<M-up>") 'backward-list)
+(global-set-key (kbd "<M-down>") 'forward-list)
 (global-set-key (kbd "<C-prior>") 'beginning-of-buffer)
 (global-set-key (kbd "<C-next>") 'end-of-buffer)
 
