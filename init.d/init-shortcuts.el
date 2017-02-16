@@ -36,7 +36,6 @@
 (global-set-key (kbd "<C-prior>") 'beginning-of-buffer)
 (global-set-key (kbd "<C-next>") 'end-of-buffer)
 
-(global-set-key (kbd "C-,") 'ace-jump-char-mode)
 (global-set-key (kbd "C-.") 'er/expand-region)
 
 (global-set-key "\C-cdf" 'find-grep-dired)
