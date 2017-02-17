@@ -3,4 +3,4 @@
   :config(progn
            (setq gitlab-host "https://gitlab.com"
                  gitlab-username "gitlab@tjaart.co.za"
-                 gitlab-password "aazU4zgerVdWkYEta6H8")))
+                 gitlab-password "W4zVaUd3DVoPyfDRbAkn")))
