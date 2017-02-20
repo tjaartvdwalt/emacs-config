@@ -2,7 +2,7 @@
 ;; Commentary:
 ;; Code:
 (req-package magit
- :require (magit-annex)
+ :require (magit-annex magit-rockstar)
   :bind ("C-c v" . magit-status)
  :config
  (progn
