@@ -2,8 +2,8 @@
 ;; Commentary:
 ;; Code:
 (req-package magit
- ;; :require (magit-filenotify)
- :bind ("C-c v" . magit-status)
+ :require (magit-annex)
+  :bind ("C-c v" . magit-status)
  :config
  (progn
    (setq magit-revert-buffers "ask")
