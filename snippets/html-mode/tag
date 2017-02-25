@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name:       tag
+# key:        tag
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+
+<${1:tag}></$1>
