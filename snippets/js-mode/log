@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 #contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
 # name: console.log
-# key: log
+# key: console.log
 # binding: direct-keybinding
 # --
 console.log($1)
