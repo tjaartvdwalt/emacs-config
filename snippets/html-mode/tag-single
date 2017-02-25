@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name:       tag-single
+# key:        tag-single
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+<${1:tag}/>
