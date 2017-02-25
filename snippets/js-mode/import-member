@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name:       import-member
+# key:        import-member
+# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
+# --
+
+import { $2 } from '$1';
+$0
