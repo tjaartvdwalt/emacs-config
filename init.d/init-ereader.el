@@ -1,1 +1,1 @@
-(req-package ereader)
+(use-package ereader)
