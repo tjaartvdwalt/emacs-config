@@ -1,4 +1,4 @@
-(req-package auto-complete
+(use-package auto-complete
   :diminish auto-complete-mode
   :require (yasnippet auto-complete-config)
   :config (progn
