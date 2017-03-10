@@ -1,5 +1,5 @@
 (use-package dired+
-  :require dired
+;;  :require dired
   :config
   (progn
     (toggle-diredp-find-file-reuse-dir 1)
