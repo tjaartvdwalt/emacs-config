@@ -1,5 +1,5 @@
 ;; use dired-k to show git status
-(req-package dired-k
+(use-package dired-k
   :require dired
   :config
   (progn
