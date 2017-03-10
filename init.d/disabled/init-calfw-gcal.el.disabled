@@ -1,4 +1,4 @@
-(req-package calfw-gcal
+(use-package calfw-gcal
     :require (calfw)
     :config(progn
            (setq cfw:gcal-py-dir "/usr/bin/python2")
