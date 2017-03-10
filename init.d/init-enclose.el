@@ -1,7 +1,7 @@
 ;;; package --- summary
 ;;; Commentary:
 ;;; Code:
-(req-package enclose
+(use-package enclose
 :config (enclose-mode t))
 
 (provide 'init-enclose)
