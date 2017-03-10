@@ -1,4 +1,4 @@
-(req-package fic-mode
+(use-package fic-mode
   :diminish fic-mode
   :config (progn
             (add-hook 'prog-mode-hook 'turn-on-fic-mode)))
