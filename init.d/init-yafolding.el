@@ -1,4 +1,4 @@
-(req-package yafolding
+(use-package yafolding
   :bind ("C-c yf" . yafolding-discover)
 
 
