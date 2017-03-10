@@ -1,2 +1,2 @@
-(req-package dired-imenu)
+(use-package dired-imenu)
 
