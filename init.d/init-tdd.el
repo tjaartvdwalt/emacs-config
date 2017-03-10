@@ -2,10 +2,10 @@
   :config
   (progn
     (add-hook 'js-mode-hook 'tdd-mode)
-    ;; (add-hook 'js-mode-hook
-    ;;           (lambda ()
-    ;;             (set (make-local-variable 'compile-command)
-    ;;                  (format "jest"))))
+    (add-hook 'js-mode-hook
+              (lambda ()
+                (set (make-local-variable 'compile-command)
+                     (format "jest"))))
     ))
 
 
