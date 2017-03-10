@@ -1,7 +1,7 @@
 (req-package tdd
   :config (progn
             (add-hook 'js-mode-hook 'tdd-mode)
-            (defcustom tdd-test-function 'runjest)
+            (defcustom tdd-test-function runjest)
             ;; (add-hook 'js-mode-hook (lambda () (add-hook 'after-save-hook 'runjest nil t)))
             ))
 
