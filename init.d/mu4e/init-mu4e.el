@@ -1,4 +1,4 @@
-(req-package mu4e
+(use-package mu4e
   :require (gnus-dired)
   :config
   (progn
