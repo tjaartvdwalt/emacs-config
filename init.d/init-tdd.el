@@ -1,6 +1,6 @@
 (req-package tdd
   :config (progn 
-(add-hook 'js-mode-hook (lambda () (add-hook 'after-save-hook 'runjest nil t))))
+(add-hook 'js-mode-hook (lambda () (add-hook 'after-save-hook 'runjest nil t)))))
 
 (defun runjest ()
   "Run jest with tdd"
