@@ -1,1 +1,1 @@
-(req-package gh-md)
+(use-package gh-md)
