@@ -1,12 +1,13 @@
 (use-package tdd
   :config
   (progn
-    (defcustom tdd-test-function 'smart-compile)
+    (defun tdd-test-function 'smart-compile)
     (add-hook 'js-mode-hook 'tdd-mode)
-    (add-hook 'js-mode-hook
-              (lambda ()
-                (set (make-local-variable 'compile-command)
-                     (format "jest"))))))
+    ;; (add-hook 'js-mode-hook
+    ;;           (lambda ()
+    ;;             (set (make-local-variable 'compile-command)
+    ;;                  (format "jest"))))
+    ))
 
 
 ;; (defun runjest ()
