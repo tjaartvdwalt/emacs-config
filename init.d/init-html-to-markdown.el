@@ -1,1 +1,1 @@
-(req-package html-to-markdown)
+(use-package html-to-markdown)
