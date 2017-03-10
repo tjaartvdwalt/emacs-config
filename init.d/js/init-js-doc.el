@@ -1,4 +1,4 @@
-(req-package js-doc
+(use-package js-doc
   :init (progn
             (setq js-doc-mail-address "tjaart@tjaart.co.za"
                   js-doc-author (format "Tjaart van der Walt <%s>" js-doc-mail-address)
