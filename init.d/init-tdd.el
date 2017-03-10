@@ -6,7 +6,6 @@
                         (set (make-local-variable 'compile-command)
                              ("jest")))
                       (defcustom tdd-test-function runjest)
-                      ;; (add-hook 'js-mode-hook (lambda () (add-hook 'after-save-hook 'runjest nil t)))
                       ))
 
   (defun runjest ()
