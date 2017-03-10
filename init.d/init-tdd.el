@@ -1,11 +1,11 @@
-(use-package tdd
-  :config
-  (progn
-    (add-hook 'js-mode-hook 'tdd-mode)
-    (add-hook 'js-mode-hook
-              (lambda ()
-                (set (make-local-variable 'compile-command)
-                     (format "jest")))))) 
+;; (use-package tdd
+;;   :config
+;;   (progn
+;;     (add-hook 'js-mode-hook 'tdd-mode)
+;;     (add-hook 'js-mode-hook
+;;               (lambda ()
+;;                 (set (make-local-variable 'compile-command)
+;;                      (format "jest")))))) 
 
 
 ;; (defun runjest ()
