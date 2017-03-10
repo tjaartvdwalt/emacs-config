@@ -1,4 +1,4 @@
-(req-package butler
+(use-package butler
   :config (progn
             (add-to-list 'butler-server-list
              '(jenkins "JENKINS"
