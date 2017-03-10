@@ -1,1 +1,1 @@
-(req-package org-present)
+(use-package org-present)
