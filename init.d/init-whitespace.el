@@ -1,5 +1,5 @@
 ;; make whitespace-mode use just basic coloring
-(req-package whitespace
+(use-package whitespace
   :config
   (global-set-key "\C-cw" 'whitespace-mode)
   )
