@@ -1,2 +1,2 @@
-(req-package helm-google
+(use-package helm-google
     :bind ("C-c h g" . helm-google))
