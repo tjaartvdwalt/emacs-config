@@ -1,1 +1,1 @@
-(req-package dockerfile-mode)
+(use-package dockerfile-mode)
