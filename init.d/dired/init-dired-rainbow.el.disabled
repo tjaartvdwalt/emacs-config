@@ -1,4 +1,4 @@
-(req-package dired-rainbow
+(use-package dired-rainbow
   : require dired
   :config( progn
            
