@@ -1,1 +1,1 @@
-(req-package ace-jump-mode)
+(use-package ace-jump-mode)
