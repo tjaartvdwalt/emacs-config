@@ -7,7 +7,7 @@
                              ("jest")))
                       )))
 
-  (defun runjest ()
-    "Run jest with tdd"
-    (let ((errbuf (get-buffer-create "*TDD Errors*")))
-      (call-process "jest" nil nil)))
+  ;; (defun runjest ()
+  ;;   "Run jest with tdd"
+  ;;   (let ((errbuf (get-buffer-create "*TDD Errors*")))
+  ;;     (call-process "jest" nil nil)))
