@@ -1,4 +1,4 @@
-(req-package browse-url-dwim
+(use-package browse-url-dwim
   ;; :bind ("C-c yf" . )
 
   :config (progn
