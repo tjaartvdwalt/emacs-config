@@ -1,7 +1,7 @@
 (use-package tdd
   :config
   (progn
-    (use-package js-mode)
+    (use-package js)
     (add-hook 'js-mode-hook 'tdd-mode)
     (add-hook 'js-mode-hook
               (lambda ()
