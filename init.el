@@ -4,8 +4,6 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(byte-recompile-directory (expand-file-name "~/.emacs.d") 0)
-
 (load "~/.emacs.d/elpa" 1)
 ;; install use-package manually
 (elpa-install 'use-package)
