@@ -44,7 +44,7 @@
 ;; (set-frame-font "DejaVu Sans Mono-12" nil t)
 ;; this script configures our elpa repositories, and supplies a
 ;; convenient method to install packages from elpa
-(load "~/.emacs.d/elpa" 1)
+;; (load "~/.emacs.d/elpa" 1)
 
 ;; load manually installed packages
 (add-to-list 'load-path "~/.emacs.d/manual/")
