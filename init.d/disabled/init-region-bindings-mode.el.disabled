@@ -1,4 +1,4 @@
-(req-package region-bindings-mode
+(use-package region-bindings-mode
   :config((progn
             (region-bindings-mode-enable)
             (define-key region-bindings-mode-map "r" 'er/expand-region)
