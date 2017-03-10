@@ -1,4 +1,4 @@
-(req-package dired-open
+(use-package dired-open
   :require dired
   :config
   (progn
