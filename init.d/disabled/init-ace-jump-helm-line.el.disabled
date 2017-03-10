@@ -1,4 +1,4 @@
-(req-package ace-jump-helm-line
+(use-package ace-jump-helm-line
   :require(helm)
   :config(progn
            (eval-after-load "helm"
