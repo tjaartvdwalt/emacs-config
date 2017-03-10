@@ -1,4 +1,4 @@
-(req-package cc-mode
+(use-package cc-mode
   :require(google-c-style) ;;flycheck-google-cpplint)
 
   :config
