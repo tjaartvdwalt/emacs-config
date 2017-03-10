@@ -1,2 +1,1 @@
-(use-package
-  :config (unicode-fonts-setup))
+(unicode-fonts-setup)
