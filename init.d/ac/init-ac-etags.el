@@ -1,4 +1,4 @@
-(req-package ac-etags
+(use-package ac-etags
   :require (etags)
   :config (progn
             (ac-etags-setup)
