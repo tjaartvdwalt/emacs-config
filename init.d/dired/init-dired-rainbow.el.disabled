@@ -1,5 +1,5 @@
 (use-package dired-rainbow
-  : require dired
+;;  :require dired
   :config( progn
            
           (dired-rainbow-define src "#ffffff" ("el"))
