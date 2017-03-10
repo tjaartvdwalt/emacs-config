@@ -1,1 +1,1 @@
-(req-package helm-gtags)
+(use-package helm-gtags)
