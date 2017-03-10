@@ -1,3 +1,3 @@
-(req-package helm-pydoc
+(use-package helm-pydoc
     :bind (("C-c h p" . helm-pydoc)))
 
