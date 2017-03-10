@@ -1,2 +1,2 @@
-(req-package on-screen
+(use-package on-screen
   :config(global-on-screen-mode))
