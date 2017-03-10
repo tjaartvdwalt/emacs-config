@@ -1,1 +1,1 @@
-(req-package ace-mc)
+(use-package ace-mc)
