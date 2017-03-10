@@ -1,4 +1,4 @@
-(req-package back-button
+(use-package back-button
   :diminish back-button-mode
   :require smartrep
   ;; :bind (("C-c bh" . back-button-local-backward)
