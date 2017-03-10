@@ -1,2 +1,2 @@
-(req-package restclient
+(use-package restclient
   :require (restclient-helm))
