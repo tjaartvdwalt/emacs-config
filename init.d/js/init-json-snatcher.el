@@ -1,2 +1,2 @@
-(req-package json-snatcher
+(use-package json-snatcher
   :bind (("C-c M-w" . jsons-print-path)))
