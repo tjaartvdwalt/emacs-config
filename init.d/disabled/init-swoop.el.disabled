@@ -1,4 +1,4 @@
-(req-package swoop
+(use-package swoop
   :bind ("C-c s s" . swoop)
   ("C-c s m" . swoop-multi)
   ("C-c s r" . swoop-pcre-regexp)
