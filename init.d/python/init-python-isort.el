@@ -2,7 +2,7 @@
 ;; You can install it using:
 ;;
 ;; sudo pip install isort
-(req-package py-isort
+(use-package py-isort
   :config(progn (add-hook 'before-save-hook 'py-isort-before-save)))
 
 ;; to remove hook (remove-hook 'before-save-hook 'py-isort-before-save)
