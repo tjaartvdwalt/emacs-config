@@ -1,1 +1,1 @@
-(req-package discover-my-major)
+(use-package discover-my-major)
