@@ -1,2 +1,2 @@
-(req-package indent-guide
+(use-package indent-guide
   :config (indent-guide-global-mode))
