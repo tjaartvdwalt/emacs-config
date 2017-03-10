@@ -1,5 +1,5 @@
 (use-package ac-emmet
-  :require (auto-complete emmet-mode)
+  ;; :require (auto-complete emmet-mode)
 
   :config (progn
             (add-hook 'sgml-mode-hook 'ac-emmet-html-setup)
