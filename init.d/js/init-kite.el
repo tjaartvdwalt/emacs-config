@@ -1,1 +1,1 @@
-(req-package kite)
+(use-package kite)
