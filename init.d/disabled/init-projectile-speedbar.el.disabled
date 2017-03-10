@@ -1,1 +1,1 @@
-(req-package projectile-speedbar)
+(use-package projectile-speedbar)
