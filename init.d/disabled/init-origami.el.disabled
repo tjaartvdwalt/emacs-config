@@ -1,4 +1,4 @@
-(req-package origami
+(use-package origami
   ;; :bind (("C-c o c" . origami-close-node)
   ;;        ("C-c o o" . origami-open-node))
 
