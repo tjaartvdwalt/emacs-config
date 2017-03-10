@@ -1,2 +1,2 @@
-(req-package
+(use-package
   :config (unicode-fonts-setup))
