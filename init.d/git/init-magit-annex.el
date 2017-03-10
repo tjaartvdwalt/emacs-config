@@ -1,1 +1,1 @@
-(req-package magit-annex)
+(use-package magit-annex)
