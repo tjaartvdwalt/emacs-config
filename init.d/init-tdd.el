@@ -1,4 +1,4 @@
-(req-package tdd
+(use-package tdd
   :require (js-mode)
   :config
   (progn
