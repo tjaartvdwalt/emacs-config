@@ -1,1 +1,1 @@
-(req-package bind-key)
+(use-package bind-key)
