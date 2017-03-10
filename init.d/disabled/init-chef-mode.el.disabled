@@ -1,1 +1,1 @@
-(req-package chef-mode)
+(use-package chef-mode)
