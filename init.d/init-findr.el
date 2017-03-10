@@ -1,1 +1,1 @@
-(req-package findr)
+(use-package findr)
