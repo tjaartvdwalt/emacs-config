@@ -9,7 +9,7 @@
 
 (use-package ispell
   :diminish ispell-minor-mode
-  :bind
+  ;; :bind
   ;; instead of having ispell shortcuts, I now use helm-flyspell 
   ;; ("C-c i w" . ispell-word)
   ;; ("C-c i b" . ispell-buffer))
