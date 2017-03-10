@@ -1,2 +1,2 @@
-(req-package helm-flyspell
+(use-package helm-flyspell
   :bind ("C-c i" . helm-flyspell-correct))
