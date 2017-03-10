@@ -1,4 +1,4 @@
-(req-package ido-vertical-mode
+(use-package ido-vertical-mode
   :require ido
   :config
   (progn
