@@ -1,2 +1,2 @@
-(req-package gitconfig)
+(use-package gitconfig)
 
