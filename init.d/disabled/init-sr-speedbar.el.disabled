@@ -1,4 +1,4 @@
-(req-package sr-speedbar
+(use-package sr-speedbar
   ;; :bind (
   ;;        ("C-c l l" . sr-speedbar-open)
   ;;        ("C-c l c" . sr-speedbar-close)
