@@ -1,8 +1,8 @@
 (use-package tdd
-  
+
   :config
-  (use-package js-mode)
   (progn
+    (use-package js-mode)
     (add-hook 'js-mode-hook 'tdd-mode)
     (add-hook 'js-mode-hook
               (lambda ()
