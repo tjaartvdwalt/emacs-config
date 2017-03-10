@@ -1,4 +1,4 @@
-(req-package company-web
+(use-package company-web
 
   :require (company web-mode)
   :commands company-web-html
