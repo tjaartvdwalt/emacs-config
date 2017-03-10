@@ -1,2 +1,2 @@
 (use-package mocha-snippets
-  :require yasnippet)
+  ;; :require yasnippet)
