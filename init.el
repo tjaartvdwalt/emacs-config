@@ -1,13 +1,11 @@
-;;; package --- summary
-;;; Commentary:
-;;; Code:
-
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
+
+;; install use-package manually
+(elpa-install 'use-package)
 
 (eval-when-compile
   (require 'use-package))
@@ -48,25 +46,13 @@
 ;; convenient method to install packages from elpa
 (load "~/.emacs.d/elpa" 1)
 
-;; install req-package manually, everything else gets installed with req-package
-(elpa-install 'req-package)
-(require 'req-package)
-
 ;; load manually installed packages
 (add-to-list 'load-path "~/.emacs.d/manual/")
-;; (add-to-list 'load-path "~/.emacs.d/functions/")
-;; (add-to-list 'load-path "~/.emacs.d/init.d/")
-
 (elpa-install 'load-dir)
 (require 'load-dir)
-;; (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))
-(load-dir-one "~/.emacs.d/functions")
 (setq load-dir-recursive t)
+(load-dir-one "~/.emacs.d/functions")
 (load-dir-one "~/.emacs.d/init.d")
-;; (load-dir-one "~/.emacs.d/init.d/dired")
-;; (load-dir-one "~/.emacs.d/init.d/helm")
-;;(setq load-dirs t)
-;;(setq load-dir-recursive t)
 (load-dirs-reload)
 
 ;;(load-dir-one "~/.emacs.d/init.d")
