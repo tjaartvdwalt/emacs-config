@@ -1,4 +1,4 @@
-(req-package helm-company
+(use-package helm-company
   :config (progn
            (eval-after-load 'company
              '(progn
