@@ -1,6 +1,6 @@
 ;; use dired-x for hiding hidden files
 (use-package dired-x
-  :require dired
+  ;; :require dired
   :config
   (progn
     (setq dired-omit-mode t)
