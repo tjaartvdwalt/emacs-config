@@ -1,4 +1,4 @@
-(req-package speedbar
+(use-package speedbar
   :bind ("C-c s" . speedbar-disp))
 
 (defun speedbar-disp()
