@@ -1,1 +1,1 @@
-(req-package fuzzy)
+(use-package fuzzy)
