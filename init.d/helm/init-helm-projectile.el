@@ -1,5 +1,5 @@
 (use-package  helm-projectile
-  :require(projectile)
+  ;; :require(projectile)
 
   :config (progn
             (setq projectile-completion-system 'helm)
