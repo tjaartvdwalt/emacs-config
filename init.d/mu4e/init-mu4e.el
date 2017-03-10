@@ -1,5 +1,5 @@
 (use-package mu4e
-  :require (gnus-dired)
+  ;; :require (gnus-dired)
   :config
   (progn
     (require 'mu4e-contrib)
