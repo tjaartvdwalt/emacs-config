@@ -1,4 +1,4 @@
-(req-package  helm-projectile
+(use-package  helm-projectile
   :require(projectile)
 
   :config (progn
