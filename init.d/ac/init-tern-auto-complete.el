@@ -1,4 +1,4 @@
-(req-package tern-auto-complete
+(use-package tern-auto-complete
   :require (tern auto-complete)
   :config (progn
             (tern-ac-setup)
