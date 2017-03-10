@@ -1,1 +1,1 @@
-(req-package git-blame)
+(use-package git-blame)
