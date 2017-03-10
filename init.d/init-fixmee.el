@@ -1,4 +1,4 @@
-;; (req-package fixmee
+;; (use-package fixmee
 ;;   :config (progn
 ;;   (setq fixmee-smartrep-prefix "C-cf")
 ;;   (setq fixmee-goto-nextmost-urgent-keystrokes '("C-cff"))
