@@ -2,7 +2,7 @@
 ;;; Commentary: 
 ;;; Code:
 
-(req-package company
+(use-package company
   :commands (company-backends)
   :bind ("M-," . company-complete)
   :config
