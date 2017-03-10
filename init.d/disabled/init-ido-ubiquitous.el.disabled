@@ -1,4 +1,4 @@
-(req-package ido-ubiquitous
+(use-package ido-ubiquitous
   :require ido
   :config
   (progn
