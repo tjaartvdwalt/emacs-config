@@ -1,1 +1,1 @@
-(req-package helm-themes)
+(use-package helm-themes)
