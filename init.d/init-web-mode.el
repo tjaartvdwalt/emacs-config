@@ -1,5 +1,5 @@
 (use-package web-mode
-  :require (yasnippet flycheck auto-complete)
+  ;; :require (yasnippet flycheck auto-complete)
   :config
   (progn
     (setq web-mode-enable-css-colorization t)
