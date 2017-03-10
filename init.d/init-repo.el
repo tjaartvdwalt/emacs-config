@@ -1,1 +1,1 @@
-(req-package repo)
+(use-package repo)
