@@ -1,4 +1,4 @@
-(req-package ggtags
+(use-package ggtags
   ;; You need ctags pygments and gnu global installed on your os
   :config
   (progn
