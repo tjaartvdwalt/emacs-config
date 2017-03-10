@@ -2,5 +2,5 @@
 ;; Easiest way to do this is using Pip
 ;; pip clf
 
-(req-package helm-commandlinefu
+(use-package helm-commandlinefu
       :bind ("C-c h f" . helm-commandlinefu-search-clf))
