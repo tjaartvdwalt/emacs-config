@@ -3,6 +3,7 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
+(load "~/.emacs.d/elpa" 1)
 
 ;; install use-package manually
 (elpa-install 'use-package)
@@ -45,7 +46,6 @@
 ;; (set-frame-font "DejaVu Sans Mono-12" nil t)
 ;; this script configures our elpa repositories, and supplies a
 ;; convenient method to install packages from elpa
-(load "~/.emacs.d/elpa" 1)
 
 ;; load manually installed packages
 (add-to-list 'load-path "~/.emacs.d/manual/")
