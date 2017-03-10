@@ -1,2 +1,2 @@
-(req-package jade-mode
+(use-package jade-mode
   :config(progn))
