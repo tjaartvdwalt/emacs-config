@@ -1,4 +1,4 @@
-(req-package calfw
+(use-package calfw
   :require (calfw-org calfw-ical)
   :bind ("C-c m k" . cfw:open-calender-buffer)
   ;; :config (progn
