@@ -1,5 +1,4 @@
 (use-package tdd
-
   :config
   (progn
     (use-package js-mode)
