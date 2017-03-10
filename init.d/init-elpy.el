@@ -4,5 +4,5 @@
 ;; pip install rope (Python3 rope_py3k)
 ;; pip install jedi
 
-(req-package elpy
+(use-package elpy
   :config(progn  (elpy-enable)))
