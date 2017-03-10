@@ -5,7 +5,7 @@
     (add-hook 'js-mode-hook
               (lambda ()
                 (set (make-local-variable 'compile-command)
-                     (format "jest")))))) 
+                     (format "jest"))))))
 
 
 ;; (defun runjest ()
