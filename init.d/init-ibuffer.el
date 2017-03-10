@@ -1,4 +1,4 @@
-(req-package ibuffer
+(use-package ibuffer
   :require (ibuffer-vc ibuffer-git ibuffer-tramp)
   :config (progn
 
