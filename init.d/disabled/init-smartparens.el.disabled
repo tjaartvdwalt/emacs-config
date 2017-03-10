@@ -1,4 +1,4 @@
-(req-package smartparens-config
+(use-package smartparens-config
   :ensure smartparens
   :config (progn
             (smartparens-global-mode t)
