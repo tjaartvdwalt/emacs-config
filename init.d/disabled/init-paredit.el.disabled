@@ -1,4 +1,4 @@
-(req-package paredit
+(use-package paredit
   :require (paredit-everywhere paredit-menu)
   :config
   (progn
