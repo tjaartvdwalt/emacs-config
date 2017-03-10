@@ -1,4 +1,4 @@
-(req-package web-mode
+(use-package web-mode
   :require (yasnippet flycheck auto-complete)
   :config
   (progn
