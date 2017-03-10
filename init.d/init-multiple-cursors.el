@@ -1,1 +1,1 @@
-(req-package multiple-cursors)
+(use-package multiple-cursors)
