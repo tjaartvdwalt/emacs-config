@@ -1,7 +1,7 @@
 ;;; package --- summary
 ;;; Commentary:
 ;;; Code:
-(req-package python-mode
+(use-package python-mode
   :interpreter ("python" . python-mode)
   ;; :config
   ;; (progn
