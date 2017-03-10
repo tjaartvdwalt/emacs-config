@@ -1,2 +1,2 @@
-(req-package git-auto-commit-mode
+(use-package git-auto-commit-mode
   :config(setq gac-automatically-push-p t))
