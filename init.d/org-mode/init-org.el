@@ -1,7 +1,7 @@
 ;;; package --- summary
 ;;; Commentary:
 ;;; Code:
-(req-package org
+(use-package org
   :require (ox-man org-contacts )
   :bind (("C-c l" . org-store-link)
          ("C-c a" . org-agenda)
