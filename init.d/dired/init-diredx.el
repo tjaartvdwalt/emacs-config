@@ -1,5 +1,5 @@
 ;; use dired-x for hiding hidden files
-(req-package dired-x
+(use-package dired-x
   :require dired
   :config
   (progn
