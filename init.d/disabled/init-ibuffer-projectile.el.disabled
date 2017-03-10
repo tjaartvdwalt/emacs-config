@@ -1,4 +1,4 @@
-(req-package ibuffer-projectile
+(use-package ibuffer-projectile
   :config (progn
             (add-hook 'ibuffer-hook
                       (lambda ()
