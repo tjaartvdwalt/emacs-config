@@ -5,7 +5,6 @@
                       (lambda ()
                         (set (make-local-variable 'compile-command)
                              ("jest")))
-                      (defcustom tdd-test-function runjest)
                       ))
 
   (defun runjest ()
