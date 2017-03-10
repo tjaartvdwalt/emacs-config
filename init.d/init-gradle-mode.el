@@ -1,3 +1,3 @@
-(req-package gradle-mode
+(use-package gradle-mode
   :diminish gradle-mode
   :config(gradle-mode 1))
