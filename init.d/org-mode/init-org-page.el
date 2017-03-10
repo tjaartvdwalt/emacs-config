@@ -1,4 +1,4 @@
-(req-package org-page
+(use-package org-page
   :config (progn
             (setq op/repository-directory "~/my-code/my-projects/tjaartvdwalt.github.io")
             (setq op/site-domain "http://tjaartvdwalt.github.io")
