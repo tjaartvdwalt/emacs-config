@@ -1,5 +1,5 @@
 (use-package ibuffer
-  :require (ibuffer-vc ibuffer-git ibuffer-tramp)
+  ;; :require (ibuffer-vc ibuffer-git ibuffer-tramp)
   :config (progn
 
             ;; To actually make these columns show up, you need to customize
