@@ -1,4 +1,4 @@
-(req-package ido-yes-or-no
+(use-package ido-yes-or-no
   :require ido
   :config
   (progn
