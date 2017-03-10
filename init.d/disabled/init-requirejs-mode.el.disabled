@@ -1,6 +1,6 @@
 ;;; package --- summary
 ;;; Commentary:
 ;;; Code:
-(req-package requirejs-mode
+(use-package requirejs-mode
   :config
   (progn))
