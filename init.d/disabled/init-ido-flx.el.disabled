@@ -1,4 +1,4 @@
-(req-package flx-ido
+(use-package flx-ido
   :require flx
   :config
   (progn
