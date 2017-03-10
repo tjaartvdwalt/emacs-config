@@ -1,1 +1,1 @@
-(req-package git-annex)
+(use-package git-annex)
