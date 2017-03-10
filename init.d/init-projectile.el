@@ -1,4 +1,4 @@
-(req-package projectile
+(use-package projectile
   :diminish projectile-mode
   :config
   (progn
