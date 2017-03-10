@@ -1,1 +1,1 @@
-(req-package igrep)
+(use-package igrep)
