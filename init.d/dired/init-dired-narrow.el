@@ -1,4 +1,4 @@
-(req-package dired-narrow
+(use-package dired-narrow
   :require dired
   :config
   (progn
