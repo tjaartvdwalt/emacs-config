@@ -3,8 +3,8 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
-(load "~/.emacs.d/elpa" 1)
 
+(load "~/.emacs.d/elpa" 1)
 ;; install use-package manually
 (elpa-install 'use-package)
 
