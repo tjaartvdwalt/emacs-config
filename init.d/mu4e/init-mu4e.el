@@ -176,4 +176,4 @@
                                                 ("/tav9wc@mail.umsl.edu/Inbox"     . ?i)
                                                 ("/tav9wc@mail.umsl.edu/Junk E-Mail" . ?l)
                                                 ("/tav9wc@mail.umsl.edu/Sent"      . ?s)
-                                                ("/tav9wc@mail.umsl.edu/Trash"     . ?t)))))))
+                                                ("/tav9wc@mail.umsl.edu/Trash"     . ?t))))))))
