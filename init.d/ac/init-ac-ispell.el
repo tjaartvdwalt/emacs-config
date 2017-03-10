@@ -1,4 +1,4 @@
-(req-package ac-ispell
+(use-package ac-ispell
   :require (auto-complete)
   :config (progn
             (ac-ispell-setup)
