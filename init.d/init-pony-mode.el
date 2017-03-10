@@ -1,1 +1,1 @@
-(req-package pony-mode)
+(use-package pony-mode)
