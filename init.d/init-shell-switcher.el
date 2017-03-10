@@ -1,5 +1,5 @@
 #!/bin/zsh -f
-(req-package shell-switcher
+(use-package shell-switcher
   :config
   (progn
     (shell-switcher-mode t)
