@@ -1,6 +1,6 @@
 ;; use dired-k to show git status
 (use-package dired-k
-  :require dired
+  ;; :require dired
   :config
   (progn
     ;; use dired-k as alternative to revert buffer. This will refresh git status
