@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(req-package multi-web-mode
+(use-package multi-web-mode
   :config
   (progn
     (setq mweb-default-major-mode 'html-mode)
