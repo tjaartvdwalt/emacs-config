@@ -1,1 +1,1 @@
-(req-package o-blog)
+(use-package o-blog)
