@@ -1,4 +1,4 @@
-(req-package guide-key-tip
+(use-package guide-key-tip
   ;; :disabled
   :require guide-key
   :config(progn(setq guide-key-tip/enabled t))
