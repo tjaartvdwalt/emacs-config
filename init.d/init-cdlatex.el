@@ -1,1 +1,1 @@
-(req-package cdlatex)
+(use-package cdlatex)
