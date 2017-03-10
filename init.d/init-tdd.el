@@ -7,7 +7,7 @@
   "Run jest with tdd"
   (let ((errbuf (get-buffer-create "*TDD Errors*")))
     (tdd-waiting)
-    (if (eq 0 (call-process "jest" nil errbuf))
+    (if (eq 0 (call-process "jest" nil nil))
         (tdd-success)
       (tdd-failure))
 ))
