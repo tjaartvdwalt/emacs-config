@@ -1,2 +1,3 @@
 (use-package restclient
-  :require (restclient-helm))
+  :init (progn
+          (use-package restclient-helm)))
