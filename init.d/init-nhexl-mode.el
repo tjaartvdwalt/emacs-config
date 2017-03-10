@@ -1,1 +1,1 @@
-(req-package nhexl-mode)
+(use-package nhexl-mode)
