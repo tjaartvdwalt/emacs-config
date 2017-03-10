@@ -1,4 +1,4 @@
-(req-package go-mode
+(use-package go-mode
   :require (go-eldoc yasnippet go-snippets gotest)
   ;; :bind
   ;;        (("M-." . godef-jump)
