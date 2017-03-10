@@ -1,1 +1,1 @@
-(req-package helm-rubygems-org)
+(use-package helm-rubygems-org)
