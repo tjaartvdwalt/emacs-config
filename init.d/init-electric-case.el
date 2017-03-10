@@ -1,4 +1,4 @@
-(req-package electric-case
+(use-package electric-case
   :require cc-mode
 :config
 (progn
