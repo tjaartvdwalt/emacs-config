@@ -1,3 +1,3 @@
 (use-package epg
-    :require (epa-file)
+    ;; :require (epa-file)
   :config(epa-file-enable))
