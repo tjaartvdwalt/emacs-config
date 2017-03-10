@@ -1,4 +1,4 @@
-(req-package ac-emmet
+(use-package ac-emmet
   :require (auto-complete emmet-mode)
 
   :config (progn
