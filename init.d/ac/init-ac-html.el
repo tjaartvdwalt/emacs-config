@@ -1,4 +1,4 @@
-;; (req-package ac-html
+;; (use-package ac-html
 ;;   :config(
 ;;           (add-to-list 'web-mode-ac-sources-alist
 ;;                        '("html" . (ac-source-html-tag
