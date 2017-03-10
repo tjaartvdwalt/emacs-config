@@ -1,4 +1,4 @@
-(req-package undo-tree
+(use-package undo-tree
   ;; :bind (("M-/" . undo-tree-redo)
   ;;        ("C-x u" . undo-tree-visualize))
   :diminish undo-tree-mode
