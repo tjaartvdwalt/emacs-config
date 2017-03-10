@@ -1,4 +1,4 @@
-(req-package golden-ratio
+(use-package golden-ratio
   :diminish golden-ratio-mode
   :init(progn
          (defcustom golden-ratio-extra-commands
