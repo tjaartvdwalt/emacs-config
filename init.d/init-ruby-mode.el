@@ -1,5 +1,5 @@
 (use-package enh-ruby-mode
-  :requires (rspec-mode inf-ruby robe auto-complete)
+  :demand (rspec-mode inf-ruby robe auto-complete)
   :config(progn
            (add-hook 'enh-ruby-mode-hook 'robe-mode)
            (add-to-list 'ac-modes 'enh-ruby-mode)
