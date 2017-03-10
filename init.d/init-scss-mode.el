@@ -1,6 +1,6 @@
 ;; you need to install scss lint
 ;; gem install scss_lint
-(req-package scss-mode
+(use-package scss-mode
   :config(progn
            ;; (setq css-indent-offset 2)
            (flycheck-add-mode 'scss 'scss-mode)
