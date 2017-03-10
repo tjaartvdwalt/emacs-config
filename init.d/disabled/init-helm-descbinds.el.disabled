@@ -1,4 +1,4 @@
-(req-package helm-descbinds
+(use-package helm-descbinds
   :defines(helm-descbinds-mode)
   :require(helm)
   :bind (("C-c h z" . helm-descbinds)))
