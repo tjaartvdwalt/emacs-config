@@ -1,4 +1,4 @@
-(req-package iedit
+(use-package iedit
   :config(progn
            (global-unset-key (kbd "C-;"))
            (global-set-key (kbd "C-,") 'iedit-mode)
