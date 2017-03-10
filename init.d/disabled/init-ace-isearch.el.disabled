@@ -1,4 +1,4 @@
-(req-package ace-isearch
+(use-package ace-isearch
   :require helm-swoop
   :config(progn (global-ace-isearch-mode +1)
                 (setq ace-isearch-jump-delay 1.5)
