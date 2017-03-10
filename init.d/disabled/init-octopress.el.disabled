@@ -1,1 +1,1 @@
-(req-package octopress)
+(use-package octopress)
