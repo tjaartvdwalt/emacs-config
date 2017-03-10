@@ -1,1 +1,1 @@
-(req-package typescript-mode)
+(use-package typescript-mode)
