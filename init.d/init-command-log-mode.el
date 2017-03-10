@@ -1,1 +1,1 @@
-(req-package command-log-mode)
+(use-package command-log-mode)
