@@ -9,7 +9,7 @@
 (setq inhibit-splash-screen t)
 (setq tab-width 2)
 (setq-default indent-tabs-mode nil)
-;; (global-linum-mode t)
+(global-linum-mode t)
 
 
 (setq compilation-scroll-output t)
