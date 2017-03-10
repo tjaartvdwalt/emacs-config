@@ -3,7 +3,7 @@
 ;; have the following line in our .bashrc:
 ;; export PYMACS_PYTHON=python2
 (
- ;;req-package pymacs
+ ;;use-package pymacs
   :config(progn
            (autoload 'pymacs-apply "pymacs")
            (autoload 'pymacs-call "pymacs")
