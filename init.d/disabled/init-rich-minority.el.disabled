@@ -1,4 +1,4 @@
-(req-package rich-minority
+(use-package rich-minority
   :config (progn
             (rich-minority-mode 1)
             (setq rm-whitelist '(""))
