@@ -1,5 +1,5 @@
 (use-package json-mode
-  :require (flycheck)
+  ;; :require (flycheck)
   :config(progn
            (flycheck-add-mode 'json-jsonlint 'json-mode)
            (add-hook 'json-mode-hook
