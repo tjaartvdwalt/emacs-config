@@ -1,1 +1,1 @@
-(req-package gmail-message-mode)
+(use-package gmail-message-mode)
