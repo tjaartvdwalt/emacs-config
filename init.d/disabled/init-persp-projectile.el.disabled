@@ -1,2 +1,2 @@
-(req-package persp-projectile
+(use-package persp-projectile
   :require persp-mode)
