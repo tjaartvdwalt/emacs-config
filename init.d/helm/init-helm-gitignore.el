@@ -1,1 +1,1 @@
-(req-package helm-gitignore)
+(use-package helm-gitignore)
