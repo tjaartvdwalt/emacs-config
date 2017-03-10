@@ -1,2 +1,2 @@
-(req-package helm-c-yasnippet
+(use-package helm-c-yasnippet
   :bind (("C-c h y" . helm-yas-complete)))
