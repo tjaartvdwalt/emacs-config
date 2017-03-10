@@ -1,4 +1,4 @@
-;; (req-package key-chord
+;; (use-package key-chord
 ;;   :config ( progn
 ;;             (key-chord-mode 1)
 ;;             ;; Max time delay between two key presses to be considered a key chord
