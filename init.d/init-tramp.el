@@ -1,5 +1,5 @@
 (use-package tramp
-  :require (sudo-ext)
+  ;; :require (sudo-ext)
   :config
   (progn
     (setq tramp-default-method "scp")
