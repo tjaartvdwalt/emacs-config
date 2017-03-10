@@ -1,4 +1,4 @@
-(req-package bts-github
+(use-package bts-github
   :require(bts))
 
   
