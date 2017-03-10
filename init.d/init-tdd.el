@@ -1,5 +1,6 @@
 (req-package tdd
-  :config (progn
+  :config
+  (progn
             (add-hook 'js-mode-hook 'tdd-mode)
             (add-hook 'js-mode-hook
                       (lambda ()
