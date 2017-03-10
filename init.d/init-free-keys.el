@@ -1,3 +1,3 @@
-(req-package free-keys)
+(use-package free-keys)
 (provide 'free-keys)
 ;;; init-flyspell ends here
