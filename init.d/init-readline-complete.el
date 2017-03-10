@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package readline-complete
+  :defines ac-modes
   ;; :require (auto-complete)
   :config
   (progn
