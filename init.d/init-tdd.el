@@ -8,5 +8,7 @@
   (let ((errbuf (get-buffer-create "*TDD Errors*")))
     (tdd-waiting)
     (let ((res (start-process "jest" errbuf "jest"))))
+    (tdd-waiting)
+    
     (message res)
 ))
