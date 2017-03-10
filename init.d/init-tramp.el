@@ -1,4 +1,4 @@
-(req-package tramp
+(use-package tramp
   :require (sudo-ext)
   :config
   (progn
