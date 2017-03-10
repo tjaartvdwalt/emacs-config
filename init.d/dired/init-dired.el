@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(req-package dired
+(use-package dired
   :config
   (progn
     ;; Configure dired to sort directories first
