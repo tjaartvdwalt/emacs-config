@@ -48,6 +48,7 @@
 
 ;; load manually installed packages
 (add-to-list 'load-path "~/.emacs.d/manual/")
+
 (elpa-install 'load-dir)
 (require 'load-dir)
 (setq load-dir-recursive t)
@@ -55,25 +56,7 @@
 (load-dir-one "~/.emacs.d/init.d")
 (load-dirs-reload)
 
-;;(load-dir-one "~/.emacs.d/init.d")
-;; (message "got here!")
-(req-package-finish)
-;; (message "done!")
-
-;; require load-dir. this loads all files in the given dirs.
-;; (setq req-package-verbose 1)
-;; (req-package load-dir
-;;   :ensure load-dir
-;;   :config (progn
-;;           (setq load-dirs '("~/.emacs.d/functions" "~/.emacs.d/init.d"))))
-
-;; actually load the packages
-;; (req-package-finish)
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(default ((t (:family "monospace" :slant normal :weight normal :height 220 :width normal)))))
 
 
