@@ -1,2 +1,2 @@
-(req-package nyan-mode
+(use-package nyan-mode
   :config (nyan-mode))
