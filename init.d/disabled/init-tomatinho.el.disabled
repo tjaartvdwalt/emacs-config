@@ -1,1 +1,1 @@
-(req-package tomatinho)
+(use-package tomatinho)
