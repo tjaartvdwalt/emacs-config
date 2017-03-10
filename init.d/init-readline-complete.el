@@ -1,7 +1,7 @@
 ;;; package --- summary
 ;;; Commentary:
 ;;; Code:
-(req-package readline-complete
+(use-package readline-complete
   :require (auto-complete)
   :config
   (progn
