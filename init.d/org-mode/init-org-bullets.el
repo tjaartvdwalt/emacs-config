@@ -1,4 +1,4 @@
 (use-package org-bullets
-  :require (org)
+  ;; :require (org)
   :config(progn
            (add-hook 'org-mode-hook 'org-bullets-mode)))
