@@ -1,4 +1,4 @@
-(req-package eclim
+(use-package eclim
   :ensure emacs-eclim
   :config(progn
            (global-eclim-mode)
