@@ -1,4 +1,4 @@
-(req-package guide-key
+(use-package guide-key
   :diminish guide-key-mode
   :config
   (progn
