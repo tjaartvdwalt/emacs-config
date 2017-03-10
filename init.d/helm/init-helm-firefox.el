@@ -1,1 +1,1 @@
-(req-package helm-firefox)
+(use-package helm-firefox)
