@@ -1,1 +1,1 @@
-(req-package password-store)
+(use-package password-store)
