@@ -1,4 +1,4 @@
-(req-package helm
+(use-package helm
   ;; :ensure helm-config
   ;; :require (helm-config)
   ;; :bind (("M-x" . helm-M-x))
