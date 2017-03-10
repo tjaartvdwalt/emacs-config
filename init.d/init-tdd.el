@@ -1,6 +1,7 @@
 (use-package tdd
   :config
   (progn
+    (use-package smart-compile)
     (add-hook 'js-mode-hook 'tdd-mode)
     (defcustom tdd-test-function #'smart-compile)
     ;; (add-hook 'js-mode-hook
