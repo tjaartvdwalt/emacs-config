@@ -1,5 +1,5 @@
 (use-package electric-case
-  :require cc-mode
+  ;; :require cc-mode
 :config
 (progn
   (add-hook 'c-mode-common-hook 'electric-case-c-init)
