@@ -7,7 +7,7 @@
 ;;; I also have `words-insane' installed as completion for ac-ispell
 ;;; Code:
 
-(req-package ispell
+(use-package ispell
   :diminish ispell-minor-mode
   :bind
   ;; instead of having ispell shortcuts, I now use helm-flyspell 
