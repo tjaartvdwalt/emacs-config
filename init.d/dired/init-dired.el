@@ -1,6 +1,4 @@
-(use-package dired
-  :config
-  (progn
+(progn
     ;; Configure dired to sort directories first
     (setq dired-listing-switches "-alh")
     ;; used to attach files in mu4e
@@ -8,4 +6,4 @@
     (setq diredp-hide-details-initially-flag nil)
     (setq dired-auto-revert-buffer t)
     (define-key dired-mode-map (kbd "\\") 'dired-get-size)
-    (define-key dired-mode-map (kbd "/") 'diredp-up-directory-reuse-dir-buffer)))
+    (define-key dired-mode-map (kbd "/") 'diredp-up-directory-reuse-dir-buffer))
