@@ -1,4 +1,4 @@
-(req-package flyspell
+(use-package flyspell
   :diminish flyspell-mode
   :config
   (add-hook 'text-mode-hook 'flyspell-mode))
