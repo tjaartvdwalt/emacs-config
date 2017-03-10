@@ -1,5 +1,5 @@
 (use-package cc-mode
-  :require(google-c-style) ;;flycheck-google-cpplint)
+  ;; :require(google-c-style) ;;flycheck-google-cpplint)
 
   :config
   (progn
