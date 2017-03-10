@@ -1,7 +1,7 @@
 ;;; package --- summary
 ;;; Commentary:
 ;;; Code:
-(req-package markdown-mode+
+(use-package markdown-mode+
   :require markdown-mode)
 
 (provide 'init-markdown)
