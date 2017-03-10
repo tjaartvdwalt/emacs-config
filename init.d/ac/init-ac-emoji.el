@@ -1,4 +1,4 @@
-(req-package ac-emoji
+(use-package ac-emoji
   :require (auto-complete markdown-mode)
   :config(progn
            (add-hook 'markdown-mode-hook 'ac-emoji-setup)
