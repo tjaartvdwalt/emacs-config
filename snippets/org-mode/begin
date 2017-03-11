@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# key:         begin
-# group:       options
-# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
-# --
-#+BEGIN_${1:$$(yas-choose-value '("ABSTRACT" "ASCII" "BEAMER" "CENTER" "COMMENT" "EXAMPLE" "HTML" "LATEX" "ODT" "QUOTE" "SRC" "TEXINFO" "VERSE" "VIDEO"))}
-$0
-#+END_$1
-

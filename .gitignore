@@ -37,3 +37,5 @@ session.*
 /.bts-project
 /.python-environments/
 /semanticdb/
+/network-security.data
+/recentf

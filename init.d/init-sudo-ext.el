@@ -1,1 +1,1 @@
-(req-package sudo-ext)
+(use-package sudo-ext)

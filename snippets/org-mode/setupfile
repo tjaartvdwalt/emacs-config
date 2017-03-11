@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# key:         setupfile
-# group:       options
-# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
-# --
-#+SETUPFILE:${1:$$(yas-choose-value (directory-files-recursive "/home/tjaart/org/setup_files" "\\.*" 0))}
-$0
-

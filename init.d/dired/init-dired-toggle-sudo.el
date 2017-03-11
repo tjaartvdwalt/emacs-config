@@ -1,4 +1,4 @@
-(req-package  dired-toggle-sudo
+(use-package  dired-toggle-sudo
   :config
   (progn
 (define-key dired-mode-map (kbd "C-c C-s") 'dired-toggle-sudo)

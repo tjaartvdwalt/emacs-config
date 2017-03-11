@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# key:         quote
-# group:       
-# contributor: Tjaart van der Walt <tjaart@tjaart.co.za>
-# --
-#+BEGIN_QUOTE
-$0
-#+END_QUOTE
