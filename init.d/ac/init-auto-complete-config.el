@@ -1,1 +1,1 @@
-use-package(auto-complete-config)
+(use-package auto-complete-config)
