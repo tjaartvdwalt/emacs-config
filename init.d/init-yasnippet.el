@@ -1,4 +1,5 @@
 ;; custom snippets go in ~/.emac.d/snippets
+
 (use-package auto-yasnippet)
 (use-package java-yasnippet)
 (use-package react-yasnippet)
