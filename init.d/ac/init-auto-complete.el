@@ -3,7 +3,7 @@
   ;; :require (yasnippet auto-complete-config)
   :config (progn
             (setq ac-use-fuzzy t)
-            (setq-default ac-sources '(ac-source-yasnippet ac-source-abbrev ac-source-dictionary ac-source-filename ac-source-words-in-same-mode-buffers))
+            (setq-default ac-sources '(ac-source-yasnippet ac-source-abbrev ac-source-dictionary ac-source-filename ac-source-words-in-same-mode-buffers ac-source-ispell-fuzzy))
             (global-auto-complete-mode 1)
             (ac-flyspell-workaround)))
 
