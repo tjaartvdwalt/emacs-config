@@ -2,5 +2,5 @@
          :config (progn
                    (add-to-list 'smart-compile-alist
                                 ;; assumes a properly configured npm project
-                                '("\\.yml\\'"      . "js-yml")
+                                '("\\.yml\\'"      . "js-yaml")
                                 '("\\.js[x]*\\'"      . "npm test"))))
