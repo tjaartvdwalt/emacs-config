@@ -1,4 +1,4 @@
-(use-package smarter-compile
+(use-package smart-compile
   :config (progn
             (add-to-list 'smart-compile-alist
                          ;; npm install -g jsonlint
