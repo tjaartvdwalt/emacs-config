@@ -1,4 +1,4 @@
-(use-package auto-complete
+ (use-package auto-complete
   :diminish auto-complete-mode
   :init (require 'auto-complete-config)
   :config (progn
