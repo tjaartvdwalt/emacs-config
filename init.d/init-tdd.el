@@ -4,7 +4,7 @@
     (add-hook 'js-mode-hook 'tdd-mode)
     (remove-hook 'js-mode-hook 'tdd-mode)
     (custom-set-variables
-     '(tdd-test-function (quote (smart-compile))))
+     '(tdd-test-function (smart-compile)))
     ))
 
     ;; (defun runjest ()
