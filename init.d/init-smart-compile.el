@@ -5,5 +5,5 @@
             ;; assumes a properly configured npm project, with test script
             (add-to-list 'smart-compile-alist
                          '(("\\.json\\'"        . "js-yaml %f")
-                         '("\\.y[a]*ml\\'"     . "js-yaml %f")
-                         '("\\.js[x]*\\'"      . "npm test")))))
+                           ("\\.y[a]*ml\\'"     . "js-yaml %f")
+                           ("\\.js[x]*\\'"      . "npm test")))))
