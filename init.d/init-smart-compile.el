@@ -2,7 +2,7 @@
   :config (progn
             (add-to-list 'smart-compile-alist
                          ;; npm install -g jsonlint
-                         '("\\.json\\'"        . "js-yaml %F"))
+                         '("\\.json\\'"        . (lambda (call-process "js-yaml" nil errbuf nil "%f" (buffer-file-name)))
             (add-to-list 'smart-compile-alist
                          ;; npm install -g js-yaml
                          '("\\.y[a]*ml\\'"     . "js-yaml %F"))
