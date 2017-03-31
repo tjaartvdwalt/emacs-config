@@ -6,7 +6,8 @@
               (lambda ()
                 (set (make-local-variable 'compile-command)
                      (format "jest")))))) 
-
+(custom-set-variables
+ '(tdd-test-function (quote (smart-compile))))
 
 ;; (defun runjest ()
 ;;   "Run jest with tdd"
