@@ -8,7 +8,7 @@
                                         (nxhtml-mode        . (browse-url-of-buffer))
                                         (html-helper-mode   . (browse-url-of-buffer))
                                         (octave-mode        . (run-octave))
-                                        ("\\.js[x]\\'"      . "jest")
+                                        ("\\.js\\'"      . "jest")
                                         ("\\.c\\'"          . "gcc -O2 %f -lm -o %n")
                                         ("\\.[Cc]+[Pp]*\\'" . "g++ -O2 %f -lm -o %n")
                                         ("\\.go\\'"         . "go build")
