@@ -8,4 +8,4 @@
                          ("\\.y[a]*ml\\'"     . "js-yaml %f"))            
             (add-to-list 'smart-compile-alist
                            ;; assumes a properly configured npm project, with test script
-                           ("\\.js[x]*\\'"      . "npm test")))))
+                           ("\\.js[x]*\\'"      . "npm test"))))
