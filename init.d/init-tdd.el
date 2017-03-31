@@ -2,5 +2,4 @@
   :config
   (progn
     (custom-set-variables
-     '(tdd-test-function (smart-compile)))))
- 
+     '(tdd-test-function (smart-compile))))) 
