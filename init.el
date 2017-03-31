@@ -38,6 +38,7 @@
  '(send-mail-function (quote smtpmail-send-it))
  '(show-paren-mode t)
  '(size-indication-mode t)
+ '(tdd-test-function (smart-compile))
  '(tool-bar-mode nil)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
 
