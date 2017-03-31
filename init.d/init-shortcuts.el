@@ -3,8 +3,8 @@
 
 ;; Swap c-x and c-u.  This is useful for dvorak layout since u is
 ;; on the home row and x is difficult to reach
-(define-key key-translation-map [?\C-x] [?\C-u])
-(define-key key-translation-map [?\C-u] [?\C-x])
+(define-key key-translation-map ?\C-x ?\C-u)
+(define-key key-translation-map ?\C-u ?\C-x)
 
 ;; use ibuffer instead of buffer-menu
 (substitute-key-definition
