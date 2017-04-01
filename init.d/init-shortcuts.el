@@ -1,11 +1,6 @@
 ;;; package --- This file contains shortcuts that do not correspond to any init file
 ;;; Commentary:
 
-;; Swap c-x and c-u.  This is useful for dvorak layout since u is
-;; on the home row and x is difficult to reach
-(keyboard-translate ?\C-x ?\C-u)
-(keyboard-translate ?\C-u ?\C-x)
-
 ;; use ibuffer instead of buffer-menu
 (substitute-key-definition
  'list-buffers 'ibuffer global-map global-map)
