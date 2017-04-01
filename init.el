@@ -16,8 +16,8 @@
 
 ;; Swap c-x and c-u.  This is useful for dvorak layout since u is
 ;; on the home row and x is difficult to reach
-(keyboard-translate ?\C-x ?\C-u)
-(keyboard-translate ?\C-u ?\C-x)
+(define-key key-translation-map (kbd "C-u") (kbd "C-x"))
+(define-key key-translation-map (kbd "C-;") (kbd "C-u"))
 
 
 (custom-set-variables
@@ -69,7 +69,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "monospace" :slant normal :weight normal :height 220 :width normal)))))
+ '(default ((t (:family "monospace" :slant normal :weight normal :height 180 :width normal)))))
 
 
 (put 'upcase-region 'disabled nil)
