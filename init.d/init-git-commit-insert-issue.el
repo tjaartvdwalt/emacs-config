@@ -1,3 +1,8 @@
-(use-package git-commit-insert-issue
-  :config(progn
-           (add-hook 'git-commit-mode-hook 'git-commit-insert-issue-mode)))
+;; for development, use my local repos
+(load-dir-one "~/home/tjaart/code/bitbucket-issues.el")
+(load-dir-one "~/home/tjaart/code/git-commit-insert-issue")
+
+
+;; (use-package git-commit-insert-issue
+;;   :config(progn
+;;            (add-hook 'git-commit-mode-hook 'git-commit-insert-issue-mode)))
