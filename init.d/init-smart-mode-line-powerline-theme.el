@@ -1,2 +1,1 @@
-(use-package smart-mode-line-powerline-theme
-    :config (sml/apply-theme 'light-powerline))
+(use-package smart-mode-line-powerline-theme)
