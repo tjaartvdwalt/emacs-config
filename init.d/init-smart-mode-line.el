@@ -1,5 +1,3 @@
-(use-package smart-mode-line-powerline-theme)
-
 (use-package smart-mode-line
   :config (progn
             ;; (setq sml/no-confirm-load-theme t)
