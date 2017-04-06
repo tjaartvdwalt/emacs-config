@@ -2,6 +2,6 @@
   :config (progn
             ;; (setq sml/no-confirm-load-theme t)
             ;; (setq sml/name-width 8)
-            (sml/apply-theme 'smart-mode-line-powerline-theme)
+            (sml/apply-theme 'respectful)
             ;; (setq sml/mode-width "full")
             (sml/setup)))
