@@ -4,4 +4,4 @@
 
 (defun rubocop-save-buffer ()
   (message "saved ruby file")
-  )
+  (rubocop-autocorrect-current-file))
