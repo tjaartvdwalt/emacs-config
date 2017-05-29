@@ -4,5 +4,5 @@
            ("C-c t r" . timeclock-reread-log)
            ("C-c t c" . timeclock-change)
            ("C-c it t" . timeclock-visit-timelog))
-  :config((timeclock-mode-line-display t))
+  :config((display-time-mode t))
 )
