@@ -1,1 +1,3 @@
-(use-package swiper)
+(use-package swiper
+  :bind*
+  (("C-s" . swiper)))
