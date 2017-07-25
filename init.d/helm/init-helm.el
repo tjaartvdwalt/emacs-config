@@ -3,7 +3,8 @@
   ;; :require (helm-config)
   ;; :bind (("M-x" . helm-M-x))
   :diminish helm-mode
-  :bind (("M-x" . helm-M-x)
+  :bind (
+          ;; ("M-x" . helm-M-x)
          ("M-y" . helm-show-kill-ring)
          ("C-x b" . helm-mini)
          ("C-x C-f" . helm-find-files)
