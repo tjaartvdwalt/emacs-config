@@ -6,7 +6,7 @@
   :bind (
           ;; ("M-x" . helm-M-x)
          ("M-y" . helm-show-kill-ring)
-         ("C-x b" . helm-mini)
+         ;; ("C-x b" . helm-mini)
          ("C-x C-f" . helm-find-files)
          ;; ("C-c h a" . helm-ag)
          ("C-c h =" . helm-calcul-expression)
