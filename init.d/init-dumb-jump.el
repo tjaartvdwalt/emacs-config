@@ -5,5 +5,6 @@
   ;;         ("M-g x" . dumb-jump-go-prefer-external)
   ;;         ("M-g z" . dumb-jump-go-prefer-external-other-window))
   :config (progn
-            (add-hook 'prog-mode-hook #'dumb-jump-mode))
+            (add-hook 'prog-mode-hook #'dumb-jump-mode)
+            (setq dumb-jump-selector 'helm))
   :ensure)
