@@ -2,8 +2,7 @@
   :bind*
   (("M-x" . counsel-M-x)
    ("C-c d d" . counsel-descbinds)
-   ("C-c s s" . counsel-ag)
-   ("C-c s d" . counsel-ag-projectile)
+    ("C-c h a" . counsel-ag)
    ("C-x C-f" . counsel-find-file)
    ("C-x r f" . counsel-recentf)
    ("C-c g g" . counsel-git)
