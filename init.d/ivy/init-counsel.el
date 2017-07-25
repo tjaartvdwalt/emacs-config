@@ -2,7 +2,7 @@
   :bind*
   (("M-x" . counsel-M-x)
    ("C-c d d" . counsel-descbinds)
-    ("C-c h a" . counsel-ag)
+    ("C-c k" . counsel-ag)
    ("C-x C-f" . counsel-find-file)
    ("C-x r f" . counsel-recentf)
    ("C-c g g" . counsel-git)
@@ -16,7 +16,7 @@
    ("C-c d s" . describe-symbol)
    :map ivy-minibuffer-map
    ("M-y" . ivy-next-line-and-call))
- 
+
   :config
   (defun reloading (cmd)
     (lambda (x)
@@ -31,7 +31,7 @@
     (funcall cmd source target 1))))
   (defun confirm-delete-file (x)
     (dired-delete-file x 'confirm-each-subdirectory))
- 
+
   (ivy-add-actions
    'counsel-find-file
    `(("c" ,(given-file #'copy-file "Copy") "copy")
@@ -43,12 +43,12 @@
      ("d" ,(reloading #'confirm-delete-file) "delete")
      ("m" ,(reloading (given-file #'rename-file "Move")) "move")
      ("b" counsel-find-file-cd-bookmark-action "cd bookmark")))
- 
+
   ;; to make counsel-ag search the root projectile directory.
   (defun counsel-ag-projectile ()
     (interactive)
     (counsel-ag nil (projectile-project-root)))
- 
+
   (setq counsel-find-file-at-point t)
   ;; ignore . files or temporary files
   (setq counsel-find-file-ignore-regexp
