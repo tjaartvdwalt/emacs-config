@@ -17,5 +17,5 @@
   ;; configure regexp engine.
   (setq ivy-re-builders-alist
 
-    '((read-file-name-internal . ivy--regex-plus)
-       (t . ivy--regex-fuzzy))))
+    '((read-file-name-internal . ivy--regex-fuzzy)
+       (t . ivy--regex-plus))))
