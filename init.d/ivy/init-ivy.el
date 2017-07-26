@@ -17,4 +17,4 @@
   ;; configure regexp engine.
   (setq ivy-re-builders-alist
     ;; allow input not in order
-    '((t   . ivy--regex-fuzzy))))
+    '((t . ivy--regex-fuzzy))))
