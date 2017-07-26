@@ -10,12 +10,9 @@
    ("C-x l" . counsel-locate)
    ("C-c g s" . counsel-grep-or-swiper)
    ("C-M-y" . counsel-yank-pop)
-   ("C-c C-r" . ivy-resume)
    ("C-c i m" . counsel-imenu)
-   ("C-c i M" . ivy-imenu-anywhere)
    ("C-c d s" . describe-symbol)
-   :map ivy-minibuffer-map
-   ("M-y" . ivy-next-line-and-call))
+    )
 
   :config
   (defun reloading (cmd)
