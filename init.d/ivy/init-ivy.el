@@ -16,5 +16,6 @@
   (setq ivy-initial-inputs-alist nil)
   ;; configure regexp engine.
   (setq ivy-re-builders-alist
-    ;; allow input not in order
-    '((t . ivy--regex-fuzzy))))
+
+    '((read-file-name-internal . ivy--regex-plus)
+       (t . ivy--regex-fuzzy))))
