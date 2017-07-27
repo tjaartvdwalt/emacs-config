@@ -9,7 +9,7 @@
   ;; add ‘recentf-mode’ and bookmarks to ‘ivy-switch-buffer’.
   (setq ivy-use-virtual-buffers t)
   ;; number of result lines to display
-  (setq ivy-height 20)
+  (setq ivy-height 15)
   ;; does not count candidates
   (setq ivy-count-format "")
   ;; no regexp by default
