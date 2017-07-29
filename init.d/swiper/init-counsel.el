@@ -1,8 +1,6 @@
 (use-package counsel :ensure t
   :bind*
   (("M-x"     . counsel-M-x)
-(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
-(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
    ("<f1> c"   . counsel-descbinds)
    ("<f1> f"   . counsel-describe-function)
    ("<f1> v"   . counsel-describe-variable)
