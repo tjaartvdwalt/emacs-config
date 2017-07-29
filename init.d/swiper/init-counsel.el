@@ -5,6 +5,7 @@
    ("<f1> f"   . counsel-describe-function)
    ("<f1> v"   . counsel-describe-variable)
    ("<f1> l"   . counsel-find-library)
+   ("<f1> s"  . describe-symbol)
    ("<f2> i"   . counsel-info-lookup-symbol)
    ("<f2> u"   . counsel-unicode-char)
    ("M-y"     . counsel-yank-pop)
@@ -15,10 +16,7 @@
    ("C-c k"   . counsel-ag)
    ("C-c r"   . counsel-rhythmbox)
    ("C-x l"   . counsel-locate)
-   ("C-c g s" . counsel-grep-or-swiper)
-   ("C-M-y"   . counsel-yank-pop)
-   ("C-c i m" . counsel-imenu)
-   ("C-c d s" . describe-symbol)
+   ("C-c m" . counsel-imenu)
     )
 
   :config
