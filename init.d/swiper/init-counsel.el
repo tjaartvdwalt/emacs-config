@@ -1,7 +1,14 @@
 (use-package counsel :ensure t
   :bind*
   (("M-x"     . counsel-M-x)
-   ("C-h c"   . counsel-descbinds)
+(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+   ("<f1> c"   . counsel-descbinds)
+   ("<f1> f"   . counsel-describe-function)
+   ("<f1> v"   . counsel-describe-variable)
+   ("<f1> l"   . counsel-find-library)
+   ("<f2> i"   . counsel-info-lookup-symbol)
+   ("<f2> u"   . counsel-unicode-char)
    ("C-c k"   . counsel-ag)
    ("M-y"     . counsel-yank-pop)
    ("C-x C-f" . counsel-find-file)
