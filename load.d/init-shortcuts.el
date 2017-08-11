@@ -32,14 +32,11 @@
 (global-set-key (kbd "<C-next>") 'end-of-buffer)
 
 ;; wraps lines in a paragraph to word-wrap characters
-(global-set-key (kbd "\C-c u u") 'fill-paragraph)
-(global-set-key (kbd "\C-c u i") 'indent-whole-buffer)
+(global-set-key (kbd "\C-c i") 'indent-whole-buffer)
 
 (global-unset-key (kbd "\M-\-"))
 (global-set-key (kbd "\M-\+") 'text-scale-increase)
 (global-set-key (kbd "\M-\-") 'text-scale-decrease)
-
-(global-set-key (kbd "\C-c m s") 'speedbar)
 
 (global-unset-key (kbd "M-DEL"))
 (global-set-key (kbd "M-DEL") 'kill-whole-line)
