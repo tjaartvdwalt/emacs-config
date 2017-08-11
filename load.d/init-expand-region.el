@@ -1,2 +1,2 @@
 (use-package expand-region
-  :bind ("C-RET" . er/expand-region))
+  :bind ("<C-return>" . er/expand-region))
