@@ -1,1 +1,0 @@
-(use-package multiple-cursors)
