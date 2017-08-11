@@ -58,7 +58,6 @@
 (add-to-list 'load-path "~/.emacs.d/manual/")
 
 ;; (setq load-dir-recursive t)
-;; (load-dir-one "~/.emacs.d/functions")
 ;; (load-dir-one "~/.emacs.d/init.d")
 ;; (load-dirs-reload)
 
@@ -75,4 +74,5 @@
 
 (elpa-install 'load-dir)
 (require 'load-dir)
+(load-dir-one "~/.emacs.d/functions")
 (setq load-dirs t)
