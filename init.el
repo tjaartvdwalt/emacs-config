@@ -57,12 +57,10 @@
 ;; load manually installed packages
 (add-to-list 'load-path "~/.emacs.d/manual/")
 
-(elpa-install 'load-dir)
-(require 'load-dir)
-(setq load-dir-recursive t)
-(load-dir-one "~/.emacs.d/functions")
-(load-dir-one "~/.emacs.d/init.d")
-(load-dirs-reload)
+;; (setq load-dir-recursive t)
+;; (load-dir-one "~/.emacs.d/functions")
+;; (load-dir-one "~/.emacs.d/init.d")
+;; (load-dirs-reload)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -74,3 +72,6 @@
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+
+(elpa-install 'load-dir)
+(require 'load-dir)
