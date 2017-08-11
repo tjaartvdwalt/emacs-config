@@ -31,11 +31,6 @@
 (global-set-key (kbd "<C-prior>") 'beginning-of-buffer)
 (global-set-key (kbd "<C-next>") 'end-of-buffer)
 
-(global-set-key (kbd "C-.") 'er/expand-region)
-
-(global-set-key "\C-cdf" 'find-grep-dired)
-(global-set-key "\C-cdd" 'find-name-dired)
-
 ;; wraps lines in a paragraph to word-wrap characters
 (global-set-key (kbd "\C-c u u") 'fill-paragraph)
 (global-set-key (kbd "\C-c u i") 'indent-whole-buffer)
