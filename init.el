@@ -75,3 +75,4 @@
 
 (elpa-install 'load-dir)
 (require 'load-dir)
+(setq load-dirs t)
