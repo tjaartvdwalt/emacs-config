@@ -2,8 +2,8 @@
   :diminish (ivy-mode . "")
   :bind
   (:map ivy-mode-map
-    ("C-x b" . ivy-switch-buffer)
-    ("C-'" . ivy-avy))
+        ("C-x b" . ivy-switch-buffer)
+        ("C-'" . ivy-avy))
   :config
   (ivy-mode 1)
   ;; add ‘recentf-mode’ and bookmarks to ‘ivy-switch-buffer’.
@@ -17,5 +17,10 @@
   ;; configure regexp engine.
   (setq ivy-re-builders-alist
 
-    '((read-file-name-internal . ivy--regex-fuzzy)
-       (t . ivy--regex-plus))))
+        '((read-file-name-internal . ivy--regex-fuzzy)
+          (t . ivy--regex-plus)))
+
+  (use-package ivy-hydra)
+  (use-package ivy-dired-history)
+
+  )
