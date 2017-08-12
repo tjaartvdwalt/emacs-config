@@ -5,9 +5,9 @@
   (add-to-list 'auto-mode-alist
                '("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . ruby-mode))
 
-  (use-package inf-ruby)
-
   (use-package chruby)
+
+  (use-package inf-ruby)
 
   (use-package rspec-mode)
 
