@@ -1,4 +1,4 @@
-(progn
+(use-package dired
     ;; Configure dired to sort directories first
     (setq dired-listing-switches "-alh")
     ;; used to attach files in mu4e
