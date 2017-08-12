@@ -25,9 +25,7 @@
   (use-package ac-emmet
     :config
     (add-hook 'sgml-mode-hook 'ac-emmet-html-setup)
-    (add-hook 'css-mode-hook 'ac-emmet-css-setup))
-
-  )
+    (add-hook 'css-mode-hook 'ac-emmet-css-setup)))
 
 ;; (setq ac-auto-start nil)
 ;; (define-key ac-mode-map (kbd "TAB") 'auto-complete)
