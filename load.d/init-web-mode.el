@@ -1,6 +1,6 @@
 (use-package web-mode
   ;; :require (yasnippet flycheck auto-complete)
-  :mode "\\.[agj]sp\\|\\.as[cp]x\\|\\.css\\|\\.djhtml\\|\\.erb\\|\\.hbs\\|\\.mustache\\|\\.php\\|\\.phtml\\|||\\.html?\\'"
+  :mode "\\.[agj]sp\\|\\.as[cp]x\\|\\.css\\|\\.djhtml\\|\\.erb\\|\\.hbs\\|\\.html?\\|\\.mustache\\|\\.php\\|\\.phtml\\'"
   :config
   (setq web-mode-enable-css-colorization t)
   (setq web-mode-enable-auto-pairing t)
