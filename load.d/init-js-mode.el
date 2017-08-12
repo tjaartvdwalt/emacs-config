@@ -6,6 +6,8 @@
             (lambda ()
               (subword-mode 1))))
 
+(use-package kite)
+
 (use-package tern-auto-complete
   :config
   (tern-ac-setup)
