@@ -22,3 +22,5 @@
 ;; delete the selection if you start typing
 (delete-selection-mode 1)
 ;;(setq show-paren-style 'expression)
+
+(menu-bar-mode -1)
