@@ -1,6 +1,6 @@
 (use-package web-mode
   ;; :require (yasnippet flycheck auto-complete)
-  :mode "\\.html?\\"
+  :mode "\\.html?\\'"
   :config
   (setq web-mode-enable-css-colorization t)
   (setq web-mode-enable-auto-pairing t)
