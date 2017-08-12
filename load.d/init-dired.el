@@ -27,7 +27,7 @@
               ("," . tvdw/dired-decrypt-open-xdg)))
 
 (use-package diredful
-  :config (progn (diredful-mode 1)))
+  :config (diredful-mode 1))
 
 (use-package dired+
   :config
