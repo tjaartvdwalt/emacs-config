@@ -22,6 +22,11 @@
   ;; Install: pacaur -S tidyhtml
   (flycheck-add-mode 'html-tidy 'web-mode))
 
+(use-package emmet-mode
+  :config
+  (add-hook 'sgml-mode-hook 'emmet-mode)
+  (add-hook 'css-mode-hook  'emmet-mode))
+
 ;; (setq web-mode-ac-sources-alist
 ;;       '(("html" . (ac-source-emmet-html-aliases ac-source-emmet-html-snippets))
 ;;         ("css" . (ac-source-css-property ac-source-emmet-css-snippets))))
