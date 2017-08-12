@@ -13,7 +13,7 @@
     :config
     (add-hook 'magit-mode-hook 'magit-svn-mode))
 
-   (use-package magit-annex)
+  (use-package magit-annex)
 
   (use-package git-auto-commit-mode
     :config (setq gac-automatically-push-p t))
