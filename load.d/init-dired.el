@@ -1,5 +1,12 @@
-(use-package 
+(use-package
   :config
+  (use-package dired-k
+    ;; use dired-k as alternative to revert buffer. This will refresh git status
+    :bind (:map dired-mode-map
+                ("g" . dired-k))
+    :config
+    (add-hook 'dired-mode-hook 'dired-k))
+
   ;; Configure dired to sort directories first
   (setq dired-listing-switches "-alh")
   ;; used to attach files in mu4e
