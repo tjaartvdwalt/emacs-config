@@ -1,4 +1,4 @@
-(use-package dired
+(use-package 
   :config
   ;; Configure dired to sort directories first
   (setq dired-listing-switches "-alh")
