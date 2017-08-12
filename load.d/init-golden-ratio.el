@@ -1,11 +1,11 @@
 (use-package golden-ratio
   :diminish golden-ratio-mode
-  :init
-  (defcustom golden-ratio-extra-commands
-    '(windmove-left windmove-right windmove-down windmove-up ace-window)
-    "List of extra commands used to jump to other window."
-    :group 'golden-ratio
-    :type '(repeat symbol))
+  ;; :init
+  ;; (defcustom golden-ratio-extra-commands
+  ;;   '(windmove-left windmove-right windmove-down windmove-up ace-window)
+  ;;   "List of extra commands used to jump to other window."
+  ;;   :group 'golden-ratio
+  ;;   :type '(repeat symbol))
 
   :config
   (golden-ratio-mode 1)
