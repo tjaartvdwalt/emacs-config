@@ -27,7 +27,7 @@
     :config
     (add-hook 'text-mode-hook 'flyspell-mode)
     (use-package flyspell-correct-ivy
-      :bind ("C-c s" 'flyspell-correct-previous-word-generic)))))
+      :bind ("C-c s" . flyspell-correct-previous-word-generic)))))
 
 (provide 'init-ispell)
 ;;; init-ispell ends here
