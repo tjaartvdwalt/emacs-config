@@ -24,3 +24,4 @@
 ;;(setq show-paren-style 'expression)
 
 (menu-bar-mode -1)
+(cua-mode t)
