@@ -23,4 +23,8 @@
   (use-package ivy-hydra)
   (use-package ivy-dired-history)
 
+  (use-package swiper
+    :bind
+    ("C-s" . swiper))
+
   )
