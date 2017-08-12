@@ -11,5 +11,9 @@
   (use-package robe
     :config (add-hook 'ruby-mode-hook 'robe-mode))
 
+  (use-package rubocop
+    :config
+    (add-hook 'ruby-mode-hook (lambda () (add-hook 'after-save-hook 'rubocop-autocorrect-current-file t t))))
+
   (use-package yard-mode
     :config (add-hook 'ruby-mode-hook 'yard-mode)))
