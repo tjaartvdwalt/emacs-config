@@ -4,4 +4,5 @@
   ;; (setq sml/name-width 8)
   (sml/apply-theme 'light-powerline)
   ;; (setq sml/mode-width "full")
+  (use-package smart-mode-line-powerline-theme)
   (sml/setup))
