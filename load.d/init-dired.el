@@ -13,3 +13,8 @@
               ("g" . dired-k))
   :config
   (add-hook 'dired-mode-hook 'dired-k))
+
+(use-package dired-open
+  ;; :require dired
+  :bind (:map dired-mode-map
+              ("," . tvdw/dired-decrypt-open-xdg)))
