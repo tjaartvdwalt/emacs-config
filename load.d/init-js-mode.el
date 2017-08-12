@@ -30,3 +30,7 @@
             (lambda ()
               (if (derived-mode-p 'json-mode)
                   (add-hook 'after-save-hook 'indent-whole-buffer t t)))))
+
+(use-package eslint-fix
+  :config
+  (add-hook 'js-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
