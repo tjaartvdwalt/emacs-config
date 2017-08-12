@@ -1,17 +1,17 @@
-;************* Configure package repositories *******************
+                                        ;************* Configure package repositories *******************
 (require 'package)
 (add-to-list 'package-archives
-	     '("gnu" .
-      "http://elpa.gnu.org/packages/"))
+             '("gnu" .
+               "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives
-	     '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
+             '("marmalade" .
+               "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives
-    '("melpa" .
-      "http://melpa.milkbox.net/packages/"))
+             '("melpa" .
+               "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives
-    '("melpa-stable" .
-      "http://stable.melpa.org/packages/"))
+             '("melpa-stable" .
+               "http://stable.melpa.org/packages/"))
 ;; (add-to-list 'package-archives
 ;;    '("tromney" .
 ;;      "http://tromey.com/elpa"))
@@ -26,6 +26,6 @@
 ;; A small function to install packages if they do not exist.
 ;; This allows the config for each plugin to live together
 (defun elpa-install (package)
-   (when (not (package-installed-p package))
-     (package-install package))
-)
+  (when (not (package-installed-p package))
+    (package-install package))
+  )
