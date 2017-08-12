@@ -13,7 +13,9 @@
   (use-package rspec-mode)
 
   (use-package robe
-    :config (add-hook 'ruby-mode-hook 'robe-mode))
+    :config
+    (add-hook 'ruby-mode-hook 'robe-mode)
+    (add-hook 'robe-mode-hook 'ac-robe-setup))
 
   (use-package rubocop
     :config
