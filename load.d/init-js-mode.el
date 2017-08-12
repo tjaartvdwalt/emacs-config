@@ -13,3 +13,11 @@
   (add-hook 'js-mode-hook
             (lambda ()
               (add-to-list 'ac-sources 'ac-source-tern-completion))))
+
+(use-package json-mode
+  :config
+  (flycheck-add-mode 'json-jsonlint 'json-mode)
+  (add-hook 'json-mode-hook
+            (lambda ()
+              (if (derived-mode-p 'json-mode)
+                  (add-hook 'after-save-hook 'indent-whole-buffer t t)))))
