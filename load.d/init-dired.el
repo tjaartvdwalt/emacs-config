@@ -5,7 +5,7 @@
 (setq diredp-hide-details-initially-flag nil)
 (setq dired-auto-revert-buffer t)
 (define-key dired-mode-map (kbd "\\") 'dired-get-size)
-(define-key dired-mode-map (kbd "/") 'diredp-up-directory-reuse-dir-buffer))
+(define-key dired-mode-map (kbd "/") 'diredp-up-directory-reuse-dir-buffer)
 
 (use-package dired-k
   ;; use dired-k as alternative to revert buffer. This will refresh git status
