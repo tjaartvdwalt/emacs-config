@@ -6,5 +6,7 @@
 
   ;; set javascript standard checekr as default
   (setq-default flycheck-disabled-checkers
-                (append flycheck-disabled-checkers
-                        '(javascript-jshint))))
+    (append flycheck-disabled-checkers
+      '(javascript-jshint)))
+
+  (global-flycheck-mode))
