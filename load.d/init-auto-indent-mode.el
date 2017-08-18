@@ -2,4 +2,4 @@
   :config
   (add-hook 'prog-mode-hook
        (lambda ()
-         (add-hook 'before-save-hook 'auto-indent-mode t t))))
+         (add-hook 'before-save-hook 'indent-whole-buffer t t))))
