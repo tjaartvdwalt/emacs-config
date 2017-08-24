@@ -1,4 +1,5 @@
-(add-hook 'prog-mode-hook 'auto-indent-on-save)
+
+(global-set-key "\C-c" (add-hook 'prog-mode-hook 'auto-indent-on-save))
 
 (remove-hook 'prog-mode-hook 'auto-indent-on-save)
 
