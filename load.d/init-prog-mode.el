@@ -1,4 +1,4 @@
-(add-hook 'prog-mode-hook)
+(add-hook 'prog-mode-hook 'auto-indent-on-save)
 
 (remove-hook HOOK FUNCTION &optional LOCAL)
 
