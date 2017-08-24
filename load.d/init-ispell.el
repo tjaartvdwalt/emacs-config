@@ -26,7 +26,7 @@
     :diminish flyspell-mode
     :config
     (add-hook 'text-mode-hook 'flyspell-mode)
-    (add-hook 'prog-mode-hook 'flyspell-prog-mode)
+    (add-hook 'prog-mode-hook (lambda () (flyspell-prog-mode)))
     (use-package flyspell-correct-ivy
       :bind ("C-c s" . flyspell-correct-previous-word-generic))))
 
