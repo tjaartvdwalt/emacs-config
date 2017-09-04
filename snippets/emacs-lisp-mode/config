@@ -1,6 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: config
-# key: config
-# binding: direct-keybinding
-# --
-:config($1)$0

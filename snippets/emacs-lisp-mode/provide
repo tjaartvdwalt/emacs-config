@@ -1,5 +1,0 @@
-#contributor : Tjaart van der Walt <tjaart@tjaart.co.za>
-#name : provide
-# --
-(provide '`(file-name-sans-extension (file-name-base (buffer-file-name)))`)
-;;; `(file-name-base (buffer-file-name))` ends here

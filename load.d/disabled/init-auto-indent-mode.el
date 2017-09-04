@@ -1,2 +1,1 @@
-;; (use-package auto-indent-mode
-;;   :config((auto-indent-global-mode)))
+(use-package auto-indent-mode)
