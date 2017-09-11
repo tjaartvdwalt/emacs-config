@@ -7,4 +7,4 @@
 
 
 ;; (defun auto-indent-on-save () (add-hook 'before-save-hook
-  ;; 'indent-whole-buffer t t))
+;;   'indent-whole-buffer t t))
