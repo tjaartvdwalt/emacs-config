@@ -1,2 +1,2 @@
 (use-package perl-mode
-  :config (use-package projectile))
+  :config (add-to-list 'auto-mode-alist '("\\.t\\'" . perl-mode))
