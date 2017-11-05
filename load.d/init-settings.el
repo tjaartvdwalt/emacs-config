@@ -4,7 +4,7 @@
 (setq global-visual-line-mode t)
 
 (global-hl-line-mode 1)
-(scroll-bar-mode -1)
+;; (scroll-bar-mode -1)
 ;; Dont show the splash screen
 (setq inhibit-splash-screen t)
 ;;(setq tab-width 2)
@@ -23,5 +23,5 @@
 (delete-selection-mode 1)
 ;;(setq show-paren-style 'expression)
 
-;; (menu-bar-mode -1)
+(menu-bar-mode -1)
 (cua-mode t)
