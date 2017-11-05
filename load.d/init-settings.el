@@ -23,5 +23,5 @@
 (delete-selection-mode 1)
 ;;(setq show-paren-style 'expression)
 
-(menu-bar-mode -1)
+;; (menu-bar-mode -1)
 (cua-mode t)
