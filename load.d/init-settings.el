@@ -23,5 +23,6 @@
 (delete-selection-mode 1)
 ;;(setq show-paren-style 'expression)
 
+(auto-revert-mode t)
 (menu-bar-mode -1)
 (cua-mode t)
