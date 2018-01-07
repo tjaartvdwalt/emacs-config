@@ -22,7 +22,7 @@
 
 (global-set-key (kbd "<C-left>") 'backward-word)
 (global-set-key (kbd "<C-right>") 'forward-word)
-(global-set-key (kbd "<C-prior") 'up-list)
+(global-set-key (kbd "<C-prior>") 'up-list)
 (global-set-key (kbd "<C-next>") 'down-list)
 (global-set-key (kbd "<M-left>") 'backward-sexp)
 (global-set-key (kbd "<M-right>") 'forward-sexp)
