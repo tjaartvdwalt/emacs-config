@@ -17,6 +17,7 @@
     :config
     (add-hook 'python-mode-hook 'jedi:setup)
     (setq jedi:complete-on-dot t))
+
   (add-hook 'python-mode-hook
     (lambda ()
       (subword-mode 1)))))
