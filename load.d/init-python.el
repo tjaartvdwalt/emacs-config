@@ -16,7 +16,10 @@
   (use-package jedi
     :config
     (add-hook 'python-mode-hook 'jedi:setup)
-    (setq jedi:complete-on-dot t)))
+    (setq jedi:complete-on-dot t))
+  (add-hook 'python-mode-hook
+    (lambda ()
+      (subword-mode 1)))))
 
 (provide 'init-python)
 ;;; init-python ends here
