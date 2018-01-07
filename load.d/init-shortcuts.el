@@ -9,7 +9,7 @@
 
 ;; set return to use indent
 ;; (define-key global-map (kbd "RET") 'newline-and-indent)
- 
+
 ;; my custom navigation functions
 (global-unset-key (kbd "<C-left>"))
 (global-unset-key (kbd "<C-right>"))
@@ -22,6 +22,8 @@
 
 (global-set-key (kbd "<C-left>") 'backward-word)
 (global-set-key (kbd "<C-right>") 'forward-word)
+(global-set-key (kbd "<C-prior") 'up-list)
+(global-set-key (kbd "<C-next>") 'down-list)
 (global-set-key (kbd "<M-left>") 'backward-sexp)
 (global-set-key (kbd "<M-right>") 'forward-sexp)
 (global-set-key (kbd "<C-up>") 'backward-paragraph)
