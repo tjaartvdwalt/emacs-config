@@ -20,7 +20,7 @@
 
   (add-hook 'python-mode-hook
     (lambda ()
-      (subword-mode 1)))))
+      (subword-mode 1))))
 
 (provide 'init-python)
 ;;; init-python ends here
