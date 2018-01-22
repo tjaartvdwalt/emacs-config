@@ -12,7 +12,9 @@
     ;; sudo pip install autopep8
     (use-package py-autopep8
       ;; :require(python-mode)
-      :config (add-hook 'python-mode-hook 'py-autopep8-enable-on-save))
+      :config
+      (setq py-autopep8-options '("--max-line-length=100"))
+      (add-hook 'python-mode-hook 'py-autopep8-enable-on-save))
 
     (use-package jedi
       :config
