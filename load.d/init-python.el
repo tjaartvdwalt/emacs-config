@@ -13,7 +13,7 @@
     (use-package py-autopep8
       ;; :require(python-mode)
       :config
-      (setq py-autopep8-options '("--max-line-length=100"))
+      (setq py-autopep8-options '("--max-line-length=80"))
       (add-hook 'python-mode-hook 'py-autopep8-enable-on-save))
 
     (use-package jedi
