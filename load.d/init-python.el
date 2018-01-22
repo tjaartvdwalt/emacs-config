@@ -5,7 +5,6 @@
   :interpreter ("python" . python-mode)
   :config
   (progn
-
     ;; sudo pip install isort
     (use-package py-isort
       :config(add-hook 'before-save-hook 'py-isort-before-save))
