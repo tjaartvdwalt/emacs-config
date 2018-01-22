@@ -5,6 +5,7 @@
   :interpreter ("python" . python-mode)
   :config
   (progn
+
     ;; sudo pip install isort
     (use-package py-isort
       :config(add-hook 'before-save-hook 'py-isort-before-save))
@@ -18,7 +19,7 @@
       :config
       (add-hook 'python-mode-hook 'jedi:setup)
       (setq jedi:complete-on-dot t))
-
+    (setq py-smart-indentation t)
     (add-hook 'python-mode-hook
       (lambda ()
         (subword-mode 1))))
