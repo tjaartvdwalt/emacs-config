@@ -2,4 +2,6 @@
   :config
   (progn
     (load-theme 'solarized-dark t)
-    (set-cursor-color "magenta")))
+    ;; (set-cursor-color "magenta")
+    )
+  )
