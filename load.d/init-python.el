@@ -4,6 +4,7 @@
 (use-package python-mode
   :interpreter ("python" . python-mode)
   :config
+  (progn
   ;; sudo pip install isort
   (use-package py-isort
     :config(add-hook 'before-save-hook 'py-isort-before-save))
@@ -20,7 +21,8 @@
 
   (add-hook 'python-mode-hook
     (lambda ()
-      (subword-mode 1))))
+      (subword-mode 1)))    )
+)
 
 (provide 'init-python)
 ;;; init-python ends here
