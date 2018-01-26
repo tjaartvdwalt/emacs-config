@@ -5,6 +5,8 @@
   :interpreter ("python" . python-mode)
   :config
   (progn
+    (define-key python-mode-map (kbd "\C-c i") 'py-autopep8)
+
     ;; sudo pip install isort
     (use-package py-isort
       :config(add-hook 'before-save-hook 'py-isort-before-save))
@@ -29,15 +31,15 @@
                                     (highlight-indentation-mode t)
                                     (highlight-indentation-current-column-mode t))))
 
-      (use-package jedi
-        :config
-        (add-hook 'python-mode-hook 'jedi:setup)
-        (setq jedi:complete-on-dot t))
-      (setq py-smart-indentation t)
-      (add-hook 'python-mode-hook
-        (lambda ()
-          (subword-mode 1))))
-    )
+    (use-package jedi
+      :config
+      (add-hook 'python-mode-hook 'jedi:setup)
+      (setq jedi:complete-on-dot t))
+    (setq py-smart-indentation t)
+    (add-hook 'python-mode-hook
+      (lambda ()
+        (subword-mode 1))))
+  )
 
-  (provide 'init-python)
+(provide 'init-python)
 ;;; init-python ends here
