@@ -1,5 +1,5 @@
 (use-package color-theme-sanityinc-solarized
-  :defer
+  :defer t
   :init
   (progn
     (set-cursor-color "magenta")
