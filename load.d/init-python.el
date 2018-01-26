@@ -15,6 +15,10 @@
       :config
       (add-hook 'python-mode-hook 'py-autopep8-enable-on-save))
 
+    (use-package pydoc)
+
+    (use-package python-docstring
+      )
     (use-package jedi
       :config
       (add-hook 'python-mode-hook 'jedi:setup)
