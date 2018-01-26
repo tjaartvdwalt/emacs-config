@@ -1,5 +1,4 @@
-(use-package highlight-indentation-mode
+(use-package highlight-indentation
   :config
-  (progn
     (highlight-indentation-mode t)
-    (highlight-indentation-current-column-mode t)))
+    (highlight-indentation-current-column-mode t))
