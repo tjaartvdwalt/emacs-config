@@ -11,7 +11,7 @@
 (eval-when-compile
   (require 'use-package))
 (setq use-package-always-ensure t) ;; always install packages with elpa
-;;(require 'diminish)                ;; if you use :diminish
+(require 'diminish)                ;; if you use :diminish
 (require 'bind-key)                ;; if you use any :bind variant
 
 ;; Swap c-x and c-u.  This is useful for dvorak layout since u is
