@@ -1,5 +1,5 @@
 (use-package color-theme-sanityinc-solarized
-  :config
+  :setup
   (progn
     (set-cursor-color "magenta")
   (load-theme 'sanityinc-solarized-dark t)))
