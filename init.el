@@ -28,13 +28,14 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
+ '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
  '(gac-automatically-push-p t)
  '(global-auto-complete-mode t)
  '(keep-end-mode t)
  '(magit-push-arguments nil)
- '(package-selected-packages
-   (quote
-    (diminish highlight-indentation git-auto-commit-mode zeal-at-point yasnippet-bundle yasnippet yascroll yard-mode yaml-mode web-mode visible-mark use-package undo-tree tern-auto-complete smart-mode-line smart-comment scss-mode rubocop rspec-mode robe rainbow-identifiers rainbow-delimiters python-mode package-lint multiple-cursors markdown-mode+ magit load-dir kite json-mode ivy-hydra ivy-dired-history guide-key golden-ratio gitlab flyspell-correct-ivy flycheck expand-region eslint-fix elm-mode editorconfig dumb-jump dockerfile-mode diredful dired-open dired-k cpanfile-mode counsel-projectile color-theme-sanityinc-solarized chruby bitbucket auctex anzu ac-ispell ac-emoji ac-emmet)))
+  '(package-selected-packages
+     (quote
+       (diminish highlight-indentation git-auto-commit-mode zeal-at-point yasnippet-bundle yasnippet yascroll yard-mode yaml-mode web-mode visible-mark use-package undo-tree tern-auto-complete smart-mode-line smart-comment scss-mode rubocop rspec-mode robe rainbow-identifiers rainbow-delimiters python-mode package-lint multiple-cursors markdown-mode+ magit load-dir kite json-mode ivy-hydra ivy-dired-history guide-key golden-ratio gitlab flyspell-correct-ivy flycheck expand-region eslint-fix elm-mode editorconfig dumb-jump dockerfile-mode diredful dired-open dired-k cpanfile-mode counsel-projectile color-theme-sanityinc-solarized chruby bitbucket auctex anzu ac-ispell ac-emoji ac-emmet)))
  '(persp-nil-name "none")
  '(rails-ws:default-server-type "webrick")
  '(send-mail-function (quote smtpmail-send-it))
