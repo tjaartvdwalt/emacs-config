@@ -14,7 +14,7 @@
     ;; sudo pip install autopep8
     (use-package py-autopep8
       :config
-      (add-hook 'python-mode-hook 'py-autopep8-enable-on-save))
+      (setq py-autopep8-options '("--global-config ~/config/pycodestyle")))
 
     (use-package pydoc)
 
