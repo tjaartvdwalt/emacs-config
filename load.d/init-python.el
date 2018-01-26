@@ -23,11 +23,11 @@
                                     (require 'sphinx-doc)
                                     (sphinx-doc-mode t))))
 
-    ;; (use-package highlight-indentation
-    ;;   :config
-    ;;   (add-hook 'python-mode-hook (lambda ()
-    ;;                                 (highlight-indentation-mode t)
-    ;;                                 (highlight-indentation-current-column-mode t))))
+    (use-package highlight-indentation
+      :config
+      (add-hook 'python-mode-hook (lambda ()
+                                    (highlight-indentation-mode t)
+                                    (highlight-indentation-current-column-mode t))))
 
       (use-package jedi
         :config
