@@ -14,6 +14,7 @@
     ;; sudo pip install autopep8
     (use-package py-autopep8
       :config
+      :requires autopep8
       (setq py-autopep8-options '("--global-config ~/config/pycodestyle")))
 
     (use-package pydoc)
