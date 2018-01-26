@@ -11,7 +11,6 @@
 
     ;; sudo pip install autopep8
     (use-package py-autopep8
-      ;; :require(python-mode)
       :config
       (add-hook 'python-mode-hook 'py-autopep8-enable-on-save))
 
@@ -23,15 +22,21 @@
       (add-hook 'python-mode-hook (lambda ()
                                     (require 'sphinx-doc)
                                     (sphinx-doc-mode t))))
-    (use-package jedi
+    (use-package highlight-indentation
       :config
-      (add-hook 'python-mode-hook 'jedi:setup)
-      (setq jedi:complete-on-dot t))
-    (setq py-smart-indentation t)
-    (add-hook 'python-mode-hook
-      (lambda ()
-        (subword-mode 1))))
-  )
+      (add-hook 'python-mode-hook (lambda ()
+                                    (highlight-indentation-mode t)
+                                    (highlight-indentation-current-column-mode t)))
 
-(provide 'init-python)
+      (use-package jedi
+        :config
+        (add-hook 'python-mode-hook 'jedi:setup)
+        (setq jedi:complete-on-dot t))
+      (setq py-smart-indentation t)
+      (add-hook 'python-mode-hook
+        (lambda ()
+          (subword-mode 1))))
+    )
+
+  (provide 'init-python)
 ;;; init-python ends here
