@@ -1,1 +1,2 @@
-(use-package diminish)
+(use-package diminish
+  :ensure t)
