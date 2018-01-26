@@ -17,7 +17,12 @@
 
     (use-package pydoc)
 
-    (use-package sphinx-doc)
+
+    (use-package sphinx-doc
+      :config
+      (add-hook 'python-mode-hook (lambda ()
+                                    (require 'sphinx-doc)
+                                    (sphinx-doc-mode t))))
     (use-package jedi
       :config
       (add-hook 'python-mode-hook 'jedi:setup)
