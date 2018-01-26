@@ -17,19 +17,20 @@
 (use-package dired-k
   ;; use dired-k as alternative to revert buffer. This will refresh git status
   :bind (:map dired-mode-map
-              ("g" . dired-k))
+          ("g" . dired-k))
   :config
   (add-hook 'dired-mode-hook 'dired-k))
 
 (use-package dired-open
   ;; :require dired
   :bind (:map dired-mode-map
-              ("," . tvdw/dired-decrypt-open-xdg)))
+          ("," . tvdw/dired-decrypt-open-xdg)))
 
 (use-package diredful
   :config (diredful-mode 1))
 
-(use-package dired+
-  :config
-  (toggle-diredp-find-file-reuse-dir 1)
-  (setq diredp-image-preview-in-tooltip nil))
+;; (use-package dired+
+;; :config
+(toggle-diredp-find-file-reuse-dir 1)
+(setq diredp-image-preview-in-tooltip nil)
+;; )
