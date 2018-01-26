@@ -17,8 +17,7 @@
 
     (use-package pydoc)
 
-    (use-package python-docstring
-      )
+    (use-package python-docstring)
     (use-package jedi
       :config
       (add-hook 'python-mode-hook 'jedi:setup)
