@@ -8,5 +8,5 @@
     (setq projectile-completion-system 'ivy)
      (add-to-list 'projectile-other-file-alist '("js" "hbs"))
      (add-to-list 'projectile-other-file-alist '("hbs" "js"))
-    ;; (setq projectile-switch-project-action 'projectile-dired)
+    (setq projectile-switch-project-action 'projectile-dired)
     ))
