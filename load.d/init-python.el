@@ -14,7 +14,7 @@
     ;; sudo pip install autopep8
     (use-package py-autopep8
       :config
-      ::ensure-system-package autopep8
+      :ensure-system-package autopep8
       (setq py-autopep8-options '("--max-line-length=79")))
 
     (use-package pydoc)
