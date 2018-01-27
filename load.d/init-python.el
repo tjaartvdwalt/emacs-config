@@ -15,7 +15,7 @@
     (use-package py-autopep8
       :ensure-system-package autopep8
       :config
-      (setq py-autopep8-options '("--max-line-length=79")))
+      (setq py-autopep8-options '("--max-line-length=100")))
 
     (use-package pydoc)
 
