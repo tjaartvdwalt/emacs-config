@@ -3,10 +3,7 @@
 ;;; Code:
 (use-package python-mode
   ;; :interpreter ("python" . python-mode)
-  :bind (:map python-mode-map
-          ("C-c i" . py-autopep8)
-          :map python-mode-map
-          ("C-c d" . pydoc-at-point))
+
   :config
   ;; sudo pip install isort
   (use-package py-isort
@@ -15,16 +12,21 @@
   ;; sudo pip install autopep8
   (use-package py-autopep8
     :ensure-system-package autopep8
+    :bind (:map python-mode-map
+            ("C-c i" . py-autopep8))
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
 
   (use-package pydoc
-
-    )
+    :bind (:map python-mode-map
+            ("C-c d" . pydoc-at-point)))
 
   (use-package tox
-    :ensure-system-package tox)
-
+    :ensure-system-package tox
+    :bind (:map python-mode-map
+            ("C-c t" . tox-current-test)
+            :map python-mode-map
+            ("C-c c" . tox-current-class)))
 
   (use-package sphinx-doc
     :config
