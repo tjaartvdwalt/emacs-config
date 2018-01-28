@@ -17,6 +17,7 @@
   (defun pepify ()
     (py-isort-buffer)
     (py-autopep8))
+  (pepify)
 
   (use-package py-autopep8
     :ensure py-isort
