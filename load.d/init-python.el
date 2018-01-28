@@ -3,9 +3,12 @@
 ;;; Code:
 (use-package python-mode
   ;; :interpreter ("python" . python-mode)
+  :bind (:map python-mode-map
+          ("C-c i" . py-autopep8)
+          )
   :config
   (progn
-    (define-key python-mode-map (kbd "\C-c i") 'py-autopep8)
+    (define-key  (kbd "\C-c i") 'py-autopep8)
 
     ;; sudo pip install isort
     (use-package py-isort
