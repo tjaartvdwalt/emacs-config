@@ -31,6 +31,7 @@
 
   (use-package sphinx-doc
     :config
+    :delight
     (add-hook 'python-mode-hook (lambda ()
                                   (sphinx-doc-mode t))))
 
