@@ -54,7 +54,7 @@
     :hook (python-mode . jedi:setup)
     :config
     ;; (add-hook 'python-mode-hook 'jedi:setup)
-    (setq jedi:complete-on-dot t))
+    (setq jedi:complete-on-dot t)))
 
 (provide 'init-python)
 ;;; init-python ends here
