@@ -45,6 +45,7 @@
     :hook (python-mode . sphinx-doc-mode))
 
   (use-package highlight-indentation
+    :delight
     :hook (python-mode . (lambda ()
                                   (highlight-indentation-mode t)
                                   (highlight-indentation-current-column-mode t))))
