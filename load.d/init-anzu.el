@@ -1,5 +1,3 @@
 (use-package anzu
-  :diminish anzu-mode
-  :config(global-anzu-mode +1))
-
-
+  :delight
+  :config(global-anzu-mode t))
