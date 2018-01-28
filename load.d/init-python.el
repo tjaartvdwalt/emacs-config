@@ -39,10 +39,12 @@
             ("C-c c" . tox-current-class)))
 
   (use-package sphinx-doc
-    :delight
-    :config
-    (add-hook 'python-mode-hook (lambda ()
-                                  (sphinx-doc-mode t))))
+    ;; :delight
+  :hook (python-mode . sphinx-doc-mode)
+    ;; :config
+    ;; (add-hook 'python-mode-hook (lambda ()
+    ;;                               (sphinx-doc-mode t)))
+    )
 
   (use-package highlight-indentation
     :config
