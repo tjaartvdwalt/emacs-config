@@ -5,6 +5,8 @@
   ;; :interpreter ("python" . python-mode)
   :bind (:map python-mode-map
           ("C-c i" . py-autopep8)
+          :map python-mode-map
+          ("C-c d" . pydoc-at-point)
           )
   :config
   (progn
