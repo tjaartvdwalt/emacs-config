@@ -4,7 +4,7 @@
 (use-package python-mode
   ;; :interpreter ("python" . python-mode)
 
-  :hook (python-mode-hook . subword-mode)
+  :hook (python-mode . subword-mode)
   :config
   (setq py-smart-indentation t)
 
