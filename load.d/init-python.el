@@ -13,13 +13,16 @@
   ;;   :delight
   ;;   :config(add-hook 'before-save-hook 'py-isort-before-save))
 
+  ;; sudo pip install autopep8
+  (defun pepify ()
+    (py-isort-buffer)
+    (py-autopep8))
+
   (use-package py-autopep8
     :ensure py-isort
     :ensure-system-package autopep8
     :bind (:map python-mode-map
-            ("C-c i" . (lambda ()
-                         (py-isort-buffer)
-                         (py-autopep8))))
+            ("C-c i" . pepify))
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
 
