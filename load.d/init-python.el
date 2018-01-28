@@ -46,10 +46,10 @@
 
   (use-package highlight-indentation
     :config
-    ;; :hook (python-mode . (lam))
-    (add-hook 'python-mode-hook (lambda ()
+    :hook (python-mode . (lambda ()
                                   (highlight-indentation-mode t)
-                                  (highlight-indentation-current-column-mode t))))
+                                  (highlight-indentation-current-column-mode t)))
+    ;; (add-hook 'python-mode-hook ))
 
   (use-package jedi
     :config
