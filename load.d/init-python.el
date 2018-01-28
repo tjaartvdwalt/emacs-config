@@ -4,11 +4,9 @@
 (use-package python-mode
   ;; :interpreter ("python" . python-mode)
 
+  :hook (python-mode-hook . subword-mode)
   :config
   (setq py-smart-indentation t)
-  (add-hook 'python-mode-hook
-    (lambda ()
-      (subword-mode 1)))
 
   ;; sudo pip install isort
   (use-package py-isort
