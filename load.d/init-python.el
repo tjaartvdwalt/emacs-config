@@ -15,8 +15,7 @@
             ("C-c i" .   (lambda ()
                            (interactive)
                            (py-isort-buffer)
-                           (py-autopep8))
-              ))
+                           (py-autopep8))))
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
 
