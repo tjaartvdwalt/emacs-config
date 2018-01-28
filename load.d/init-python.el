@@ -22,7 +22,7 @@
     :ensure py-isort
     :ensure-system-package autopep8
     :bind (:map python-mode-map
-            ("C-c i" . pepify)
+            ("C-c i" . pepify))
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
 
