@@ -17,7 +17,9 @@
       :config
       (setq py-autopep8-options '("--max-line-length=100")))
 
-    (use-package pydoc)
+    (use-package pydoc
+
+      )
 
     (use-package tox
       :ensure-system-package tox)
