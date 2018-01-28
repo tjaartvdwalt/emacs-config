@@ -18,6 +18,7 @@
       (setq py-autopep8-options '("--max-line-length=100")))
 
     (use-package pydoc)
+    (use-package tox)
 
 
     (use-package sphinx-doc
