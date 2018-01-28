@@ -8,10 +8,10 @@
   :config
   (setq py-smart-indentation t)
 
-  ;; sudo pip install isort
-  (use-package py-isort
-    :delight
-    :config(add-hook 'before-save-hook 'py-isort-before-save))
+  ;; ;; sudo pip install isort
+  ;; (use-package py-isort
+  ;;   :delight
+  ;;   :config(add-hook 'before-save-hook 'py-isort-before-save))
 
   ;; sudo pip install autopep8
   (use-package py-autopep8
