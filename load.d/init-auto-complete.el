@@ -1,5 +1,5 @@
 (use-package auto-complete
-  :diminish auto-complete-mode
+  :delight
   :init (require 'auto-complete-config)
   :config
   (setq ac-use-fuzzy t)
@@ -18,6 +18,8 @@
     (add-hook 'text-mode-hook 'ac-ispell-ac-setup))
 
   (use-package ac-emoji
+    :hook ((markdown-mode . ac-emoji-setup)
+            (git-commit-mode . ac-emoji-setup))
     :config
     (add-hook 'markdown-mode-hook 'ac-emoji-setup)
     (add-hook 'git-commit-mode-hook 'ac-emoji-setup))
