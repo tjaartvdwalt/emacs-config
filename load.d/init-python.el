@@ -39,17 +39,15 @@
             ("C-c c" . tox-current-class)))
 
   (use-package sphinx-doc
-    ;; :delight
+    :delight
     :bind (:map python-mode-map
             ("C-c e" . sphinx-doc))
     :hook (python-mode . sphinx-doc-mode))
 
   (use-package highlight-indentation
-    :config
     :hook (python-mode . (lambda ()
                                   (highlight-indentation-mode t)
                                   (highlight-indentation-current-column-mode t))))
-    ;; (add-hook 'python-mode-hook ))
 
   (use-package jedi
     :config
