@@ -8,9 +8,6 @@
           :map python-mode-map
           ("C-c d" . pydoc-at-point))
   :config
-  (progn
-    (define-key  (kbd "\C-c i") 'py-autopep8)
-
     ;; sudo pip install isort
     (use-package py-isort
       :config(add-hook 'before-save-hook 'py-isort-before-save))
@@ -49,7 +46,6 @@
     (add-hook 'python-mode-hook
       (lambda ()
         (subword-mode 1))))
-  )
 
 (provide 'init-python)
 ;;; init-python ends here
