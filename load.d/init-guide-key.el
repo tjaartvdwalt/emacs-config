@@ -1,5 +1,5 @@
 (use-package guide-key
-  :diminish guide-key-mode
+  :delight
   :config
     (setq guide-key/idle-delay 0.5)
     ;;(setq guide-key/text-scale-amount -1)
