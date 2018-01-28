@@ -51,8 +51,9 @@
                                   (highlight-indentation-current-column-mode t))))
 
   (use-package jedi
+    :hook (python-mode . jedi:setup)
     :config
-    (add-hook 'python-mode-hook 'jedi:setup)
+    ;; (add-hook 'python-mode-hook 'jedi:setup)
     (setq jedi:complete-on-dot t)))
 
 (provide 'init-python)
