@@ -5,6 +5,11 @@
   ;; :interpreter ("python" . python-mode)
 
   :config
+  (setq py-smart-indentation t)
+  (add-hook 'python-mode-hook
+    (lambda ()
+      (subword-mode 1)))
+
   ;; sudo pip install isort
   (use-package py-isort
     :delight
@@ -44,11 +49,7 @@
   (use-package jedi
     :config
     (add-hook 'python-mode-hook 'jedi:setup)
-    (setq jedi:complete-on-dot t))
-  (setq py-smart-indentation t)
-  (add-hook 'python-mode-hook
-    (lambda ()
-      (subword-mode 1))))
+    (setq jedi:complete-on-dot t)))
 
 (provide 'init-python)
 ;;; init-python ends here
