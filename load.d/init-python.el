@@ -46,6 +46,7 @@
 
   (use-package highlight-indentation
     :config
+    ;; :hook (python-mode . (lam))
     (add-hook 'python-mode-hook (lambda ()
                                   (highlight-indentation-mode t)
                                   (highlight-indentation-current-column-mode t))))
