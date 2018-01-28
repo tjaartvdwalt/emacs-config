@@ -16,6 +16,7 @@
 (setq dired-omit-files "^#\\|^\\.[^.].*$")
 (use-package dired-k
   ;; use dired-k as alternative to revert buffer. This will refresh git status
+  :hook (dired-mode . dired-k)
   :bind (:map dired-mode-map
           ("g" . dired-k))
   :config
