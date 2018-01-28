@@ -7,7 +7,7 @@
 
 (use-package ansible-doc
   :bind (:map yaml-mode-map
-          ("C-c d" . pydoc-at-point))
+          ("C-c d" . ansible-doc))
   :hook (yaml-mode . ansible-doc-mode))
 ;; :config
 ;; (add-hook 'yaml-mode-hook #'ansible-doc-mode)))
