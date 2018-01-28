@@ -8,13 +8,6 @@
   :config
   (setq py-smart-indentation t)
 
-  ;; ;; sudo pip install isort
-  ;; (use-package py-isort
-  ;;   :delight
-  ;;   :config(add-hook 'before-save-hook 'py-isort-before-save))
-
-  ;; sudo pip install autopep8
-
   (use-package py-autopep8
     :ensure py-isort
     :ensure-system-package autopep8
@@ -47,13 +40,12 @@
   (use-package highlight-indentation
     :delight
     :hook (python-mode . (lambda ()
-                                  (highlight-indentation-mode t)
-                                  (highlight-indentation-current-column-mode t))))
+                           (highlight-indentation-mode t)
+                           (highlight-indentation-current-column-mode t))))
 
   (use-package jedi
     :hook (python-mode . jedi:setup)
     :config
-    ;; (add-hook 'python-mode-hook 'jedi:setup)
     (setq jedi:complete-on-dot t)))
 
 (provide 'init-python)
