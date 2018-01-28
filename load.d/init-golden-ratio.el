@@ -1,5 +1,6 @@
 (use-package golden-ratio
   :delight
+  :ensure golden-radio-mode
   ;; :init
   ;; (defcustom golden-ratio-extra-commands
   ;;   '(windmove-left windmove-right windmove-down windmove-up ace-window)
