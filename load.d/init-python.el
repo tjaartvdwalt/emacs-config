@@ -13,7 +13,6 @@
   ;;   :delight
   ;;   :config(add-hook 'before-save-hook 'py-isort-before-save))
 
-  ;; sudo pip install autopep8
   (use-package py-autopep8
     :ensure py-isort
     :ensure-system-package autopep8
