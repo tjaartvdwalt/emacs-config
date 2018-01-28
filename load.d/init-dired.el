@@ -18,9 +18,7 @@
   ;; use dired-k as alternative to revert buffer. This will refresh git status
   :hook (dired-mode . dired-k)
   :bind (:map dired-mode-map
-          ("g" . dired-k))
-  :config
-  (add-hook 'dired-mode-hook 'dired-k))
+          ("g" . dired-k)))
 
 (use-package dired-open
   ;; :require dired
