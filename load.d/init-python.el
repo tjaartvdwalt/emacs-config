@@ -15,6 +15,7 @@
 
   ;; sudo pip install autopep8
   (defun pepify ()
+    (interactive)
     (py-isort-buffer)
     (py-autopep8))
 
