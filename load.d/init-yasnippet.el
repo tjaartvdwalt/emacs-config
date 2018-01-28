@@ -3,6 +3,6 @@
 ;; (use-package yasnippet-bundle)
 
 (use-package yasnippet
-  :diminish yas-minor-mode
+  :delight
   :bind(:map yas-minor-mode-map ("TAB" . nil))
   :config (yas-global-mode 1))
