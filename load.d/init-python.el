@@ -30,8 +30,8 @@
             ("C-c c" . tox-current-class)))
 
   (use-package sphinx-doc
-    :config
     :delight
+    :config
     (add-hook 'python-mode-hook (lambda ()
                                   (sphinx-doc-mode t))))
 
