@@ -48,7 +48,7 @@
     :config
     :hook (python-mode . (lambda ()
                                   (highlight-indentation-mode t)
-                                  (highlight-indentation-current-column-mode t)))
+                                  (highlight-indentation-current-column-mode t))))
     ;; (add-hook 'python-mode-hook ))
 
   (use-package jedi
