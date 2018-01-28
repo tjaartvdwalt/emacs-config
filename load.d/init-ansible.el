@@ -1,7 +1,7 @@
-;; (use-package ansible
-;;   :hook (yaml-mode . (lambda ()
-;;                        (interactive)
-;;                        (ansible 1))))
+(use-package ansible
+  :hook (yaml-mode . (lambda ()
+                       (interactive)
+                       (ansible 1))))
 ;; ;; :config
 ;; ;; (add-hook 'yaml-mode-hook '(lambda () (ansible 1)))
 
