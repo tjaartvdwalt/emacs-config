@@ -102,8 +102,6 @@
 (require 'bind-key)
 (elpa-install 'delight)
 (require 'delight)
-(elpa-install 'diminish)
-(require 'diminish)
 (elpa-install 'use-package-ensure-system-package)
 (require 'use-package-ensure-system-package)
 
