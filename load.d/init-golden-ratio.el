@@ -1,5 +1,5 @@
 (use-package golden-ratio
-  :diminish golden-ratio-mode
+  :delight
   ;; :init
   ;; (defcustom golden-ratio-extra-commands
   ;;   '(windmove-left windmove-right windmove-down windmove-up ace-window)
