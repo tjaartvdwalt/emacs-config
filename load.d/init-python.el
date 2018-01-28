@@ -17,7 +17,7 @@
   (use-package py-autopep8
     :ensure-system-package autopep8
     :bind (:map python-mode-map
-            ("C-c i" . py-autopep8))
+            ("C-c i" . (py-autopep8 py-isort-buffer)))
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
 
