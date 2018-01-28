@@ -13,13 +13,13 @@
   (use-package rspec-mode)
 
   (use-package robe
-    :config
-    (add-hook 'ruby-mode-hook 'robe-mode)
-    (add-hook 'robe-mode-hook 'ac-robe-setup))
+    :hook ((ruby-mode . robe-mode)(ruby-mode . ac-robe-setup)))
 
   (use-package rubocop
-    :config
-    (add-hook 'ruby-mode-hook (lambda () (add-hook 'after-save-hook 'rubocop-autocorrect-current-file t t))))
+    :hook (ruby-mode . (lambda ()
+                         (add-hook
+                           'after-save-hook '
+                           rubocop-autocorrect-current-file t t))))
 
   (use-package yard-mode
-    :config (add-hook 'ruby-mode-hook 'yard-mode)))
+    :hook (ruby-mode . yard-mode)))
