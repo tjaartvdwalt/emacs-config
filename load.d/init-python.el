@@ -15,6 +15,7 @@
 
   ;; sudo pip install autopep8
   (use-package py-autopep8
+    :ensure py-isort
     :ensure-system-package autopep8
     :bind (:map python-mode-map
             ("C-c i" . (py-isort-buffer py-autopep8)))
