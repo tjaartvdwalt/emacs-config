@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package python-mode
-  :interpreter ("python" . python-mode)
+  ;; :interpreter ("python" . python-mode)
   :config
   (progn
     (define-key python-mode-map (kbd "\C-c i") 'py-autopep8)
