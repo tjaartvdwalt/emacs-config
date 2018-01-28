@@ -14,7 +14,7 @@
   ;;   :config(add-hook 'before-save-hook 'py-isort-before-save))
 
   ;; sudo pip install autopep8
-  (defun pepify
+  (defun pepify ()
     (py-isort-buffer)
     (py-autopep8))
 
