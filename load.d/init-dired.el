@@ -1,4 +1,5 @@
 (require 'dired)
+(setq dired-hide-details-mode 0)
 ;; Configure dired to sort directories first
 (setq dired-listing-switches "-alh")
 ;; used to attach files in mu4e
@@ -13,7 +14,6 @@
 ;; 2) Hide files that start with . then not a dot then anything
 ;;    This will hide any hidden files, but not . and .. that I use to navigate
 (setq dired-omit-files "^#\\|^\\.[^.].*$")
-(setq dired-hide-details-mode 0)
 (use-package dired-k
   ;; use dired-k as alternative to revert buffer. This will refresh git status
   :bind (:map dired-mode-map
