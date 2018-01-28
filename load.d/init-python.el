@@ -40,11 +40,9 @@
 
   (use-package sphinx-doc
     ;; :delight
-  :hook (python-mode . sphinx-doc-mode)
-    ;; :config
-    ;; (add-hook 'python-mode-hook (lambda ()
-    ;;                               (sphinx-doc-mode t)))
-    )
+    :bind (:map python-mode-map
+            ("C-c e" . sphinx-doc))
+    :hook (python-mode . sphinx-doc-mode))
 
   (use-package highlight-indentation
     :config
