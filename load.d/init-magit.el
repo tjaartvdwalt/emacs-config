@@ -15,10 +15,10 @@
 
   (use-package magit-annex)
 
-  (use-package git-auto-commit-mode
-    :config (setq gac-automatically-push-p t))
-
   (use-package gitconfig))
+
+(use-package git-auto-commit-mode
+  :config (setq gac-automatically-push-p t))
 
 (provide 'init-magit)
 ;; init-magit ends here

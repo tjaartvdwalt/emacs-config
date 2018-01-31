@@ -60,9 +60,10 @@
       ;; File names ending with # or ~
       "\\|\\(?:\\`.+?[#~]\\'\\)"))
 
-  (use-package counsel-projectile :ensure t
-    :bind (("C-c p p" . counsel-projectile)
-            ("C-c p s" . nil)
-            ("C-c p s" . counsel-projectile-drop-to-switch-project-binding))
-    :init
-    (counsel-projectile-on)))
+  ;; (use-package counsel-projectile :ensure t
+  ;;   :bind (("C-c p p" . counsel-projectile)
+  ;;           ("C-c p s" . nil)
+  ;;           ("C-c p s" . counsel-projectile-drop-to-switch-project-binding))
+  ;;   :init
+  ;;   (counsel-projectile-on))
+  )
