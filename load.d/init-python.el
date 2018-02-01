@@ -4,10 +4,10 @@
 (use-package python-mode
   ;; :interpreter ("python" . python-mode)
 
-  :hook ((python-mode . subword-mode)
-          (python-mode. (lambda ()
-                          (interactive)
-                          (setq indent-tabs-mode t))))
+  :hook  (python-mode. (lambda ()
+                         (interactive)
+                         (subword-mode)
+                         (setq indent-tabs-mode t)))
   :config
   (setq py-smart-indentation t)
 
