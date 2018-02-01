@@ -4,8 +4,7 @@
 (use-package python-mode
   ;; :interpreter ("python" . python-mode)
 
-  :hook  (python-mode. (lambda ()
-                         (interactive)
+  :hook  (python-mode . (lambda ()
                          (subword-mode)
                          (setq indent-tabs-mode t)))
   :config
