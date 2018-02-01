@@ -7,7 +7,7 @@
 ;; (scroll-bar-mode -1)
 ;; Dont show the splash screen
 (setq inhibit-splash-screen t)
-(setq tab-width 4)
+;; (setq tab-width 4)
 ;;(setq-default indent-tabs-mode t)
 ;; (global-linum-mode t)
 
