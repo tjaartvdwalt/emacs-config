@@ -1,6 +1,6 @@
 (use-package flycheck
   :delight
-  :requires (flycheck-pycheckers)
+  :ensure (flycheck-pycheckers)
   :config
   (add-hook 'after-init-hook 'global-flycheck-mode)
   (add-hook 'javascript-mode-hook 'flycheck-mode)
