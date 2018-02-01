@@ -19,6 +19,7 @@
 (global-unset-key (kbd "<C-down>"))
 (global-unset-key (kbd "<C-prior>"))
 (global-unset-key (kbd "<C-next>"))
+(global-unset-key (kbd "<tab>"))
 
 (global-set-key (kbd "<C-left>") 'backward-word)
 (global-set-key (kbd "<C-right>") 'forward-word)
