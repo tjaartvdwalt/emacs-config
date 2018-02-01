@@ -6,7 +6,7 @@
 
   :hook  (python-mode . (lambda ()
                          (subword-mode)
-                         (setq indent-tabs-mode t)))
+                         (py-indent-tabs-mode)))
   :config
   (setq py-smart-indentation t)
 
