@@ -5,8 +5,8 @@
   ;; :interpreter ("python" . python-mode)
 
   :hook  (python-mode . (lambda ()
-                         (subword-mode)
-                         (py-indent-tabs-mode-on t)))
+						  (subword-mode)
+						  (setq py-indent-tabs-mode t)))
   :config
   (setq py-smart-indentation t)
 
