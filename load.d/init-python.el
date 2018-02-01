@@ -5,7 +5,9 @@
   ;; :interpreter ("python" . python-mode)
 
   :hook ((python-mode . subword-mode)
-          (python-mode. indent-tabs-mode t))
+          (python-mode. (lambda ()
+                          (interactive)
+                          (setq indent-tabs-mode t))))
   :config
   (setq py-smart-indentation t)
 
