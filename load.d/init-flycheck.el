@@ -12,4 +12,4 @@
     (append flycheck-disabled-checkers
       '(javascript-jshint)))
 
-  (global-flycheck-mode))
+  (global-flycheck-mode 1))
