@@ -4,6 +4,7 @@
 
 (use-package yasnippet
   :delight
+  :bind(:map yas-minor-mode-map ("<tab>" . nil))
   :config
   (yas/load-directory "~/.emacs.d/snippets"))
   ;; :bind(:map yas-minor-mode-map ("TAB" . nil)))
