@@ -6,7 +6,7 @@
 
   :hook  (python-mode . (lambda ()
                           (subword-mode)
-                          (setq fci-mode t)
+                          (turn-on-fci-mode)
                           (setq py-indent-tabs-mode t)))
   :config
   (setq py-smart-indentation t)
