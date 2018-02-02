@@ -1,1 +1,1 @@
-(use-package init-fill-column-indicator)
+(use-package fill-column-indicator)
