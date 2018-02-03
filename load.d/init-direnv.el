@@ -1,3 +1,4 @@
 (use-package direnv
   :config
-  (direnv-mode))
+  (direnv-mode)
+  (setq direnv-always-show-summary t))
