@@ -4,4 +4,7 @@
 
 (use-package yasnippet
   :delight
-  :bind(:map snippet-mode-map ("TAB" . nil)))
+  :bind(:map snippet-mode-map ("TAB" . nil)
+         ("<tab>" . nil))
+  :config
+  (yas-global-mode))
