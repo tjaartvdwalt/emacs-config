@@ -10,6 +10,7 @@
 
   :config
   (setq py-smart-indentation t)
+  (setq py-split-window-on-execute-off)
 
   (use-package py-autopep8
     :ensure py-isort
