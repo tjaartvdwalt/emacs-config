@@ -43,5 +43,7 @@
 (global-unset-key (kbd "M-DEL"))
 (global-set-key (kbd "M-DEL") 'kill-whole-line)
 
+(global-unset-key (kbd "C-%"))
 (global-unset-key (kbd "C-M-%"))
+(global-set-key (kbd "C-%") 'vr/query-replace)
 (global-set-key (kbd "C-M-%") 'vr/query-replace)
