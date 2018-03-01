@@ -1,1 +1,3 @@
-(use-package visual-regexp)
+(use-package visual-regexp
+  :bind (("M-%" . vr/query-replace)
+          ("M-#" . vr/mc-mark)))
