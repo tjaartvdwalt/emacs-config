@@ -3,7 +3,6 @@
 ;;; Code:
 (use-package python-mode
   ;; :interpreter ("python" . python-mode)
-
   ;; :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
                           (subword-mode)
