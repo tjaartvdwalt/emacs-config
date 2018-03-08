@@ -4,5 +4,5 @@
 
 (use-package yasnippet
   :delight
-  :bind(:map yas-minor-mode-map ("TAB" . nil)
+  :bind(:map snippet-mode-map ("TAB" . nil)
          ("<tab>" . nil)))
