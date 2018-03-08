@@ -8,7 +8,7 @@
 ;; Dont show the splash screen
 (setq inhibit-splash-screen t)
 ;; (setq tab-width nil)
-(setq-default tab-always-indent nil)
+;;(setq-default tab-always-indent nil)
 ;;(setq-default indent-tabs-mode t)
 ;; (global-linum-mode t)
 
