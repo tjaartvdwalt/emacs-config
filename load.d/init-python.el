@@ -4,6 +4,7 @@
 (use-package python-mode
   ;; :interpreter ("python" . python-mode)
 
+  :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
                           (subword-mode)
                           (turn-on-fci-mode)))
@@ -11,6 +12,7 @@
   :config
   (setq py-smart-indentation t)
   (py-split-window-on-execute-off)
+
 
   (use-package py-autopep8
     :ensure py-isort
