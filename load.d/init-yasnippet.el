@@ -3,5 +3,4 @@
 ;; (use-package yasnippet-bundle)
 
 (use-package yasnippet
-  :delight
-  :bind("<tab>" . nil))
+  :delight)
