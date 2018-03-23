@@ -7,7 +7,7 @@
   (setq magit-revert-buffers "ask")
   (setq magit-last-seen-setup-instructions "1.4.0")
   (setq magit-completing-read-function 'ivy-completing-read)
-  (setq magit-display-buffer-fullframe-status-v1 t)
+  (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
 
   (use-package magit-svn
     :config
