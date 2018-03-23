@@ -28,6 +28,7 @@
     (add-hook 'text-mode-hook 'flyspell-mode)
     (add-hook 'prog-mode-hook 'flyspell-prog-mode)
     (define-key flyspell-mode-map (kbd "M-TAB") nil)
+    (define-key flyspell-mode-map (kbd "C-.") nil)
     (use-package flyspell-correct-ivy
       :bind ("C-c s" . flyspell-correct-previous-word-generic))))
 
