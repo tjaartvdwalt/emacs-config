@@ -13,7 +13,7 @@
     :config
     (add-hook 'magit-mode-hook 'magit-svn-mode))
 
-  (use-package-magit-imerge)
+  (use-package magit-imerge)
 
   (use-package gitconfig))
 
