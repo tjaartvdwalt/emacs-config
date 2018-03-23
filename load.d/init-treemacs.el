@@ -1,7 +1,7 @@
 (use-package treemacs
-  :bind (("C-." . treemacs-projectile-toggle))
+  :bind (("C-." . treemacs-toggle))
   :config
   (treemacs-git-mode 'extended)
-  (setq treemacs-show-hidden-files f))
+  (setq treemacs-show-hidden-files nil))
 
 (use-package treemacs-projectile)
