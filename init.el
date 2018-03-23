@@ -23,31 +23,31 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default bold shadow italic underline bold bold-italic bold])
- '(ansi-color-names-vector
-   (vector "#839496" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"))
+  '(ansi-color-faces-vector
+     [default bold shadow italic underline bold bold-italic bold])
+  '(ansi-color-names-vector
+     (vector "#839496" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"))
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
  '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
- '(custom-safe-themes
-   (quote
-    ("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
+  '(custom-safe-themes
+     (quote
+       ("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
  '(fci-rule-color "#073642")
  '(gac-automatically-push-p t)
  '(global-auto-complete-mode t)
  '(keep-end-mode t)
  '(magit-push-arguments nil)
- '(package-selected-packages
-   (quote
-    (git-commit-insert-issue magit-imerge gitignore-mode gitconfig-mode gitattributes-mode git-gutter dired-sidebar php-mode puppet-mode direnv fill-column-indicator init-fill-column-indicator smart-tab visual-regexp ansible zeal-at-point yasnippet-bundle yasnippet yascroll yard-mode yaml-mode web-mode visible-mark use-package-ensure-system-package undo-tree tox tern-auto-complete sphinx-doc smart-mode-line smart-comment scss-mode rubocop rspec-mode robe rainbow-identifiers rainbow-delimiters python-mode pydoc py-isort py-autopep8 package-lint multiple-cursors markdown-mode+ magit-svn magit-annex load-dir kite json-mode jedi ivy-hydra ivy-dired-history highlight-indentation guide-key golden-ratio gitlab gitconfig git-auto-commit-mode flyspell-correct-ivy flycheck expand-region eslint-fix elm-mode editorconfig dumb-jump dockerfile-mode diredful dired-open dired-k diminish delight cpanfile-mode counsel-projectile color-theme-sanityinc-solarized chruby bitbucket auctex anzu ansible-doc ac-ispell ac-emoji ac-emmet)))
+  '(package-selected-packages
+     (quote
+       (treemacs git-commit-insert-issue magit-imerge gitignore-mode gitconfig-mode gitattributes-mode git-gutter dired-sidebar php-mode puppet-mode direnv fill-column-indicator init-fill-column-indicator smart-tab visual-regexp ansible zeal-at-point yasnippet-bundle yasnippet yascroll yard-mode yaml-mode web-mode visible-mark use-package-ensure-system-package undo-tree tox tern-auto-complete sphinx-doc smart-mode-line smart-comment scss-mode rubocop rspec-mode robe rainbow-identifiers rainbow-delimiters python-mode pydoc py-isort py-autopep8 package-lint multiple-cursors markdown-mode+ magit-svn magit-annex load-dir kite json-mode jedi ivy-hydra ivy-dired-history highlight-indentation guide-key golden-ratio gitlab gitconfig git-auto-commit-mode flyspell-correct-ivy flycheck expand-region eslint-fix elm-mode editorconfig dumb-jump dockerfile-mode diredful dired-open dired-k diminish delight cpanfile-mode counsel-projectile color-theme-sanityinc-solarized chruby bitbucket auctex anzu ansible-doc ac-ispell ac-emoji ac-emmet)))
  '(persp-nil-name "none")
  '(rails-ws:default-server-type "webrick")
- '(safe-local-variable-values
-   (quote
-    ((tox-use-all-dot-style . t)
-     (tox-default-env . "py36"))))
+  '(safe-local-variable-values
+     (quote
+       ((tox-use-all-dot-style . t)
+         (tox-default-env . "py36"))))
  '(send-mail-function (quote smtpmail-send-it))
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -55,26 +55,26 @@
  '(tool-bar-mode nil)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(vc-annotate-background nil)
- '(vc-annotate-color-map
-   (quote
-    ((20 . "#dc322f")
-     (40 . "#cb4b16")
-     (60 . "#b58900")
-     (80 . "#859900")
-     (100 . "#2aa198")
-     (120 . "#268bd2")
-     (140 . "#d33682")
-     (160 . "#6c71c4")
-     (180 . "#dc322f")
-     (200 . "#cb4b16")
-     (220 . "#b58900")
-     (240 . "#859900")
-     (260 . "#2aa198")
-     (280 . "#268bd2")
-     (300 . "#d33682")
-     (320 . "#6c71c4")
-     (340 . "#dc322f")
-     (360 . "#cb4b16"))))
+  '(vc-annotate-color-map
+     (quote
+       ((20 . "#dc322f")
+         (40 . "#cb4b16")
+         (60 . "#b58900")
+         (80 . "#859900")
+         (100 . "#2aa198")
+         (120 . "#268bd2")
+         (140 . "#d33682")
+         (160 . "#6c71c4")
+         (180 . "#dc322f")
+         (200 . "#cb4b16")
+         (220 . "#b58900")
+         (240 . "#859900")
+         (260 . "#2aa198")
+         (280 . "#268bd2")
+         (300 . "#d33682")
+         (320 . "#6c71c4")
+         (340 . "#dc322f")
+         (360 . "#cb4b16"))))
  '(vc-annotate-very-old-color nil))
 
 ;; (set-frame-font "Cousine-13" nil t)
