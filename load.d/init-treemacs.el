@@ -4,6 +4,6 @@
   (treemacs-git-mode 'extended)
   (treemacs-tag-follow-mode t)
   (setq treemacs-show-hidden-files nil
-    treemacs-position right))
+    treemacs-position 'right))
 
 (use-package treemacs-projectile)
