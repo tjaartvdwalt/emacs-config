@@ -1,5 +1,5 @@
 (use-package treemacs
-  :bind (("C-." . treemacs-toggle))
+  :bind (("C-." . treemacs-toggle-projectile))
   :config
   (treemacs-git-mode 'extended)
   ;;  (treemacs-follow-mode t)
