@@ -30,4 +30,4 @@
 
 (auto-revert-mode t)
 (menu-bar-mode -1)
-(cua-mode t)
+;; (cua-mode t)
