@@ -1,9 +1,7 @@
 (use-package powerline)
 (use-package airline-themes
   :config
-  ((let ((inhibit-mode-name-delight nil))
-     ad-do-it)
-
+  (
     (load-theme 'airline-kolor)
     (setq powerline-utf-8-separator-left        #xe0b0
       powerline-utf-8-separator-right       #xe0b2
