@@ -1,7 +1,7 @@
 (use-package powerline)
 (use-package airline-themes
   :config
-  (load-theme airline-solarized-gui)
+  (load-theme 'airline-simple)
   )
 ;; (use-package smart-mode-line)
 ;; :config
