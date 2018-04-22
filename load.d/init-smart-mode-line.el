@@ -1,4 +1,5 @@
-(use-package smart-mode-line)
+(use-package powerline)
+;; (use-package smart-mode-line)
   ;; :config
   ;; (setq sml/no-confirm-load-theme t)
   ;; (setq sml/name-width 8)
