@@ -1,7 +1,7 @@
 (use-package powerline)
 (use-package airline-themes
   :config
-  (load-theme 'airline-simple)
+  (load-theme 'airline-dark)
   (setq powerline-utf-8-separator-left        #xe0b0
       powerline-utf-8-separator-right       #xe0b2
       airline-utf-glyph-separator-left      #xe0b0
