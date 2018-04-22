@@ -34,7 +34,7 @@
  '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
   '(custom-safe-themes
      (quote
-       ("b181ea0cc32303da7f9227361bb051bbb6c3105bb4f386ca22a06db319b08882" "b59d7adea7873d58160d368d42828e7ac670340f11f36f67fa8071dbf957236a" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
+       ("158013ec40a6e2844dbda340dbabda6e179a53e0aea04a4d383d69c329fba6e6" "b181ea0cc32303da7f9227361bb051bbb6c3105bb4f386ca22a06db319b08882" "b59d7adea7873d58160d368d42828e7ac670340f11f36f67fa8071dbf957236a" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
  '(fci-rule-color "#073642")
  '(gac-automatically-push-p t)
  '(global-auto-complete-mode t)
