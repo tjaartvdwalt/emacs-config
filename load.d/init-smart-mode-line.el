@@ -1,4 +1,5 @@
 (use-package powerline)
+(use-package airline-themes)
 ;; (use-package smart-mode-line)
   ;; :config
   ;; (setq sml/no-confirm-load-theme t)
