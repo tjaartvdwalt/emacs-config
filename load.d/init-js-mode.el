@@ -25,7 +25,7 @@
 
 (use-package json-mode
   :config
-  (flycheck-add-mode 'json-jsonlint 'json-mode)
+  ;; (flycheck-add-mode 'json-jsonlint 'json-mode)
   (add-hook 'json-mode-hook
             (lambda ()
               (if (derived-mode-p 'json-mode)
