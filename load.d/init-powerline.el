@@ -15,7 +15,6 @@
 
 (use-package smart-mode-line
   :config
-  (use-package smart-mode-line-powerline-theme)
   (setq sml/no-confirm-load-theme t)
   (setq sml/name-width 8)
   (sml/apply-theme 'light-powerline)
