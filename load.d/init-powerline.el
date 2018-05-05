@@ -13,11 +13,11 @@
 ;;     airline-utf-glyph-linenumber          #xe0a1)
 ;;   )
 
-(use-package smart-mode-line)
-:config
-(setq sml/no-confirm-load-theme t)
-(setq sml/name-width 8)
-(sml/apply-theme 'light-powerline)
-(setq sml/mode-width "full")
-(use-package smart-mode-line-powerline-theme)
-(sml/setup))
+(use-package smart-mode-line
+  :config
+  (setq sml/no-confirm-load-theme t)
+  (setq sml/name-width 8)
+  (sml/apply-theme 'light-powerline)
+  (setq sml/mode-width "full")
+  (use-package smart-mode-line-powerline-theme)
+  (sml/setup))
