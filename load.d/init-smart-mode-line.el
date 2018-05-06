@@ -20,5 +20,5 @@
   (setq sml/mode-width "full")
   (use-package smart-mode-line-powerline-theme)
     :config
-      (sml/apply-theme 'light-powerline))
+      (sml/apply-theme 'light-powerline)
   (sml/setup))
