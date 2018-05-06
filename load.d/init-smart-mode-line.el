@@ -18,7 +18,7 @@
   (setq sml/no-confirm-load-theme t)
   (setq sml/name-width 8)
   (setq sml/mode-width "full")
-  ;; (use-package smart-mode-line-powerline-theme
+  (use-package smart-mode-line-powerline-theme)
   ;;   :config
   ;;     (sml/apply-theme 'light-powerline))
   (sml/setup))
