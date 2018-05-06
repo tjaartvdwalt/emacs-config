@@ -4,7 +4,7 @@
 
 (use-package yasnippet
   :delight
-  :ensure yas-minor-mode
-  )
-(define-key yas-minor-mode-map [(tab)] nil)
-(define-key yas-minor-mode-map (kbd "TAB") nil)
+  :config
+  (yas-global-mode)
+  (define-key yas-minor-mode-map [(tab)] nil)
+  (define-key yas-minor-mode-map (kbd "TAB") nil))
