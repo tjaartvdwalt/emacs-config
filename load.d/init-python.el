@@ -50,7 +50,8 @@
   (use-package jedi
     :hook (python-mode . jedi:setup)
     :bind (:map python-mode-map
-            ("C-M-g" . jedi:goto-definition))
+            ("C-M-g" . jedi:goto-definition)
+            ("C-M-g" . jedi:goto-definition-pop-marker))
     :config
     (setq jedi:complete-on-dot t)))
 
