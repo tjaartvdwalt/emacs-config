@@ -4,7 +4,8 @@
   :hook (flycheck-mode-hook . flycheck-pycheckers-setup)
   :config
   (use-package flycheck-pycheckers
-    :config
+  :hook (flycheck-mode-hook . flycheck-pycheckers-setup))
+    ;; :config
     ;; (add-hook 'flycheck-mode-hook #'flycheck-pycheckers-setup))
 
   (add-hook 'after-init-hook 'global-flycheck-mode)
