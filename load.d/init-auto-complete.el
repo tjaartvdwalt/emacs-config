@@ -1,5 +1,5 @@
 (use-package auto-complete
-  :delight (yas/minor-mode)
+  :delight auto-complete-mode yas/minor-mode
   :init (require 'auto-complete-config)
   :config
   (setq ac-use-fuzzy t)
