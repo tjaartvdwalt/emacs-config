@@ -12,6 +12,7 @@
     ))
 
 (define-key global-map (kbd "C-c .") 'hydra-projectile/body)
+(setq projectile-keymap-prefix nil)
 
 (defhydra hydra-projectile (:color teal
 			    :columns 4)
@@ -20,7 +21,6 @@
   ("r"   projectile-recentf                  "Recent Files")
   ("z"   projectile-cache-current-file       "Cache Current File")
   ("x"   projectile-remove-known-project     "Remove Known Project")
-
   ("d"   projectile-find-dir                 "Find Directory")
   ("b"   projectile-switch-to-buffer         "Switch to Buffer")
   ("c"   projectile-invalidate-cache         "Clear Cache")
@@ -31,8 +31,8 @@
   ("k"   projectile-kill-buffers             "Kill Buffers")
   ("q"   nil "Cancel" :color blue))
 
-C-c p f	Display a list of all files in the project. With a prefix argument it will clear the cache first.
-C-c p F	Display a list of all files in all known projects.
+C-c p F
+Display a list of all files in all known projects.
 C-c p g	Display a list of all files at point in the project. With a prefix argument it will clear the cache first.
 C-c p 4 f	Jump to a project's file using completion and show it in another window.
 C-c p 4 g	Jump to a project's file based on context at point and show it in another window.
