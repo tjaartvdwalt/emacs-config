@@ -14,7 +14,7 @@
 (define-key global-map (kbd "C-c .") 'hydra-projectile/body)
 (setq projectile-keymap-prefix nil)
 
-(defhydra hydra-projectile (:color teal
+(defhydra hydra-projectile (:color magenta
                              :columns 4)
   "Projectile"
   ("w a"    projectile-find-other-file-other-window              "Find other file other window")
