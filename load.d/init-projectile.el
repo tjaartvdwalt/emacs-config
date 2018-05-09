@@ -17,7 +17,7 @@
 (defhydra hydra-projectile (:color teal
 			    :columns 4)
   "Projectile"
-    ("4 a" projectile-find-other-file-other-window)
+    ("4 a" projectile-find-other-file-other-window     "Find other window")
 		("4 b" projectile-switch-to-buffer-other-window)
 		("4 C-o" 'projectile-display-buffer)
 		("4 d" #'projectile-find-dir-other-window)
