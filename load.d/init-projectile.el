@@ -38,7 +38,7 @@
   ("b" projectile-switch-to-buffer                                "")
   ("C" projectile-configure-project                               "")
   ("c" projectile-compile-project                                 "" :color blue)
-  ("d" projectile-find-dir                                        "")
+  ("d" projectile-find-dir                                        "" :color green)
   ("D" projectile-dired                                           "")
   ("e" projectile-recentf                                         "")
   ("E" projectile-edit-dir-locals                                 "")
