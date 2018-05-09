@@ -11,6 +11,8 @@
     ;; (setq projectile-switch-project-action 'projectile-dired)
     ))
 
+(define-key global-map "C-c-p" 'hydra-projectile/body)
+
 (defhydra hydra-projectile (:color teal
 			    :columns 4)
   "Projectile"
