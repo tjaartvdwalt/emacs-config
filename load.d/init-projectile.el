@@ -68,7 +68,6 @@
   ("x e" projectile-run-eshell                                    "")
   ("x t" projectile-run-term                                      "")
   ("x s" projectile-run-shell                                     "")
-  ("x p" projectile-run-shell                                     "")
   ;; ("z" projectile-cache-current-file                              "")
   ;; (ESC projectile-project-buffers-other-buffer                 "Project ")
   ("q"   nil "Cancel" :color blue))
