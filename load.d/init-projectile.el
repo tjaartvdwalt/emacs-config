@@ -37,7 +37,7 @@
   ("a" projectile-find-other-file                                 nil)
   ("b" projectile-switch-to-buffer                                "")
   ("C" projectile-configure-project                               "")
-  ("c" projectile-compile-project                                 "")
+  ("c" projectile-compile-project                                 "" :color blue)
   ("d" projectile-find-dir                                        "")
   ("D" projectile-dired                                           "")
   ("e" projectile-recentf                                         "")
