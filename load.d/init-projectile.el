@@ -66,7 +66,7 @@
   ("v" projectile-vc                                              "")
   ("V" projectile-browse-dirty-projects                           "")
   ("x e" projectile-run-eshell                                    "")
-  ("x t" projectile-run-term                                      "")
+  ("x t" projectile-run-term                                      "" :color green)
   ("x s" projectile-run-shell                                     ""  :color green)
   ;; ("z" projectile-cache-current-file                              "")
   ;; (ESC projectile-project-buffers-other-buffer                 "Project ")
