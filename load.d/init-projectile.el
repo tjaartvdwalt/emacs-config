@@ -17,12 +17,12 @@
 (defhydra hydra-projectile (:color teal
                              :columns 4)
   "Projectile"
-  ("4 a"    projectile-find-other-file-other-window                 "Find other window")
-  ("4 b"    projectile-switch-to-buffer-other-window                 "Switch to buffer other window")
-  ;; ("4 C-o"  projectile-display-buffer)
-  ;; ("4 d"    projectile-find-dir-other-window)
-  ;; ("4 D" projectile-dired-other-window)
-  ;; ("4 f" projectile-find-file-other-window)
+  ("w a"    projectile-find-other-file-other-window              "Find other file other window")
+  ("w b"    projectile-switch-to-buffer-other-window             "Switch to buffer other window")
+  ("w C-o"  projectile-display-buffer                            "Display buffer")
+  ("w d"    projectile-find-dir-other-window                     "Find dir other window")
+  ("w D" projectile-dired-other-window                           "Dired other window")
+  ("w f" projectile-find-file-other-window                       "Find file other window")
   ;; ("4 g" projectile-find-file-dwim-other-window)
   ;; ("4 t" projectile-find-implementation-or-test-other-window)
   ;; ("5 a" projectile-find-other-file-other-frame)
@@ -32,7 +32,7 @@
   ;; ("5 f" projectile-find-file-other-frame)
   ;; ("5 g" projectile-find-file-dwim-other-frame)
   ;; ("5 t" projectile-find-implementation-or-test-other-frame)
-  ;; ("!" projectile-run-shell-command-in-root)
+  ("!" projectile-run-shell-command-in-root                      "Run shell command in root"))
   ;; ("&" projectile-run-async-shell-command-in-root)
   ;; ("a" projectile-find-other-file)
   ;; ("b" projectile-switch-to-buffer)
@@ -70,4 +70,14 @@
   ;; ("x s" projectile-run-shell)
   ;; ("z" projectile-cache-current-file)
   ;; (ESC projectile-project-buffers-other-buffer)
+  ("q"   nil "Cancel" :color blue))
+
+
+
+(defhydra hydra-projectile (:color teal :columns 4)
+  "Projectile"
+  ("a d" projectile-find-dir-other-window "Find dir other window")
+  ("f"   projectile-find-file            "Find File")
+  ("r"   projectile-recentf                  "Recent Files")
+  ("m"   projectile-recentf                  "Recent Files")
   ("q"   nil "Cancel" :color blue))
