@@ -34,7 +34,7 @@
   ;; ("5 t" projectile-find-implementation-or-test-other-frame      "")
   ("!" projectile-run-shell-command-in-root                       "Runs shell-command in the root directory of the project.")
   ("&" projectile-run-async-shell-command-in-root                 "Runs async-shell-command in the root directory of the project.")
-  ("a" projectile-find-other-file                                 "")
+  ("a" projectile-find-other-file                                 nil)
   ("b" projectile-switch-to-buffer                                "")
   ("C" projectile-configure-project                               "")
   ("c" projectile-compile-project                                 "")
