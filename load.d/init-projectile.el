@@ -70,7 +70,7 @@
   ("x s" projectile-run-shell                                     "")
   ;; ("z" projectile-cache-current-file                              "")
   ;; (ESC projectile-project-buffers-other-buffer                 "Project ")
-  ("q"   nil "Cancel" :color blue))
+  ("q"   nil "Cancel" :color green))
 
 
 
