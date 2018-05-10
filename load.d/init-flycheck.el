@@ -8,7 +8,8 @@
     ;; :hook (flycheck-mode-hook . flycheck-pycheckers-setup)
     :config
     (with-eval-after-load 'flycheck
-  (add-hook 'flycheck-mode-hook #'flycheck-pycheckers-setup))
+      (add-hook 'flycheck-mode-hook #'flycheck-pycheckers-setup))
+    (flycheck-pycheckers-checkers 'pep8)
     ;; (add-hook 'flycheck-mode-hook 'flycheck-pycheckers-setup)
 
     )
