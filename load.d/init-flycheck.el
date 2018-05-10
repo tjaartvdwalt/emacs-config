@@ -1,7 +1,7 @@
 (use-package flycheck
   :delight
                                         ;  :ensure flycheck-pycheckers
-  :hook (flycheck-mode-hook . flycheck-pycheckers-setup)
+  ;; :hook (flycheck-mode-hook . flycheck-pycheckers-setup)
   :config
   (use-package flycheck-pycheckers
   :hook (flycheck-mode-hook . flycheck-pycheckers-setup))
