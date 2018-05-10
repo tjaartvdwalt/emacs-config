@@ -6,7 +6,9 @@
   (use-package flycheck-pycheckers
     ;; :hook (flycheck-mode-hook . flycheck-pycheckers-setup)
     :config
-    (add-hook 'flycheck-mode-hook 'flycheck-pycheckers-setup)
+    (with-eval-after-load 'flycheck
+  (add-hook 'flycheck-mode-hook #'flycheck-pycheckers-setup))
+    ;; (add-hook 'flycheck-mode-hook 'flycheck-pycheckers-setup)
 
     )
 
