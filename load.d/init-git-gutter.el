@@ -1,4 +1,4 @@
 (use-package git-gutter
-  :config
   :delight
+  :config
   (global-git-gutter-mode t))
