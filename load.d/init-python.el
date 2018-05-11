@@ -5,8 +5,7 @@
   ;; :interpreter ("python" . python-mode)
   ;; :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
-                          (subword-mode)
-                          (turn-on-fci-mode)))
+                          (subword-mode)))
 
   :config
   (setq py-smart-indentation t)
