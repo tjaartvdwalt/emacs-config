@@ -30,5 +30,5 @@
 
 (auto-revert-mode t)
 (menu-bar-mode -1)
- (add-hook 'find-file-hook (lambda () (ruler-mode 1)))
+(add-hook 'find-file-hook (lambda () (ruler-mode 1)))
 ;; (cua-mode t)
