@@ -4,6 +4,7 @@
   :config
   (setq ac-use-fuzzy t)
   (setq ac-auto-start 4)
+  (setq ac-dwim t)
   (setq-default ac-sources
     '(ac-source-yasnippet
        ac-source-abbrev
