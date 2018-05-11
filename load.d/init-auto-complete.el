@@ -3,6 +3,7 @@
   :init (require 'auto-complete-config)
   :config
   (setq ac-use-fuzzy t)
+  (setq ac-auto-start 4)
   (setq-default ac-sources
     '(ac-source-yasnippet
        ac-source-abbrev
