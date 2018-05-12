@@ -1,4 +1,6 @@
 (use-package treemacs
+  :ensure t
+  :defer t
   :bind (("C-." . treemacs-toggle))
   :config
   (treemacs-git-mode 'extended)
