@@ -31,8 +31,8 @@
 ;;               (if (derived-mode-p 'json-mode)
 ;;                   (add-hook 'after-save-hook 'indent-whole-buffer t t)))))
 
-(use-package eslint-fix
+(use-package eslintd-fix
   :bind (:map js-mode-map
-          ("C-c i" .   eslint-fix))
+          ("C-c i" .   eslintd-fix))
   :config
   (setq eslintd-fix-executable "eslint_d"))
