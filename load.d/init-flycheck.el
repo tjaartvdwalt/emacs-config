@@ -21,4 +21,4 @@
   (setq flycheck-javascript-eslint-executable "eslint_d")
   (setq-default flycheck-disabled-checkers
     (append flycheck-disabled-checkers
-      '(javascript-jshint))))
+      '(javascript-jshint javascript-standard))))
