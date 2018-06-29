@@ -18,6 +18,7 @@
   ;; (add-hook 'flycheck-mode-hook 'flycheck-pycheckers-setup)
   ;; (setq flycheck-flake8-maximum-line-length 80)
   ;; set javascript standard checekr as default
+  (setq flycheck-javascript-eslint-executable "eslint_d")
   (setq-default flycheck-disabled-checkers
     (append flycheck-disabled-checkers
       '(javascript-jshint))))
