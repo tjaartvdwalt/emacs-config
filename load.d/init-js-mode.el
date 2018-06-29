@@ -35,4 +35,4 @@
   :bind (:map js-mode-map
           ("C-c i" .   eslintd-fix))
   :config
-  (setq eslintd-fix-executable "node_modules/.bin/eslint_d"))
+  (setq eslintd-fix-executable "eslint_d"))
