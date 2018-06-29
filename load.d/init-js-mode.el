@@ -32,5 +32,6 @@
 ;;                   (add-hook 'after-save-hook 'indent-whole-buffer t t)))))
 
 (use-package eslint-fix
-    :bind (:map js-mode-map
+  :bind (:map js-mode-map
+          (setq eslintd-fix-executable "node_modules/.bin/eslint")
             ("C-c i" .   eslint-fix)))
