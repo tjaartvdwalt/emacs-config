@@ -33,5 +33,5 @@
 
 (use-package eslint-fix
   :bind (:map js-mode-map
-          (setq eslintd-fix-executable "node_modules/.bin/eslint")
+          (setq eslintd-fix-executable "eslint_d")
             ("C-c i" .   eslint-fix)))
