@@ -3,8 +3,8 @@
   (add-to-list 'auto-mode-alist '("\\.js\\'" . js-jsx-mode))
   (add-to-list 'auto-mode-alist '("\\.jsx\\'" . js-jsx-mode))
   (add-hook 'js-mode-hook
-            (lambda ()
-              (subword-mode 1))))
+    (lambda ()
+      (subword-mode 1))))
 
 (use-package kite)
 
@@ -20,8 +20,8 @@
   (tern-ac-setup)
   (setq tern-ac-sync t)
   (add-hook 'js-mode-hook
-            (lambda ()
-              (add-to-list 'ac-sources 'ac-source-tern-completion))))
+    (lambda ()
+      (add-to-list 'ac-sources 'ac-source-tern-completion))))
 
 ;; (use-package json-mode
 ;;   :config
@@ -34,4 +34,4 @@
 (use-package eslint-fix
   :bind (:map js-mode-map
           (setq eslintd-fix-executable "eslint_d")
-            ("C-c i" .   eslint-fix)))
+          ("C-c i" .   eslint-fix)))
