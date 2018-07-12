@@ -1,4 +1,5 @@
 (use-package php-mode
+  :after (auto-complete)
   :config
   (use-package ac-php)
   (use-package ede-php-autoload
