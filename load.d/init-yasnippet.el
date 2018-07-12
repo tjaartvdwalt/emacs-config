@@ -2,9 +2,9 @@
 
 ;; ;; (use-package yasnippet-bundle)
 
-;; (use-package yasnippet
+(use-package yasnippet
 ;;   :delight
 ;;   :config
-;;   (yas-global-mode 1)
-;;   (define-key yas-minor-mode-map [(tab)] nil)
-;;   (define-key yas-minor-mode-map (kbd "TAB") nil))
+  (yas-global-mode 1)
+  (define-key yas-minor-mode-map [(tab)] nil)
+  (define-key yas-minor-mode-map (kbd "TAB") nil))
