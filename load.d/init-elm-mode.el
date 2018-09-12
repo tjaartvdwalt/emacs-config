@@ -14,7 +14,7 @@
                                (if errbuf (kill-error-buffer errbuf)))
                              (progn
                                (revert-buffer t t)
-                               (display-buffer (ansi-color-apply errbuf)))))))))
+                               (display-buffer errbuf))))))))
 (use-package flycheck-elm
   :config
   (eval-after-load 'flycheck
