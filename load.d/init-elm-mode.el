@@ -7,6 +7,7 @@
                            (with-current-buffer errbuf
                              (erase-buffer))
 
+                           (save-buffer)
                            (if (zerop (call-process "elm-format" nil errbuf nil "--yes" (buffer-file-name)))
                              (progn
                                (revert-buffer t t)
