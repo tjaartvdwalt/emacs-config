@@ -12,6 +12,10 @@
     ;; (add-hook 'flycheck-mode-hook 'flycheck-pycheckers-setup)
 
     )
+  (use-package flycheck-elm
+    :config
+    (add-hook 'flycheck-mode-hook 'flycheck-elm-setup))
+
 
   (add-hook 'after-init-hook 'global-flycheck-mode)
   (add-hook 'javascript-mode-hook 'flycheck-mode)
