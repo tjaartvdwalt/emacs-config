@@ -3,6 +3,7 @@
           ("C-c i" .   (lambda ()
                          (interactive)
                          (let ((errbuf (get-buffer-create "*Elm Format Errors*")))
+
                            (with-current-buffer errbuf
                              (erase-buffer))
 
