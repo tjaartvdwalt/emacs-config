@@ -5,6 +5,9 @@
                          ;; (setq filename (buffer-file-name (window-buffer (minibuffer-selected-window))))
                          ;; (setq filename "/home/tjaart/elm-architecture-tutorial/examples/01-button.elm")
                          (let ((errbuf (get-buffer-create "*Elm Format Errors*")))
+                           (with-current-buffer errbuf
+                             (erase-buffer))
+
                            (if (zerop (call-process "elm-format" nil errbuf nil "--yes" (buffer-file-name)))
                              (progn
                                (revert-buffer t t)
