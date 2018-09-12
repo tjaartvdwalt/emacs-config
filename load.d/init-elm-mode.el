@@ -15,7 +15,3 @@
                              (progn
                                (revert-buffer t t)
                                (display-buffer errbuf))))))))
-(use-package flycheck-elm
-  :config
-  (eval-after-load 'flycheck
-    '(flycheck-elm-setup)))
