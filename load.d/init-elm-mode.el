@@ -2,8 +2,8 @@
   :bind (:map elm-mode-map
           ("C-c i" .   (lambda ()
                          (interactive)
-                         (setq filename '(buffer-file-name (window-buffer (minibuffer-selected-window))))
-                         (shell-command "fixpack &")
+                         (setq filename (buffer-file-name (window-buffer (minibuffer-selected-window))))
+                         (shell-command concat("elm-format --yes" filename))
                          ;; (shell-command-on-region pmin pmax
                          ;;   "astyle"
                          ;;   (current-buffer) t
