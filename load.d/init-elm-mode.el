@@ -2,8 +2,6 @@
   :bind (:map elm-mode-map
           ("C-c i" .   (lambda ()
                          (interactive)
-                         ;; (setq filename (buffer-file-name (window-buffer (minibuffer-selected-window))))
-                         ;; (setq filename "/home/tjaart/elm-architecture-tutorial/examples/01-button.elm")
                          (let ((errbuf (get-buffer-create "*Elm Format Errors*")))
                            (with-current-buffer errbuf
                              (erase-buffer))
