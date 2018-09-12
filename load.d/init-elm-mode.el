@@ -2,15 +2,11 @@
   :bind (:map elm-mode-map
           ("C-c i" .   (lambda ()
                          (interactive)
-                         (py-isort-buffer)
-                         (py-autopep8))))
-
-  :config (
-
-            )
-
-                                        ;:hook (flycheck-mode . flycheck-elm-setup)
-  )
+                         (shell-command-on-region pmin pmax
+                           "astyle"
+                           (current-buffer) t
+                           (get-buffer-create "*Astyle Errors*") t))
+            )))
 
 (use-package flycheck-elm
   :config
