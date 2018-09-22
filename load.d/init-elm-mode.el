@@ -4,7 +4,12 @@
                          (interactive)
                          (let ((errbuf (get-buffer-create "*Elm Format Errors*")))
                            (elm-compile-clean-imports)
-                           (elm-mode-format-buffer))))))
+                           (if (zerop (elm-mode-format-buffer))
+                             (progn
+(message "hello")
+                               )
+
+                             ))))
 
                            ;; (with-current-buffer errbuf
                            ;;   (erase-buffer))
