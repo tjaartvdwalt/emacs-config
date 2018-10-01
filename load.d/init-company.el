@@ -1,4 +1,4 @@
 (use-package company
-  :hook (after-init-hook. global-company-mode)
+  :hook (after-init-hook . global-company-mode)
   ;; :config
   )
