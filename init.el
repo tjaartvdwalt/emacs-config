@@ -30,11 +30,6 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
-  '(company-backends
-     (quote
-       (company-ispell company-abbrev company-bbdb company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files
-         (company-dabbrev-code company-gtags company-etags company-keywords)
-         company-oddmuse company-dabbrev)))
  '(cua-mode t nil (cua-base))
  '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
   '(custom-safe-themes
