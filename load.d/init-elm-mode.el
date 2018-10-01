@@ -4,9 +4,8 @@
           ("C-M-p" . pop-tag-mark)
           ("C-c i" .   (lambda ()
                          (interactive)
-                         (let ((errbuf (get-buffer-create "*Elm Format Errors*")))
                            (elm-compile-clean-imports)
-                           (elm-mode-format-buffer)))))
+                           (elm-mode-format-buffer))))
   :config (setq elm-tags-on-save 1))
 
 ;; (with-current-buffer errbuf
