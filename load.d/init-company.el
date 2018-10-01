@@ -1,2 +1,3 @@
 (use-package company
+  :config
   )
