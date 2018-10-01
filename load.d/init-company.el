@@ -2,5 +2,5 @@
   ;; :hook
   ;; (after-init-hook . global-company-mode)
   :config
-  (setq global-company-mode t)
+  (global-company-mode)
   (setq company-idle-delay 0))
