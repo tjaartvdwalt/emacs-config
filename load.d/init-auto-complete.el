@@ -1,4 +1,5 @@
 (use-package auto-complete
+  :disabled
   :delight auto-complete-mode yas/minor-mode
   :init (require 'auto-complete-config)
   :config
