@@ -1,4 +1,5 @@
 (use-package company
   :hook (after-init-hook . global-company-mode)
-  ;; :config
+  :config
+  (setq company-idle-delay 0)
   )
