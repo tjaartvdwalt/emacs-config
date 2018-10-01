@@ -11,4 +11,5 @@
     ;;      company-oddmuse company-dabbrev)))
 
   (add-to-list 'company-backends 'company-ispell t)
+  (add-to-list 'company-backends 'company-yasnippet t)
   (setq company-idle-delay 0))
