@@ -1,5 +1,5 @@
 (use-package company
-    :bind (("C-=" . company-other-backend))
+  :bind (("C-=" . company-other-backend))
 
   :config
   (global-company-mode)
@@ -8,12 +8,12 @@
 
 (use-package company-web
   :config
-    (add-to-list 'company-backends '(company-web-html company-yasnippet)))
+  (add-to-list 'company-backends '(company-web-html company-yasnippet)))
 
 (use-package company-jedi
-:config
+  :config
   (add-to-list 'company-backends '(company-jedi company-files company-yasnippet)))
 
 (use package company-tern
-:config
-(add-to-list 'company-backends 'company-tern))
+  :config
+  (add-to-list 'company-backends 'company-tern))
