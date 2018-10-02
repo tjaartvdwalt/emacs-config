@@ -5,7 +5,7 @@
   (global-company-mode)
   (setq company-idle-delay 0)
   (add-to-list 'company-backends 'company-ispel)
-    (add-to-list 'company-backends 'company-yasnippet))
+  (add-to-list 'company-backends 'company-yasnippet))
 
 ;; Box frontend
 (use-package company-box
@@ -28,3 +28,7 @@
 (use-package company-ansible
   :config
   (add-to-list 'company-backends 'company-ansible))
+
+(use-package  company-emoji
+  :config
+  (add-to-list 'company-backends 'company-emoji))
