@@ -16,6 +16,4 @@
 
 (use-package company-web
   :config
-    (add-to-list 'company-backends 'company-web-html)
-
-  )
+    (add-to-list 'company-backends 'company-web-html))
