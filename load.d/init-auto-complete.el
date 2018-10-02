@@ -16,15 +16,18 @@
   (ac-flyspell-workaround)
 
   (use-package ac-ispell
+    :disable
     :config
     (ac-ispell-setup)
     (add-hook 'text-mode-hook 'ac-ispell-ac-setup))
 
   (use-package ac-emoji
+    :disable
     :hook ((markdown-mode . ac-emoji-setup)
             (git-commit-mode . ac-emoji-setup)))
 
   (use-package ac-emmet
+    :disable
     :hook ((sgml-mode . ac-emmet-html-setup)
             (css-mode . ac-emmet-css-setup))))
 
