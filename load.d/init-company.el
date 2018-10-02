@@ -1,6 +1,4 @@
 (use-package company
-  ;; :hook
-  ;; (after-init-hook . global-company-mode)
     :bind (("C-=" . company-other-backend))
 
   :config
