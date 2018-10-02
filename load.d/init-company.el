@@ -1,8 +1,7 @@
 (use-package company
   ;; :hook
   ;; (after-init-hook . global-company-mode)
-    :bind (("C-=" . company-other-backend)
-          ("C-M-c" . dumb-jump-back))
+    :bind (("C-=" . company-other-backend))
 
   :config
   (global-company-mode)
