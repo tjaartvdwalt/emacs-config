@@ -10,5 +10,12 @@
     ;;      (company-dabbrev-code company-gtags company-etags company-keywords)
     ;;      company-oddmuse company-dabbrev)))
 
-  (add-to-list 'company-backends ('company-ispell 'company-yasnippet) t)
+  (add-to-list 'company-backends ('company-ispell) t)
+  (add-to-list 'company-backends 'company-yasnippet t)
   (setq company-idle-delay 0))
+
+(use-package company-web
+  :config
+    (add-to-list 'company-backends 'company-web-html)
+
+  )
