@@ -6,6 +6,11 @@
   (setq company-idle-delay 0)
   (add-to-list 'company-backends 'company-ispell))
 
+;; Box frontend
+(use-package company-box
+  :hook (company-mode . company-box-mode))
+
+;; Backends
 (use-package company-web
   :config
   (add-to-list 'company-backends '(company-web-html)))
