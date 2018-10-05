@@ -4,7 +4,7 @@
 
   :config
   (add-hook 'ruby-mode-hook 'eldoc-mode)
-  (add-to-list 'ac-modes 'ruby-mode)
+  (add-to-list 'ruby-mode)
 
   (use-package chruby)
 
@@ -12,8 +12,8 @@
 
   (use-package rspec-mode)
 
-  (use-package robe
-    :hook ((ruby-mode . robe-mode)(ruby-mode . ac-robe-setup)))
+  ;; (use-package robe
+  ;;   :hook ((ruby-mode . robe-mode)(ruby-mode . ac-robe-setup)))
 
   (use-package rubocop
     :hook (ruby-mode . (lambda ()
