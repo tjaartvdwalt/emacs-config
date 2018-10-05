@@ -1,4 +1,5 @@
 (use-package elm-mode
+  :delight (elm-indent-mode)
   :bind (:map elm-mode-map
           ("C-M-g" . elm-mode-goto-tag-at-point)
           ("C-M-p" . pop-tag-mark)
