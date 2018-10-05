@@ -1,2 +1,1 @@
-(use-package hl-todo
-)
+(use-package hl-todo)
