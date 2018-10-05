@@ -14,6 +14,8 @@
 
   (use-package magit-imerge)
 
+  (use-package 'magit-todos)
+
   (use-package gitconfig))
 
 (use-package git-auto-commit-mode
