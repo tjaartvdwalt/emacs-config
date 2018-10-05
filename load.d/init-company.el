@@ -4,11 +4,12 @@
   :config
   (global-company-mode)
   (setq company-idle-delay 0)
-  (add-to-list 'company-backends 'company-ispel)
+  (add-to-list 'company-backends 'company-ispell)
   (add-to-list 'company-backends 'company-yasnippet))
 
 ;; Box frontend
 (use-package company-box
+  :delight
   :hook (company-mode . company-box-mode))
 
 ;; Backends
