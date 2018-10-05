@@ -3,7 +3,7 @@
 ;; ;; (use-package yasnippet-bundle)
 
 (use-package yasnippet
-  :delight
+  :delight yas-minor-mode
   :config
    (yas-global-mode))
 
