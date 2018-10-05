@@ -3,7 +3,7 @@
 
 ;; use ibuffer instead of buffer-menu
 (substitute-key-definition
- 'list-buffers 'ibuffer global-map global-map)
+  'list-buffers 'ibuffer global-map global-map)
 
 ;; (global-set-key "\C-cy" 'toggle-window-split)
 
