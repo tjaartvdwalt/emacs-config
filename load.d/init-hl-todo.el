@@ -1,1 +1,3 @@
-(use-package hl-todo)
+(use-package hl-todo
+  :config
+  (global-hl-todo-mode))
