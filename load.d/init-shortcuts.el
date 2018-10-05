@@ -48,4 +48,5 @@
 (global-set-key (kbd "M-%") 'vr/replace)
 (global-set-key (kbd "C-M-%") 'vr/query-replace)
 
-(global-unset-key (kbd "M-tab"))
+(global-unset-key (kbd "<M-tab>"))
+(global-unset-key (kbd "<C-M-i"))
