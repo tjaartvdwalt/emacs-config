@@ -1,1 +1,1 @@
-(delight 'eldoc-mode)
+(delight 'eldoc-mode "")
