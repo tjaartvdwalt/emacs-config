@@ -14,7 +14,10 @@
 
   (use-package magit-imerge)
 
-  (use-package magit-todos)
+  (use-package magit-todos
+    :config
+    (setq magit-todos-mode t)
+    )
 
   (use-package gitconfig))
 
