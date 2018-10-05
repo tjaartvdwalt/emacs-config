@@ -1,7 +1,7 @@
 (use-package php-mode
   ;; :after (auto-complete)
   :config
-  (use-package ac-php)
+  ;; (use-package ac-php)
   (use-package ede-php-autoload
      :bind (:map php-mode-map
           ("C-M-g" . ac-php-find-symbol-at-point)
