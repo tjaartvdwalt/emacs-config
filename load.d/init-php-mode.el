@@ -9,7 +9,8 @@
 
     :config
     (add-hook 'php-mode-hook '(lambda ()
-                                (setq ac-sources  '(ac-source-php )))))
+                                (setq ac-sources  '(ac-source-php ))))
+    )
 
   (use-package ede-php-autoload-composer-installers)
   (add-hook 'php-mode-hook #'ede-php-autoload-mode))
