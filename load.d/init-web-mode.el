@@ -6,17 +6,17 @@
   (setq web-mode-enable-current-element-highlight t)
   (setq web-mode-enable-current-column-highlight t)
 
-  (add-hook 'web-mode-before-auto-complete-hooks
-            '(lambda ()
-               (let ((web-mode-cur-language
-                      (web-mode-language-at-pos)))
-                 (if (string= web-mode-cur-language "html")
-                     (yas-activate-extra-mode 'html-mode))
-                 ;; (yas-deactivate-extra-mode 'php-mode))
-                 (if (string= web-mode-cur-language "css")
-                     (setq emmet-use-css-transform t)
-                   (setq emmet-use-css-transform nil))
-                 )))
+  ;; (add-hook 'web-mode-before-auto-complete-hooks
+  ;;           '(lambda ()
+  ;;              (let ((web-mode-cur-language
+  ;;                     (web-mode-language-at-pos)))
+  ;;                (if (string= web-mode-cur-language "html")
+  ;;                    (yas-activate-extra-mode 'html-mode))
+  ;;                ;; (yas-deactivate-extra-mode 'php-mode))
+  ;;                (if (string= web-mode-cur-language "css")
+  ;;                    (setq emmet-use-css-transform t)
+  ;;                  (setq emmet-use-css-transform nil))
+  ;;                )))
 
   ;; Install: pacaur -S tidyhtml
   (flycheck-add-mode 'html-tidy 'web-mode))
