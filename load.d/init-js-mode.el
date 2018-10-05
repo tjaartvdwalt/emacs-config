@@ -15,13 +15,13 @@
   :config
   (add-hook 'js-mode-hook (lambda () (tern-mode t))))
 
-(use-package tern-auto-complete
-  :config
-  (tern-ac-setup)
-  (setq tern-ac-sync t)
-  (add-hook 'js-mode-hook
-    (lambda ()
-      (add-to-list 'ac-sources 'ac-source-tern-completion))))
+;; (use-package tern-auto-complete
+;;   :config
+;;   (tern-ac-setup)
+;;   (setq tern-ac-sync t)
+;;   (add-hook 'js-mode-hook
+;;     (lambda ()
+;;       (add-to-list 'ac-sources 'ac-source-tern-completion))))
 
 ;; (use-package json-mode
 ;;   :config
