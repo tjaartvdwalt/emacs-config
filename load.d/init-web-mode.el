@@ -1,5 +1,4 @@
 (use-package web-mode
-  ;; :require (yasnippet flycheck auto-complete)
   :mode "\\.[agj]sp\\|\\.as[cp]x\\|\\.css\\|\\.djhtml\\|\\.erb\\|\\.hbs\\|\\.html?\\|\\.mustache\\|\\.phtml\\|\\.tag\\'"
   :config
   (setq web-mode-enable-css-colorization t)
