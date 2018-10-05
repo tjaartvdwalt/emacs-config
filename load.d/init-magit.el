@@ -14,7 +14,7 @@
 
   (use-package magit-imerge)
 
-  (use-package 'magit-todos)
+  (use-package magit-todos)
 
   (use-package gitconfig))
 
