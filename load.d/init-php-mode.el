@@ -5,7 +5,7 @@
   (use-package ede-php-autoload
      :bind (:map php-mode-map
           ("C-M-g" . ac-php-find-symbol-at-point)
-          ("C-M-p" . ac-php-location-stack-back))
+          ("C-M-c" . ac-php-location-stack-back))
 
     :config
     (add-hook 'php-mode-hook '(lambda ()
