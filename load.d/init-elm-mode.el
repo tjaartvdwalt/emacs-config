@@ -2,7 +2,7 @@
   :delight (elm-indent-mode)
   :bind (:map elm-mode-map
           ("C-M-g" . elm-mode-goto-tag-at-point)
-          ("C-M-p" . pop-tag-mark)
+          ("C-M-c" . pop-tag-mark)
           ("C-c i" .   (lambda ()
                          (interactive)
                          (elm-compile-clean-imports)
