@@ -6,7 +6,9 @@
   (setq company-idle-delay 0)
   (add-to-list 'company-backends 'company-ispell)
   (add-to-list 'company-backends 'company-yasnippet)
-  (add-to-list 'company-backends 'company-elm))
+  (add-to-list 'company-backends 'company-elm)
+
+  )
 
 ;; Box frontend
 (use-package company-box
