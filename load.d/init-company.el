@@ -6,8 +6,8 @@
   (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 2)
   (setq company-selection-wrap-around t)
-  (add-to-list 'company-backends 'company-ispell)
-  (add-to-list 'company-backends 'company-yasnippet)
+  (add-to-list 'company-backends 'company-ispell 'company-yasnippet)
+  (add-to-list 'company-backends )
   (add-to-list 'company-backends 'company-elm)
 
   )
