@@ -4,6 +4,7 @@
   :config
   (global-company-mode)
   (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 2)
   (add-to-list 'company-backends 'company-ispell)
   (add-to-list 'company-backends 'company-yasnippet)
   (add-to-list 'company-backends 'company-elm)
