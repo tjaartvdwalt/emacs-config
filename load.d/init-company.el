@@ -15,11 +15,11 @@
 ;; Backends
 (use-package company-web
   :config
-  (add-to-list 'company-backends '(company-web-html)))
+  (add-to-list 'company-backends 'company-web-html))
 
 (use-package company-jedi
   :config
-  (add-to-list 'company-backends '(company-jedi)))
+  (add-to-list 'company-backends 'company-jedi))
 
 (use-package company-tern
   :config
