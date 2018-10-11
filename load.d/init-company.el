@@ -7,6 +7,7 @@
   (add-to-list 'company-backends 'company-ispell)
   (add-to-list 'company-backends 'company-yasnippet)
   (add-to-list 'company-backends 'company-elm))
+
 ;; Box frontend
 (use-package company-box
   :delight
