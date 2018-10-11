@@ -1,5 +1,5 @@
 (use-package company
-  :bind (("C-=" . company-other-backend))
+  :bind (("M-<tab>" . company-other-backend))
 
   :config
   (global-company-mode)
