@@ -7,8 +7,7 @@
                          (interactive)
                          (elm-compile-clean-imports)
                          (elm-mode-format-buffer))))
-  :config (setq elm-tags-on-save 1)
-  (add-to-list 'company-backends 'company-elm))
+  :config (setq elm-tags-on-save 1))
 
 ;; (with-current-buffer errbuf
 ;;   (erase-buffer))
