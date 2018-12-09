@@ -5,7 +5,7 @@
 (defhydra hydra-commenter (:color teal
                             :hint nil)
   "
-     PROJECTILE: %(projectile-project-root)
+     COMMENTER: %(projectile-project-root)
 
      Find File            Search/Tags          Buffers                Cache
 ------------------------------------------------------------------------------------------
@@ -16,6 +16,16 @@ _s-f_: file            _a_: ag                _i_: Ibuffer           _c_: cache 
   _d_: dir
 
 "
+  ("ci" evilnc-comment-or-uncomment-lines)
+  ("cl" evilnc-quick-comment-or-uncomment-to-the-line)
+  ("ll" evilnc-quick-comment-or-uncomment-to-the-line)
+  ("cc" evilnc-copy-and-comment-lines)
+  ("cp" evilnc-comment-or-uncomment-paragraphs)
+  ("cr" comment-or-uncomment-region)
+  ("cv" evilnc-toggle-invert-comment-line-by-line)
+  ("."  evilnc-copy-and-comment-operator)
+  ("\\" evilnc-comment-operator)
+
   ("a"   projectile-ag)
   ("b"   projectile-switch-to-buffer)
   ("c"   projectile-invalidate-cache)
