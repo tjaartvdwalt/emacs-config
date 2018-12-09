@@ -1,2 +1,2 @@
-;; (use-package smart-comment
-;;   :bind ("M-;" . smart-comment))
+(use-package smart-comment
+  :bind ("M-;" . smart-comment))
