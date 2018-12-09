@@ -1,3 +1,3 @@
 (use-package evil-nerd-commenter
-  ;; :bind ("M-;" . smart-comment)
+  :bind ("M-;" . evilnc-comment-or-uncomment-lines)
   )
