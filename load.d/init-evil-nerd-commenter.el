@@ -1,5 +1,5 @@
 (use-package evil-nerd-commenter
-  :bind ("M-;" . evilnc-comment-or-uncomment-lines)
+  :bind ("M-;" . hydra-commenter/body)
   )
 
 (defhydra hydra-commenter (:color teal
