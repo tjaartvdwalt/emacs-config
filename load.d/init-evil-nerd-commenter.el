@@ -12,8 +12,8 @@
 ;; _r_: comment or uncomment region
 ;; _v_: toggle invert comment line by line
 ;; "
-  (";" evilnc-comment-or-uncomment-lines "comment or uncomment lines\n")
-  ("q" evilnc-quick-comment-or-uncomment-to-the-line "quick comment or uncomment to the line")
+  (";" evilnc-comment-or-uncomment-lines "\ncomment or uncomment lines")
+  ("q" evilnc-quick-comment-or-uncomment-to-the-line "\nquick comment or uncomment to the line")
   ("c" evilnc-copy-and-comment-lines "copy and comment lines")
   ("p" evilnc-comment-or-uncomment-paragraphs "comment or uncomment paragraphs")
   ("r" comment-or-uncomment-region "comment or uncomment region")
