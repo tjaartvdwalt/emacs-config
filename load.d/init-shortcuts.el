@@ -54,7 +54,7 @@
 (defhydra hydra-navigate (:hint nil)
   "
 Navigate:
-_<left>_: Left
+<-: Left
 _<right>_: Right
 _<up>_: Up
 _<down>_: Down
