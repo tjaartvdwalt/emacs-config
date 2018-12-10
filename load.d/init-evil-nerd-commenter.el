@@ -2,7 +2,7 @@
   :bind ("M-;" . hydra-commenter/body)
   )
 
-(defhydra hydra-commenter (:pre ("\n"))
+(defhydra hydra-commenter (:pre (message "\n"))
 "Evil Nerd Commenter"
 ;;   "
 ;; _q_: quick comment or uncomment to the line
