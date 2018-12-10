@@ -49,7 +49,7 @@
 (global-set-key (kbd "C-M-%") 'vr/query-replace)
 
 
-(global-set-key (kbd "C-=") 'hydra-navigate/body)
+(global-set-key (kbd "C-=") 'hydra-ctrl-c/body)
 
 (defhydra hydra-navigate (:hint nil)
   "
