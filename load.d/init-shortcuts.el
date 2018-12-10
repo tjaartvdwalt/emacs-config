@@ -51,10 +51,10 @@
 (defhydra hydra-navigate ((global-map "C-="):hint nil)
   "
 Navigate:
-_<-_: Left
-_->_: Right
-_->_: Up
-_->_: Down
+_<left>_: Left
+_<right>_: Right
+_<up>_: Up
+_<down>_: Down
 "
   ("<left>" backward-word)
   ("<right>" forward-word)
