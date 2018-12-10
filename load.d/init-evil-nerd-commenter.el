@@ -2,7 +2,7 @@
   :bind ("M-;" . hydra-commenter/body)
   )
 
-(defhydra hydra-commenter ()
+(defhydra hydra-commenter (:hint nil)
   "
 Evil Nerd Commenter:
 _;_: comment or uncomment lines
