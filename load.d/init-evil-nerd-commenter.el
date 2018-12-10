@@ -13,4 +13,12 @@ _r_: comment or uncomment region
 _v_: toggle invert comment line by line
 _._: copy and comment operator
 _\\_: comment operator
-")
+"
+  ("l" evilnc-comment-or-uncomment-lines)
+  ("q" evilnc-quick-comment-or-uncomment-to-the-line)
+  ("c" evilnc-copy-and-comment-lines)
+  ("p" evilnc-comment-or-uncomment-paragraphs)
+  ("r" comment-or-uncomment-region)
+  ("v" evilnc-toggle-invert-comment-line-by-line)
+  ("."  evilnc-copy-and-comment-operator)
+  ("\\" evilnc-comment-operator))
