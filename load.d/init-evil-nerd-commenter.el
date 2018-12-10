@@ -4,7 +4,7 @@
 
 (defhydra hydra-commenter (:color teal
                             :hint nil)
-  "Comment"
+  ;; "Comment"
 ;;   "
 ;; _;_: comment or uncomment lines
 ;; _q_: quick comment or uncomment to the line
