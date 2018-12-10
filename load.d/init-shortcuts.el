@@ -48,7 +48,7 @@
 (global-set-key (kbd "M-%") 'vr/replace)
 (global-set-key (kbd "C-M-%") 'vr/query-replace)
 
-(defhydra hydra-navigate (:hint nil)
+(defhydra hydra-navigate ((global-map "C-="):hint nil)
   "
 Navigate:
 _<-_: Left
@@ -68,7 +68,7 @@ _->_: Down
 ctrl-c:
 _n_: Navigate
 "
-  ("n" )
+  ("n" hydra-navigate/body)
   ("q" evilnc-quick-comment-or-uncomment-to-the-line)
   ("c" evilnc-copy-and-comment-lines)
   ("p" evilnc-comment-or-uncomment-paragraphs)
