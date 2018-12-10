@@ -2,8 +2,7 @@
   :bind ("M-;" . hydra-commenter/body)
   )
 
-(defhydra hydra-commenter (:color teal
-                            :hint nil)
+(defhydra hydra-commenter (:color teal)
 "Evil Nerd Commenter"
 ;;   "
 ;; _q_: quick comment or uncomment to the line
