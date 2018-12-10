@@ -47,3 +47,30 @@
 (global-unset-key (kbd "C-M-%"))
 (global-set-key (kbd "M-%") 'vr/replace)
 (global-set-key (kbd "C-M-%") 'vr/query-replace)
+
+(defhydra hydra-navigate (:hint nil)
+  "
+Navigate:
+_<-_: Left
+_->_: Right
+_->_: Up
+_->_: Down
+"
+  ("<left>" backward-word)
+  ("<right>" forward-word)
+  ("<up>" backward-list)
+  ("<down>" forward-list)
+  ("r" comment-or-uncomment-region)
+  ("v" evilnc-toggle-invert-comment-line-by-line))
+
+(defhydra hydra-ctrl-c (:hint nil)
+  "
+ctrl-c:
+_n_: Navigate
+"
+  ("n" )
+  ("q" evilnc-quick-comment-or-uncomment-to-the-line)
+  ("c" evilnc-copy-and-comment-lines)
+  ("p" evilnc-comment-or-uncomment-paragraphs)
+  ("r" comment-or-uncomment-region)
+  ("v" evilnc-toggle-invert-comment-line-by-line))
