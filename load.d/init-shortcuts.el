@@ -48,7 +48,10 @@
 (global-set-key (kbd "M-%") 'vr/replace)
 (global-set-key (kbd "C-M-%") 'vr/query-replace)
 
-(defhydra hydra-navigate ((global-map "C-="):hint nil)
+
+(global-set-key (kbd "C-=") 'hydra-navigate/body)
+
+(defhydra hydra-navigate (:hint nil)
   "
 Navigate:
 _<left>_: Left
