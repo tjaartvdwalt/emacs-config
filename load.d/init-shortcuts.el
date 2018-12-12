@@ -75,4 +75,4 @@ _w_: Whitespace Mode
 "
    ("n" hydra-navigate/body :exit t)
   ("o" hydra-origami/body :exit t)
-  ("w" whitespace-mode :exit t))
+  ("w" whitespace-mode))
