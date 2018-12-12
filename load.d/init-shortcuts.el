@@ -73,6 +73,6 @@ _n_: Navigate
 _o_: Origami
 _w_: Whitespace Mode
 "
-   ("n" hydra-navigate/body "Navigate" :exit t)
-  ("o" hydra-origami/body "Origami" :exit t)
+   ("n" hydra-navigate/body :exit t)
+  ("o" hydra-origami/body :exit t)
   ("w" whitespace-mode :exit t))
