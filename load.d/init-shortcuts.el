@@ -71,9 +71,4 @@ _<down>_ : Down
 ctrl-c:
 _n_: Navigate
 "
-  ("n" hydra-navigate/body)
-  ("q" evilnc-quick-comment-or-uncomment-to-the-line)
-  ("c" evilnc-copy-and-comment-lines)
-  ("p" evilnc-comment-or-uncomment-paragraphs)
-  ("r" comment-or-uncomment-region)
-  ("v" evilnc-toggle-invert-comment-line-by-line))
+  ("n" hydra-navigate/body))
