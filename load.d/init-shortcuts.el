@@ -71,4 +71,4 @@ _<down>_ : Down
 ctrl-c:
 _n_: Navigate
 "
-  ("n" hydra-navigate/body))
+  ("n" hydra-navigate/body "Navigate" :exit t))
