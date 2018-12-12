@@ -1,2 +1,1 @@
-(use-package expand-region
-  :bind ("<M-return>" . er/expand-region))
+(use-package expand-region)
