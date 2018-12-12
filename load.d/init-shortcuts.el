@@ -66,9 +66,9 @@
 ;;   ("r" comment-or-uncomment-region)
 ;;   ("v" evilnc-toggle-invert-comment-line-by-line))
 
-;; (defhydra hydra-ctrl-c (:hint nil)
-;;   "
-;; ctrl-c:
-;; _n_: Navigate
-;; "
-;;   ("n" hydra-navigate/body "Navigate" :exit t))
+(defhydra hydra-ctrl-c (:hint nil)
+  "
+ctrl-c:
+_n_: Navigate
+"
+  ("n" hydra-navigate/body "Navigate" :exit t))
