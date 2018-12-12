@@ -7,7 +7,7 @@
     ;; ("<f1> l"   . counsel-find-library)
     ;; ("<f1> s"   . describe-symbol)
     ;; ("<f2> i"   . counsel-info-lookup-symbol)
-    ("<f2> u"   . counsel-unicode-char)
+    ;; ("<f2> u"   . counsel-unicode-char)
     ("M-y"     . counsel-yank-pop)
     ("C-x C-f" . counsel-find-file)
     ("C-x r f" . counsel-recentf)
