@@ -72,4 +72,5 @@ ctrl-c:
 _n_: Navigate
 _o_: Origami
 "
-  ("n" hydra-navigate/body "Navigate" :exit t))
+  ("n" hydra-navigate/body "Navigate" :exit t)
+  ("n" hydra-origami/body "Origami" :exit t))
