@@ -67,10 +67,10 @@
 ;;   ("v" evilnc-toggle-invert-comment-line-by-line))
 
 (defhydra hydra-ctrl-c (:hint nil)
-  "
-ctrl-c:
-_n_: Navigate
-_o_: Origami
-"
-  ("n" hydra-navigate/body "Navigate" :exit t)
+;;   "
+;; ctrl-c:
+;; _n_: Navigate
+;; _o_: Origami
+;; "
+;;   ("n" hydra-navigate/body "Navigate" :exit t)
   ("n" hydra-origami/body "Origami" :exit t))
