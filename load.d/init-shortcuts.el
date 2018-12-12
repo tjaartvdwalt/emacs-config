@@ -69,6 +69,7 @@
 (defhydra hydra-ctrl-c (:hint nil)
   "
 ctrl-c:
+_e_: Exand Region
 _n_: Navigate
 _o_: Origami
 _p_: Projectile
