@@ -14,6 +14,4 @@
               ("n" origami-next-fold)
               ("p" origami-previous-fold)
               ("f" origami-forward-toggle-node)
-              ("a" origami-toggle-all-nodes))
-
-            ))
+              ("a" origami-toggle-all-nodes))))
