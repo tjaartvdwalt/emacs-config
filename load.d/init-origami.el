@@ -4,7 +4,7 @@
 
   :config (progn
             (add-hook 'prog-mode-hook 'origami-mode)
-            (defhydra hydra-folding (:color red)
+            (defhydra hydra-origami (:color red)
               "
   _o_pen node    _n_ext fold       toggle _f_orward
   _c_lose node   _p_revious fold   toggle _a_ll
