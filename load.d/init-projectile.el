@@ -11,7 +11,6 @@
     ;; (setq projectile-switch-project-action 'projectile-dired)
     ))
 
-(define-key global-map (kbd "C-c p") 'hydra-projectile/body)
 (setq projectile-keymap-prefix nil)
 
 
