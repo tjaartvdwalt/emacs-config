@@ -8,7 +8,7 @@
 ;;; Code:
 
 (use-package ispell
-  :diminish ispell-minor-mode
+  :delight ispell-minor-mode
   ;; instead of having ispell shortcuts, I now use flyspell
   ;; :bind
   ;; ("C-c i w" . ispell-word)
