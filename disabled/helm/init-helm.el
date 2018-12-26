@@ -2,7 +2,7 @@
   ;; :ensure helm-config
   ;; :require (helm-config)
   ;; :bind (("M-x" . helm-M-x))
-  :diminish helm-mode
+  :delight helm-mode
   :bind (
           ;; ("M-x" . helm-M-x)
          ;; ("M-y" . helm-show-kill-ring)
