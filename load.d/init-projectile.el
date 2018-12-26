@@ -1,5 +1,5 @@
 (use-package projectile
-  :diminish projectile-mode
+  :delight projectile-mode
   :config
   (progn
     (projectile-global-mode +1)
