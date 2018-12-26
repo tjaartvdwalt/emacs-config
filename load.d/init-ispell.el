@@ -23,7 +23,7 @@
     ;; (global-set-key "\C-cn" 'ispell-word)
     )
   (use-package flyspell
-    :diminish flyspell-mode
+    :delight flyspell-mode
     :config
     (add-hook 'text-mode-hook 'flyspell-mode)
     (add-hook 'prog-mode-hook 'flyspell-prog-mode)
