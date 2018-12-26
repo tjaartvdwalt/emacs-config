@@ -3,7 +3,7 @@
 ;;; Code:
 
 (use-package column-enforce-mode
-  :diminish column-enforce-mode
+  :delight column-enforce-mode
   :config (progn (add-hook 'prog-mode-hook 'column-enforce-mode)
                  ;; (global-set-key "\C-ce" 'column-enforce-mode)
                  ))
