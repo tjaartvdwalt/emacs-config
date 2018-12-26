@@ -1,5 +1,5 @@
 (use-package editorconfig
   :ensure t
-  :diminish editorconfig-mode
+  :delight editorconfig-mode
   :config
   (editorconfig-mode 1))
