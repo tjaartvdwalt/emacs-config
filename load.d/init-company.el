@@ -1,6 +1,6 @@
 (use-package company
   :bind (("M-<tab>" . company-other-backend))
-
+  :delight
   :config
   (global-company-mode)
   (setq company-idle-delay 0)
