@@ -1,5 +1,5 @@
 (use-package ivy :ensure t
-  :diminish (ivy-mode . "")
+  :delight (ivy-mode . "")
   :bind
   (:map ivy-mode-map
         ("C-x b" . ivy-switch-buffer)
