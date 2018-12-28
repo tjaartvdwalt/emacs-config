@@ -1,4 +1,5 @@
-(use-package ivy :ensure t
+(use-package ivy
+  :ensure t
   :delight ivy-mode
   :bind
   (:map ivy-mode-map
