@@ -31,10 +31,6 @@
  '(browse-url-dwim-mode t)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
- ;; '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
- ;; '(custom-safe-themes
- ;;   (quote
- ;;    ("c616e584f7268aa3b63d08045a912b50863a34e7ea83e35fcab8537b75741956" "003a9aa9e4acb50001a006cfde61a6c3012d373c4763b48ceb9d523ceba66829" "b563a87aa29096e0b2e38889f7a5e3babde9982262181b65de9ce8b78e9324d5" "3eb93cd9a0da0f3e86b5d932ac0e3b5f0f50de7a0b805d4eb1f67782e9eb67a4" "158013ec40a6e2844dbda340dbabda6e179a53e0aea04a4d383d69c329fba6e6" "b181ea0cc32303da7f9227361bb051bbb6c3105bb4f386ca22a06db319b08882" "b59d7adea7873d58160d368d42828e7ac670340f11f36f67fa8071dbf957236a" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
  '(fci-rule-color "#073642")
  '(gac-automatically-push-p t)
  '(keep-end-mode t)
@@ -98,7 +94,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "monospace" :slant normal :weight normal :height 200 :width normal)))))
+ )
 
 
 (put 'upcase-region 'disabled nil)
