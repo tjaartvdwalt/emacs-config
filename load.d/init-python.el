@@ -13,12 +13,12 @@
 
 
   (use-package py-autopep8
-    :ensure py-isort
+    ;; :ensure py-isort
     ;; :ensure-system-package (python-isort autopep8)
     :bind (:map python-mode-map
             ("C-c i" .   (lambda ()
                            (interactive)
-                           (py-isort-buffer)
+                           ;; (py-isort-buffer)
                            (py-autopep8))))
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
