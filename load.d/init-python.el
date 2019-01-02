@@ -14,7 +14,7 @@
 
   (use-package py-autopep8
     :ensure py-isort
-    :ensure-system-package (python-isort autopep8)
+    ;; :ensure-system-package (python-isort autopep8)
     :bind (:map python-mode-map
             ("C-c i" .   (lambda ()
                            (interactive)
