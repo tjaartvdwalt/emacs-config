@@ -84,8 +84,8 @@ _<plus>_ Zoom in
 _<minus>_ Zoom out
 "
 
-()"<plus>": text-scale-increase',
-()\"l\":    `text-scale-decrease'
+("<plus>" text-scale-increase)
+("<minus>") text-scale-decrease)
 
 (defhydra hydra-ctrl-c (:hint nil)
   "
