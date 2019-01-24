@@ -80,5 +80,5 @@ _w_: Whitespace Mode
   ("n" hydra-navigate/body :exit t)
   ("o" hydra-origami/body :exit t)
   ("p" hydra-projectile/body :exit t)
-  ("s" hydra-smerge/body :exit t)
+  ;; ("s" hydra-smerge/body :exit t)
   ("w" whitespace-mode :exit t))
