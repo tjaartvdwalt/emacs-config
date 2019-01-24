@@ -68,7 +68,7 @@
 
 (defhydra hydra-smerge (:hint t)
   "
-_c_ smerge-keep-current
+_c_ smerge-keep-current!!!
 "
   ("c" smerge-keep-current))
 
