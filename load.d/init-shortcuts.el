@@ -66,7 +66,10 @@
 ;;   ("r" comment-or-uncomment-region)
 ;;   ("v" evilnc-toggle-invert-comment-line-by-line))
 
-(defhydra hydra-smerge (:color teal)
+(defhydra hydra-smerge ()
+  "
+_c_ smerge-keep-current
+"
   ("c" smerge-keep-current))
 
 
