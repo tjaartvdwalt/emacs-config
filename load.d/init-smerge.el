@@ -1,2 +1,2 @@
-(defhydra hydra-origami (:color red)
+(defhydra hydra-smerge (:color red)
   ("c" smerge-keep-current))
