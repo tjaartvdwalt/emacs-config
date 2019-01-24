@@ -1,2 +1,2 @@
-(defhydra hydra-smerge (:color red)
+(defhydra hydra-smerge
   ("c" smerge-keep-current))
