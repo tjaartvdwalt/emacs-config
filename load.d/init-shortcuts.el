@@ -78,6 +78,14 @@ _<return>_ Keep Current
   ("u" smerge-keep-upper :exit t)
   ("<return>" smerge-keep-current :exit t))
 
+(defhydra hydra-zoom (:hint t)
+  "
+_<plus>_ Zoom in
+_<minus>_ Zoom out
+"
+
+()"<plus>": text-scale-increase',
+()\"l\":    `text-scale-decrease'
 
 (defhydra hydra-ctrl-c (:hint nil)
   "
