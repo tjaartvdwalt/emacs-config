@@ -70,7 +70,7 @@
   "
 _c_ smerge-keep-current
 "
-  ("c" smerge-keep-current))
+  ("c" smerge-keep-current :exit t))
 
 
 (defhydra hydra-ctrl-c (:hint nil)
