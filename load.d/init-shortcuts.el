@@ -68,9 +68,13 @@
 
 (defhydra hydra-smerge (:hint t)
   "
-_c_ smerge-keep-current
+_l_ Keep Lower
+_u_ Keep Upper
+_a_ Keep All
+_RET_ Keep Current
 "
-  ("c" smerge-keep-current :exit t))
+  ("a" smerge-keep-current :exit t)
+  ("<return>" smerge-keep-current :exit t))
 
 
 (defhydra hydra-ctrl-c (:hint nil)
