@@ -85,7 +85,7 @@ _-_ Zoom out
 "
 
 ("+" text-scale-increase)
-("-" text-scale-decrease))+
+("-" text-scale-decrease))
 
 (defhydra hydra-ctrl-c (:hint nil)
   "
