@@ -39,4 +39,4 @@ session.*
 /semanticdb/
 /network-security.data
 /recentf
-.cache
+/.cache
