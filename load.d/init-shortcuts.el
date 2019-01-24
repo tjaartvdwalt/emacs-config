@@ -77,6 +77,7 @@ _e_: Exand Region
 _n_: Navigate
 _o_: Origami
 _p_: Projectile
+_s_: Smerge
 _w_: Whitespace Mode
 "
 
