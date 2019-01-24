@@ -80,12 +80,12 @@ _<return>_ Keep Current
 
 (defhydra hydra-zoom (:hint t)
   "
-_<plus>_ Zoom in
-_<minus>_ Zoom out
+_+_ Zoom in
+_-_ Zoom out
 "
 
-("<plus>" text-scale-increase)
-("<minus>" text-scale-decrease))
+("+" text-scale-increase)
+("-" text-scale-decrease))+
 
 (defhydra hydra-ctrl-c (:hint nil)
   "
