@@ -66,7 +66,7 @@
 ;;   ("r" comment-or-uncomment-region)
 ;;   ("v" evilnc-toggle-invert-comment-line-by-line))
 
-(defhydra hydra-smerge ()
+(defhydra hydra-smerge (:hint t)
   "
 _c_ smerge-keep-current
 "
