@@ -85,7 +85,7 @@ _<minus>_ Zoom out
 "
 
 ("<plus>" text-scale-increase)
-("<minus>") text-scale-decrease))
+("<minus>" text-scale-decrease))
 
 (defhydra hydra-ctrl-c (:hint nil)
   "
@@ -96,6 +96,7 @@ _o_: Origami
 _p_: Projectile
 _s_: Smerge
 _w_: Whitespace Mode
+_z_: Zoom
 "
 
   ("e" er/expand-region :exit t)
@@ -103,4 +104,5 @@ _w_: Whitespace Mode
   ("o" hydra-origami/body :exit t)
   ("p" hydra-projectile/body :exit t)
   ("s" hydra-smerge/body :exit t)
-  ("w" whitespace-mode :exit t))
+  ("w" whitespace-mode :exit t)
+  ("z" hydra-zoom :exit t))
