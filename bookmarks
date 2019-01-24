@@ -2,7 +2,11 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored-marker"
+(("init-anzu.el"
+ (filename . "/home/tjaart/.emacs.d/load.d/init-anzu.el")
+ (position . 0)
+ (defaults "load.d"))
+("org-capture-last-stored-marker"
  (filename . "~/org/todo.org")
  (front-context-string . "**** Pomodori <2")
  (rear-context-string . " [-] pomodoro\n\n\n")
