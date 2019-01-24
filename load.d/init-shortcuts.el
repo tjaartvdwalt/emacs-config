@@ -68,9 +68,9 @@
 
 (defhydra hydra-smerge (:hint t)
   "
+_a_ Keep All
 _l_ Keep Lower
 _u_ Keep Upper
-_a_ Keep All
 _RET_ Keep Current
 "
   ("a" smerge-keep-all :exit t)
