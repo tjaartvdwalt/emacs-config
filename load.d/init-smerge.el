@@ -1,5 +1,5 @@
 (defhydra hydra-origami (:color red)
-  ("o" origami-open-node)
+  ("<return>" smerge-keep-current)
   ("c" origami-close-node)
   ("n" origami-next-fold)
   ("p" origami-previous-fold)
