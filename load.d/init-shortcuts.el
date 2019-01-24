@@ -105,4 +105,4 @@ _z_: Zoom
   ("p" hydra-projectile/body :exit t)
   ("s" hydra-smerge/body :exit t)
   ("w" whitespace-mode :exit t)
-  ("z" hydra-zoom :exit t))
+  ("z" hydra-zoom/body :exit t))
