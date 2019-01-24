@@ -73,7 +73,9 @@ _u_ Keep Upper
 _a_ Keep All
 _RET_ Keep Current
 "
-  ("a" smerge-keep-current :exit t)
+  ("a" smerge-keep-all :exit t)
+  ("l" smerge-keep-lower :exit t)
+  ("u" smerge-keep-upper :exit t)
   ("<return>" smerge-keep-current :exit t))
 
 
