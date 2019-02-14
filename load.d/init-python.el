@@ -6,6 +6,7 @@
   :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
                           (subword-mode)))
+  :delight (subword-mode py-smart-indentation)
 
   :config
   (setq py-smart-indentation t)
