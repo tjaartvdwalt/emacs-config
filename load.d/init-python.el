@@ -46,7 +46,7 @@
                            (highlight-indentation-mode t)
                            (highlight-indentation-current-column-mode t))))
 
-  (use-package jedi
+  (use-package company-jedi
     :hook (python-mode . jedi:setup)
     :bind (:map python-mode-map
             ("C-M-g" . jedi:goto-definition)
