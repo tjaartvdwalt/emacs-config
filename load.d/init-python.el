@@ -23,9 +23,9 @@
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
 
-  (use-package pydoc
-    :bind (:map python-mode-map
-            ("C-c d" . pydoc-at-point)))
+  ;; (use-package pydoc
+  ;;   :bind (:map python-mode-map
+  ;;           ("C-c d" . pydoc-at-point)))
 
   (use-package tox
     :ensure-system-package tox
@@ -34,11 +34,11 @@
             :map python-mode-map
             ("C-c c" . tox-current-class)))
 
-  (use-package sphinx-doc
-    :delight
-    :bind (:map python-mode-map
-            ("C-c e" . sphinx-doc))
-    :hook (python-mode . sphinx-doc-mode))
+  ;; (use-package sphinx-doc
+  ;;   :delight
+  ;;   :bind (:map python-mode-map
+  ;;           ("C-c e" . sphinx-doc))
+  ;;   :hook (python-mode . sphinx-doc-mode))
 
   (use-package highlight-indentation
     :delight
@@ -46,11 +46,11 @@
                            (highlight-indentation-mode t)
                            (highlight-indentation-current-column-mode t))))
 
-  (use-package jedi
-    :hook (python-mode . jedi:setup)
-    :bind (:map python-mode-map
-            ("C-M-g" . jedi:goto-definition)
-            ("C-M-c" . jedi:goto-definition-pop-marker))))
+  ;; (use-package jedi
+  ;;   :hook (python-mode . jedi:setup)
+  ;;   :bind (:map python-mode-map
+  ;;           ("C-M-g" . jedi:goto-definition)
+  ;;           ("C-M-c" . jedi:goto-definition-pop-marker))))
 
-(provide 'init-python)
+;; (provide 'init-python)
 ;;; init-python ends here
