@@ -23,9 +23,9 @@
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
 
-  ;; (use-package pydoc
-  ;;   :bind (:map python-mode-map
-  ;;           ("C-c d" . pydoc-at-point)))
+  (use-package pydoc
+    :bind (:map python-mode-map
+            ("C-c d" . pydoc-at-point)))
 
   ;; (use-package tox
   ;;   :ensure-system-package tox
