@@ -34,11 +34,11 @@
             :map python-mode-map
             ("C-c c" . tox-current-class)))
 
-  ;; (use-package sphinx-doc
-  ;;   :delight
-  ;;   :bind (:map python-mode-map
-  ;;           ("C-c e" . sphinx-doc))
-  ;;   :hook (python-mode . sphinx-doc-mode))
+  (use-package sphinx-doc
+    :delight
+    :bind (:map python-mode-map
+            ("C-c e" . sphinx-doc))
+    :hook (python-mode . sphinx-doc-mode))
 
   ;; (use-package highlight-indentation
   ;;   :delight
