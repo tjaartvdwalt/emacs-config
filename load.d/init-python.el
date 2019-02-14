@@ -7,9 +7,9 @@
   ;; :hook  (python-mode . (lambda ()
   ;;                         (subword-mode)))
 
-  ;; :config
-  ;; (setq py-smart-indentation t)
-  ;; ;; (py-split-window-on-execute-off)
+  :config
+  (setq py-smart-indentation t)
+  ;; (py-split-window-on-execute-off)
 
 
   ;; (use-package py-autopep8
