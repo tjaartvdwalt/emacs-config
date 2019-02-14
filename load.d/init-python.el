@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (use-package python
-  :interpreter ("python" . python-mode)
+  :interpreter ("python" . python)
   :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
                           (subword-mode)))
