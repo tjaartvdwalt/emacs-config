@@ -4,8 +4,8 @@
 (use-package python
   ;; :interpreter ("python" . python-mode)
   ;; :bind ("<tab>" . nil)
-  :hook  (python-mode . (lambda ()
-                          (subword-mode)))
+  ;; :hook  (python-mode . (lambda ()
+  ;;                         (subword-mode)))
 
   ;; :config
   ;; (setq py-smart-indentation t)
