@@ -27,12 +27,12 @@
     :bind (:map python-mode-map
             ("C-c d" . pydoc-at-point)))
 
-  ;; (use-package tox
-  ;;   :ensure-system-package tox
-  ;;   :bind (:map python-mode-map
-  ;;           ("C-c t" . tox-current-test)
-  ;;           :map python-mode-map
-  ;;           ("C-c c" . tox-current-class)))
+  (use-package tox
+    :ensure-system-package tox
+    :bind (:map python-mode-map
+            ("C-c t" . tox-current-test)
+            :map python-mode-map
+            ("C-c c" . tox-current-class)))
 
   ;; (use-package sphinx-doc
   ;;   :delight
