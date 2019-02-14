@@ -46,11 +46,11 @@
                            (highlight-indentation-mode t)
                            (highlight-indentation-current-column-mode t))))
 
-  ;; (use-package jedi
-  ;;   :hook (python-mode . jedi:setup)
-  ;;   :bind (:map python-mode-map
-  ;;           ("C-M-g" . jedi:goto-definition)
-  ;;           ("C-M-c" . jedi:goto-definition-pop-marker)))
+  (use-package jedi
+    :hook (python-mode . jedi:setup)
+    :bind (:map python-mode-map
+            ("C-M-g" . jedi:goto-definition)
+            ("C-M-c" . jedi:goto-definition-pop-marker)))
   )
 
 (provide 'init-python)
