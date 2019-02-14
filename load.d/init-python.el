@@ -9,7 +9,7 @@
 
   :config
   (setq py-smart-indentation t)
-  (py-split-window-on-execute-off)
+  ;; (py-split-window-on-execute-off)
 
 
   (use-package py-autopep8
