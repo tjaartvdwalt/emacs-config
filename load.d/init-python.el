@@ -17,8 +17,8 @@
     :bind (:map python-mode-map
             ("C-c i" .   (lambda ()
                            (interactive)
-                           (py-isort-buffer)
-                           (py-autopep8))))
+                           ;; (py-isort-buffer)
+                           (blacken))))
     :config
     (setq py-autopep8-options '("--max-line-length=100")))
 
