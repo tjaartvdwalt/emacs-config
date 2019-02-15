@@ -11,7 +11,7 @@
   ;; (py-split-window-on-execute-off)
 
 
-  (use-package py-autopep8
+  (use-package blacken
     ;; :ensure py-isort
     ;; :ensure-system-package (python-isort autopep8)
     :bind (:map python-mode-map
