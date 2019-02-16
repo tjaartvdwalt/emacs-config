@@ -5,10 +5,9 @@
   :interpreter ("python" . python)
   :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
-                          (setq-default python-indent-offset 4)
                           (subword-mode)))
   :config
-  (setq py-smart-indentation t)
+  ;; (setq py-smart-indentation t)
   ;; (py-split-window-on-execute-off)
 
 
