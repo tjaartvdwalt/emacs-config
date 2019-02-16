@@ -10,7 +10,7 @@
   (setq-default python-indent-guess-indent-offset nil)
   (setq-default python-indent-guess-indent-offset-verbose nil)
   (setq-default python-indent-offset 4)
-  (setq-default py-smart-indentation t)
+  ;; (setq-default py-smart-indentation t)
   ;; (py-split-window-on-execute-off)
 
 
