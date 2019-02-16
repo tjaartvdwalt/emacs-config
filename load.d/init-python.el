@@ -6,7 +6,7 @@
   :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
                           (subword-mode)))
-  :config
+  ;; :config
   ;; (setq py-smart-indentation t)
   ;; (py-split-window-on-execute-off)
 
