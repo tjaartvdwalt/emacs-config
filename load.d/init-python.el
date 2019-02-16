@@ -7,6 +7,7 @@
   :hook  (python-mode . (lambda ()
                           (subword-mode)))
   :config
+  (setq-default python-indent-offset 4)
   (setq py-smart-indentation t)
   ;; (py-split-window-on-execute-off)
 
