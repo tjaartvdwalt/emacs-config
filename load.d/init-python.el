@@ -6,10 +6,10 @@
   :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
                           (subword-mode)))
-  :config
-  (setq-default python-indent-guess-indent-offset nil)
-  (setq-default python-indent-guess-indent-offset-verbose nil)
-  ;; (setq-default tab-width 4)
+  ;; :config
+  ;; (setq-default python-indent-guess-indent-offset nil)
+  ;; (setq-default python-indent-guess-indent-offset-verbose nil)
+  ;; ;; (setq-default tab-width 4)
   ;; (setq-default python-indent 4)
   ;; (setq-default python-indent-offset 4)
   ;; ;; (setq-default py-smart-indentation t)
