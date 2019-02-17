@@ -5,6 +5,7 @@
   :interpreter ("python" . python)
   :bind ("<tab>" . nil)
   :hook  (python-mode . (lambda ()
+                          (python-indent-guess-indent-offset)
                           (subword-mode)))
   :config
   (setq-default python-guess-indent nil)
