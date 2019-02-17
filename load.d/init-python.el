@@ -7,6 +7,7 @@
   :hook  (python-mode . (lambda ()
                           (subword-mode)))
   :config
+  (setq-default python-guess-indent nil)
   (setq-default python-indent-offset 4)
   (use-package blacken
     ;; :ensure py-isort
