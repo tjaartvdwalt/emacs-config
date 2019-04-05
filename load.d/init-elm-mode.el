@@ -7,7 +7,12 @@
                          (interactive)
                          (elm-compile-clean-imports)
                          (elm-mode-format-buffer))))
-  :config (setq elm-tags-on-save 1))
+  :config
+  (setq elm-interactive-command '("elm" "repl")
+    elm-reactor-command '("elm" "reactor")
+    elm-compile-command '("elm" "make")
+    elm-package-command '("elm" "package"))
+  (setq elm-tags-on-save 1))
 
 ;; (with-current-buffer errbuf
 ;;   (erase-buffer))
