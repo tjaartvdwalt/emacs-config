@@ -12,6 +12,7 @@
     elm-reactor-command '("elm" "reactor")
     elm-compile-command '("elm" "make")
     elm-package-command '("elm" "package"))
+  (add-to-list 'company-backends 'company-elm)
   (setq elm-tags-on-save 1))
 
 ;; (with-current-buffer errbuf
