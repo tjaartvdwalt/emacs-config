@@ -4,4 +4,4 @@
 
  (use-package ansible-doc
    :config
-   (add-hook 'yaml-mode-hook #'ansible-doc-mode)))
+   (add-hook 'yaml-mode-hook #'ansible-doc-mode))
