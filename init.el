@@ -29,6 +29,7 @@
      (vector "#839496" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"))
  '(bmkp-last-as-first-bookmark-file "~/.emacs.d/bookmarks")
  '(browse-url-dwim-mode t)
+ '(browse-url-generic-program "brave")
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
  '(fci-rule-color "#073642")
@@ -90,7 +91,6 @@
 ;; (load-dirs-reload)
 
 (custom-set-faces
-  '(default ((t (:family "monospace" :slant normal :weight normal :height 200 :width normal))))
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
