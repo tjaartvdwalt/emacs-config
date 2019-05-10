@@ -91,7 +91,7 @@
 ;; (load-dirs-reload)
 
 (custom-set-faces
-  '(default ((t (:family "monospace" :slant normal :weight normal :height 200 :width normal))))
+  '(default ((t (:family "monospace" :slant normal :weight normal :height 180 :width normal))))
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
