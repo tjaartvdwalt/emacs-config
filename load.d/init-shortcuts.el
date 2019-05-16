@@ -101,7 +101,7 @@ _z_: Zoom
 "
 
   ("e" er/expand-region :exit t)
-  ("n" hydra-multiple-cursors/body :exit t)
+  ("m" hydra-multiple-cursors/body :exit t)
   ("n" hydra-navigate/body :exit t)
   ("o" hydra-origami/body :exit t)
   ("p" hydra-projectile/body :exit t)
