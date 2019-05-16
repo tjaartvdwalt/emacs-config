@@ -2,8 +2,8 @@
   :config
   (defhydra hydra-multiple-cursors (:color red)
     "
-  _o_pen node    _n_ext fold       toggle _f_orward
-  _c_lose node   _p_revious fold   toggle _a_ll
+  _a_ edit beginnings of lines
+  _e_ edit ends of lines
   "
     ("a" mc/edit-beginnings-of-lines)
     ("e" mc/edit-ends-of-lines)))
