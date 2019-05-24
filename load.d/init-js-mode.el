@@ -7,7 +7,7 @@
 
    (add-hook 'js-mode-hook
      (lambda ()
-      (define-key js-mode-map "C-c i" 'prettier-js)))
+      (define-key js-mode-map (kbd "C-c i") 'prettier-js)))
 
   (add-hook 'js-mode-hook
     (lambda ()
