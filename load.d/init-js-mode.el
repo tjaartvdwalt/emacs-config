@@ -7,6 +7,10 @@
 
   (add-hook 'js-mode-hook
     (lambda ()
+      (define-key js-mode-map "C-c i" 'prettier-js)))
+
+  (add-hook 'js-mode-hook
+    (lambda ()
       (subword-mode 1))))
 
 (use-package kite)
@@ -26,13 +30,13 @@
 ;;     (lambda ()
 ;;       (add-to-list 'ac-sources 'ac-source-tern-completion))))
 
-;; (use-package json-mode
-;;   :config
-;;   (flycheck-add-mode 'json-jsonlint 'json-mode)
-;;   (add-hook 'json-mode-hook
-;;             (lambda ()
-;;               (if (derived-mode-p 'json-mode)
-;;                   (add-hook 'after-save-hook 'indent-whole-buffer t t)))))
+(use-package json-mode
+  :config
+  (flycheck-add-mode 'json-jsonlint 'json-mode)
+  (add-hook 'json-mode-hook
+    (lambda ()
+      (if (derived-mode-p 'json-mode)
+        (add-hook 'after-save-hook 'indent-whole-buffer t t)))))
 
 ;; (use-package eslintd-fix
 ;;   :bind (:map js-mode-map
