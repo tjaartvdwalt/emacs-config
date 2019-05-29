@@ -13,8 +13,6 @@
     (lambda ()
       (subword-mode 1))))
 
-(use-package kite)
-
 ;; tern must be installed seperately
 ;; on arch linux `yaourt -S nodejs-tern`
 (use-package tern
