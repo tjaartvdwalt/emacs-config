@@ -13,7 +13,7 @@
     ("C-x r f" . counsel-recentf)
     ("C-c g" . counsel-git)
     ("C-c j" . counsel-git-grep)
-    ("C-c k"   . counsel-ag)
+    ("C-c a"   . counsel-ag)
     ("C-c r"   . counsel-rhythmbox)
     ("C-c l"   . counsel-locate)
     ;;   ("C-c m" . counsel-imenu)
