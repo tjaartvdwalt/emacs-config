@@ -34,7 +34,7 @@
 (global-set-key (kbd "<C-next>") 'end-of-buffer)
 
 ;; wraps lines in a paragraph to word-wrap characters
-(global-set-key (kbd "\C-c i") 'indent-whole-buffer)
+;; (global-set-key (kbd "\C-c i") 'indent-whole-buffer)
 
 (global-unset-key (kbd "\M-\-"))
 (global-set-key (kbd "\M-\+") 'text-scale-increase)
