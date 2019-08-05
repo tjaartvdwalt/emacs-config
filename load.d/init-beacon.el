@@ -1,3 +1,3 @@
 (use-package beacon
-  :configure
+  :config
   (beacon-mode 1))
