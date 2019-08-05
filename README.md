@@ -2,7 +2,7 @@
 This is my personal Emacs config.
 
 I wrote this config to self install the required plugins before configuring them.
-## Installation of plugins 
+## Installation of plugins
 There are two ways to install a plugin: [ELPA](https://github.com/tjaartvdwalt/emacs-config/blob/master/config/elpa.el) or [el-get](https://github.com/tjaartvdwalt/emacs-config/blob/master/config/el-get.el)
 Elpa is the preferred installation method but el-get can install packages from more sources.
 
@@ -45,9 +45,9 @@ For example if your email config looks like this:
 (setq mu4e-maildir "~/Maildir/")
 
 (defvar my-mu4e-account-alist
-  '(("my@email.com"
-    (mu4e-refile-folder "/my@email.com/Archives")
-    ...
+'(("my@email.com"
+(mu4e-refile-folder "/my@email.com/Archives")
+...
 ```
 And you try to refile an email that was sent on "28 December 2013" your email will be filed in the following directory in your maildir.
 
