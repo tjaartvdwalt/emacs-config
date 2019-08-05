@@ -1,7 +1,7 @@
 (use-package company
   :bind (("M-<tab>" . company-other-backend))
   :hook ((after-init . global-company-mode))
-  :delight
+  ;; :delight
   :config
   (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 2)
