@@ -1,17 +1,17 @@
 (use-package company
   :bind (("M-<tab>" . company-other-backend))
+  :hook ((after-init . global-company-mode)
   :delight
   :config
-  (global-company-mode)
   (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 2)
   (setq company-selection-wrap-around t)
   (add-to-list 'company-backends 'company-ispell 'company-yasnippet 'company-elm))
 
-;; Box frontend
-(use-package company-box
-  :delight
-  :hook (company-mode . company-box-mode))
+;; ;; Box frontend
+;; (use-package company-box
+;;   :delight
+;;   :hook (company-mode . company-box-mode))
 
 ;; Backends
 (use-package company-web
