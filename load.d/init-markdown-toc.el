@@ -1,1 +1,1 @@
-(use-package markdown-mode-toc)
+(use-package markdown-toc)
