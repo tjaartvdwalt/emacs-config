@@ -1,6 +1,7 @@
-(use-package smartparens
+(use-package smartparens-config
+  :ensure smartparens
   :bind ("C-c k" . sp-kill-sexp)
 
   :config
-  (require 'smartparens-config)
-  (smartparens-global-strict-mode))
+  (show-smartparens-global-mode t)
+  (require 'smartparens-config))
