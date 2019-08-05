@@ -10,16 +10,16 @@
   :config
   (setq-default python-guess-indent nil)
   (setq-default python-indent-offset 4)
-  (use-package blacken
-    ;; :ensure py-isort
-    ;; :ensure-system-package (python-isort autopep8)
-    :bind (:map python-mode-map
-            ("C-c i" .   (lambda ()
-                           (interactive)
-                           (py-isort-buffer)
-                           (blacken-buffer))))
-    :config
-    (setq py-autopep8-options '("--max-line-length=100")))
+  ;; (use-package blacken
+  ;;   ;; :ensure py-isort
+  ;;   ;; :ensure-system-package (python-isort autopep8)
+  ;;   :bind (:map python-mode-map
+  ;;           ("C-c i" .   (lambda ()
+  ;;                          (interactive)
+  ;;                          (py-isort-buffer)
+  ;;                          (blacken-buffer))))
+  ;;   :config
+  ;;   (setq py-autopep8-options '("--max-line-length=100")))
 
   (use-package pydoc
     :bind (:map python-mode-map
