@@ -5,9 +5,9 @@
   (add-to-list 'auto-mode-alist '("\\.mjs\\'" . js-mode))
   (add-to-list 'auto-mode-alist '("\\.jsx\\'" . js-mode))
 
-   (add-hook 'js-mode-hook
-     (lambda ()
-      (define-key js-mode-map (kbd "C-c i") 'prettier-js)))
+   ;; (add-hook 'js-mode-hook
+   ;;   (lambda ()
+   ;;    (define-key js-mode-map (kbd "C-c i") 'prettier-js)))
 
   (add-hook 'js-mode-hook
     (lambda ()
