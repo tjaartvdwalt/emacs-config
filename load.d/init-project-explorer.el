@@ -3,4 +3,4 @@
   :config
   (progn
     (setq pe/side 'right)
-    (setq pe/width 50)))
+    (setq pe/width 20)))
