@@ -2,5 +2,5 @@
   :bind (("C-\\" . project-explorer-toggle))
   :config
   (progn
-    (setq pe/side "right")
+    ;; (setq pe/side "right")
     (setq pe/width 50)))
