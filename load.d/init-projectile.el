@@ -15,9 +15,11 @@
 									  :test "npm test"
 									  :run "npm start"
 									  :test-suffix ".spec")
+    (setq projectile-switch-project-action #'projectile-dired)
+	(setq projectile-keymap-prefix nil)
+
     ))
 
-(setq projectile-keymap-prefix nil)
 
 
 (defhydra hydra-projectile (:color teal
