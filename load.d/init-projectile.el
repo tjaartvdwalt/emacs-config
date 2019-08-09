@@ -16,9 +16,8 @@
 									  :run "npm start"
 									  :test-suffix ".tests")
     (setq projectile-switch-project-action #'project-explorer-open)
-	(setq projectile-keymap-prefix nil)
+	(setq projectile-keymap-prefix nil)))
 
-    ))
 
 
 
