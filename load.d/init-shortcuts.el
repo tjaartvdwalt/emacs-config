@@ -91,6 +91,7 @@ _-_ Zoom out
   "
 ctrl-c:
 _e_: Exand Region
+_l_: Linum mode
 _m_: Multiple Cursors
 _n_: Navigate
 _o_: Origami
@@ -101,6 +102,7 @@ _z_: Zoom
 "
 
   ("e" er/expand-region :exit t)
+  ("l" global-linum-mode :exit t)
   ("m" hydra-multiple-cursors/body :exit t)
   ("n" hydra-navigate/body :exit t)
   ("o" hydra-origami/body :exit t)
