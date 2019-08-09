@@ -51,7 +51,7 @@ _s-f_: file            _a_: ag                _i_: Ibuffer           _c_: cache 
   ("o"   projectile-multi-occur)
   ("s-p" projectile-switch-project "switch project")
   ("p"   projectile-switch-project)
-  ("s"   projectile-switch-project)
+  ("s"   projectile-persp-switch-project)
   ("r"   projectile-recentf)
   ("x"   projectile-remove-known-project)
   ("X"   projectile-cleanup-known-projects)
