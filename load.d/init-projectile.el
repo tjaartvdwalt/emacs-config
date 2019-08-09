@@ -9,13 +9,19 @@
     (add-to-list 'projectile-other-file-alist '("js" "hbs"))
     (add-to-list 'projectile-other-file-alist '("hbs" "js"))
     ;; (setq projectile-switch-project-action 'projectile-dired)
+
+    (projectile-register-project-type 'npm '("package.json")
+									  :compile "npm install"
+									  :test "npm test"
+									  :run "npm start"
+									  :test-suffix ".spec")
     ))
 
 (setq projectile-keymap-prefix nil)
 
 
 (defhydra hydra-projectile (:color teal
-                            :hint nil)
+								   :hint nil)
   "
      PROJECTILE: %(projectile-project-root)
 
