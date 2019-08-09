@@ -16,7 +16,7 @@
 
   (use-package magit-todos
     :config
-    (setq magit-todos-mode t)
+    (magit-todos-mode t)
     )
 
   (use-package gitconfig))
