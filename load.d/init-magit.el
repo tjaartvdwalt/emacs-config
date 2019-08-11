@@ -17,6 +17,7 @@
   (use-package magit-todos
     :config
     (magit-todos-mode 1)
+    (setq magit-todos-exclude-globs  "node_modules")
     )
 
   (use-package gitconfig))
