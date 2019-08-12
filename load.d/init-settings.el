@@ -15,10 +15,11 @@
 ;; (global-linum-mode t)
 
 
+
 (setq compilation-scroll-output t)
 
 (setq browse-url-browser-function 'browse-url-generic
-  browse-url-generic-program "google-chrome-stable")
+	  browse-url-generic-program "google-chrome-stable")
 
 
 ;; (setq eshell-cmpl-cycle-completions nil)
