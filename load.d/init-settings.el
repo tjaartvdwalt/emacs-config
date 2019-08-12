@@ -7,7 +7,7 @@
 ;; (scroll-bar-mode -1)
 ;; Dont show the splash screen
 (setq inhibit-splash-screen t)
-(setq-default tab-width 4)
+(setq tab-width 4)
 (setq-default standard-indent 4)
 (electric-indent-mode t)
 ;;(setq-default tab-always-indent nil)
