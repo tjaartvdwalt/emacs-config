@@ -14,11 +14,11 @@
 
   (use-package magit-imerge)
 
-  (use-package magit-todos
-    :config
-    (magit-todos-mode 1)
-    (setq magit-todos-exclude-globs  "node_modules")
-    )
+  ;; (use-package magit-todos
+  ;;   :config
+  ;;   (magit-todos-mode 1)
+  ;;   (setq magit-todos-exclude-globs  "node_modules")
+  ;;   )
 
   (use-package gitconfig))
 
