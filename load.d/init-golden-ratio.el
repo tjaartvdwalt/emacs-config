@@ -10,7 +10,7 @@
   :config
   (golden-ratio-mode 1)
   (setq golden-ratio-auto-scale t)
-  (setq golden-ratio-exclude-modes '("dired-mode"))
+  (setq golden-ratio-exclude-modes '("dired-mode", "ranger-mode"))
 
   (setq golden-ratio-adjust-factor .8
         golden-ratio-wide-adjust-factor .8))
