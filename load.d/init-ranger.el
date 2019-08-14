@@ -1,3 +1,4 @@
 (use-package ranger
   :config
-  (ranger-override-dired-mode t))
+  ;;(ranger-override-dired-mode t)
+  )
