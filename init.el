@@ -114,5 +114,5 @@
 (require 'load-dir)
 (load-dir-one "~/.emacs.d/manual/")
 (load-dir-one "~/.emacs.d/functions")
-(load-dir-one "~/emacs-sfdx")
+;; (load-dir-one "~/emacs-sfdx")
 (setq load-dirs t)
