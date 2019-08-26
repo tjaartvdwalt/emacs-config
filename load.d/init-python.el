@@ -38,11 +38,11 @@
             ("C-c e" . sphinx-doc))
     :hook (python-mode . sphinx-doc-mode))
 
-  (use-package highlight-indentation
-    :delight
-    :hook (python-mode . (lambda ()
-                           (highlight-indentation-mode t)
-                           (highlight-indentation-current-column-mode t))))
+  ;; (use-package highlight-indentation
+  ;;   :delight
+  ;;   :hook (python-mode . (lambda ()
+  ;;                          (highlight-indentation-mode t)
+  ;;                          (highlight-indentation-current-column-mode t))))
 
   (use-package company-jedi
     ;; :hook (python-mode . jedi:setup)
