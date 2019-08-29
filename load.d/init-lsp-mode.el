@@ -1,8 +1,13 @@
 (use-package lsp-mode
-  :hook (prog-mode . lsp-deferred)
-  :commands lsp)
+  :hook ((prog-mode . lsp-deferred)
+          :hook (web-mode . lsp-deferred))
+  :commands lsp
+  :config
+  (setq lsp-auto-guess-root t)
+  (setq lsp-enable-snippet t)
+  )
 
 (use-package lsp-vue
-  :hook (web-mode . lsp-vue-enable))
+  )
 (use-package lsp-ui :commands lsp-ui-mode)
 (use-package company-lsp :commands company-lsp)
