@@ -1,6 +1,6 @@
 (use-package lsp-mode
   :hook ((prog-mode . lsp-deferred)
-          :hook (web-mode . lsp-deferred))
+		 (web-mode . lsp-deferred))
   :commands lsp
   :config
   (setq lsp-auto-guess-root t)
