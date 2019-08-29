@@ -15,11 +15,11 @@
   ;; (use-package robe
   ;;   :hook ((ruby-mode . robe-mode)(ruby-mode . ac-robe-setup)))
 
-  (use-package rubocop
-    :hook (ruby-mode . (lambda ()
-                         (add-hook
-                           'after-save-hook '
-                           rubocop-autocorrect-current-file t t))))
+  ;; (use-package rubocop
+  ;;   :hook (ruby-mode . (lambda ()
+  ;;                        (add-hook
+  ;;                          'after-save-hook '
+  ;;                          rubocop-autocorrect-current-file t t))))
 
   (use-package yard-mode
     :hook (ruby-mode . yard-mode)))
