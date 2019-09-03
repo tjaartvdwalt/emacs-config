@@ -6,3 +6,5 @@
             (setq lsp-auto-configure t)
 			(setq lsp-auto-guess-root t)
 			(setq lsp-enable-snippet t)))
+
+(use-package lsp-java)
