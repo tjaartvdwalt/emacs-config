@@ -2,7 +2,6 @@
   :mode "\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'"
   :interpreter "ruby")
 
-
   ;; :config
   ;; (add-hook 'ruby-mode-hook 'eldoc-mode)
   ;; (add-to-list 'ruby-mode)
