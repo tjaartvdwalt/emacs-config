@@ -87,7 +87,7 @@ _0_ Zoom default
 "
 
 ("+" font-size-increase :exit t)
-("-" font-size-decrease :exit t))
+("-" font-size-decrease :exit t)
 ("0" font-size-default :exit t))
 
 (defhydra hydra-ctrl-c (:hint nil)
