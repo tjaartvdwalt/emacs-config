@@ -37,8 +37,8 @@
 ;; (global-set-key (kbd "\C-c i") 'indent-whole-buffer)
 
 (global-unset-key (kbd "\M-\-"))
-(global-set-key (kbd "\M-\+") 'text-scale-increase)
-(global-set-key (kbd "\M-\-") 'text-scale-decrease)
+(global-set-key (kbd "\M-\+") 'font-size-increase)
+(global-set-key (kbd "\M-\-") 'text-size-decrease)
 
 (global-unset-key (kbd "M-DEL"))
 (global-set-key (kbd "M-DEL") 'kill-whole-line)
