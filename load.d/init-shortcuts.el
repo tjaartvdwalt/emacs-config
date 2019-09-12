@@ -79,7 +79,7 @@ _<return>_ Keep Current
   ("u" smerge-keep-upper :exit t)
   ("<return>" smerge-keep-current :exit t))
 
-(defhydra hydra-zoom (:hint t)
+(defhydra hydra-zoom ()
   "
 _a_ Zoom in
 _b_ Zoom out
