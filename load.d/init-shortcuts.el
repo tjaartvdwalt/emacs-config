@@ -36,10 +36,10 @@
 ;; wraps lines in a paragraph to word-wrap characters
 ;; (global-set-key (kbd "\C-c i") 'indent-whole-buffer)
 
-(global-unset-key (kbd "\M-\-"))
-(global-set-key (kbd "\M-\+") 'font-size-increase)
-(global-set-key (kbd "\M-\-") 'text-size-decrease)
-(global-set-key (kbd "\M-0") 'text-size-default)
+;;(global-unset-key (kbd "\M-\-"))
+;;(global-set-key (kbd "\M-\+") 'font-size-increase)
+;;(global-set-key (kbd "\M-\-") 'text-size-decrease)
+;;(global-set-key (kbd "\M-0") 'text-size-default)
 
 (global-unset-key (kbd "M-DEL"))
 (global-set-key (kbd "M-DEL") 'kill-whole-line)
@@ -83,12 +83,11 @@ _<return>_ Keep Current
   "
 _+_ Zoom in
 _-_ Zoom out
-_0_ Zoom default
 "
 
-("+" font-size-increase)
-("-" font-size-decrease))
-("0" font-size-default))
+("+" font-size-increase :exit t)
+("-" font-size-decrease :exit t))
+;;("0" font-size-default :exit t))
 
 (defhydra hydra-ctrl-c (:hint nil)
   "
