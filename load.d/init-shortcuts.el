@@ -83,7 +83,7 @@ _<return>_ Keep Current
   "
 _+_ Zoom in
 _-_ Zoom out
-_0_ Zoom reset
+_0_ Zoom default
 "
 
 ("+" font-size-increase :exit t)
