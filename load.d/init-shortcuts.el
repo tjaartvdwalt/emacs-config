@@ -67,7 +67,7 @@
 ;;   ("r" comment-or-uncomment-region)
 ;;   ("v" evilnc-toggle-invert-comment-line-by-line))
 
-(defhydra hydra-smerge (:hint t)
+(defhydra hydra-smerge ()
   "
 _a_ Keep All
 _l_ Keep Lower
@@ -90,7 +90,7 @@ _0_ Zoom default
 ("-" font-size-decrease :exit nil)
 ("0" font-size-default :exit nil))
 
-(defhydra hydra-ctrl-c (:hint nil)
+(defhydra hydra-ctrl-c ()
   "
 ctrl-c:
 _e_: Exand Region
