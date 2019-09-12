@@ -1,4 +1,5 @@
 (use-package lsp-mode
+  :bind (("M-C-r" . lsp-rename))
   :hook ((prog-mode . lsp-deferred)
 		 (web-mode . lsp-deferred))
   :commands lsp
