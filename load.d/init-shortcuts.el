@@ -39,7 +39,7 @@
 (global-unset-key (kbd "\M-\-"))
 (global-set-key (kbd "\M-\+") 'font-size-increase)
 (global-set-key (kbd "\M-\-") 'text-size-decrease)
-(global-set-key (kbd "\M-0") 'text-size-decrease)
+(global-set-key (kbd "\M-0") 'text-size-default)
 
 (global-unset-key (kbd "M-DEL"))
 (global-set-key (kbd "M-DEL") 'kill-whole-line)
