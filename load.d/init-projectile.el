@@ -14,7 +14,7 @@
 									  :compile "npm install"
 									  :test "npm test"
 									  :run "npm start"
-									  :test-suffix ".tests.js")
+									  :test-suffix ".test.js")
     (setq projectile-switch-project-action #'project-explorer-open)
 	(setq projectile-keymap-prefix nil)))
 
