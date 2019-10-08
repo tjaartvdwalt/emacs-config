@@ -13,7 +13,7 @@
     (projectile-register-project-type 'yarn '("package.json")
 									  :compile "yarn build"
 									  :test "yarn test"
-									  : related-files-fn #'my/related-files
+									  :related-files-fn #'my/related-files
 									  :run "yarn serve"
 									  :src-dir "src"
 									  :test-suffix ".test.js")
