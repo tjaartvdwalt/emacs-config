@@ -13,13 +13,21 @@
     (projectile-register-project-type 'yarn '("package.json")
 									  :compile "yarn build"
 									  :test "yarn test"
+									  : related-files-fn #'my/related-files
 									  :run "yarn serve"
 									  :src-dir "src"
 									  :test-suffix ".test.js")
     (setq projectile-switch-project-action #'project-explorer-open)
 	(setq projectile-keymap-prefix nil)))
 
-
+(defun my/related-files (path)
+  (if (string-match (rx (group (or "src" "test")) (group "/" (1+ anything) ".cpp")) path)
+      (let ((dir (match-string 1 path))
+            (file-name (match-string 2 path)))
+        (if (equal dir "test")
+            (list :impl (concat "src" file-name))
+          (list :test (concat "test" file-name)
+                :other (concat "src" file-name ".def"))))))
 
 
 (defhydra hydra-projectile (:color teal
