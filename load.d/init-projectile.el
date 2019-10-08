@@ -10,10 +10,10 @@
     (add-to-list 'projectile-other-file-alist '("hbs" "js"))
     ;; (setq projectile-switch-project-action 'projectile-dired)
 
-    (projectile-register-project-type 'npm '("package.json")
+    (projectile-register-project-type 'yarn '("package.json")
 									  :compile "npm install"
-									  :test "npm test"
-									  :run "npm start"
+									  :test "yarn test"
+									  :run "yarn serve"
 									  :test-suffix ".test.js")
     (setq projectile-switch-project-action #'project-explorer-open)
 	(setq projectile-keymap-prefix nil)))
