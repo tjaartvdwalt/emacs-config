@@ -11,9 +11,10 @@
     ;; (setq projectile-switch-project-action 'projectile-dired)
 
     (projectile-register-project-type 'yarn '("package.json")
-									  :compile "npm install"
+									  :compile "yarn build"
 									  :test "yarn test"
 									  :run "yarn serve"
+									  :src-dir "src"
 									  :test-suffix ".test.js")
     (setq projectile-switch-project-action #'project-explorer-open)
 	(setq projectile-keymap-prefix nil)))
