@@ -26,8 +26,7 @@
             (file-name (match-string 2 path)))
         (if (equal dir "test")
             (list :impl (concat "src" file-name))
-          (list :test (concat "test" file-name)
-                :other (concat "src" file-name ".def"))))))
+          (list :test (concat "test" file-name))))))
 
 
 (defhydra hydra-projectile (:color teal
