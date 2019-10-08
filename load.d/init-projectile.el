@@ -15,8 +15,8 @@
 									  :test "yarn test"
 									  :related-files-fn #'my/related-files
 									  :run "yarn serve"
-      :src-dir "src"
-      :test-dir "__tests__"
+									  :src-dir "src"
+									  :test-dir "__tests__"
 									  :test-suffix ".test.js")
     (setq projectile-switch-project-action #'project-explorer-open)
 	(setq projectile-keymap-prefix nil)))
