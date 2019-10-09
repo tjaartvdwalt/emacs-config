@@ -1,5 +1,6 @@
 (use-package hl-todo
+  :bind (:map hl-todo-mode-map
+          ("M-p" . hl-todo-previous)
+          ("M-n" . hl-todo-next)))
   :config
-  (define-key hl-todo-mode-map (kbd "M-p") 'hl-todo-previous)
-  (define-key hl-todo-mode-map (kbd "M-n") 'hl-todo-next)
   (global-hl-todo-mode))
