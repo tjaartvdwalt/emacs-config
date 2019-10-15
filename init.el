@@ -33,8 +33,6 @@
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
  '(fci-rule-color "#073642")
- '(font-size--current-size size)
- '(font-size--default-size default-size)
  '(gac-automatically-push-p t)
  '(keep-end-mode t)
  '(magit-push-arguments nil)
