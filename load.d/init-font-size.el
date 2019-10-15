@@ -1,2 +1,2 @@
-(require 'font-size)
+(require `font-size)
 (font-size-init 18)
