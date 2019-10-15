@@ -6,3 +6,4 @@
 ;;   (load-theme 'sanityinc-solarized-dark t))
 
 (use-package dracula-theme)
+(use-package spacemacs-theme)
