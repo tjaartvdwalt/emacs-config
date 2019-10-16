@@ -7,6 +7,6 @@
 
 ;; (use-package dracula-theme)
 (use-package spacemacs-theme
-  :ensure spacemacs-dark-theme)
+  :ensure spacemacs-dark)
   ;; :config
   ;; (load-theme 'spacemacs-theme-dark t)
