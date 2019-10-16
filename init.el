@@ -36,8 +36,6 @@
    (quote
     ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
  '(fci-rule-color "#073642")
- '(font-size--current-size size)
- '(font-size--default-size default-size)
  '(gac-automatically-push-p t)
  '(keep-end-mode t)
  '(magit-push-arguments nil)
