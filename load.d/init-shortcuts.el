@@ -105,6 +105,7 @@ _w_: Whitespace Mode
 _z_: Zoom
 "
 
+  ("a" counsel-ag :exit t)
   ("e" er/expand-region :exit t)
   ("l" global-linum-mode :exit t)
   ("m" hydra-multiple-cursors/body :exit t)
