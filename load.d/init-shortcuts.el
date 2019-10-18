@@ -112,6 +112,6 @@ _z_: Zoom
   ("o" hydra-origami/body :exit t)
   ("p" hydra-projectile/body :exit t)
   ("s" hydra-smerge/body :exit t)
-  ("v"  :exit t)
+  ("v" magit-status :exit t)
   ("w" whitespace-mode :exit t)
   ("z" hydra-zoom/body :exit t))
