@@ -3,7 +3,7 @@
 
 ;; use ibuffer instead of buffer-menu
 (substitute-key-definition
-  'list-buffers 'ibuffer global-map global-map)
+ 'list-buffers 'ibuffer global-map global-map)
 
 ;; (global-set-key "\C-cy" 'toggle-window-split)
 
@@ -86,15 +86,15 @@ _-_ Zoom out
 _0_ Zoom default
 "
 
-("+" font-size-increase :exit nil)
-("-" font-size-decrease :exit nil)
-("0" font-size-default :exit nil))
+  ("+" font-size-increase :exit nil)
+  ("-" font-size-decrease :exit nil)
+  ("0" font-size-default :exit nil))
 
 (defhydra hydra-ctrl-c ()
   "
 ctrl-c:
 _a_: ag
-_b_: Beacon Blink
+_b_: Toggle Beacon Blink
 _e_: Exand Region
 _i_: Format Buffer
 _k_: Kill Sexp
