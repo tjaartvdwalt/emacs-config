@@ -27,7 +27,7 @@
 (use-package counsel
   :pretty-hydra
   ((:color teal :quit-key "q")
-   ("Ivy"
+   ("Counsel"
 	(  ("a" counsel-ag  :exit true)
 	   ("f" counsel-find-file  :exit true)
 	   ("g" counsel-git :exit true)
