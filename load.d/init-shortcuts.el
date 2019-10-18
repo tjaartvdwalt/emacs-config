@@ -154,7 +154,7 @@ _z_: zoom
 	 ("m" hydra-multiple-cursors/body :exit t)
 	 ("n" hydra-navigate/body :exit t)
 	 ("o" hydra-origami/body :exit t)
-	 ("p" hydra-projectile/body :exit t)
+	 ("p" hydra-projectile/body "projectile" :exit t)
 	 ("s" hydra-smerge/body :exit t)
 	 ("v" magit-status :exit t)
 	 ("w" hydra-web-mode/body :exit t)
