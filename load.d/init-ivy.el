@@ -5,7 +5,7 @@
 
   :pretty-hydra
   ((:color teal :quit-key "q")
-   ("Multiple cursors"
+   ("Ivy"
 	(  ("a" counsel-ag  :exit true)
 	   ("f" counsel-find-file  :exit true)
 	   ("g" counsel-git :exit true)
@@ -28,7 +28,6 @@
         '((read-file-name-internal . ivy--regex-fuzzy)
           (t . ivy--regex-plus)))
 
-  (use-package ivy-hydra)
   (use-package ivy-dired-history)
 
   (use-package swiper
