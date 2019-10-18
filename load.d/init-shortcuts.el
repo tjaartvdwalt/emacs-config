@@ -70,12 +70,11 @@
 
 
 (pretty-hydra-define hydra-ctrl-c
-  (:color amaranth :quit-key "q" )
+  (:color amaranth :quit-key "C-g" )
   ("Toggle Minor Modes"
    (("l" global-linum-mode :toggle t)
 	("h" whitespace-mode :toggle t))
    "Minor Mode Commands"
-
    (("b" beacon-blink :exit t)
 	("c" counsel-hydra/body :exit t)
 	("e" er/expand-region :exit t)
@@ -90,6 +89,4 @@
 	("w" web-mode-hydra/body :exit t)
 	("z" zoom-hydra/body "zoom" :exit t))
    "Other Commands"
-   ()
-
-   ))
+   ()))
