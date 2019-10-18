@@ -127,7 +127,7 @@ _TAB_ buffer-indent
 	("e" er/expand-region :exit t)
 	("i" format-all-buffer :exit t)
 	("k" sp-kill-sexp :exit t)
-	("m" hydra-multiple-cursors/body :exit t)
+	("m" multiple-cursors-hydra/body :exit t)
 	("n" hydra-navigate/body :exit t)
 	("o" hydra-origami/body :exit t)
 	("p" hydra-projectile/body "projectile" :exit t)
