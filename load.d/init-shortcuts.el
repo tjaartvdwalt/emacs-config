@@ -142,13 +142,15 @@ _z_: zoom
   (pretty-hydra-define hydra-ctrl-c
     (:color amaranth :quit-key "q" )
     ("Minor Modes"
-	 (  ("b" beacon-blink :exit t)
+      (		("l" global-linum-mode :toggle t)
+		("h" whitespace-mode :toggle t))
+      ("Other"
+
+        ("b" beacon-blink :exit t)
 		("c" hydra-counsel/body :exit t)
 		("e" er/expand-region :exit t)
-		("h" whitespace-mode :toggle t)
 		("i" format-all-buffer :exit t)
 		("k" sp-kill-sexp :exit t)
-		("l" global-linum-mode :toggle t)
 		("m" hydra-multiple-cursors/body :exit t)
 		("n" hydra-navigate/body :exit t)
 		("o" hydra-origami/body :exit t)
