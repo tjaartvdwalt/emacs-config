@@ -52,21 +52,6 @@
 
 (global-set-key (kbd "C-=") 'hydra-ctrl-c/body)
 
-;; (defhydra hydra-navigate (:hint nil)
-;;   "
-;; Navigate:
-;; _<left>_ : Left
-;; _<right>_: Right
-;; _<up>_   : Up
-;; _<down>_ : Down
-;; "
-;;   ("<left>" backward-word)
-;;   ("<right>" forward-word)
-;;   ("<up>" backward-list)
-;;   ("<down>" forward-list)
-;;   ("r" comment-or-uncomment-region)
-;;   ("v" evilnc-toggle-invert-comment-line-by-line))
-
 (pretty-hydra-define smerge-hydra
   (:color amaranth :quit-key "C-g" :title "smerge" )
   (""
