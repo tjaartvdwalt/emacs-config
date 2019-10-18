@@ -3,6 +3,15 @@
   :delight ivy-mode
   :bind ("C-x b" . ivy-switch-buffer)
 
+  :pretty-hydra
+  ((:color teal :quit-key "q")
+   ("Multiple cursors"
+	(  ("a" counsel-ag  :exit true)
+	   ("f" counsel-find-file  :exit true)
+	   ("g" counsel-git :exit true)
+	   ("j" counsel-git-grep :exit true)
+	   ("l" counsel-locate :exit true)
+	   ("r" counsel-recentf :exit true))))
   :config
   (ivy-mode 1)
   ;; add ‘recentf-mode’ and bookmarks to ‘ivy-switch-buffer’.
