@@ -140,7 +140,7 @@ _z_: zoom
 "
 
   ("b" beacon-blink :exit t)
-  ("c" hydra-counsel/body :exit t :color teal)
+  ("c" hydra-counsel/body :exit t :color blue)
   ("e" er/expand-region :exit t :color teal)
   ("h" whitespace-mode :exit t)
   ("i" format-all-buffer :exit t)
