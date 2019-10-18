@@ -92,14 +92,14 @@ _0_ Zoom default
 
 (defhydra hydra-web-mode ()
   "
-_+_ Zoom in
-_-_ Zoom out
-_0_ Zoom default
+_+_ fold-or-unfold
+_-_ buffer-highlight
+_TAB_ buffer-indent
 "
 
-  ("f" web-mode-fold-or-4  :exit nil)
-  ("-" font-size-decrease :exit nil)
-  ("0" font-size-default :exit nil))
+  ("f" web-mode-fold-or-unfold  :exit nil)
+  ("h" webmode-buffer-highlight :exit nil)
+  ("<tab>" font-size-default :exit nil))
 
 (defhydra hydra-ctrl-c ()
   "
