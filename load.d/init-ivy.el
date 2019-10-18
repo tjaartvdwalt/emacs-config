@@ -23,3 +23,14 @@
   (use-package swiper
     :bind
     ("C-s" . swiper)))
+
+(use-package counsel
+    :pretty-hydra
+  ((:color teal :quit-key "q")
+   ("Ivy"
+	(  ("a" counsel-ag  :exit true)
+	   ("f" counsel-find-file  :exit true)
+	   ("g" counsel-git :exit true)
+	   ("j" counsel-git-grep :exit true)
+	   ("l" counsel-locate :exit true)
+	   ("r" counsel-recentf :exit true)))))
