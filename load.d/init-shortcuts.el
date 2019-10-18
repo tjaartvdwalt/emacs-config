@@ -94,6 +94,7 @@ _0_ Zoom default
   "
 ctrl-c:
 _a_: ag
+_b_: Beacon Blink
 _e_: Exand Region
 _i_: Format Buffer
 _k_: Kill Sexp
@@ -109,6 +110,7 @@ _z_: Zoom
 "
 
   ("a" counsel-ag :exit t)
+  ("b" beacon-blink :exit t)
   ("e" er/expand-region :exit t)
   ("i" format-all-buffer :exit t)
   ("k" sp-kill-sexp :exit t)
