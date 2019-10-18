@@ -7,17 +7,6 @@
     (("f" web-mode-fold-or-unfold  :exit nil)
 	 ("h" web-mode-buffer-highlight :exit nil)
 	 ("<tab>" web-mode-buffer-indend :exit nil))))
-
-  (defhydra hydra-web-mode ()
-	"
-_f_ fold-or-unfold
-_h_ buffer-highlight
-_TAB_ buffer-indent
-"
-
-	)
-
-
   :config
   (setq web-mode-enable-css-colorization t)
   (setq web-mode-enable-auto-pairing t)
