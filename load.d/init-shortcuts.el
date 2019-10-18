@@ -141,7 +141,7 @@ _z_: zoom*
 "
 
   ("b" beacon-blink :exit t)
-  ("c" hydra-counsel/body :exit t)
+  ("c" hydra-counsel/body :exit t :color pink)
   ("e" er/expand-region :exit t)
   ("h" whitespace-mode :exit t)
   ("i" format-all-buffer :exit t)
