@@ -55,18 +55,18 @@
 (pretty-hydra-define smerge-hydra
   (:color amaranth :quit-key "C-g")
   ("smerge"
-    (("a" smerge-keep-all :exit t)
-  ("l" smerge-keep-lower :exit t)
-  ("u" smerge-keep-upper :exit t)
-  ("<return>" smerge-keep-current :exit t))))
+   (("a" smerge-keep-all :exit t)
+	("l" smerge-keep-lower :exit t)
+	("u" smerge-keep-upper :exit t)
+	("<return>" smerge-keep-current :exit t))))
 
 
 (pretty-hydra-define zoom-hydra
   (:color amaranth :quit-key "C-g" )
   ("zoom"
-    (("+" font-size-increase "Zoom in" :exit nil)
-   ("-" font-size-decrease "Zoom out" :exit nil)
-   ("0" font-size-default "Defaultn" :exit nil))))
+   (("+" font-size-increase "Zoom in" :exit nil)
+	("-" font-size-decrease "Zoom out" :exit nil)
+	("0" font-size-default "Defaultn" :exit nil))))
 
 
 (pretty-hydra-define hydra-ctrl-c
@@ -88,8 +88,8 @@
 	("s" smerge-hydra/body :exit t)
 	("v" magit-status :exit t)
 	("w" web-mode-hydra/body :exit t)
-     ("z" zoom-hydra/body "zoom" :exit t))
-    "Other Commands"
-    ()
+	("z" zoom-hydra/body "zoom" :exit t))
+   "Other Commands"
+   ()
 
-    ))
+   ))
