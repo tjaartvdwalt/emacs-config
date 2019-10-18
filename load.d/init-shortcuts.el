@@ -90,6 +90,24 @@ _0_ Zoom default
   ("-" font-size-decrease :exit nil)
   ("0" font-size-default :exit nil))
 
+(defhydra hydra-counsel ()
+  "
+_a_ ag
+_f_ find-file
+_g_ git
+_j_ git-grep
+_l_ locate
+_r_ recentf
+"
+
+  ("a" counsel-ag  :exit true)
+  ("f" counsel-find-file  :exit true)
+  ("g" counsel-git :exit true)
+  ("j" counsel-git-grep :exit true)
+  ("l" counsel-locate :exit true)
+  ("r" counsel-recentf :exit true))
+
+
 (defhydra hydra-web-mode ()
   "
 _f_ fold-or-unfold
@@ -105,24 +123,25 @@ _TAB_ buffer-indent
   "
 ctrl-c:
 _a_: ag
-_b_: Toggle Beacon Blink
-_e_: Exand Region
-_i_: Format Buffer
-_h_: Whitespace Mode
-_k_: Kill Sexp
-_l_: Linum mode
-_m_: Multiple Cursors
-_n_: Navigate
-_o_: Origami
-_p_: Projectile
-_s_: Smerge
-_v_: Magit
-_w_: Web Mode
-_z_: Zoom
+_b_: beacon-blink
+_c_: counsel*
+_e_: exand-region*
+_i_: format-all-buffer
+_h_: whitespace-mode
+_k_: kill-sexp
+_l_: linum-mode
+_m_: multiple-cursors*
+_n_: navigate*
+_o_: origami*
+_p_: projectile*
+_s_: smerge*
+_v_: magit-buffer
+_w_: web-mode*
+_z_: zoom*
 "
 
-  ("a" counsel-ag :exit t)
   ("b" beacon-blink :exit t)
+  ("c" hydra-counsel/body :exit t)
   ("e" er/expand-region :exit t)
   ("h" whitespace-mode :exit t)
   ("i" format-all-buffer :exit t)
