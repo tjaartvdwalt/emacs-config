@@ -79,16 +79,11 @@ _<return>_ Keep Current
   ("u" smerge-keep-upper :exit t)
   ("<return>" smerge-keep-current :exit t))
 
-(defhydra hydra-zoom ()
-  "
-_+_ Zoom in
-_-_ Zoom out
-_0_ Zoom default
-"
-
-  ("+" font-size-increase :exit nil)
-  ("-" font-size-decrease :exit nil)
-  ("0" font-size-default :exit nil))
+(pretty-hydra-define hydra-zoom
+      (:color amaranth :quit-key "C-g" :title "Zoom" )
+  ("+" font-size-increase "Zoom in" :exit nil)
+  ("-" font-size-decrease "Zoom out" :exit nil)
+  ("0" font-size-default "Defaultn" :exit nil))
 
 (defhydra hydra-counsel ()
   "
@@ -119,26 +114,6 @@ _TAB_ buffer-indent
   ("h" web-mode-buffer-highlight :exit nil)
   ("<tab>" web-mode-buffer-indend :exit nil))
 
-(defhydra hydra-ctrl-c ()
-  "
-ctrl-c:
-_b_: beacon-blink
-_c_: counsel
-_e_: exand-region
-_i_: format-all-buffer
-_h_: whitespace-mode
-_k_: kill-sexp
-_l_: linum-mode
-_m_: multiple-cursors
-_n_: navigate
-_o_: origami
-_p_: projectile
-_s_: smerge
-_v_: magit-buffer
-_w_: web-mode
-_z_: zoom
-"
-
   (pretty-hydra-define hydra-ctrl-c
     (:color amaranth :quit-key "q" )
     ("Minor Modes"
@@ -158,6 +133,4 @@ _z_: zoom
 	 ("s" hydra-smerge/body :exit t)
 	 ("v" magit-status :exit t)
 	 ("w" hydra-web-mode/body :exit t)
-	 ("z" hydra-zoom/body :exit t))
-
-	 ))
+	 ("z" hydra-zoom/body "zoom" :exit t))))
