@@ -80,10 +80,10 @@ _<return>_ Keep Current
   ("<return>" smerge-keep-current :exit t))
 
 (pretty-hydra-define hydra-zoom
-      (:color amaranth :quit-key "C-g" :title "Zoom" )
- (("+" font-size-increase "Zoom in" :exit nil)
-  ("-" font-size-decrease "Zoom out" :exit nil)
-  ("0" font-size-default "Defaultn" :exit nil)))
+  (:color amaranth :quit-key "C-g" :title "Zoom" )
+  (("+" font-size-increase "Zoom in" :exit nil)
+   ("-" font-size-decrease "Zoom out" :exit nil)
+   ("0" font-size-default "Defaultn" :exit nil)))
 
 (defhydra hydra-counsel ()
   "
@@ -114,23 +114,23 @@ _TAB_ buffer-indent
   ("h" web-mode-buffer-highlight :exit nil)
   ("<tab>" web-mode-buffer-indend :exit nil))
 
-  (pretty-hydra-define hydra-ctrl-c
-    (:color amaranth :quit-key "q" )
-    ("Minor Modes"
-	 (		("l" global-linum-mode :toggle t)
-			("h" whitespace-mode :toggle t))
-	 "Other"
+(pretty-hydra-define hydra-ctrl-c
+  (:color amaranth :quit-key "q" )
+  ("Minor Modes"
+   (("l" global-linum-mode :toggle t)
+	("h" whitespace-mode :toggle t))
+   "Other"
 
-	 (("b" beacon-blink :exit t)
-	 ("c" hydra-counsel/body :exit t)
-	 ("e" er/expand-region :exit t)
-	 ("i" format-all-buffer :exit t)
-	 ("k" sp-kill-sexp :exit t)
-	 ("m" hydra-multiple-cursors/body :exit t)
-	 ("n" hydra-navigate/body :exit t)
-	 ("o" hydra-origami/body :exit t)
-	 ("p" hydra-projectile/body "projectile" :exit t)
-	 ("s" hydra-smerge/body :exit t)
-	 ("v" magit-status :exit t)
-	 ("w" hydra-web-mode/body :exit t)
-	 ("z" hydra-zoom/body "zoom" :exit t))))
+   (("b" beacon-blink :exit t)
+	("c" hydra-counsel/body :exit t)
+	("e" er/expand-region :exit t)
+	("i" format-all-buffer :exit t)
+	("k" sp-kill-sexp :exit t)
+	("m" hydra-multiple-cursors/body :exit t)
+	("n" hydra-navigate/body :exit t)
+	("o" hydra-origami/body :exit t)
+	("p" hydra-projectile/body "projectile" :exit t)
+	("s" hydra-smerge/body :exit t)
+	("v" magit-status :exit t)
+	("w" hydra-web-mode/body :exit t)
+	("z" hydra-zoom/body "zoom" :exit t))))
