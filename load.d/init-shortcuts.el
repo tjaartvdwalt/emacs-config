@@ -92,8 +92,8 @@ _0_ Zoom default
 
 (defhydra hydra-web-mode ()
   "
-_+_ fold-or-unfold
-_-_ buffer-highlight
+_f_ fold-or-unfold
+_h_ buffer-highlight
 _TAB_ buffer-indent
 "
 
