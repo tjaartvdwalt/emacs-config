@@ -124,13 +124,13 @@ _TAB_ buffer-indent
 ctrl-c:
 _a_: ag
 _b_: beacon-blink
-_c_: counsel*
-_e_: exand-region*
+_c_: counsel
+_e_: exand-region
 _i_: format-all-buffer
 _h_: whitespace-mode
 _k_: kill-sexp
 _l_: linum-mode
-_m_: multiple-cursors*
+_m_: multiple-cursors
 _n_: navigate*
 _o_: origami*
 _p_: projectile*
@@ -142,16 +142,16 @@ _z_: zoom*
 
   ("b" beacon-blink :exit t)
   ("c" hydra-counsel/body :exit t :color pink)
-  ("e" er/expand-region :exit t)
+  ("e" er/expand-region :exit t :color pink)
   ("h" whitespace-mode :exit t)
   ("i" format-all-buffer :exit t)
   ("k" sp-kill-sexp :exit t)
   ("l" global-linum-mode :exit t)
-  ("m" hydra-multiple-cursors/body :exit t)
-  ("n" hydra-navigate/body :exit t)
-  ("o" hydra-origami/body :exit t)
-  ("p" hydra-projectile/body :exit t)
-  ("s" hydra-smerge/body :exit t)
+  ("m" hydra-multiple-cursors/body :exit t :color pink)
+  ("n" hydra-navigate/body :exit t :color pink)
+  ("o" hydra-origami/body :exit t :color pink)
+  ("p" hydra-projectile/body :exit t :color pink)
+  ("s" hydra-smerge/body :exit t :color pink)
   ("v" magit-status :exit t)
-  ("w" hydra-web-mode/body :exit t)
-  ("z" hydra-zoom/body :exit t))
+  ("w" hydra-web-mode/body :exit t :color pink)
+  ("z" hydra-zoom/body :exit t :color pink))
