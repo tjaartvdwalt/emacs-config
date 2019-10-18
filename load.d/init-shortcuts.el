@@ -90,6 +90,17 @@ _0_ Zoom default
   ("-" font-size-decrease :exit nil)
   ("0" font-size-default :exit nil))
 
+(defhydra hydra-web-mode ()
+  "
+_+_ Zoom in
+_-_ Zoom out
+_0_ Zoom default
+"
+
+  ("+" font-size-increase :exit nil)
+  ("-" font-size-decrease :exit nil)
+  ("0" font-size-default :exit nil))
+
 (defhydra hydra-ctrl-c ()
   "
 ctrl-c:
