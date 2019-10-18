@@ -131,13 +131,13 @@ _h_: whitespace-mode
 _k_: kill-sexp
 _l_: linum-mode
 _m_: multiple-cursors
-_n_: navigate*
-_o_: origami*
-_p_: projectile*
-_s_: smerge*
+_n_: navigate
+_o_: origami
+_p_: projectile
+_s_: smerge
 _v_: magit-buffer
-_w_: web-mode*
-_z_: zoom*
+_w_: web-mode
+_z_: zoom
 "
 
   ("b" beacon-blink :exit t)
