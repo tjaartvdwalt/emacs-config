@@ -97,7 +97,7 @@ _-_ Zoom out
 _0_ Zoom default
 "
 
-  ("+" font-size-increase :exit nil)
+  ("f" web-mode-fold-or-4  :exit nil)
   ("-" font-size-decrease :exit nil)
   ("0" font-size-default :exit nil))
 
