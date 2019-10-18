@@ -139,23 +139,23 @@ _w_: web-mode
 _z_: zoom
 "
 
-  (pretty-hydra-define ctrl-c
-    (:color amaranth :quit-key "q")
-    ("Basic"
-      (  ("b" beacon-blink :exit t)
-  ("c" hydra-counsel/body :exit t)
-  ("e" er/expand-region :exit t)
-  ("h" whitespace-mode :toggle t)
-  ("i" format-all-buffer :exit t)
-  ("k" sp-kill-sexp :exit t)
-  ("l" global-linum-mode :exit t)
-  ("m" hydra-multiple-cursors/body :exit t)
-  ("n" hydra-navigate/body :exit t)
-  ("o" hydra-origami/body :exit t)
-  ("p" hydra-projectile/body :exit t)
-  ("s" hydra-smerge/body :exit t)
-  ("v" magit-status :exit t)
-  ("w" hydra-web-mode/body :exit t)
-  ("z" hydra-zoom/body :exit t)
-              )
-))
+  (pretty-hydra-define hydra-ctrl-c
+    (:color amaranth :quit-key "q" )
+    ("Minor Modes"
+	 (  ("b" beacon-blink :exit t)
+		("c" hydra-counsel/body :exit t)
+		("e" er/expand-region :exit t)
+		("h" whitespace-mode :toggle t)
+		("i" format-all-buffer :exit t)
+		("k" sp-kill-sexp :exit t)
+		("l" global-linum-mode :toggle t)
+		("m" hydra-multiple-cursors/body :exit t)
+		("n" hydra-navigate/body :exit t)
+		("o" hydra-origami/body :exit t)
+		("p" hydra-projectile/body :exit t)
+		("s" hydra-smerge/body :exit t)
+		("v" magit-status :exit t)
+		("w" hydra-web-mode/body :exit t)
+		("z" hydra-zoom/body :exit t)
+		)
+	 ))
