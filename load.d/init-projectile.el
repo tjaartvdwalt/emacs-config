@@ -1,5 +1,31 @@
 (use-package projectile
   :delight projectile-mode
+  :pretty-hydra
+  ((:color teal :quit-key "q")
+   ("Projectile"
+	(("a"   projectile-ag)
+	 ("b"   projectile-switch-to-buffer)
+	 ("c"   projectile-invalidate-cache)
+	 ("d"   projectile-find-dir)
+	 ("s-f" projectile-find-file)
+	 ("ff"  projectile-find-file-dwim)
+	 ("fd"  projectile-find-file-in-directory)
+	 ("g"   ggtags-update-tags)
+	 ("s-g" ggtags-update-tags)
+	 ("i"   projectile-ibuffer)
+	 ("K"   projectile-kill-buffers)
+	 ("s-k" projectile-kill-buffers)
+	 ("m"   projectile-multi-occur)
+	 ("o"   projectile-multi-occur)
+	 ("s-p" projectile-switch-project "switch project")
+	 ("p"   projectile-switch-project)
+	 ("s"   projectile-persp-switch-project)
+	 ("r"   projectile-recentf)
+	 ("x"   projectile-remove-known-project)
+	 ("X"   projectile-cleanup-known-projects)
+	 ("z"   projectile-cache-current-file)
+	 ("`"   hydra-projectile-other-window/body "other window")
+	 ("q"   nil "cancel" :color blue))))
   :config
   (progn
     (projectile-global-mode +1)
