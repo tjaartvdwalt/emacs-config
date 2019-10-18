@@ -81,9 +81,9 @@ _<return>_ Keep Current
 
 (pretty-hydra-define hydra-zoom
       (:color amaranth :quit-key "C-g" :title "Zoom" )
-  ("+" font-size-increase "Zoom in" :exit nil)
+ (("+" font-size-increase "Zoom in" :exit nil)
   ("-" font-size-decrease "Zoom out" :exit nil)
-  ("0" font-size-default "Defaultn" :exit nil))
+  ("0" font-size-default "Defaultn" :exit nil)))
 
 (defhydra hydra-counsel ()
   "
