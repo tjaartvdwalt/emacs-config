@@ -93,7 +93,10 @@ _0_ Zoom default
 (defhydra hydra-ctrl-c ()
   "
 ctrl-c:
+_a_: ag
 _e_: Exand Region
+_i_: Format Buffer
+_k_: Kill Sexp
 _l_: Linum mode
 _m_: Multiple Cursors
 _n_: Navigate
@@ -107,6 +110,8 @@ _z_: Zoom
 
   ("a" counsel-ag :exit t)
   ("e" er/expand-region :exit t)
+  ("i" format-all-buffer :exit t)
+  ("k" sp-kill-sexp :exit t)
   ("l" global-linum-mode :exit t)
   ("m" hydra-multiple-cursors/body :exit t)
   ("n" hydra-navigate/body :exit t)
