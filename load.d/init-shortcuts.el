@@ -53,8 +53,8 @@
 (global-set-key (kbd "C-=") 'hydra-ctrl-c/body)
 
 (pretty-hydra-define smerge-hydra
-  (:color amaranth :quit-key "C-g" :title "smerge" )
-  (""
+  (:color amaranth :quit-key "C-g")
+  ("smerge"
     (("a" smerge-keep-all :exit t)
   ("l" smerge-keep-lower :exit t)
   ("u" smerge-keep-upper :exit t)
@@ -62,8 +62,8 @@
 
 
 (pretty-hydra-define zoom-hydra
-  (:color amaranth :quit-key "C-g" :title "Zoom" )
-  (""
+  (:color amaranth :quit-key "C-g" )
+  ("zoom"
     (("+" font-size-increase "Zoom in" :exit nil)
    ("-" font-size-decrease "Zoom out" :exit nil)
    ("0" font-size-default "Defaultn" :exit nil))))
@@ -87,5 +87,5 @@
 	("p" projectile-hydra/body "projectile" :exit t)
 	("s" smerge-hydra/body :exit t)
 	("v" magit-status :exit t)
-	("w" hydra-web-mode/body :exit t)
-	("z" hydra-zoom/body "zoom" :exit t))))
+	("w" web-mode-hydra/body :exit t)
+	("z" zoom-hydra/body "zoom" :exit t))))
