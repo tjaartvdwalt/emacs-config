@@ -67,17 +67,14 @@
 ;;   ("r" comment-or-uncomment-region)
 ;;   ("v" evilnc-toggle-invert-comment-line-by-line))
 
-(defhydra hydra-smerge ()
-  "
-_a_ Keep All
-_l_ Keep Lower
-_u_ Keep Upper
-_<return>_ Keep Current
-"
-  ("a" smerge-keep-all :exit t)
+(pretty-hydra-define smerge-hydra
+  (:color amaranth :quit-key "C-g" :title "smerge" )
+  (""
+    (("a" smerge-keep-all :exit t)
   ("l" smerge-keep-lower :exit t)
   ("u" smerge-keep-upper :exit t)
-  ("<return>" smerge-keep-current :exit t))
+  ("<return>" smerge-keep-current :exit t))))
+
 
 (pretty-hydra-define zoom-hydra
   (:color amaranth :quit-key "C-g" :title "Zoom" )
@@ -86,17 +83,6 @@ _<return>_ Keep Current
    ("-" font-size-decrease "Zoom out" :exit nil)
    ("0" font-size-default "Defaultn" :exit nil))))
 
-
-(defhydra hydra-web-mode ()
-  "
-_f_ fold-or-unfold
-_h_ buffer-highlight
-_TAB_ buffer-indent
-"
-
-  ("f" web-mode-fold-or-unfold  :exit nil)
-  ("h" web-mode-buffer-highlight :exit nil)
-  ("<tab>" web-mode-buffer-indend :exit nil))
 
 (pretty-hydra-define hydra-ctrl-c
   (:color amaranth :quit-key "q" )
@@ -114,7 +100,7 @@ _TAB_ buffer-indent
 	("n" hydra-navigate/body :exit t)
 	("o" hydra-origami/body :exit t)
 	("p" projectile-hydra/body "projectile" :exit t)
-	("s" hydra-smerge/body :exit t)
+	("s" smerge-hydra/body :exit t)
 	("v" magit-status :exit t)
 	("w" hydra-web-mode/body :exit t)
 	("z" hydra-zoom/body "zoom" :exit t))))
