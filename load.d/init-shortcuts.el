@@ -116,8 +116,8 @@ _TAB_ buffer-indent
 "
 
   ("f" web-mode-fold-or-unfold  :exit nil)
-  ("h" webmode-buffer-highlight :exit nil)
-  ("<tab>" font-size-default :exit nil))
+  ("h" web-mode-buffer-highlight :exit nil)
+  ("<tab>" web-mode-buffer-indend :exit nil))
 
 (defhydra hydra-ctrl-c ()
   "
