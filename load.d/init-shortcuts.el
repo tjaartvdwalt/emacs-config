@@ -97,6 +97,7 @@ _a_: ag
 _b_: Toggle Beacon Blink
 _e_: Exand Region
 _i_: Format Buffer
+_h_: Whitespace Mode
 _k_: Kill Sexp
 _l_: Linum mode
 _m_: Multiple Cursors
@@ -105,13 +106,14 @@ _o_: Origami
 _p_: Projectile
 _s_: Smerge
 _v_: Magit
-_w_: Whitespace Mode
+_w_: Web Mode
 _z_: Zoom
 "
 
   ("a" counsel-ag :exit t)
   ("b" beacon-blink :exit t)
   ("e" er/expand-region :exit t)
+  ("h" whitespace-mode :exit t)
   ("i" format-all-buffer :exit t)
   ("k" sp-kill-sexp :exit t)
   ("l" global-linum-mode :exit t)
@@ -121,5 +123,5 @@ _z_: Zoom
   ("p" hydra-projectile/body :exit t)
   ("s" hydra-smerge/body :exit t)
   ("v" magit-status :exit t)
-  ("w" whitespace-mode :exit t)
+  ("w" hydra-web-mode/body :exit t)
   ("z" hydra-zoom/body :exit t))
