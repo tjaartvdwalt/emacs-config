@@ -122,7 +122,6 @@ _TAB_ buffer-indent
 (defhydra hydra-ctrl-c ()
   "
 ctrl-c:
-_a_: ag
 _b_: beacon-blink
 _c_: counsel
 _e_: exand-region
