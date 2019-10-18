@@ -25,7 +25,7 @@
     ("C-s" . swiper)))
 
 (use-package counsel
-    :pretty-hydra
+  :pretty-hydra
   ((:color teal :quit-key "q")
    ("Ivy"
 	(  ("a" counsel-ag  :exit true)
