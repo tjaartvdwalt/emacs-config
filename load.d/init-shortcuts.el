@@ -146,7 +146,7 @@ _z_: zoom
 			("h" whitespace-mode :toggle t))
 	 "Other"
 
-	 ("b" beacon-blink :exit t)
+	 (("b" beacon-blink :exit t)
 	 ("c" hydra-counsel/body :exit t)
 	 ("e" er/expand-region :exit t)
 	 ("i" format-all-buffer :exit t)
@@ -158,6 +158,6 @@ _z_: zoom
 	 ("s" hydra-smerge/body :exit t)
 	 ("v" magit-status :exit t)
 	 ("w" hydra-web-mode/body :exit t)
-	 ("z" hydra-zoom/body :exit t)
+	 ("z" hydra-zoom/body :exit t))
 
 	 ))
