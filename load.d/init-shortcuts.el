@@ -123,7 +123,7 @@ _TAB_ buffer-indent
    "Other"
 
    (("b" beacon-blink :exit t)
-	("c" ivy-hydra/body :exit t)
+	("c" counsel-hydra/body :exit t)
 	("e" er/expand-region :exit t)
 	("i" format-all-buffer :exit t)
 	("k" sp-kill-sexp :exit t)
