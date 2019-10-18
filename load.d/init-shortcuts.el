@@ -116,7 +116,7 @@ _TAB_ buffer-indent
   ("<tab>" web-mode-buffer-indend :exit nil))
 
 (pretty-hydra-define hydra-ctrl-c
-  (:color amaranth :quit-key "C-g" )
+  (:color amaranth :quit-key "q" )
   ("Minor Modes"
    (("l" global-linum-mode :toggle t)
 	("h" whitespace-mode :toggle t))
