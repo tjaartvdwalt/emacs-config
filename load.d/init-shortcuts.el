@@ -79,29 +79,12 @@ _<return>_ Keep Current
   ("u" smerge-keep-upper :exit t)
   ("<return>" smerge-keep-current :exit t))
 
-(pretty-hydra-define hydra-zoom
+(pretty-hydra-define zoom-hydra
   (:color amaranth :quit-key "C-g" :title "Zoom" )
   (""
     (("+" font-size-increase "Zoom in" :exit nil)
    ("-" font-size-decrease "Zoom out" :exit nil)
    ("0" font-size-default "Defaultn" :exit nil))))
-
-(defhydra hydra-counsel ()
-  "
-_a_ ag
-_f_ find-file
-_g_ git
-_j_ git-grep
-_l_ locate
-_r_ recentf
-"
-
-  ("a" counsel-ag  :exit true)
-  ("f" counsel-find-file  :exit true)
-  ("g" counsel-git :exit true)
-  ("j" counsel-git-grep :exit true)
-  ("l" counsel-locate :exit true)
-  ("r" counsel-recentf :exit true))
 
 
 (defhydra hydra-web-mode ()
