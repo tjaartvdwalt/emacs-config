@@ -1,5 +1,5 @@
-(use-package evil-nerd-commenter
-  :bind ("M-;" . evilnc-comment-or-uncomment-lines))
+;; (use-package evil-nerd-commenter
+;;   :bind ("M-;" . evilnc-comment-or-uncomment-lines))
 
 ;; (defhydra hydra-commenter (:hint nil)
 ;;   "
