@@ -1,2 +1,4 @@
 (use-package yascroll
-  :config(global-yascroll-bar-mode))
+  :config(
+		  (setq scroll-bar-mode nil)
+		  (global-yascroll-bar-mode 1)))
