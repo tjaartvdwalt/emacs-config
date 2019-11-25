@@ -40,3 +40,9 @@ session.*
 /network-security.data
 /recentf
 /.cache
+
+.lsp-session-v1
+eclipse.jdt.ls/
+forge-database.sqlite
+transient/
+workspace/
