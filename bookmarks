@@ -1,8 +1,13 @@
-;;;; Emacs Bookmark Format Version 1 ;;;;
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8 -*- 
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("init-anzu.el"
+(("ranger-a"
+ (filename . "~/")
+ (front-context-string . "architectural_ov")
+ (rear-context-string . ".8k 07-17 00:12 ")
+ (position . 2258))
+("init-anzu.el"
  (filename . "/home/tjaart/.emacs.d/load.d/init-anzu.el")
  (position . 0)
  (defaults "load.d"))
