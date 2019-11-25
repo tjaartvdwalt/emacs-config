@@ -42,7 +42,7 @@ session.*
 /.cache
 
 .lsp-session-v1
-eclipse.jdt.ls/
+eclipse.jdt.ls
 forge-database.sqlite
-transient/
-workspace/
+transient
+workspace
