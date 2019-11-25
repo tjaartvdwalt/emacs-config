@@ -9,3 +9,5 @@
 			(setq lsp-enable-snippet t)))
 
 (use-package lsp-java)
+(use-package lsp-ui)
+(use-package lsp-treemacs)
