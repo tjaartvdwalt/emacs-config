@@ -4,6 +4,7 @@
 (setq global-visual-line-mode t)
 
 (setq auto-save-visited-mode t)
+(setq auto-save-visited-interval 30)
 ;; (global-hl-line-mode 1)
 ;; (scroll-bar-mode -1)
 ;; Dont show the splash screen
