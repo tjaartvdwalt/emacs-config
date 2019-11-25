@@ -11,7 +11,7 @@
 (use-package lsp-java)
 (use-package lsp-ui
   :config
-  (setq lsp-prefer-flymake nil))
+  (setq lsp-prefer-flymake t))
 (use-package lsp-treemacs
   :config
   (lsp-treemacs-sync-mode 1))
