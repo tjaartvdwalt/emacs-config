@@ -8,6 +8,7 @@
 	 ("h" web-mode-buffer-highlight :exit nil)
 	 ("<tab>" web-mode-buffer-indend :exit nil))))
   :config
+  (setq web-mode-code-indent-offset 2)
   (setq web-mode-enable-css-colorization t)
   (setq web-mode-enable-auto-pairing t)
   (setq web-mode-enable-current-element-highlight t)
