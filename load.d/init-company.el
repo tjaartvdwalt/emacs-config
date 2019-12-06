@@ -1,5 +1,5 @@
 (use-package company
-  :bind (("M-<tab>" . company-other-backend))
+  ;; :bind (("M-<tab>" . company-other-backend))
   ;; :delight
   :config
   (global-company-mode)
