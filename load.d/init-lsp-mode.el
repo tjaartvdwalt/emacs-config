@@ -17,4 +17,4 @@
   (lsp-treemacs-sync-mode 1))
 (use-package lsp-ivy)
 (use-package lsp-origami
-:hook((origami-mode . lsp-origami-mode)))
+  :hook((origami-mode . lsp-origami-mode)))
