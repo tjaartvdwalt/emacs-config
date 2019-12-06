@@ -1,5 +1,5 @@
 (use-package origami
-  :bind (("TAB" . origami-recursively-toggle-node))
+  :bind (("M-<tab>" . origami-recursively-toggle-node))
   ;;        ("C-c o o" . origami-open-node))
 
   ;; :config (progn
