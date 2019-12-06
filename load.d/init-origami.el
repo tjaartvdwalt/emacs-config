@@ -1,9 +1,7 @@
 (use-package origami
   :bind (("M-<tab>" . origami-recursively-toggle-node))
-  ;;        ("C-c o o" . origami-open-node))
-
-  ;; :config (progn
-  ;;           (add-hook 'prog-mode-hook 'origami-mode)
+  :config (progn
+            (add-hook 'prog-mode-hook 'origami-mode)))
   ;;           (defhydra hydra-origami (:color red)
   ;;             "
   ;; _o_pen node    _n_ext fold       toggle _f_orward
@@ -15,5 +13,3 @@
   ;;             ("p" origami-previous-fold)
   ;;             ("f" origami-forward-toggle-node)
   ;;             ("a" origami-toggle-all-nodes)))
-
-)
