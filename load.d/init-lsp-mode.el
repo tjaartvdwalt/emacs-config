@@ -15,3 +15,4 @@
 (use-package lsp-treemacs
   :config
   (lsp-treemacs-sync-mode 1))
+(use-package lsp-ivy)
