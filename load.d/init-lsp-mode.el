@@ -1,7 +1,8 @@
 (use-package lsp-mode
   :bind (("M-C-r" . lsp-rename))
   :hook ((prog-mode . lsp-deferred)
-		 (web-mode . lsp-deferred))
+		 (web-mode . lsp-deferred)
+		 (origami-mode . lsp-origami-mode))
   :commands lsp
   :config (progn
             (setq lsp-auto-configure t)
