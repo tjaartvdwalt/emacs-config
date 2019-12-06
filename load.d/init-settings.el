@@ -10,7 +10,7 @@
 (setq inhibit-splash-screen t)
 ;; (setq tab-width 4)
 ;; (setq standard-indent 4)
-;; (electric-indent-mode t)
+(electric-indent-mode t)
 ;;(setq-default tab-always-indent nil)
 ;;(setq-default indent-tabs-mode t)
 ;; (global-linum-mode t)
