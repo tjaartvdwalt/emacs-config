@@ -14,9 +14,9 @@ for variable-pitch face."
 (defun tajvdw-set-fonts ()
   "Set your font size based on your screen resolution"
   (interactive)
-(when window-system
-  (if (> (x-display-pixel-width) 2000)
-    ((tajvdw-setup-main-fonts 130 120)
-      (message "Resolution > 2000 pixels"))
-    ((tajvdw-setup-main-fonts 180 160)
-      (message "Resolution < 2000 pixels")))))
+  (when window-system
+	(if (> (x-display-pixel-width) 2000)
+		(progn (tajvdw-setup-main-fonts 130 120)
+			   (message "Resolution > 2000 pixels"))
+	  (progn (tajvdw-setup-main-fonts 180 160)
+			 (message "Resolution < 2000 pixels")))))f
