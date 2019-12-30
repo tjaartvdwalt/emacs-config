@@ -13,5 +13,5 @@ for variable-pitch face."
 
 (when window-system
   (if (> (x-display-pixel-width) 2000)
-      (mu-setup-main-fonts 150 160)
+      (mu-setup-main-fonts 130 120)
     (mu-setup-main-fonts 180 160)))
