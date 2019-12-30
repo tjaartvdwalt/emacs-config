@@ -11,7 +11,7 @@ for variable-pitch face."
                       :height variable-pitch-height
                       :weight 'regular))
 
-(defun set-fonts ()
+(defun tajvdw-set-fonts ()
   "Set your font size based on your screen resolution"
   (interactive)
 (when window-system
