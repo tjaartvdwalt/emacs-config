@@ -1,4 +1,4 @@
-(defun mu-setup-main-fonts (default-height variable-pitch-height)
+(defun tajvdw-setup-main-fonts (default-height variable-pitch-height)
   "Set up default fonts.
 
 Use DEFAULT-HEIGHT for default face and VARIABLE-PITCH-HEIGHT
@@ -16,5 +16,5 @@ for variable-pitch face."
   (interactive)
 (when window-system
   (if (> (x-display-pixel-width) 2000)
-      (mu-setup-main-fonts 130 120)
-    (mu-setup-main-fonts 180 160))))
+      (tajvdw-setup-main-fonts 130 120)
+    (tajvdw-setup-main-fonts 180 160))))
