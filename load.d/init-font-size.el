@@ -4,10 +4,10 @@
 Use DEFAULT-HEIGHT for default face and VARIABLE-PITCH-HEIGHT
 for variable-pitch face."
   (set-face-attribute 'default nil
-                      :family "Mono"
+                      :family "monospace"
                       :height default-height)
   (set-face-attribute 'variable-pitch nil
-                      :family "Sans"
+                      :family "sans-serif"
                       :height variable-pitch-height
                       :weight 'regular))
 
