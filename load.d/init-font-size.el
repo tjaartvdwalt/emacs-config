@@ -19,4 +19,4 @@ for variable-pitch face."
 		(progn (tajvdw-setup-main-fonts 130 120)
 			   (message "Resolution > 2000 pixels"))
 	  (progn (tajvdw-setup-main-fonts 180 160)
-			 (message "Resolution < 2000 pixels")))))f
+			 (message "Resolution < 2000 pixels")))))
