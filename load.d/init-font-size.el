@@ -16,7 +16,7 @@ for variable-pitch face."
   (interactive)
   (when window-system
 	(if (> (x-display-pixel-width) 2000)
-		(progn (tajvdw-setup-main-fonts 150 140)
+		(progn (tajvdw-setup-main-fonts 160 150)
 			   (message "Resolution > 2000 pixels"))
 	  (progn (tajvdw-setup-main-fonts 180 160)
 			 (message "Resolution < 2000 pixels")))))
