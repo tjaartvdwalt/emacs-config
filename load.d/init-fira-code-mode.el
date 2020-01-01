@@ -1,0 +1,1 @@
+(require 'fira-code-mode)
